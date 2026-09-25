@@ -695,7 +695,7 @@
   $('raceDate').addEventListener('change',loadManifest);
   $('raceVenue').addEventListener('change',()=>{updateRaces();loadRace()});
   $('raceNumber').addEventListener('change',loadRace);
-  $('raceAuto').addEventListener('click',()=>available.length?loadRace():loadManifest());
+  $('raceAuto').addEventListener('click',loadManifest);
   $('raceApplyLines').addEventListener('click',()=>{
     try{
       const card=JSON.parse(localStorage.getItem(KEY));

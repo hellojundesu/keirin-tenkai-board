@@ -16,7 +16,7 @@ await saveManifest();
 // These functions execute in the KEIRIN.JP page. The line grouping comes
 // from the official race list; it is never inferred from rider names.
 function extractRace(race){
-  const cards=[...document.querySelectorAll('table.sltbl_02-2')];
+  const cards=[...document.querySelectorAll('table.sltbl_02, table.sltbl_02-2')];
   const card=cards.find(t=>new RegExp(`^\\s*${race}R(?:\\s|　)`).test(t.innerText));
   if(!card)throw Error('出走表なし');
   const riders=[...card.querySelectorAll('a.sllink_name')].map(a=>{
@@ -66,7 +66,7 @@ async function openRaceList(page,venue){
     const row=[...document.querySelectorAll('tr')].find(r=>r.querySelector('td')?.textContent.replace(/[\s　]/g,'').startsWith(v)&&[...r.querySelectorAll('button')].some(b=>b.textContent.replace(/[\s　]/g,'').includes('出走表一覧')));
     [...row.querySelectorAll('button')].find(b=>b.textContent.replace(/[\s　]/g,'').includes('出走表一覧')).click();
   },venue);
-  await page.waitForFunction(()=>location.pathname==='/pc/racelist'&&document.querySelectorAll('table.sltbl_02-2').length>0,{timeout:20000});
+await page.waitForFunction(()=>location.pathname==='/pc/racelist'&&document.querySelectorAll('table.sltbl_02, table.sltbl_02-2').length>0,{timeout:20000});
 }
 async function scoresFor(browser,riders,scores){
   const queue=[...new Set(riders.map(r=>r.snum).filter(id=>!scores.has(id)))];

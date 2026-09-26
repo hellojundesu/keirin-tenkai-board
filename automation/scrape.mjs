@@ -1,22 +1,33 @@
 import puppeteer from 'puppeteer';
-import {mkdir, readFile, writeFile} from 'node:fs/promises';
+import {mkdir, readFile, readdir, rm, writeFile} from 'node:fs/promises';
 import {join} from 'node:path';
 
 const VENUES='函館 青森 いわき平 弥彦 前橋 取手 宇都宮 大宮 西武園 京王閣 立川 松戸 千葉 川崎 平塚 小田原 伊東 静岡 名古屋 岐阜 大垣 豊橋 富山 松阪 四日市 福井 奈良 向日町 和歌山 岸和田 玉野 広島 防府 高松 小松島 高知 松山 小倉 久留米 武雄 佐世保 別府 熊本'.split(' ');
 const date=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
-const directory=join(process.cwd(),'data',date);
+const dataRoot=join(process.cwd(),'data');
+const directory=join(dataRoot,date);
 const manifestPath=join(directory,'manifest.json');
+await mkdir(dataRoot,{recursive:true});
+for(const entry of await readdir(dataRoot,{withFileTypes:true})){
+  if(entry.isDirectory()&&/^\d{4}-\d{2}-\d{2}$/.test(entry.name)&&entry.name!==date){
+    await rm(join(dataRoot,entry.name),{recursive:true,force:true});
+  }
+}
 await mkdir(directory,{recursive:true});
 let prior={};
 try{prior=JSON.parse(await readFile(manifestPath,'utf8'))}catch{}
 const manifest={date,updatedAt:new Date().toISOString(),status:'running',races:Array.isArray(prior.races)?prior.races:[],errors:[],completedVenues:[]};
-const saveManifest=()=>writeFile(manifestPath,JSON.stringify(manifest,null,2)+'\n');
+const saveManifest=()=>{
+  manifest.races.sort((a,b)=>a.venue.localeCompare(b.venue,'ja')||Number(a.race)-Number(b.race));
+  return writeFile(manifestPath,JSON.stringify(manifest,null,2)+'\n');
+};
 await saveManifest();
 
 // These functions execute in the KEIRIN.JP page. The line grouping comes
 // from the official race list; it is never inferred from rider names.
 function extractRace(race){
-  const cards=[...document.querySelectorAll('table.sltbl_02, table.sltbl_02-2')];
+  // KEIRIN.JP uses sltbl_02 for 1R and sltbl_02-2 for later races.
+  const cards=[...document.querySelectorAll('#sldivSyusouList > table.sltbl_02, #sldivSyusouList > table.sltbl_02-2')];
   const card=cards.find(t=>new RegExp(`^\\s*${race}R(?:\\s|　)`).test(t.innerText));
   if(!card)throw Error('出走表なし');
   const riders=[...card.querySelectorAll('a.sllink_name')].map(a=>{
@@ -66,7 +77,7 @@ async function openRaceList(page,venue){
     const row=[...document.querySelectorAll('tr')].find(r=>r.querySelector('td')?.textContent.replace(/[\s　]/g,'').startsWith(v)&&[...r.querySelectorAll('button')].some(b=>b.textContent.replace(/[\s　]/g,'').includes('出走表一覧')));
     [...row.querySelectorAll('button')].find(b=>b.textContent.replace(/[\s　]/g,'').includes('出走表一覧')).click();
   },venue);
-await page.waitForFunction(()=>location.pathname==='/pc/racelist'&&document.querySelectorAll('table.sltbl_02, table.sltbl_02-2').length>0,{timeout:20000});
+  await page.waitForFunction(()=>location.pathname==='/pc/racelist'&&document.querySelectorAll('#sldivSyusouList > table.sltbl_02, #sldivSyusouList > table.sltbl_02-2').length>0,{timeout:20000});
 }
 async function scoresFor(browser,riders,scores){
   const queue=[...new Set(riders.map(r=>r.snum).filter(id=>!scores.has(id)))];

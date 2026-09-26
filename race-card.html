@@ -118,15 +118,9 @@
       <h2>出走表</h2>
       <button type="button" id="raceOpen" class="race-primary" aria-expanded="false" aria-controls="raceControls">出走表取得</button>
       <div id="raceControls" class="race-controls" hidden>
-        <label>開催日<input id="raceDate" type="date"></label>
         <label>会場<select id="raceVenue"><option value="">会場を選択</option></select></label>
         <label>レース<select id="raceNumber"></select></label>
-        
-        <div class="race-actions"><button type="button" id="raceAuto" class="race-primary">保存済みの出走表を読み込む</button></div>
         <div class="race-actions"><a id="raceSource" href="https://keirin.jp/pc/top" target="_blank" rel="noopener noreferrer">KEIRIN.JPで出走表を見る ↗</a></div>
-        <details><summary>手動で取り込む</summary><label>公式出走表からコピーした選手欄<textarea id="racePaste" placeholder="例：1 山田 太郎 東京 逃&#10;2 鈴木 一郎 神奈川 追"></textarea></label>
-        <div class="race-actions"><button type="button" id="raceImport" class="race-primary">左側に表示</button><button type="button" id="raceClear" class="race-secondary">表示を消す</button></div>
-        <p class="race-help">保存データがない場合は公式サイトの該当レースからコピーして貼り付けてください。</p></details>
       </div>
       <p id="raceStatus" class="race-status" role="status" hidden></p>
       <div id="raceTitle" class="race-title"></div>
@@ -579,13 +573,11 @@
   const $=id=>document.getElementById(id);
   const KEY='keirin-race-card-separate-page-v1';
   const DATA_BASE=new URL('./data/',location.href); // GitHub Pages に保存した出走表
-  let available=[], requestId=0;
+  let available=[], requestId=0, activeDate='';
+  const todayJST=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
   const venues='函館 青森 いわき平 弥彦 前橋 取手 宇都宮 大宮 西武園 京王閣 立川 松戸 千葉 川崎 平塚 小田原 伊東 静岡 名古屋 岐阜 大垣 豊橋 富山 松阪 四日市 福井 奈良 向日町 和歌山 岸和田 玉野 広島 防府 高松 小松島 高知 松山 小倉 久留米 武雄 佐世保 別府 熊本'.split(' ');
   const colors=['#f7f8f9','#202126','#e2383a','#317bd5','#f1ca32','#15965a','#ed8b32','#ed82ae','#7141c3'];
   const inks=['#17202a','#fff','#fff','#fff','#18202a','#fff','#18202a','#17202a','#fff'];
-  $('raceVenue').insertAdjacentHTML('beforeend',venues.map(v=>`<option value="${v}">${v}</option>`).join(''));
-  $('raceNumber').innerHTML=Array.from({length:12},(_,i)=>`<option value="${i+1}">${i+1}R</option>`).join('');
-  $('raceDate').value=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
   const setStatus=t=>{ $('raceStatus').hidden=!t;$('raceStatus').textContent=t };
   function render(card){
     $('raceRows').replaceChildren();$('raceTitle').textContent='';$('raceLinePreview').textContent='';$('raceApplyLines').hidden=true;
@@ -605,29 +597,10 @@
       $('raceApplyLines').hidden=![7,9].includes(card.riders.length);
     }
   }
-  function parseRiders(raw){
-    const text=raw.replace(/\r/g,'').normalize('NFKC');
-    const found=new Map();
-    for(const line of text.split('\n')){
-      // KEIRIN.JP's displayed rows usually copy as tab-separated cells.
-      // One rider per line with spaces is also accepted for manual cleanup.
-      const bits=line.trim().split(/\t+| {2,}/).map(s=>s.trim()).filter(Boolean);
-      let number,name,prefecture='',style='';
-      if(bits.length>=2&&/^[1-9]$/.test(bits[0])){
-        number=+bits[0];name=bits[1];prefecture=bits[2]||'';style=bits.find(s=>/^[逃両追]$/.test(s))||'';
-      }else{
-        const m=line.trim().match(/^([1-9])\s+([\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}ー・]+(?:\s+[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}ー・]+)?)\s+([\p{Script=Han}](?:\s*[\p{Script=Han}]){1,3})\s+([逃両追])(?:\s|$)/u);
-        if(!m)continue;
-        [,number,name,prefecture,style]=m;number=+number;
-      }
-      if(!/^[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}ー・\s]{2,20}$/u.test(name||''))continue;
-      if(!found.has(number))found.set(number,{number,name:name.replace(/\s+/g,' ').trim(),prefecture:prefecture.replace(/\s+/g,''),style});
-    }
-    return [...found.values()].sort((a,b)=>a.number-b.number);
-  }
   $('raceOpen').addEventListener('click',()=>{
     const open=$('raceControls').hidden;
     $('raceControls').hidden=!open;$('raceOpen').setAttribute('aria-expanded',String(open));
+    if(open)loadManifest();
   });
   function workerURL(path='/',params={}){
     const {date,venue,race}=params;
@@ -646,16 +619,16 @@
   }
   function updateRaces(preferred){
     const venue=$('raceVenue').value;
-    const races=available.filter(item=>item.venue===venue).map(item=>Number(item.race));
+    const races=[...new Set(available.filter(item=>item.venue===venue).map(item=>Number(item.race)))].sort((a,b)=>a-b);
     const select=$('raceNumber');
     select.replaceChildren(...races.map(n=>new Option(`${n}R`,String(n))));
     select.value=races.includes(Number(preferred))?String(preferred):String(races[0]||'');
   }
   async function loadRace(){
-    const date=$('raceDate').value,venue=$('raceVenue').value,race=Number($('raceNumber').value);
+    const date=activeDate,venue=$('raceVenue').value,race=Number($('raceNumber').value);
     if(!date||!venue||!available.some(item=>item.venue===venue&&Number(item.race)===race))return;
     const current=++requestId;
-    $('raceAuto').disabled=true;setStatus('保存済みの出走表を読み込み中…');
+    setStatus('出走表を読み込み中…');
     try{
       const response=await fetch(workerURL('/',{date,venue,race}),{signal:AbortSignal.timeout(15000),cache:'no-store'});
       const data=await response.json();
@@ -665,36 +638,33 @@
       const card={date,venue,race,riders:data.riders,lines:data.lines||[],lineSource:data.lineSource,updatedAt:data.updatedAt};
       render(card);
       try{localStorage.setItem(KEY,JSON.stringify(card))}catch{}
-      const time=data.updatedAt?new Intl.DateTimeFormat('ja-JP',{timeZone:'Asia/Tokyo',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}).format(new Date(data.updatedAt)):'';
-      setStatus(`保存済みの出走表（${data.riders.length}人）を表示中。取得：${time||'時刻不明'}。直前の変更は反映されていない場合があります。`);
+      setStatus('');
     }catch(e){if(current===requestId)setStatus(`読み込めませんでした：${e.message}`)}
-    finally{if(current===requestId)$('raceAuto').disabled=false}
   }
   async function loadManifest(){
-    const current=++requestId,date=$('raceDate').value;
-    if(!date)return;
-    $('raceAuto').disabled=true;setStatus('公開済みのレースを確認中…');
+    const current=++requestId,date=todayJST();
+    activeDate=date;
+    render(null);
+    setStatus('本日のレースを確認中…');
     try{
       const response=await fetch(workerURL('/manifest',{date}),{signal:AbortSignal.timeout(15000),cache:'no-store'});
       const manifest=await response.ok?await response.json():{date,status:'pending',races:[]};
       if(current!==requestId)return;
       available=Array.isArray(manifest.races)?manifest.races.filter(item=>venues.includes(item.venue)&&Number.isInteger(Number(item.race))&&Number(item.race)>=1&&Number(item.race)<=12):[];
       const previous=JSON.parse(localStorage.getItem(KEY)||'null');
+      if(previous?.date!==date)try{localStorage.removeItem(KEY)}catch{}
       updateVenues(previous?.date===date?previous.venue:'');
       if(previous?.date===date)updateRaces(previous.race);
       if(available.length){await loadRace()}
       else{
         render(null);
-        const message=manifest.status==='running'?'朝の取得処理中です。少し時間をおいて再読み込みしてください。':manifest.status==='failed'?'今朝の自動取得に失敗しました。管理者にお知らせください。':'この日に保存済みのレースはありません。';
+        const message=manifest.status==='running'?'本日の取得処理中です。少し時間をおいて再読み込みしてください。':manifest.status==='failed'?'本日の自動取得に失敗しました。管理者にお知らせください。':'本日の出走表はまだありません。';
         setStatus(message);
       }
     }catch(e){if(current===requestId)setStatus(`公開済みデータを確認できませんでした：${e.message}`)}
-    finally{if(current===requestId)$('raceAuto').disabled=false}
   }
-  $('raceDate').addEventListener('change',loadManifest);
   $('raceVenue').addEventListener('change',()=>{updateRaces();loadRace()});
   $('raceNumber').addEventListener('change',loadRace);
-  $('raceAuto').addEventListener('click',loadManifest);
   $('raceApplyLines').addEventListener('click',()=>{
     try{
       const card=JSON.parse(localStorage.getItem(KEY));
@@ -702,19 +672,6 @@
       if(!window.keirinBoardApplyLines(card.lines,card.riders.length))throw Error('7車または9車の全員分のラインが必要です。');
       setStatus('並び予想をラインに反映し、表示中のシーンに配置しました。');
     }catch(e){setStatus(e.message)}
-  });
-  $('raceImport').addEventListener('click',()=>{
-    const date=$('raceDate').value,venue=$('raceVenue').value,race=Number($('raceNumber').value);
-    if(!date||!venue){setStatus('開催日と会場を選択してください。');return}
-    const riders=parseRiders($('racePaste').value);
-    if(riders.length<5||riders.length>9){setStatus('車番付きの選手を5～9人読み取れませんでした。1行ずつ「1 山田 太郎 東京 逃」の形式でも貼り付けられます。');return}
-    const card={date,venue,race,riders};
-    render(card);
-    try{localStorage.setItem(KEY,JSON.stringify(card))}catch{}
-    setStatus(`${riders.length}人を表示しました。車番・選手名を公式出走表と照合してください。`);
-  });
-  $('raceClear').addEventListener('click',()=>{
-    render(null);$('racePaste').value='';try{localStorage.removeItem(KEY)}catch{}setStatus('表示を消しました。');
   });
   loadManifest();
 })();

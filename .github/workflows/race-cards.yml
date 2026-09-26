@@ -3,7 +3,8 @@ name: 出走表を毎朝取得
 on:
   push:
   schedule:
-    - cron: '9 0 * * *' # 09:09 JST. GitHub's scheduled start can be delayed.
+    - cron: '0 8 * * *'
+      timezone: 'Asia/Tokyo'
   workflow_dispatch:
 
 permissions:

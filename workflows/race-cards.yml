@@ -1,0 +1,60 @@
+name: 出走表を毎朝取得
+
+on:
+  push:
+  schedule:
+    - cron: '9 0 * * *' # 09:09 JST. GitHub's scheduled start can be delayed.
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: keirin-race-cards
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: ブラウザをインストール
+        if: github.event_name != 'push'
+        run: npm install --prefix automation
+      - name: 当日の出走表を取得
+        if: github.event_name != 'push'
+        continue-on-error: true
+        run: node automation/scrape.mjs
+      - name: 公開用データを更新
+        if: github.event_name != 'push' && always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if ! git diff --cached --quiet; then
+            git commit -m "出走表を更新"
+            git push
+          fi
+      - name: 既存のサイトと出走表を公開用にまとめる
+        run: |
+          mkdir -p public
+          rsync -a --exclude='.git/' --exclude='.github/' --exclude='automation/' --exclude='public/' --exclude='node_modules/' ./ public/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+      - name: 公開サイトを更新
+        id: deployment
+        uses: actions/deploy-pages@v4

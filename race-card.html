@@ -578,7 +578,7 @@
   'use strict';
   const $=id=>document.getElementById(id);
   const KEY='keirin-race-card-separate-page-v1';
-  const WORKER_URL='https://keirin-card-worker.hellojundesu.workers.dev'; // 管理者: デプロイ後に実際のURLに書き換える
+  const DATA_BASE=new URL('./data/',location.href); // GitHub Pages に保存した出走表
   let available=[], requestId=0;
   const venues='函館 青森 いわき平 弥彦 前橋 取手 宇都宮 大宮 西武園 京王閣 立川 松戸 千葉 川崎 平塚 小田原 伊東 静岡 名古屋 岐阜 大垣 豊橋 富山 松阪 四日市 福井 奈良 向日町 和歌山 岸和田 玉野 広島 防府 高松 小松島 高知 松山 小倉 久留米 武雄 佐世保 別府 熊本'.split(' ');
   const colors=['#f7f8f9','#202126','#e2383a','#317bd5','#f1ca32','#15965a','#ed8b32','#ed82ae','#7141c3'];
@@ -630,11 +630,11 @@
     $('raceControls').hidden=!open;$('raceOpen').setAttribute('aria-expanded',String(open));
   });
   function workerURL(path='/',params={}){
-    if(WORKER_URL.includes('REPLACE-WITH-YOUR-WORKER'))throw Error('管理者がWorkerのURLをまだ設定していません。');
-    const base=new URL(WORKER_URL);
-    if(base.protocol!=='https:')throw Error('WorkerのURLはhttpsで設定してください。');
-    const url=new URL(path,base.origin);
-    for(const [key,value] of Object.entries(params))url.searchParams.set(key,String(value));
+    const {date,venue,race}=params;
+    if(!/^\d{4}-\d{2}-\d{2}$/.test(date||''))throw Error('開催日を確認してください。');
+    const filename=path==='/manifest'?'manifest.json':`${encodeURIComponent(venue)}-${Number(race)}.json`;
+    const url=new URL(`${date}/${filename}`,DATA_BASE);
+    url.searchParams.set('updated',String(Date.now()));
     return url;
   }
   function updateVenues(preferred=''){
@@ -657,7 +657,7 @@
     const current=++requestId;
     $('raceAuto').disabled=true;setStatus('保存済みの出走表を読み込み中…');
     try{
-      const response=await fetch(workerURL('/',{date,venue,race}),{signal:AbortSignal.timeout(15000)});
+      const response=await fetch(workerURL('/',{date,venue,race}),{signal:AbortSignal.timeout(15000),cache:'no-store'});
       const data=await response.json();
       if(!response.ok)throw Error(data.error||'読み込みに失敗しました。');
       if(!Array.isArray(data.riders)||data.riders.length<5||data.riders.length>9||data.riders.some(r=>!Number.isInteger(r.number)||!r.name))throw Error('選手データを検証できませんでした。');
@@ -675,9 +675,8 @@
     if(!date)return;
     $('raceAuto').disabled=true;setStatus('公開済みのレースを確認中…');
     try{
-      const response=await fetch(workerURL('/manifest',{date}),{signal:AbortSignal.timeout(15000)});
-      const manifest=await response.json();
-      if(!response.ok)throw Error(manifest.error||'一覧を読み込めませんでした。');
+      const response=await fetch(workerURL('/manifest',{date}),{signal:AbortSignal.timeout(15000),cache:'no-store'});
+      const manifest=await response.ok?await response.json():{date,status:'pending',races:[]};
       if(current!==requestId)return;
       available=Array.isArray(manifest.races)?manifest.races.filter(item=>venues.includes(item.venue)&&Number.isInteger(Number(item.race))&&Number(item.race)>=1&&Number(item.race)<=12):[];
       const previous=JSON.parse(localStorage.getItem(KEY)||'null');

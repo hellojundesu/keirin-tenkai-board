@@ -1,0 +1,137 @@
+{
+  "date": "2026-09-30",
+  "venue": "平塚",
+  "race": 3,
+  "raceId": "202609303503",
+  "riders": [
+    {
+      "number": 1,
+      "name": "加藤 大輔",
+      "snum": "013897",
+      "style": "追",
+      "score": "73.62",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503"
+      }
+    },
+    {
+      "number": 2,
+      "name": "相樂 修",
+      "snum": "013184",
+      "style": "両",
+      "score": "69.58",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503"
+      }
+    },
+    {
+      "number": 3,
+      "name": "山崎 功也",
+      "snum": "014434",
+      "style": "追",
+      "score": "74.17",
+      "back": 0,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503"
+      }
+    },
+    {
+      "number": 4,
+      "name": "川上 修平",
+      "snum": "014776",
+      "style": "追",
+      "score": "74.87",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503"
+      }
+    },
+    {
+      "number": 5,
+      "name": "岡崎 克政",
+      "snum": "014257",
+      "style": "逃",
+      "score": "72.00",
+      "back": 25,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503"
+      }
+    },
+    {
+      "number": 6,
+      "name": "横瀬 聡",
+      "snum": "012547",
+      "style": "追",
+      "score": "68.77",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503"
+      }
+    },
+    {
+      "number": 7,
+      "name": "楠本 政明",
+      "snum": "015739",
+      "style": "逃",
+      "score": "70.50",
+      "back": 7,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609303503"
+      }
+    }
+  ],
+  "lines": [
+    [
+      7,
+      6,
+      1
+    ],
+    [
+      2
+    ],
+    [
+      5,
+      4,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202609303503"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-09-29T23:04:57.877Z"
+}

@@ -1,0 +1,137 @@
+{
+  "date": "2026-09-30",
+  "venue": "広島",
+  "race": 1,
+  "raceId": "202609306201",
+  "riders": [
+    {
+      "number": 1,
+      "name": "鈴木 愼二",
+      "snum": "012882",
+      "style": "追",
+      "score": "80.55",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201"
+      }
+    },
+    {
+      "number": 2,
+      "name": "中山 遼太郎",
+      "snum": "015662",
+      "style": "逃",
+      "score": "83.89",
+      "back": 8,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201"
+      }
+    },
+    {
+      "number": 3,
+      "name": "岡本 翔",
+      "snum": "015735",
+      "style": "逃",
+      "score": "82.83",
+      "back": 9,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201"
+      }
+    },
+    {
+      "number": 4,
+      "name": "安東 宏高",
+      "snum": "014116",
+      "style": "追",
+      "score": "86.00",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201"
+      }
+    },
+    {
+      "number": 5,
+      "name": "山信田 学",
+      "snum": "013556",
+      "style": "追",
+      "score": "81.00",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201"
+      }
+    },
+    {
+      "number": 6,
+      "name": "甲斐下 智",
+      "snum": "012132",
+      "style": "追",
+      "score": "75.17",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201"
+      }
+    },
+    {
+      "number": 7,
+      "name": "宇佐見 裕輝",
+      "snum": "014353",
+      "style": "両",
+      "score": "85.57",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306201"
+      }
+    }
+  ],
+  "lines": [
+    [
+      2,
+      4
+    ],
+    [
+      7,
+      5,
+      1
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202609306201"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-09-29T23:04:33.950Z"
+}

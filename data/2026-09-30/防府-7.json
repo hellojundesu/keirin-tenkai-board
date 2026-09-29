@@ -1,0 +1,137 @@
+{
+  "date": "2026-09-30",
+  "venue": "防府",
+  "race": 7,
+  "raceId": "202609306307",
+  "riders": [
+    {
+      "number": 1,
+      "name": "細中 翔太",
+      "snum": "015830",
+      "style": "逃",
+      "score": "92.92",
+      "back": 12,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307"
+      }
+    },
+    {
+      "number": 2,
+      "name": "田中 洋輔",
+      "snum": "013667",
+      "style": "追",
+      "score": "84.67",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307"
+      }
+    },
+    {
+      "number": 3,
+      "name": "一守 大葵",
+      "snum": "015913",
+      "style": "逃",
+      "score": "92.22",
+      "back": 15,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307"
+      }
+    },
+    {
+      "number": 4,
+      "name": "藏本 徹二",
+      "snum": "015193",
+      "style": "両",
+      "score": "90.27",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307"
+      }
+    },
+    {
+      "number": 5,
+      "name": "古賀 勝大",
+      "snum": "015365",
+      "style": "両",
+      "score": "95.68",
+      "back": 3,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307"
+      }
+    },
+    {
+      "number": 6,
+      "name": "橋本 勝弘",
+      "snum": "014037",
+      "style": "追",
+      "score": "82.48",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307"
+      }
+    },
+    {
+      "number": 7,
+      "name": "太田黒 大心",
+      "snum": "012924",
+      "style": "追",
+      "score": "84.75",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306307"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3,
+      5,
+      7
+    ],
+    [
+      1,
+      4,
+      6
+    ],
+    [
+      2
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202609306307"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-09-29T23:05:12.868Z"
+}

@@ -1,0 +1,93 @@
+{
+  "date": "2026-09-30",
+  "venue": "広島",
+  "race": 8,
+  "raceId": "202609306208",
+  "riders": [
+    {
+      "number": 1,
+      "name": "飯嶋 則之",
+      "snum": "013394",
+      "style": "追",
+      "score": "91.36",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306208",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306208",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306208"
+      }
+    },
+    {
+      "number": 2,
+      "name": "吉松 直人",
+      "snum": "014109",
+      "style": "追",
+      "score": "96.56",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306208",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306208",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306208"
+      }
+    },
+    {
+      "number": 3,
+      "name": "谷田 泰平",
+      "snum": "014307",
+      "style": "追",
+      "score": "95.36",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306208",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306208",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306208"
+      }
+    },
+    {
+      "number": 4,
+      "name": "中原 航大",
+      "snum": "015727",
+      "style": "逃",
+      "score": "94.54",
+      "back": 14,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306208",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306208",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306208"
+      }
+    },
+    {
+      "number": 5,
+      "name": "三谷 政史",
+      "snum": "014310",
+      "style": "追",
+      "score": "99.18",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306208",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306208",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306208"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202609306208"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-09-29T23:04:41.144Z"
+}

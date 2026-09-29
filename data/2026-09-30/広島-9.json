@@ -1,0 +1,105 @@
+{
+  "date": "2026-09-30",
+  "venue": "広島",
+  "race": 9,
+  "raceId": "202609306209",
+  "riders": [
+    {
+      "number": 1,
+      "name": "三ツ石 康洋",
+      "snum": "013803",
+      "style": "両",
+      "score": "93.35",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306209",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306209",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306209"
+      }
+    },
+    {
+      "number": 2,
+      "name": "内田 玄希",
+      "snum": "014372",
+      "style": "追",
+      "score": "95.54",
+      "back": 0,
+      "start": 21,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306209",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306209",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306209"
+      }
+    },
+    {
+      "number": 3,
+      "name": "笹倉 慎也",
+      "snum": "014176",
+      "style": "追",
+      "score": "95.90",
+      "back": 0,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306209",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306209",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306209"
+      }
+    },
+    {
+      "number": 4,
+      "name": "塩崎 隼秀",
+      "snum": "015646",
+      "style": "両",
+      "score": "96.34",
+      "back": 5,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306209",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306209",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306209"
+      }
+    },
+    {
+      "number": 5,
+      "name": "坂本 亮馬",
+      "snum": "014114",
+      "style": "追",
+      "score": "100.09",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609306209",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609306209",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609306209"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202609306209"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-09-29T23:04:41.638Z"
+}

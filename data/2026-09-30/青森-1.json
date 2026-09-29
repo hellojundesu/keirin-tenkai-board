@@ -1,0 +1,145 @@
+{
+  "date": "2026-09-30",
+  "venue": "青森",
+  "race": 1,
+  "raceId": "202609301201",
+  "riders": [
+    {
+      "number": 1,
+      "name": "大浦 彩瑛",
+      "snum": "015855",
+      "style": "逃",
+      "score": "56.96",
+      "back": 9,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201"
+      }
+    },
+    {
+      "number": 2,
+      "name": "吉川 美穂",
+      "snum": "015587",
+      "style": "両",
+      "score": "56.96",
+      "back": 5,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201"
+      }
+    },
+    {
+      "number": 3,
+      "name": "緒方 詩央里",
+      "snum": "016043",
+      "style": "両",
+      "score": "53.45",
+      "back": 10,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201"
+      }
+    },
+    {
+      "number": 4,
+      "name": "荒川 ひかり",
+      "snum": "015135",
+      "style": "追",
+      "score": "53.19",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201"
+      }
+    },
+    {
+      "number": 5,
+      "name": "高橋 美沙紀",
+      "snum": "015762",
+      "style": "両",
+      "score": "52.96",
+      "back": 6,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201"
+      }
+    },
+    {
+      "number": 6,
+      "name": "藤原 春陽",
+      "snum": "015680",
+      "style": "両",
+      "score": "49.65",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201"
+      }
+    },
+    {
+      "number": 7,
+      "name": "高崎 千賀",
+      "snum": "015943",
+      "style": "両",
+      "score": "47.24",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609301201"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3
+    ],
+    [
+      5
+    ],
+    [
+      2
+    ],
+    [
+      1
+    ],
+    [
+      4
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202609301201"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-09-29T23:04:45.056Z"
+}

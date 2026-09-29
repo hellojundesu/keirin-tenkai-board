@@ -1,0 +1,137 @@
+{
+  "date": "2026-09-30",
+  "venue": "青森",
+  "race": 7,
+  "raceId": "202609301207",
+  "riders": [
+    {
+      "number": 1,
+      "name": "内山 雅貴",
+      "snum": "015262",
+      "style": "逃",
+      "score": "97.48",
+      "back": 8,
+      "start": 12,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207"
+      }
+    },
+    {
+      "number": 2,
+      "name": "蒔田 英彦",
+      "snum": "014298",
+      "style": "両",
+      "score": "95.00",
+      "back": 3,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207"
+      }
+    },
+    {
+      "number": 3,
+      "name": "藤田 祐大",
+      "snum": "015790",
+      "style": "逃",
+      "score": "94.89",
+      "back": 13,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207"
+      }
+    },
+    {
+      "number": 4,
+      "name": "丸山 貴秀",
+      "snum": "013996",
+      "style": "追",
+      "score": "94.53",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207"
+      }
+    },
+    {
+      "number": 5,
+      "name": "菊地 圭",
+      "snum": "015689",
+      "style": "逃",
+      "score": "94.28",
+      "back": 11,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207"
+      }
+    },
+    {
+      "number": 6,
+      "name": "高塩 讓次",
+      "snum": "014059",
+      "style": "追",
+      "score": "92.70",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207"
+      }
+    },
+    {
+      "number": 7,
+      "name": "川口 直人",
+      "snum": "013632",
+      "style": "追",
+      "score": "92.00",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609301207"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      2,
+      7
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      5,
+      4
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202609301207"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-09-29T23:04:48.552Z"
+}

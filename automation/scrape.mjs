@@ -1,176 +1,126 @@
 import puppeteer from 'puppeteer';
-import {mkdir, readFile, readdir, rm, writeFile} from 'node:fs/promises';
-import {join} from 'node:path';
+import {mkdir,readFile,writeFile} from 'node:fs/promises';
+import {resolve,join} from 'node:path';
+import {parseArgs} from 'node:util';
+import {extractRace,extractProfile,extractSupplement} from './parsers.mjs';
 
+const {values:options}=parseArgs({options:{venue:{type:'string'},race:{type:'string'},'data-root':{type:'string'},evidence:{type:'string'}}});
+if(options.race&&(!options.venue||!/^([1-9]|1[0-2])$/.test(options.race)))throw Error('--race は --venue と1〜12を指定してください');
 const VENUES='函館 青森 いわき平 弥彦 前橋 取手 宇都宮 大宮 西武園 京王閣 立川 松戸 千葉 川崎 平塚 小田原 伊東 静岡 名古屋 岐阜 大垣 豊橋 富山 松阪 四日市 福井 奈良 向日町 和歌山 岸和田 玉野 広島 防府 高松 小松島 高知 松山 小倉 久留米 武雄 佐世保 別府 熊本'.split(' ');
+if(options.venue&&!VENUES.includes(options.venue))throw Error('会場名が不正です');
 const date=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
-const dataRoot=join(process.cwd(),'data');
-const directory=join(dataRoot,date);
-const manifestPath=join(directory,'manifest.json');
-await mkdir(dataRoot,{recursive:true});
-for(const entry of await readdir(dataRoot,{withFileTypes:true})){
-  if(entry.isDirectory()&&/^\d{4}-\d{2}-\d{2}$/.test(entry.name)&&entry.name!==date){
-    await rm(join(dataRoot,entry.name),{recursive:true,force:true});
-  }
-}
+const directory=join(resolve(options['data-root']||'data'),date);
 await mkdir(directory,{recursive:true});
-let prior={};
-try{prior=JSON.parse(await readFile(manifestPath,'utf8'))}catch{}
-const manifest={date,updatedAt:new Date().toISOString(),status:'running',races:Array.isArray(prior.races)?prior.races:[],errors:[],completedVenues:[]};
-const saveManifest=()=>{
-  manifest.races.sort((a,b)=>a.venue.localeCompare(b.venue,'ja')||Number(a.race)-Number(b.race));
-  return writeFile(manifestPath,JSON.stringify(manifest,null,2)+'\n');
+if(options.evidence)await mkdir(resolve(options.evidence),{recursive:true});
+const manifestPath=join(directory,'manifest.json');
+let prior={};try{prior=JSON.parse(await readFile(manifestPath,'utf8'))}catch{}
+const manifest={date,updatedAt:new Date().toISOString(),status:'running',scope:options.venue?{venue:options.venue,race:options.race||'all'}:'all',races:[],errors:[],warnings:[],completedVenues:[]};
+// Partial test runs may retain previously acquired races, but never advertise
+// a failed current run as complete. Full runs rebuild the index from fresh data.
+if(options.venue)manifest.races=(prior.races||[]).filter(r=>r.venue!==options.venue||(options.race&&Number(r.race)!==Number(options.race)));
+const saveManifest=async()=>{
+  manifest.updatedAt=new Date().toISOString();
+  manifest.races.sort((a,b)=>a.venue.localeCompare(b.venue,'ja')||a.race-b.race);
+  await writeFile(manifestPath,JSON.stringify(manifest,null,2)+'\n');
 };
+const evidence=async(name,page)=>{if(options.evidence)await writeFile(join(resolve(options.evidence),name),await page.content())};
 await saveManifest();
 
-// These functions execute in the KEIRIN.JP page. The line grouping comes
-// from the official race list; it is never inferred from rider names.
-// Read the S column from the official race table. Resolve row/column spans so
-// a missing or differently arranged field stays unknown instead of shifting.
-function extractStartCount(card,row){
-  const rows=[...card.rows];
-  while(row&&!rows.includes(row))row=row.parentElement?.closest('tr');
-  const index=rows.indexOf(row);
-  if(index<0)return null;
-  const grid=[];
-  rows.slice(0,index+1).forEach((tr,r)=>{
-    grid[r]||=[];
-    let col=0;
-    for(const cell of tr.cells){
-      while(grid[r][col])col++;
-      for(let dy=0;dy<cell.rowSpan;dy++){
-        grid[r+dy]||=[];
-        for(let dx=0;dx<cell.colSpan;dx++)grid[r+dy][col+dx]=cell;
-      }
-      col+=cell.colSpan;
-    }
-  });
-  for(let col=0;col<grid[index].length;col++){
-    const value=grid[index][col]?.textContent.trim();
-    if(!/^\d{1,3}(?:回)?$/.test(value||''))continue;
-    for(let r=index-1;r>=0;r--){
-      const label=grid[r][col]?.textContent.replace(/[\s　]/g,'');
-      if(/^(?:S|Ｓ|スタート|スタート回数)$/.test(label||''))return Number(value.replace('回',''));
-    }
-  }
-  return null;
+async function top(page){
+  await page.goto('https://keirin.jp/pc/top',{waitUntil:'domcontentloaded',timeout:45000});
+  // Generic buttons exist before the asynchronous meeting list is loaded.
+  await page.waitForFunction(()=>[...document.querySelectorAll('button')].some(b=>b.textContent.replace(/[\s　]/g,'').includes('出走表一覧')),{timeout:30000});
 }
-function extractRace(race){
-  // KEIRIN.JP uses sltbl_02 for 1R and sltbl_02-2 for later races.
-  const cards=[...document.querySelectorAll('#sldivSyusouList > table.sltbl_02, #sldivSyusouList > table.sltbl_02-2')];
-  const card=cards.find(t=>new RegExp(`^\\s*${race}R(?:\\s|　)`).test(t.innerText));
-  if(!card)throw Error('出走表なし');
-  const riders=[...card.querySelectorAll('a.sllink_name')].map(a=>{
-    let cell=a.closest('td'),number=null;
-    for(let i=0;i<4&&cell;i++,cell=cell.previousElementSibling){
-      if(/^sltb-no\d/.test(cell.className)){number=Number(cell.textContent.trim());break}
-    }
-    return {number,name:a.textContent.replace(/\s+/g,' ').trim(),snum:a.getAttribute('onclick')?.match(/\d{6}/)?.[0]||null,start:extractStartCount(card,a.closest('tr'))};
-  }).filter(x=>x.number>=1&&x.number<=9&&x.snum);
-  const row=card.querySelector(`[id^="slyoso_td_${race}_"]`)?.closest('tr');
-  const cells=row?[...row.querySelectorAll('td')].map(td=>Number(td.textContent.trim())||0):[];
-  const lines=[],seen=new Set();let group=[];
-  for(const n of cells){
-    if(n){if(!seen.has(n)){group.push(n);seen.add(n)}}
-    else if(group.length){lines.push(group);group=[]}
-  }
-  if(group.length)lines.push(group);
-  return {riders,lines:riders.length>=5&&seen.size===riders.length&&riders.every(r=>seen.has(r.number))?lines:[]};
-}
-function extractProfile(){
-  const tables=[...document.querySelectorAll('table')];
-  function valueFor(label){
-    const table=tables.find(t=>{
-      const first=t.querySelector('tr');
-      return first&&[...first.children].some(c=>c.textContent.replace(/[\s　]/g,'')===label);
-    });
-    if(!table)return null;
-    const headers=[...table.querySelector('tr').children];
-    const i=headers.findIndex(c=>c.textContent.replace(/[\s　]/g,'')===label);
-    return table.querySelectorAll('tr')[1]?.children[i]?.textContent.trim()||null;
-  }
-  const score=valueFor('競走得点'),style=valueFor('脚質'),back=valueFor('バック回数');
-  return {
-    score:/^\d{2,3}\.\d{1,2}$/.test(score||'')?score:null,
-    style:/^(?:逃|両|追)$/.test(style||'')?style:null,
-    back:/^\d{1,3}(?:回)?$/.test(back||'')?Number(back.replace('回','')):null
-  };
-}
-const norm=s=>s.replace(/[\s　]/g,'');
 async function discover(page){
-  await page.goto('https://keirin.jp/pc/top',{waitUntil:'domcontentloaded',timeout:30000});
-  await page.waitForSelector('button',{timeout:15000});
-  return page.evaluate(known=>{
-    const norm=s=>s.replace(/[\s　]/g,'');
-    return [...new Set([...document.querySelectorAll('tr')].filter(row=>[...row.querySelectorAll('button')].some(b=>norm(b.textContent).includes('出走表一覧'))).map(row=>{
-      const value=norm(row.querySelector('td')?.textContent||'');
-      return known.find(v=>value.startsWith(v));
-    }).filter(Boolean))];
-  },VENUES);
+  await top(page);
+  return page.evaluate(known=>[...new Set([...document.querySelectorAll('tr')].filter(row=>[...row.querySelectorAll('button')].some(b=>b.textContent.replace(/[\s　]/g,'').includes('出走表一覧'))).map(row=>known.find(v=>row.querySelector('td')?.textContent.replace(/[\s　]/g,'').startsWith(v))).filter(Boolean))],VENUES);
 }
 async function openRaceList(page,venue){
-  await page.goto('https://keirin.jp/pc/top',{waitUntil:'domcontentloaded',timeout:30000});
-  await page.waitForFunction(v=>[...document.querySelectorAll('tr')].some(row=>row.querySelector('td')?.textContent.replace(/[\s　]/g,'').startsWith(v)&&[...row.querySelectorAll('button')].some(b=>b.textContent.replace(/[\s　]/g,'').includes('出走表一覧'))),{timeout:15000},venue);
+  await top(page);
   await page.evaluate(v=>{
-    const row=[...document.querySelectorAll('tr')].find(r=>r.querySelector('td')?.textContent.replace(/[\s　]/g,'').startsWith(v)&&[...r.querySelectorAll('button')].some(b=>b.textContent.replace(/[\s　]/g,'').includes('出走表一覧')));
-    [...row.querySelectorAll('button')].find(b=>b.textContent.replace(/[\s　]/g,'').includes('出走表一覧')).click();
+    const norm=s=>s.replace(/[\s　]/g,'');
+    const row=[...document.querySelectorAll('tr')].find(r=>norm(r.querySelector('td')?.textContent||'').startsWith(v)&&[...r.querySelectorAll('button')].some(b=>norm(b.textContent).includes('出走表一覧')));
+    if(!row)throw Error('本日の会場なし');
+    [...row.querySelectorAll('button')].find(b=>norm(b.textContent).includes('出走表一覧')).click();
   },venue);
-  await page.waitForFunction(()=>location.pathname==='/pc/racelist'&&document.querySelectorAll('#sldivSyusouList > table.sltbl_02, #sldivSyusouList > table.sltbl_02-2').length>0,{timeout:20000});
+  await page.waitForSelector('#sldivSyusouList a.sllink_name',{timeout:30000});
+  const context=await page.evaluate(()=>({date:document.querySelector('#hhSelK')?.value,venueCode:document.querySelector('#hhSelJ')?.value}));
+  if(context.date!==date.replaceAll('-','')||!/^\d{2}$/.test(context.venueCode||''))throw Error('公式出走表の開催日・場コードを確認できません');
+  return context;
 }
-async function profilesFor(browser,riders,profiles){
-  const queue=[...new Set(riders.map(r=>r.snum).filter(id=>!profiles.has(id)))];
-  let next=0;
-  await Promise.all(Array.from({length:Math.min(4,queue.length)},async()=>{
-    const page=await browser.newPage();
-    try{
-      while(next<queue.length){
-        const snum=queue[next++];
-        try{
-          await page.goto(`https://keirin.jp/pc/racerprofile?snum=${snum}`,{waitUntil:'domcontentloaded',timeout:15000});
-          await page.waitForFunction(()=>[...document.querySelectorAll('td')].some(c=>c.textContent.trim()==='競走得点'),{timeout:7000});
-          profiles.set(snum,await page.evaluate(extractProfile));
-        }catch(e){profiles.set(snum,null);console.warn(`選手データを確認できません: ${snum}: ${e.message}`)}
-      }
-    }finally{await page.close()}
-  }));
+async function supplement(page,raceId){
+  const url=`https://keirin.netkeiba.com/race/entry/?race_id=${raceId}`;
+  const response=await page.goto(url,{waitUntil:'domcontentloaded',timeout:30000});
+  if(!response?.ok())throw Error(`補完元 HTTP ${response?.status()}`);
+  await page.waitForSelector('#RaceCard_Table_Static [id^="name_"]',{timeout:15000});
+  const riders=await page.evaluate(extractSupplement,raceId);
+  await evidence(`${raceId}-netkeirin.html`,page);
+  return {riders,url};
 }
-let browser;
+async function profile(page,rider){
+  const url=`https://keirin.jp/pc/racerprofile?snum=${rider.snum}`;
+  await page.goto(url,{waitUntil:'domcontentloaded',timeout:30000});
+  await page.waitForFunction(()=>[...document.querySelectorAll('td')].some(c=>c.textContent.trim()==='競走得点'),{timeout:15000});
+  const data=await page.evaluate(extractProfile);
+  if(data.snum!==rider.snum)throw Error('プロフィール登録番号不一致');
+  return {data,url};
+}
+
+let browser,acquired=0;
 try{
-  browser=await puppeteer.launch({headless:true,args:['--no-sandbox']});
-  const page=await browser.newPage();
-  try{
-    const venues=await discover(page);
-    manifest.discoveredVenues=venues;
+  browser=await puppeteer.launch({headless:true,args:['--no-sandbox'],...(process.env.PUPPETEER_EXECUTABLE_PATH?{executablePath:process.env.PUPPETEER_EXECUTABLE_PATH}:{})});
+  const page=await browser.newPage(),detail=await browser.newPage();
+  const venues=await discover(page);
+  if(!venues.length)throw Error('開催一覧を取得できませんでした（開催なしとは断定できません）');
+  if(options.venue&&!venues.includes(options.venue))throw Error(`${options.venue}は本日の開催一覧にありません`);
+  manifest.discoveredVenues=venues;await saveManifest();
+  for(const venue of options.venue?[options.venue]:venues){
+    try{
+      const context=await openRaceList(page,venue);
+      await evidence(`${date}-${venue}-official.html`,page);
+      let venueRaces=0;
+      for(const race of options.race?[Number(options.race)]:Array.from({length:12},(_,i)=>i+1)){
+        try{
+          const card=await page.evaluate(extractRace,race);
+          if(!card){if(options.race)throw Error('指定レースなし');continue}
+          const raceId=context.date+context.venueCode+String(race).padStart(2,'0');
+          let extra=null;
+          try{extra=await supplement(detail,raceId)}catch(e){manifest.warnings.push({venue,race,message:`B/S補完: ${e.message}`})}
+          // Do not trust a same-number rider from another roster. Match official
+          // registration IDs as well, including leading zero normalization.
+          const extraValid=extra&&extra.riders.length===card.riders.length&&new Set(extra.riders.map(r=>r.number)).size===card.riders.length&&card.riders.every(r=>extra.riders.some(x=>x.number===r.number&&x.snum===r.snum));
+          if(extra&&!extraValid)manifest.warnings.push({venue,race,message:'補完元と公式の車番・登録番号が一致しません。補完値は不採用。'});
+          const riders=[];
+          for(const rider of card.riders){
+            const x=extraValid?extra.riders.find(x=>x.number===rider.number):null;
+            const sources={style:rider.style?'https://keirin.jp/pc/racelist':null,score:x?.score?extra.url:null,back:x?.back!=null?extra.url:null,start:x?.start!=null?extra.url:null};
+            let result={...rider,style:rider.style||x?.style||null,score:x?.score??null,back:x?.back??null,start:x?.start??null,sources};
+            if(!sources.style&&x?.style)sources.style=extra.url;
+            if(result.score==null||result.back==null||result.style==null){
+              try{
+                const fallback=await profile(detail,rider);
+                for(const key of ['score','style','back'])if(result[key]==null&&fallback.data[key]!=null){result[key]=fallback.data[key];sources[key]=fallback.url}
+              }catch(e){manifest.warnings.push({venue,race,number:rider.number,message:`公式プロフィール: ${e.message}`})}
+            }
+            riders.push(result);
+          }
+          const missingFields=riders.flatMap(r=>['style','back','start','score'].filter(key=>r[key]==null).map(field=>({number:r.number,field})));
+          const data={date,venue,race,raceId,riders,lines:card.lines,source:extraValid?'KEIRIN.JP / netkeirin':'KEIRIN.JP',lineSource:card.lines.length?'KEIRIN.JP':null,scoreType:extraValid?'出走表掲載の競走得点':'直近4ヶ月の競走得点',sourceUrls:['https://keirin.jp/pc/racelist',...(extraValid?[extra.url]:[])],missingFields,updatedAt:new Date().toISOString()};
+          await writeFile(join(directory,`${venue}-${race}.json`),JSON.stringify(data,null,2)+'\n');
+          manifest.races.push({venue,race,updatedAt:data.updatedAt,missingFields:missingFields.length});
+          if(missingFields.length)manifest.warnings.push({venue,race,message:'一部項目が未取得。推測値は使用していません。',missingFields});
+          acquired++;venueRaces++;await saveManifest();
+          console.log(`${venue} ${race}R: ${riders.length}人 / 未取得 ${missingFields.length}項目`);
+          console.table(riders.map(({number,name,style,back,start,score})=>({number,name,style,B:back,S:start,score})));
+        }catch(e){manifest.errors.push({venue,race,message:e.message});await saveManifest()}
+      }
+      if(!venueRaces)throw Error('出走表を1件も取得できませんでした');
+      manifest.completedVenues.push(venue);
+    }catch(e){manifest.errors.push({venue,message:e.message})}
     await saveManifest();
-    for(const venue of venues){
-      try{
-        await openRaceList(page,venue);
-        const cards=[];
-        for(let race=1;race<=12;race++){
-          try{
-            const card=await page.evaluate(extractRace,race);
-            if([5,6,7,8,9].includes(card.riders.length))cards.push({race,...card});
-          }catch{} // Some meetings have fewer than 12 races.
-        }
-        if(!cards.length)throw Error('出走表を読めませんでした');
-        const profiles=new Map();
-        for(const card of cards){
-          await profilesFor(browser,card.riders,profiles);
-          const riders=card.riders.map(({snum,...r})=>({...r,...(profiles.get(snum)||{score:null,style:null,back:null})}));
-          const data={date,venue,race:card.race,riders,lines:card.lines,source:'KEIRIN.JP',lineSource:card.lines.length?'KEIRIN.JP':null,scoreType:'直近4ヶ月の競走得点',updatedAt:new Date().toISOString()};
-          await writeFile(join(directory,`${venue}-${card.race}.json`),JSON.stringify(data)+'\n');
-          if(!manifest.races.some(x=>x.venue===venue&&Number(x.race)===card.race))manifest.races.push({venue,race:card.race});
-          manifest.updatedAt=new Date().toISOString();
-          await saveManifest();
-          console.log(`${venue} ${card.race}R: ${riders.length}人`);
-        }
-        manifest.completedVenues.push(venue);
-      }catch(e){manifest.errors.push({venue,message:String(e.message||e).slice(0,200)})}
-      await saveManifest();
-    }
-    manifest.status=venues.length===0?'no-meetings':manifest.errors.length?'partial':'complete';
-  }finally{await page.close()}
-}catch(e){manifest.errors.push({message:String(e.message||e).slice(0,200)});manifest.status=manifest.races.length?'partial':'failed'}
-finally{if(browser)await browser.close();manifest.updatedAt=new Date().toISOString();await saveManifest()}
-console.log(`終了: ${manifest.status} / ${manifest.races.length}レース / ${manifest.errors.length}エラー`);
-if(manifest.status==='failed'||(manifest.status==='partial'&&!manifest.races.length))process.exitCode=1;
+  }
+  manifest.status=!acquired?'failed':manifest.errors.length||manifest.warnings.length?'partial':'complete';
+}catch(e){manifest.errors.push({message:e.message});manifest.status=acquired?'partial':'failed'}
+finally{if(browser)await browser.close();await saveManifest()}
+console.log(`終了: ${manifest.status} / 今回 ${acquired}レース / ${manifest.errors.length}エラー / ${manifest.warnings.length}警告`);
+if(manifest.status!=='complete')process.exitCode=1;

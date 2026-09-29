@@ -25,6 +25,36 @@ await saveManifest();
 
 // These functions execute in the KEIRIN.JP page. The line grouping comes
 // from the official race list; it is never inferred from rider names.
+// Read the S column from the official race table. Resolve row/column spans so
+// a missing or differently arranged field stays unknown instead of shifting.
+function extractStartCount(card,row){
+  const rows=[...card.rows];
+  while(row&&!rows.includes(row))row=row.parentElement?.closest('tr');
+  const index=rows.indexOf(row);
+  if(index<0)return null;
+  const grid=[];
+  rows.slice(0,index+1).forEach((tr,r)=>{
+    grid[r]||=[];
+    let col=0;
+    for(const cell of tr.cells){
+      while(grid[r][col])col++;
+      for(let dy=0;dy<cell.rowSpan;dy++){
+        grid[r+dy]||=[];
+        for(let dx=0;dx<cell.colSpan;dx++)grid[r+dy][col+dx]=cell;
+      }
+      col+=cell.colSpan;
+    }
+  });
+  for(let col=0;col<grid[index].length;col++){
+    const value=grid[index][col]?.textContent.trim();
+    if(!/^\d{1,3}(?:回)?$/.test(value||''))continue;
+    for(let r=index-1;r>=0;r--){
+      const label=grid[r][col]?.textContent.replace(/[\s　]/g,'');
+      if(/^(?:S|Ｓ|スタート|スタート回数)$/.test(label||''))return Number(value.replace('回',''));
+    }
+  }
+  return null;
+}
 function extractRace(race){
   // KEIRIN.JP uses sltbl_02 for 1R and sltbl_02-2 for later races.
   const cards=[...document.querySelectorAll('#sldivSyusouList > table.sltbl_02, #sldivSyusouList > table.sltbl_02-2')];
@@ -35,7 +65,7 @@ function extractRace(race){
     for(let i=0;i<4&&cell;i++,cell=cell.previousElementSibling){
       if(/^sltb-no\d/.test(cell.className)){number=Number(cell.textContent.trim());break}
     }
-    return {number,name:a.textContent.replace(/\s+/g,' ').trim(),snum:a.getAttribute('onclick')?.match(/\d{6}/)?.[0]||null};
+    return {number,name:a.textContent.replace(/\s+/g,' ').trim(),snum:a.getAttribute('onclick')?.match(/\d{6}/)?.[0]||null,start:extractStartCount(card,a.closest('tr'))};
   }).filter(x=>x.number>=1&&x.number<=9&&x.snum);
   const row=card.querySelector(`[id^="slyoso_td_${race}_"]`)?.closest('tr');
   const cells=row?[...row.querySelectorAll('td')].map(td=>Number(td.textContent.trim())||0):[];
@@ -47,16 +77,24 @@ function extractRace(race){
   if(group.length)lines.push(group);
   return {riders,lines:riders.length>=5&&seen.size===riders.length&&riders.every(r=>seen.has(r.number))?lines:[]};
 }
-function extractScore(){
-  const table=[...document.querySelectorAll('table')].find(t=>{
-    const first=t.querySelector('tr');
-    return first&&[...first.children].some(c=>c.textContent.trim()==='競走得点')&&first.children.length>8;
-  });
-  if(!table)return null;
-  const headers=[...table.querySelector('tr').children];
-  const i=headers.findIndex(c=>c.textContent.trim()==='競走得点');
-  const score=table.querySelectorAll('tr')[1]?.children[i]?.textContent.trim();
-  return /^\d{2,3}\.\d{1,2}$/.test(score||'')?score:null;
+function extractProfile(){
+  const tables=[...document.querySelectorAll('table')];
+  function valueFor(label){
+    const table=tables.find(t=>{
+      const first=t.querySelector('tr');
+      return first&&[...first.children].some(c=>c.textContent.replace(/[\s　]/g,'')===label);
+    });
+    if(!table)return null;
+    const headers=[...table.querySelector('tr').children];
+    const i=headers.findIndex(c=>c.textContent.replace(/[\s　]/g,'')===label);
+    return table.querySelectorAll('tr')[1]?.children[i]?.textContent.trim()||null;
+  }
+  const score=valueFor('競走得点'),style=valueFor('脚質'),back=valueFor('バック回数');
+  return {
+    score:/^\d{2,3}\.\d{1,2}$/.test(score||'')?score:null,
+    style:/^(?:逃|両|追)$/.test(style||'')?style:null,
+    back:/^\d{1,3}(?:回)?$/.test(back||'')?Number(back.replace('回','')):null
+  };
 }
 const norm=s=>s.replace(/[\s　]/g,'');
 async function discover(page){
@@ -79,8 +117,8 @@ async function openRaceList(page,venue){
   },venue);
   await page.waitForFunction(()=>location.pathname==='/pc/racelist'&&document.querySelectorAll('#sldivSyusouList > table.sltbl_02, #sldivSyusouList > table.sltbl_02-2').length>0,{timeout:20000});
 }
-async function scoresFor(browser,riders,scores){
-  const queue=[...new Set(riders.map(r=>r.snum).filter(id=>!scores.has(id)))];
+async function profilesFor(browser,riders,profiles){
+  const queue=[...new Set(riders.map(r=>r.snum).filter(id=>!profiles.has(id)))];
   let next=0;
   await Promise.all(Array.from({length:Math.min(4,queue.length)},async()=>{
     const page=await browser.newPage();
@@ -90,8 +128,8 @@ async function scoresFor(browser,riders,scores){
         try{
           await page.goto(`https://keirin.jp/pc/racerprofile?snum=${snum}`,{waitUntil:'domcontentloaded',timeout:15000});
           await page.waitForFunction(()=>[...document.querySelectorAll('td')].some(c=>c.textContent.trim()==='競走得点'),{timeout:7000});
-          scores.set(snum,await page.evaluate(extractScore));
-        }catch(e){scores.set(snum,null);console.warn(`競走得点を確認できません: ${snum}: ${e.message}`)}
+          profiles.set(snum,await page.evaluate(extractProfile));
+        }catch(e){profiles.set(snum,null);console.warn(`選手データを確認できません: ${snum}: ${e.message}`)}
       }
     }finally{await page.close()}
   }));
@@ -115,14 +153,13 @@ try{
           }catch{} // Some meetings have fewer than 12 races.
         }
         if(!cards.length)throw Error('出走表を読めませんでした');
-        const scores=new Map();
+        const profiles=new Map();
         for(const card of cards){
-          if(manifest.races.some(x=>x.venue===venue&&Number(x.race)===card.race))continue;
-          await scoresFor(browser,card.riders,scores);
-          const riders=card.riders.map(({snum,...r})=>({...r,score:scores.get(snum)||null}));
+          await profilesFor(browser,card.riders,profiles);
+          const riders=card.riders.map(({snum,...r})=>({...r,...(profiles.get(snum)||{score:null,style:null,back:null})}));
           const data={date,venue,race:card.race,riders,lines:card.lines,source:'KEIRIN.JP',lineSource:card.lines.length?'KEIRIN.JP':null,scoreType:'直近4ヶ月の競走得点',updatedAt:new Date().toISOString()};
           await writeFile(join(directory,`${venue}-${card.race}.json`),JSON.stringify(data)+'\n');
-          manifest.races.push({venue,race:card.race});
+          if(!manifest.races.some(x=>x.venue===venue&&Number(x.race)===card.race))manifest.races.push({venue,race:card.race});
           manifest.updatedAt=new Date().toISOString();
           await saveManifest();
           console.log(`${venue} ${card.race}R: ${riders.length}人`);

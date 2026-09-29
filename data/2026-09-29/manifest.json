@@ -1,7 +1,7 @@
 {
   "date": "2026-09-29",
-  "updatedAt": "2026-09-28T23:07:18.923Z",
-  "status": "complete",
+  "updatedAt": "2026-09-29T07:25:16.742Z",
+  "status": "partial",
   "races": [
     {
       "venue": "いわき平",
@@ -292,16 +292,37 @@
       "race": 7
     }
   ],
-  "errors": [],
-  "completedVenues": [
-    "岐阜",
-    "広島",
-    "武雄",
-    "いわき平",
-    "平塚",
-    "玉野",
-    "防府"
+  "errors": [
+    {
+      "venue": "岐阜",
+      "message": "出走表を読めませんでした"
+    },
+    {
+      "venue": "広島",
+      "message": "出走表を読めませんでした"
+    },
+    {
+      "venue": "武雄",
+      "message": "出走表を読めませんでした"
+    },
+    {
+      "venue": "いわき平",
+      "message": "出走表を読めませんでした"
+    },
+    {
+      "venue": "平塚",
+      "message": "出走表を読めませんでした"
+    },
+    {
+      "venue": "玉野",
+      "message": "出走表を読めませんでした"
+    },
+    {
+      "venue": "防府",
+      "message": "出走表を読めませんでした"
+    }
   ],
+  "completedVenues": [],
   "discoveredVenues": [
     "岐阜",
     "広島",

@@ -1,1 +1,123 @@
-{"date":"2026-09-29","venue":"防府","race":7,"riders":[{"number":1,"name":"樫山 恭柄","score":"96.06"},{"number":2,"name":"細中 翔太","score":"92.92"},{"number":3,"name":"古賀 勝大","score":"95.68"},{"number":4,"name":"薦田 将伍","score":"94.70"},{"number":5,"name":"梅澤 忠秀","score":"93.87"},{"number":6,"name":"大槇 大介","score":"92.54"},{"number":7,"name":"久樹 克門","score":"92.96"}],"lines":[[4,7,1],[5,3],[2,6]],"source":"KEIRIN.JP","lineSource":"KEIRIN.JP","scoreType":"直近4ヶ月の競走得点","updatedAt":"2026-09-28T23:07:18.772Z"}
+{
+  "date": "2026-09-29",
+  "venue": "防府",
+  "race": 7,
+  "raceId": "202609296307",
+  "riders": [
+    {
+      "number": 1,
+      "name": "樫山 恭柄",
+      "snum": "014263",
+      "style": "追",
+      "score": "96.06",
+      "back": 0,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307"
+      }
+    },
+    {
+      "number": 2,
+      "name": "細中 翔太",
+      "snum": "015830",
+      "style": "逃",
+      "score": "92.92",
+      "back": 12,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307"
+      }
+    },
+    {
+      "number": 3,
+      "name": "古賀 勝大",
+      "snum": "015365",
+      "style": "両",
+      "score": "95.68",
+      "back": 3,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307"
+      }
+    },
+    {
+      "number": 4,
+      "name": "薦田 将伍",
+      "snum": "015288",
+      "style": "逃",
+      "score": "94.70",
+      "back": 8,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307"
+      }
+    },
+    {
+      "number": 5,
+      "name": "梅澤 忠秀",
+      "snum": "015817",
+      "style": "逃",
+      "score": "93.88",
+      "back": 7,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307"
+      }
+    },
+    {
+      "number": 6,
+      "name": "大槇 大介",
+      "snum": "015544",
+      "style": "両",
+      "score": "92.55",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307"
+      }
+    },
+    {
+      "number": 7,
+      "name": "久樹 克門",
+      "snum": "015285",
+      "style": "逃",
+      "score": "92.96",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609296307"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202609296307"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-09-29T12:11:59.686Z"
+}

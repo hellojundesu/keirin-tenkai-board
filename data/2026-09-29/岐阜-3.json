@@ -1,1 +1,138 @@
-{"date":"2026-09-29","venue":"岐阜","race":3,"riders":[{"number":1,"name":"瀬戸 栄作","score":"96.22"},{"number":2,"name":"伊藤 勝太","score":"93.57"},{"number":3,"name":"中嶋 宣成","score":"101.14"},{"number":4,"name":"水谷 良和","score":"96.31"},{"number":5,"name":"稲葉 一真","score":"95.66"},{"number":6,"name":"竹澤 浩司","score":"92.61"},{"number":7,"name":"網谷 竜次","score":"96.38"},{"number":8,"name":"五十嵐 力","score":"93.44"}],"lines":[[1,7],[6,4,2],[3,5,8]],"source":"KEIRIN.JP","lineSource":"KEIRIN.JP","scoreType":"直近4ヶ月の競走得点","updatedAt":"2026-09-28T23:04:41.884Z"}
+{
+  "date": "2026-09-29",
+  "venue": "岐阜",
+  "race": 3,
+  "raceId": "202609294303",
+  "riders": [
+    {
+      "number": 1,
+      "name": "瀬戸 栄作",
+      "snum": "015130",
+      "style": "両",
+      "score": "96.23",
+      "back": 2,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303"
+      }
+    },
+    {
+      "number": 2,
+      "name": "伊藤 勝太",
+      "snum": "014435",
+      "style": "追",
+      "score": "93.57",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303"
+      }
+    },
+    {
+      "number": 3,
+      "name": "中嶋 宣成",
+      "snum": "015256",
+      "style": "逃",
+      "score": "101.15",
+      "back": 18,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303"
+      }
+    },
+    {
+      "number": 4,
+      "name": "水谷 良和",
+      "snum": "012592",
+      "style": "追",
+      "score": "96.31",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303"
+      }
+    },
+    {
+      "number": 5,
+      "name": "稲葉 一真",
+      "snum": "014825",
+      "style": "追",
+      "score": "95.67",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303"
+      }
+    },
+    {
+      "number": 6,
+      "name": "竹澤 浩司",
+      "snum": "014090",
+      "style": "両",
+      "score": "92.62",
+      "back": 9,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303"
+      }
+    },
+    {
+      "number": 7,
+      "name": "網谷 竜次",
+      "snum": "014186",
+      "style": "追",
+      "score": "96.38",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303"
+      }
+    },
+    {
+      "number": 8,
+      "name": "五十嵐 力",
+      "snum": "013852",
+      "style": "追",
+      "score": "93.44",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609294303"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202609294303"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-09-29T12:10:58.847Z"
+}

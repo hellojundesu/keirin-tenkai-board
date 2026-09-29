@@ -1,1 +1,108 @@
-{"date":"2026-09-29","venue":"いわき平","race":1,"riders":[{"number":1,"name":"鈴木 樹里","score":"50.42"},{"number":2,"name":"吉村 美有紀","score":"49.66"},{"number":3,"name":"佐藤 乃愛","score":"47.37"},{"number":4,"name":"齊藤 萌","score":"47.11"},{"number":5,"name":"伊藤 木々音","score":"45.62"},{"number":6,"name":"森 この芽","score":"44.88"}],"lines":[],"source":"KEIRIN.JP","lineSource":null,"scoreType":"直近4ヶ月の競走得点","updatedAt":"2026-09-28T23:06:00.587Z"}
+{
+  "date": "2026-09-29",
+  "venue": "いわき平",
+  "race": 1,
+  "raceId": "202609291301",
+  "riders": [
+    {
+      "number": 1,
+      "name": "鈴木 樹里",
+      "snum": "015402",
+      "style": "両",
+      "score": "50.43",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301"
+      }
+    },
+    {
+      "number": 2,
+      "name": "吉村 美有紀",
+      "snum": "015761",
+      "style": "両",
+      "score": "49.67",
+      "back": 3,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301"
+      }
+    },
+    {
+      "number": 3,
+      "name": "佐藤 乃愛",
+      "snum": "015849",
+      "style": "両",
+      "score": "47.37",
+      "back": 1,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301"
+      }
+    },
+    {
+      "number": 4,
+      "name": "齊藤 萌",
+      "snum": "016044",
+      "style": "両",
+      "score": "47.11",
+      "back": 4,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301"
+      }
+    },
+    {
+      "number": 5,
+      "name": "伊藤 木々音",
+      "snum": "015946",
+      "style": "両",
+      "score": "45.63",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301"
+      }
+    },
+    {
+      "number": 6,
+      "name": "森 この芽",
+      "snum": "016037",
+      "style": "両",
+      "score": "44.89",
+      "back": 2,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609291301"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202609291301"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-09-29T12:11:31.353Z"
+}

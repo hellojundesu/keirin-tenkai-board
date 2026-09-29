@@ -1,1 +1,138 @@
-{"date":"2026-09-29","venue":"岐阜","race":1,"riders":[{"number":1,"name":"佐々木 亮太","score":"95.75"},{"number":2,"name":"伊藤 裕貴","score":"99.00"},{"number":3,"name":"岸田 剛","score":"102.96"},{"number":4,"name":"八日市屋浩之","score":"96.77"},{"number":5,"name":"徳丸 泰教","score":"93.94"},{"number":6,"name":"邊見 光輝","score":"90.00"},{"number":7,"name":"小橋 秀幸","score":"93.87"},{"number":8,"name":"福元 啓太","score":"93.64"}],"lines":[[1,6,7],[2,4],[3,5],[8]],"source":"KEIRIN.JP","lineSource":"KEIRIN.JP","scoreType":"直近4ヶ月の競走得点","updatedAt":"2026-09-28T23:04:37.203Z"}
+{
+  "date": "2026-09-29",
+  "venue": "岐阜",
+  "race": 1,
+  "raceId": "202609294301",
+  "riders": [
+    {
+      "number": 1,
+      "name": "佐々木 亮太",
+      "snum": "015782",
+      "style": "逃",
+      "score": "95.76",
+      "back": 13,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301"
+      }
+    },
+    {
+      "number": 2,
+      "name": "伊藤 裕貴",
+      "snum": "014831",
+      "style": "両",
+      "score": "99.00",
+      "back": 5,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301"
+      }
+    },
+    {
+      "number": 3,
+      "name": "岸田 剛",
+      "snum": "015629",
+      "style": "逃",
+      "score": "102.97",
+      "back": 15,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301"
+      }
+    },
+    {
+      "number": 4,
+      "name": "八日市屋浩之",
+      "snum": "013274",
+      "style": "追",
+      "score": "96.77",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301"
+      }
+    },
+    {
+      "number": 5,
+      "name": "徳丸 泰教",
+      "snum": "014481",
+      "style": "追",
+      "score": "93.94",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301"
+      }
+    },
+    {
+      "number": 6,
+      "name": "邊見 光輝",
+      "snum": "015595",
+      "style": "逃",
+      "score": "90.00",
+      "back": 4,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301"
+      }
+    },
+    {
+      "number": 7,
+      "name": "小橋 秀幸",
+      "snum": "013670",
+      "style": "追",
+      "score": "93.87",
+      "back": 0,
+      "start": 12,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301"
+      }
+    },
+    {
+      "number": 8,
+      "name": "福元 啓太",
+      "snum": "015543",
+      "style": "逃",
+      "score": "93.65",
+      "back": 8,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609294301"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202609294301"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-09-29T12:10:56.198Z"
+}

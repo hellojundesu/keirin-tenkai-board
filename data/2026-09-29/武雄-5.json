@@ -1,1 +1,108 @@
-{"date":"2026-09-29","venue":"武雄","race":5,"riders":[{"number":1,"name":"松岡 孔明","score":"99.82"},{"number":2,"name":"真崎 新太郎","score":"97.19"},{"number":3,"name":"久木原 洋","score":"100.56"},{"number":4,"name":"小川 賢人","score":"99.04"},{"number":5,"name":"佐々木 翔一","score":"98.21"},{"number":6,"name":"浮島 知稀","score":"96.17"}],"lines":[[4,1,5],[6,3,2]],"source":"KEIRIN.JP","lineSource":"KEIRIN.JP","scoreType":"直近4ヶ月の競走得点","updatedAt":"2026-09-28T23:05:42.890Z"}
+{
+  "date": "2026-09-29",
+  "venue": "武雄",
+  "race": 5,
+  "raceId": "202609298405",
+  "riders": [
+    {
+      "number": 1,
+      "name": "松岡 孔明",
+      "snum": "014199",
+      "style": "追",
+      "score": "99.82",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405"
+      }
+    },
+    {
+      "number": 2,
+      "name": "真崎 新太郎",
+      "snum": "013679",
+      "style": "追",
+      "score": "97.19",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405"
+      }
+    },
+    {
+      "number": 3,
+      "name": "久木原 洋",
+      "snum": "014580",
+      "style": "追",
+      "score": "100.57",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405"
+      }
+    },
+    {
+      "number": 4,
+      "name": "小川 賢人",
+      "snum": "014956",
+      "style": "両",
+      "score": "99.04",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405"
+      }
+    },
+    {
+      "number": 5,
+      "name": "佐々木 翔一",
+      "snum": "014337",
+      "style": "追",
+      "score": "98.21",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405"
+      }
+    },
+    {
+      "number": 6,
+      "name": "浮島 知稀",
+      "snum": "015694",
+      "style": "逃",
+      "score": "96.18",
+      "back": 9,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202609298405"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202609298405"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-09-29T12:11:23.635Z"
+}

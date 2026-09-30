@@ -3,9 +3,17 @@ name: 出走表を毎朝取得
 on:
   push:
   schedule:
-    - cron: '0 8 * * *'
-      timezone: 'Asia/Tokyo'
+    - cron: '9 0 * * *' # 09:09 JST. GitHub's scheduled start can be delayed.
+    - cron: '0 9 * * *' # 18:00 JST: fill missing lines only.
   workflow_dispatch:
+    inputs:
+      mode:
+        description: '取得内容（full=全項目、lines-only=空欄のラインだけ補完）'
+        type: choice
+        default: full
+        options:
+          - full
+          - lines-only
 
 permissions:
   contents: write
@@ -35,9 +43,17 @@ jobs:
         if: github.event_name != 'push'
         run: npm install --prefix automation
       - name: 当日の出走表を取得
+        id: scrape
         if: github.event_name != 'push'
         continue-on-error: true
-        run: node automation/scrape.mjs
+        env:
+          LINES_ONLY: ${{ github.event.schedule == '0 9 * * *' || inputs.mode == 'lines-only' }}
+        run: |
+          if [ "$LINES_ONLY" = "true" ]; then
+            node automation/scrape.mjs --lines-only
+          else
+            node automation/scrape.mjs
+          fi
       - name: 公開用データを更新
         if: github.event_name != 'push' && always()
         run: |
@@ -59,3 +75,6 @@ jobs:
       - name: 公開サイトを更新
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: 取得エラーを実行結果に表示
+        if: always() && steps.scrape.outcome == 'failure'
+        run: exit 1

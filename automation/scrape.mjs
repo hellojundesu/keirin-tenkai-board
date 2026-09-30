@@ -3,8 +3,9 @@ import {mkdir,readFile,writeFile} from 'node:fs/promises';
 import {resolve,join} from 'node:path';
 import {parseArgs} from 'node:util';
 import {extractRace,extractProfile,extractSupplement} from './parsers.mjs';
+import {fillMissingLines} from './fill-lines.mjs';
 
-const {values:options}=parseArgs({options:{venue:{type:'string'},race:{type:'string'},'data-root':{type:'string'},evidence:{type:'string'}}});
+const {values:options}=parseArgs({options:{venue:{type:'string'},race:{type:'string'},'data-root':{type:'string'},evidence:{type:'string'},'lines-only':{type:'boolean',default:false}}});
 if(options.race&&(!options.venue||!/^([1-9]|1[0-2])$/.test(options.race)))throw Error('--race は --venue と1〜12を指定してください');
 const VENUES='函館 青森 いわき平 弥彦 前橋 取手 宇都宮 大宮 西武園 京王閣 立川 松戸 千葉 川崎 平塚 小田原 伊東 静岡 名古屋 岐阜 大垣 豊橋 富山 松阪 四日市 福井 奈良 向日町 和歌山 岸和田 玉野 広島 防府 高松 小松島 高知 松山 小倉 久留米 武雄 佐世保 別府 熊本'.split(' ');
 if(options.venue&&!VENUES.includes(options.venue))throw Error('会場名が不正です');
@@ -14,6 +15,23 @@ await mkdir(directory,{recursive:true});
 if(options.evidence)await mkdir(resolve(options.evidence),{recursive:true});
 const manifestPath=join(directory,'manifest.json');
 let prior={};try{prior=JSON.parse(await readFile(manifestPath,'utf8'))}catch{}
+if(options['lines-only']){
+  let lineBrowser,linePage,currentVenue;
+  try{
+    const report=await fillMissingLines({directory,date,manifest:prior,venue:options.venue,race:options.race,getCard:async(venue,race)=>{
+      if(!lineBrowser){
+        lineBrowser=await puppeteer.launch({headless:true,args:['--no-sandbox'],...(process.env.PUPPETEER_EXECUTABLE_PATH?{executablePath:process.env.PUPPETEER_EXECUTABLE_PATH}:{})});
+        linePage=await lineBrowser.newPage();
+      }
+      if(currentVenue!==venue){await openRaceList(linePage,venue);currentVenue=venue}
+      return linePage.evaluate(extractRace,race);
+    }});
+    console.log(`ライン補完: 追加 ${report.added.length} / 既存維持 ${report.preserved.length} / 掲載なし ${report.unavailable.length} / エラー ${report.errors.length}`);
+    if(report.errors.length)process.exitCode=1;
+  }catch(e){console.error(e.message);process.exitCode=1}
+  finally{if(lineBrowser)await lineBrowser.close()}
+  process.exit(process.exitCode||0);
+}
 const manifest={date,updatedAt:new Date().toISOString(),status:'running',scope:options.venue?{venue:options.venue,race:options.race||'all'}:'all',races:[],errors:[],warnings:[],completedVenues:[]};
 // Partial test runs may retain previously acquired races, but never advertise
 // a failed current run as complete. Full runs rebuild the index from fresh data.

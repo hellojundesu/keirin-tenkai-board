@@ -39,6 +39,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: ライン反映を全シーン対応に更新
+        run: node automation/patch-all-scenes.mjs
       - name: ブラウザをインストール
         if: github.event_name != 'push'
         run: npm install --prefix automation
@@ -54,12 +56,12 @@ jobs:
           else
             node automation/scrape.mjs
           fi
-      - name: 公開用データを更新
-        if: github.event_name != 'push' && always()
+      - name: 公開用データと画面を更新
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add data/ race-card.html
           if ! git diff --cached --quiet; then
             git commit -m "出走表を更新"
             git push

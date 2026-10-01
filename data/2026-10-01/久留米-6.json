@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-01",
+  "venue": "久留米",
+  "race": 6,
+  "raceId": "202610018306",
+  "riders": [
+    {
+      "number": 1,
+      "name": "又多 風緑",
+      "snum": "015679",
+      "style": "両",
+      "score": "53.43",
+      "back": 3,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306"
+      }
+    },
+    {
+      "number": 2,
+      "name": "板根 茜弥",
+      "snum": "015139",
+      "style": "追",
+      "score": "51.00",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306"
+      }
+    },
+    {
+      "number": 3,
+      "name": "栗山 百花",
+      "snum": "016032",
+      "style": "両",
+      "score": "48.40",
+      "back": 4,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306"
+      }
+    },
+    {
+      "number": 4,
+      "name": "西脇 美唯奈",
+      "snum": "015584",
+      "style": "両",
+      "score": "53.56",
+      "back": 2,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306"
+      }
+    },
+    {
+      "number": 5,
+      "name": "大和 久保美",
+      "snum": "014925",
+      "style": "追",
+      "score": "48.17",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306"
+      }
+    },
+    {
+      "number": 6,
+      "name": "日野 友葵",
+      "snum": "015079",
+      "style": "追",
+      "score": "46.79",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306"
+      }
+    },
+    {
+      "number": 7,
+      "name": "児玉 碧衣",
+      "snum": "015080",
+      "style": "逃",
+      "score": "59.33",
+      "back": 12,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610018306"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3
+    ],
+    [
+      2
+    ],
+    [
+      1
+    ],
+    [
+      5
+    ],
+    [
+      7
+    ],
+    [
+      4
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610018306"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-01T00:31:19.308Z"
+}

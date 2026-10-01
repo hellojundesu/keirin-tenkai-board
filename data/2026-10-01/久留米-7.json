@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-01",
+  "venue": "久留米",
+  "race": 7,
+  "raceId": "202610018307",
+  "riders": [
+    {
+      "number": 1,
+      "name": "玉手 翔",
+      "snum": "014193",
+      "style": "追",
+      "score": "88.71",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307"
+      }
+    },
+    {
+      "number": 2,
+      "name": "白濱 一平",
+      "snum": "015210",
+      "style": "両",
+      "score": "84.87",
+      "back": 5,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307"
+      }
+    },
+    {
+      "number": 3,
+      "name": "山田 雅之",
+      "snum": "012742",
+      "style": "追",
+      "score": "84.11",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307"
+      }
+    },
+    {
+      "number": 4,
+      "name": "船曳 義之",
+      "snum": "013587",
+      "style": "追",
+      "score": "79.73",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307"
+      }
+    },
+    {
+      "number": 5,
+      "name": "四元 慎也",
+      "snum": "013155",
+      "style": "追",
+      "score": "83.95",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307"
+      }
+    },
+    {
+      "number": 6,
+      "name": "片折 勇輝",
+      "snum": "014449",
+      "style": "両",
+      "score": "79.25",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307"
+      }
+    },
+    {
+      "number": 7,
+      "name": "西森 一稀",
+      "snum": "015914",
+      "style": "逃",
+      "score": "91.52",
+      "back": 12,
+      "start": 11,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610018307"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610018307"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-01T00:31:19.908Z"
+}

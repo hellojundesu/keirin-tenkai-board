@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-01",
+  "venue": "前橋",
+  "race": 5,
+  "raceId": "202610012205",
+  "riders": [
+    {
+      "number": 1,
+      "name": "坂井 央雅",
+      "snum": "015991",
+      "style": "逃",
+      "score": "79.67",
+      "back": 8,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205"
+      }
+    },
+    {
+      "number": 2,
+      "name": "中西 将太郎",
+      "snum": "015978",
+      "style": "逃",
+      "score": "78.47",
+      "back": 10,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205"
+      }
+    },
+    {
+      "number": 3,
+      "name": "山村 慮太",
+      "snum": "014610",
+      "style": "両",
+      "score": "76.38",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205"
+      }
+    },
+    {
+      "number": 4,
+      "name": "松本 大地",
+      "snum": "013451",
+      "style": "追",
+      "score": "76.25",
+      "back": 1,
+      "start": 15,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205"
+      }
+    },
+    {
+      "number": 5,
+      "name": "沢田 勇治",
+      "snum": "014705",
+      "style": "両",
+      "score": "71.90",
+      "back": 1,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205"
+      }
+    },
+    {
+      "number": 6,
+      "name": "沼川 夢久",
+      "snum": "013402",
+      "style": "追",
+      "score": "70.35",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205"
+      }
+    },
+    {
+      "number": 7,
+      "name": "木下 章",
+      "snum": "011792",
+      "style": "両",
+      "score": "68.13",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610012205"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610012205"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-01T00:31:00.476Z"
+}

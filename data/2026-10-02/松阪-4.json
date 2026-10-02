@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-02",
+  "venue": "松阪",
+  "race": 4,
+  "raceId": "202610024704",
+  "riders": [
+    {
+      "number": 1,
+      "name": "皿屋 豊",
+      "snum": "015179",
+      "style": "両",
+      "score": "104.14",
+      "back": 3,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704"
+      }
+    },
+    {
+      "number": 2,
+      "name": "島川 将貴",
+      "snum": "015122",
+      "style": "逃",
+      "score": "104.00",
+      "back": 6,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704"
+      }
+    },
+    {
+      "number": 3,
+      "name": "久保田 泰弘",
+      "snum": "015195",
+      "style": "追",
+      "score": "99.35",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704"
+      }
+    },
+    {
+      "number": 4,
+      "name": "吉田 勇人",
+      "snum": "013762",
+      "style": "追",
+      "score": "95.00",
+      "back": 0,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704"
+      }
+    },
+    {
+      "number": 5,
+      "name": "伊藤 世哉",
+      "snum": "013864",
+      "style": "追",
+      "score": "95.26",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704"
+      }
+    },
+    {
+      "number": 6,
+      "name": "中島 竜誠",
+      "snum": "015802",
+      "style": "逃",
+      "score": "91.14",
+      "back": 2,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704"
+      }
+    },
+    {
+      "number": 7,
+      "name": "阿竹 智史",
+      "snum": "014105",
+      "style": "両",
+      "score": "102.33",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704"
+      }
+    },
+    {
+      "number": 8,
+      "name": "佐藤 真一",
+      "snum": "013245",
+      "style": "追",
+      "score": "94.78",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704"
+      }
+    },
+    {
+      "number": 9,
+      "name": "児玉 虎之介",
+      "snum": "015717",
+      "style": "逃",
+      "score": "99.67",
+      "back": 8,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024704"
+      }
+    }
+  ],
+  "lines": [
+    [
+      9,
+      1,
+      5
+    ],
+    [
+      2,
+      7,
+      3
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      8
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610024704"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-02T00:29:01.605Z"
+}

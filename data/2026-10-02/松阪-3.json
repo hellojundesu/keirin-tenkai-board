@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-02",
+  "venue": "松阪",
+  "race": 3,
+  "raceId": "202610024703",
+  "riders": [
+    {
+      "number": 1,
+      "name": "小笠原 光",
+      "snum": "015416",
+      "style": "両",
+      "score": "97.41",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703"
+      }
+    },
+    {
+      "number": 2,
+      "name": "高橋 和也",
+      "snum": "014168",
+      "style": "両",
+      "score": "102.65",
+      "back": 3,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703"
+      }
+    },
+    {
+      "number": 3,
+      "name": "山本 紳貴",
+      "snum": "015046",
+      "style": "追",
+      "score": "97.61",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703"
+      }
+    },
+    {
+      "number": 4,
+      "name": "古川 尚耶",
+      "snum": "014221",
+      "style": "追",
+      "score": "96.64",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703"
+      }
+    },
+    {
+      "number": 5,
+      "name": "内藤 秀久",
+      "snum": "014018",
+      "style": "追",
+      "score": "104.46",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703"
+      }
+    },
+    {
+      "number": 6,
+      "name": "谷口 明正",
+      "snum": "014978",
+      "style": "両",
+      "score": "94.25",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703"
+      }
+    },
+    {
+      "number": 7,
+      "name": "山口 多聞",
+      "snum": "015608",
+      "style": "逃",
+      "score": "99.88",
+      "back": 14,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703"
+      }
+    },
+    {
+      "number": 8,
+      "name": "松尾 信太郎",
+      "snum": "014264",
+      "style": "追",
+      "score": "95.63",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703"
+      }
+    },
+    {
+      "number": 9,
+      "name": "丸山 留依",
+      "snum": "015896",
+      "style": "逃",
+      "score": "104.06",
+      "back": 9,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610024703"
+      }
+    }
+  ],
+  "lines": [
+    [
+      9,
+      5,
+      3
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      7,
+      4
+    ],
+    [
+      1,
+      8
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610024703"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-02T00:29:00.932Z"
+}

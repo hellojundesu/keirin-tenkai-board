@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-02",
+  "venue": "前橋",
+  "race": 7,
+  "raceId": "202610022207",
+  "riders": [
+    {
+      "number": 1,
+      "name": "坂井 央雅",
+      "snum": "015991",
+      "style": "逃",
+      "score": "79.67",
+      "back": 8,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207"
+      }
+    },
+    {
+      "number": 2,
+      "name": "大村 涼兼",
+      "snum": "015983",
+      "style": "逃",
+      "score": "78.58",
+      "back": 20,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207"
+      }
+    },
+    {
+      "number": 3,
+      "name": "中西 将太郎",
+      "snum": "015978",
+      "style": "逃",
+      "score": "78.47",
+      "back": 10,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207"
+      }
+    },
+    {
+      "number": 4,
+      "name": "舟山 佑京",
+      "snum": "015257",
+      "style": "逃",
+      "score": "76.29",
+      "back": 7,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207"
+      }
+    },
+    {
+      "number": 5,
+      "name": "内田 淳",
+      "snum": "015166",
+      "style": "逃",
+      "score": "76.29",
+      "back": 2,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207"
+      }
+    },
+    {
+      "number": 6,
+      "name": "松本 大地",
+      "snum": "013451",
+      "style": "追",
+      "score": "76.25",
+      "back": 1,
+      "start": 15,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207"
+      }
+    },
+    {
+      "number": 7,
+      "name": "北村 翔太",
+      "snum": "015969",
+      "style": "逃",
+      "score": "74.80",
+      "back": 5,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610022207"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610022207"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-02T00:29:35.448Z"
+}

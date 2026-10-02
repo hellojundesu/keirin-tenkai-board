@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-02",
+  "venue": "大宮",
+  "race": 2,
+  "raceId": "202610022502",
+  "riders": [
+    {
+      "number": 1,
+      "name": "伊藤 大理",
+      "snum": "013690",
+      "style": "追",
+      "score": "82.64",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502"
+      }
+    },
+    {
+      "number": 2,
+      "name": "岩原 健馬",
+      "snum": "015898",
+      "style": "逃",
+      "score": "83.28",
+      "back": 7,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502"
+      }
+    },
+    {
+      "number": 3,
+      "name": "吉岡 篤志",
+      "snum": "013507",
+      "style": "追",
+      "score": "84.57",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502"
+      }
+    },
+    {
+      "number": 4,
+      "name": "土井 慎二",
+      "snum": "015918",
+      "style": "逃",
+      "score": "83.62",
+      "back": 7,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502"
+      }
+    },
+    {
+      "number": 5,
+      "name": "表 大暁",
+      "snum": "013484",
+      "style": "追",
+      "score": "83.26",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502"
+      }
+    },
+    {
+      "number": 6,
+      "name": "清水 邦章",
+      "snum": "012473",
+      "style": "追",
+      "score": "79.52",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502"
+      }
+    },
+    {
+      "number": 7,
+      "name": "小坂 敏之",
+      "snum": "012861",
+      "style": "追",
+      "score": "81.17",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610022502"
+      }
+    }
+  ],
+  "lines": [
+    [
+      2,
+      5,
+      7
+    ],
+    [
+      1
+    ],
+    [
+      4,
+      3,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610022502"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-02T00:29:10.565Z"
+}

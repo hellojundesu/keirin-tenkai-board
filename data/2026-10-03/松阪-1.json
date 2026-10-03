@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-03",
+  "venue": "松阪",
+  "race": 1,
+  "raceId": "202610034701",
+  "riders": [
+    {
+      "number": 1,
+      "name": "吉田 勇人",
+      "snum": "013762",
+      "style": "追",
+      "score": "95.00",
+      "back": 0,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701"
+      }
+    },
+    {
+      "number": 2,
+      "name": "伊藤 世哉",
+      "snum": "013864",
+      "style": "追",
+      "score": "95.26",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701"
+      }
+    },
+    {
+      "number": 3,
+      "name": "松尾 信太郎",
+      "snum": "014264",
+      "style": "追",
+      "score": "95.63",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701"
+      }
+    },
+    {
+      "number": 4,
+      "name": "山口 多聞",
+      "snum": "015608",
+      "style": "逃",
+      "score": "99.88",
+      "back": 14,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701"
+      }
+    },
+    {
+      "number": 5,
+      "name": "都築 巧",
+      "snum": "015733",
+      "style": "両",
+      "score": "98.11",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701"
+      }
+    },
+    {
+      "number": 6,
+      "name": "伊東 佑晟",
+      "snum": "015816",
+      "style": "逃",
+      "score": "93.00",
+      "back": 4,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701"
+      }
+    },
+    {
+      "number": 7,
+      "name": "松本 定",
+      "snum": "015842",
+      "style": "逃",
+      "score": "98.95",
+      "back": 12,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701"
+      }
+    },
+    {
+      "number": 8,
+      "name": "佐藤 真一",
+      "snum": "013245",
+      "style": "追",
+      "score": "94.78",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610034701"
+      }
+    }
+  ],
+  "lines": [
+    [
+      7,
+      3
+    ],
+    [
+      4,
+      1,
+      8
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      5
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610034701"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-03T00:26:52.498Z"
+}

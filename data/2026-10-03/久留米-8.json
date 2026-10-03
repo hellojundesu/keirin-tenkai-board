@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-03",
+  "venue": "久留米",
+  "race": 8,
+  "raceId": "202610038308",
+  "riders": [
+    {
+      "number": 1,
+      "name": "大庭 正紀",
+      "snum": "012598",
+      "style": "追",
+      "score": "84.70",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308"
+      }
+    },
+    {
+      "number": 2,
+      "name": "阿部 兼士",
+      "snum": "014333",
+      "style": "追",
+      "score": "87.52",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308"
+      }
+    },
+    {
+      "number": 3,
+      "name": "蒋野 翔太",
+      "snum": "015377",
+      "style": "逃",
+      "score": "87.04",
+      "back": 4,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308"
+      }
+    },
+    {
+      "number": 4,
+      "name": "高野 信元",
+      "snum": "015809",
+      "style": "逃",
+      "score": "93.06",
+      "back": 6,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308"
+      }
+    },
+    {
+      "number": 5,
+      "name": "高橋 清太郎",
+      "snum": "014614",
+      "style": "追",
+      "score": "86.67",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308"
+      }
+    },
+    {
+      "number": 6,
+      "name": "境 啓亨",
+      "snum": "015214",
+      "style": "逃",
+      "score": "82.29",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308"
+      }
+    },
+    {
+      "number": 7,
+      "name": "白濱 一平",
+      "snum": "015210",
+      "style": "両",
+      "score": "84.87",
+      "back": 5,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610038308"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      1
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      7,
+      2,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610038308"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-03T00:27:50.143Z"
+}

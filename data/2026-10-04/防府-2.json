@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-04",
+  "venue": "防府",
+  "race": 2,
+  "raceId": "202610046302",
+  "riders": [
+    {
+      "number": 1,
+      "name": "岡田 啓渡",
+      "snum": "014850",
+      "style": "両",
+      "score": "87.21",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302"
+      }
+    },
+    {
+      "number": 2,
+      "name": "小竹 洋平",
+      "snum": "014601",
+      "style": "両",
+      "score": "86.62",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302"
+      }
+    },
+    {
+      "number": 3,
+      "name": "下岡 優季",
+      "snum": "014997",
+      "style": "逃",
+      "score": "89.22",
+      "back": 18,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302"
+      }
+    },
+    {
+      "number": 4,
+      "name": "宮司 周郎",
+      "snum": "013477",
+      "style": "追",
+      "score": "87.86",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302"
+      }
+    },
+    {
+      "number": 5,
+      "name": "屋良 朝春",
+      "snum": "014374",
+      "style": "両",
+      "score": "80.29",
+      "back": 4,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302"
+      }
+    },
+    {
+      "number": 6,
+      "name": "三浦 靖",
+      "snum": "010900",
+      "style": "追",
+      "score": "77.36",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302"
+      }
+    },
+    {
+      "number": 7,
+      "name": "葛西 雄太郎",
+      "snum": "013742",
+      "style": "両",
+      "score": "80.54",
+      "back": 8,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610046302"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610046302"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-04T03:21:08.299Z"
+}

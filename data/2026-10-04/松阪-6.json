@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-04",
+  "venue": "松阪",
+  "race": 6,
+  "raceId": "202610044706",
+  "riders": [
+    {
+      "number": 1,
+      "name": "泉 慶輔",
+      "snum": "014712",
+      "style": "追",
+      "score": "97.50",
+      "back": 0,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706"
+      }
+    },
+    {
+      "number": 2,
+      "name": "久田 朔",
+      "snum": "015826",
+      "style": "逃",
+      "score": "106.00",
+      "back": 13,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706"
+      }
+    },
+    {
+      "number": 3,
+      "name": "都築 巧",
+      "snum": "015733",
+      "style": "両",
+      "score": "98.11",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706"
+      }
+    },
+    {
+      "number": 4,
+      "name": "今村 麟太郎",
+      "snum": "015198",
+      "style": "両",
+      "score": "97.15",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706"
+      }
+    },
+    {
+      "number": 5,
+      "name": "野口 裕史",
+      "snum": "015169",
+      "style": "逃",
+      "score": "101.24",
+      "back": 21,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706"
+      }
+    },
+    {
+      "number": 6,
+      "name": "白岩 大助",
+      "snum": "013622",
+      "style": "追",
+      "score": "94.83",
+      "back": 0,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706"
+      }
+    },
+    {
+      "number": 7,
+      "name": "山本 巨樹",
+      "snum": "014839",
+      "style": "追",
+      "score": "97.78",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706"
+      }
+    },
+    {
+      "number": 8,
+      "name": "鷲田 幸司",
+      "snum": "014249",
+      "style": "追",
+      "score": "96.46",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706"
+      }
+    },
+    {
+      "number": 9,
+      "name": "瀬戸 晋作",
+      "snum": "015067",
+      "style": "両",
+      "score": "98.86",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044706"
+      }
+    }
+  ],
+  "lines": [
+    [
+      5,
+      1,
+      6
+    ],
+    [
+      2,
+      7,
+      8
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      9
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610044706"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-04T03:20:28.951Z"
+}

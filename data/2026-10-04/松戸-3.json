@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-04",
+  "venue": "松戸",
+  "race": 3,
+  "raceId": "202610043103",
+  "riders": [
+    {
+      "number": 1,
+      "name": "塩川 真一郎",
+      "snum": "012910",
+      "style": "追",
+      "score": "74.89",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103"
+      }
+    },
+    {
+      "number": 2,
+      "name": "十文字 悠真",
+      "snum": "015873",
+      "style": "逃",
+      "score": "75.32",
+      "back": 10,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103"
+      }
+    },
+    {
+      "number": 3,
+      "name": "山下 季秦",
+      "snum": "015974",
+      "style": "逃",
+      "score": "72.93",
+      "back": 8,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103"
+      }
+    },
+    {
+      "number": 4,
+      "name": "大薗 宏",
+      "snum": "012634",
+      "style": "追",
+      "score": "74.67",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103"
+      }
+    },
+    {
+      "number": 5,
+      "name": "龍門 慎太郎",
+      "snum": "014550",
+      "style": "追",
+      "score": "71.33",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103"
+      }
+    },
+    {
+      "number": 6,
+      "name": "三浦 綾",
+      "snum": "014986",
+      "style": "逃",
+      "score": "69.96",
+      "back": 6,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103"
+      }
+    },
+    {
+      "number": 7,
+      "name": "戸田 康平",
+      "snum": "014885",
+      "style": "逃",
+      "score": "77.78",
+      "back": 6,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610043103"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610043103"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-04T03:20:57.088Z"
+}

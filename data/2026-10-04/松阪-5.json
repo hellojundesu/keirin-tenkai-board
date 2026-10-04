@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-04",
+  "venue": "松阪",
+  "race": 5,
+  "raceId": "202610044705",
+  "riders": [
+    {
+      "number": 1,
+      "name": "栗山 俊介",
+      "snum": "014944",
+      "style": "両",
+      "score": "100.12",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705"
+      }
+    },
+    {
+      "number": 2,
+      "name": "高橋 和也",
+      "snum": "014168",
+      "style": "両",
+      "score": "102.65",
+      "back": 3,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705"
+      }
+    },
+    {
+      "number": 3,
+      "name": "原口 昌平",
+      "snum": "015066",
+      "style": "両",
+      "score": "105.00",
+      "back": 6,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705"
+      }
+    },
+    {
+      "number": 4,
+      "name": "山口 多聞",
+      "snum": "015608",
+      "style": "逃",
+      "score": "99.88",
+      "back": 14,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705"
+      }
+    },
+    {
+      "number": 5,
+      "name": "大川 龍二",
+      "snum": "014182",
+      "style": "両",
+      "score": "106.14",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705"
+      }
+    },
+    {
+      "number": 6,
+      "name": "伊藤 成紀",
+      "snum": "014096",
+      "style": "両",
+      "score": "97.25",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705"
+      }
+    },
+    {
+      "number": 7,
+      "name": "松岡 篤哉",
+      "snum": "014599",
+      "style": "両",
+      "score": "100.18",
+      "back": 5,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705"
+      }
+    },
+    {
+      "number": 8,
+      "name": "阿部 大樹",
+      "snum": "014370",
+      "style": "両",
+      "score": "98.47",
+      "back": 1,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705"
+      }
+    },
+    {
+      "number": 9,
+      "name": "窓場 千加頼",
+      "snum": "014835",
+      "style": "両",
+      "score": "101.53",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044705"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      8
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      9,
+      6,
+      1
+    ],
+    [
+      2,
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610044705"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-04T03:20:28.246Z"
+}

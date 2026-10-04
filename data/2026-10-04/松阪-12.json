@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-04",
+  "venue": "松阪",
+  "race": 12,
+  "raceId": "202610044712",
+  "riders": [
+    {
+      "number": 1,
+      "name": "郡司 浩平",
+      "snum": "014741",
+      "style": "両",
+      "score": "117.00",
+      "back": 7,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712"
+      }
+    },
+    {
+      "number": 2,
+      "name": "浅井 康太",
+      "snum": "014089",
+      "style": "両",
+      "score": "113.89",
+      "back": 1,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712"
+      }
+    },
+    {
+      "number": 3,
+      "name": "阿部 力也",
+      "snum": "014794",
+      "style": "追",
+      "score": "112.75",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712"
+      }
+    },
+    {
+      "number": 4,
+      "name": "杉浦 侑吾",
+      "snum": "015356",
+      "style": "逃",
+      "score": "110.88",
+      "back": 8,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712"
+      }
+    },
+    {
+      "number": 5,
+      "name": "鈴木 竜士",
+      "snum": "015037",
+      "style": "両",
+      "score": "111.05",
+      "back": 1,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712"
+      }
+    },
+    {
+      "number": 6,
+      "name": "西村 光太",
+      "snum": "014537",
+      "style": "追",
+      "score": "103.77",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712"
+      }
+    },
+    {
+      "number": 7,
+      "name": "新山 響平",
+      "snum": "015034",
+      "style": "逃",
+      "score": "115.22",
+      "back": 11,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712"
+      }
+    },
+    {
+      "number": 8,
+      "name": "東 龍之介",
+      "snum": "014523",
+      "style": "追",
+      "score": "105.64",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712"
+      }
+    },
+    {
+      "number": 9,
+      "name": "阿部 拓真",
+      "snum": "015035",
+      "style": "両",
+      "score": "113.95",
+      "back": 0,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610044712"
+      }
+    }
+  ],
+  "lines": [
+    [
+      7,
+      9,
+      3
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610044712"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-04T03:20:33.847Z"
+}

@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-04",
+  "venue": "小松島",
+  "race": 3,
+  "raceId": "202610047303",
+  "riders": [
+    {
+      "number": 1,
+      "name": "貝原 涼太",
+      "snum": "015792",
+      "style": "逃",
+      "score": "86.75",
+      "back": 13,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303"
+      }
+    },
+    {
+      "number": 2,
+      "name": "内山 拓",
+      "snum": "013971",
+      "style": "追",
+      "score": "86.33",
+      "back": 1,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303"
+      }
+    },
+    {
+      "number": 3,
+      "name": "伊藤 奎",
+      "snum": "015330",
+      "style": "追",
+      "score": "85.67",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303"
+      }
+    },
+    {
+      "number": 4,
+      "name": "表原 周",
+      "snum": "014845",
+      "style": "追",
+      "score": "85.39",
+      "back": 4,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303"
+      }
+    },
+    {
+      "number": 5,
+      "name": "萱島 大介",
+      "snum": "014784",
+      "style": "追",
+      "score": "83.95",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303"
+      }
+    },
+    {
+      "number": 6,
+      "name": "板崎 佑矢",
+      "snum": "014887",
+      "style": "両",
+      "score": "81.75",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303"
+      }
+    },
+    {
+      "number": 7,
+      "name": "栗林 巧",
+      "snum": "013984",
+      "style": "追",
+      "score": "81.00",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610047303"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610047303"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-04T03:21:17.049Z"
+}

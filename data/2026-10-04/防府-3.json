@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-04",
+  "venue": "防府",
+  "race": 3,
+  "raceId": "202610046303",
+  "riders": [
+    {
+      "number": 1,
+      "name": "倉野 隆太郎",
+      "snum": "014166",
+      "style": "追",
+      "score": "82.38",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303"
+      }
+    },
+    {
+      "number": 2,
+      "name": "櫻井 太士",
+      "snum": "014403",
+      "style": "追",
+      "score": "86.61",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303"
+      }
+    },
+    {
+      "number": 3,
+      "name": "魚屋 周成",
+      "snum": "014783",
+      "style": "逃",
+      "score": "86.67",
+      "back": 3,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303"
+      }
+    },
+    {
+      "number": 4,
+      "name": "工藤 文彦",
+      "snum": "014612",
+      "style": "追",
+      "score": "88.86",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303"
+      }
+    },
+    {
+      "number": 5,
+      "name": "藤原 俊太郎",
+      "snum": "015192",
+      "style": "逃",
+      "score": "87.00",
+      "back": 10,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303"
+      }
+    },
+    {
+      "number": 6,
+      "name": "星島 太",
+      "snum": "012298",
+      "style": "追",
+      "score": "78.81",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303"
+      }
+    },
+    {
+      "number": 7,
+      "name": "柴田 祐也",
+      "snum": "014393",
+      "style": "追",
+      "score": "79.48",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610046303"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610046303"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-04T03:21:08.952Z"
+}

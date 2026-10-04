@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-04",
+  "venue": "松戸",
+  "race": 1,
+  "raceId": "202610043101",
+  "riders": [
+    {
+      "number": 1,
+      "name": "齋藤 輝彦",
+      "snum": "014301",
+      "style": "追",
+      "score": "68.69",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610043101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610043101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610043101"
+      }
+    },
+    {
+      "number": 2,
+      "name": "廣田 樹里",
+      "snum": "014049",
+      "style": "両",
+      "score": "73.04",
+      "back": 3,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610043101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610043101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610043101"
+      }
+    },
+    {
+      "number": 3,
+      "name": "鈴木 康平",
+      "snum": "015710",
+      "style": "逃",
+      "score": "66.27",
+      "back": 8,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610043101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610043101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610043101"
+      }
+    },
+    {
+      "number": 4,
+      "name": "徳吉 正治",
+      "snum": "014042",
+      "style": "追",
+      "score": "69.42",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610043101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610043101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610043101"
+      }
+    },
+    {
+      "number": 5,
+      "name": "和泉田 喜一",
+      "snum": "011599",
+      "style": "追",
+      "score": "64.33",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610043101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610043101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610043101"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610043101"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-04T03:20:55.834Z"
+}

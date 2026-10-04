@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-04",
+  "venue": "小松島",
+  "race": 5,
+  "raceId": "202610047305",
+  "riders": [
+    {
+      "number": 1,
+      "name": "望月 一成",
+      "snum": "015176",
+      "style": "逃",
+      "score": "94.17",
+      "back": 11,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305"
+      }
+    },
+    {
+      "number": 2,
+      "name": "藤井 將",
+      "snum": "015280",
+      "style": "両",
+      "score": "92.15",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305"
+      }
+    },
+    {
+      "number": 3,
+      "name": "江守 昇",
+      "snum": "012811",
+      "style": "追",
+      "score": "90.48",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305"
+      }
+    },
+    {
+      "number": 4,
+      "name": "長井 優斗",
+      "snum": "014452",
+      "style": "追",
+      "score": "88.87",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305"
+      }
+    },
+    {
+      "number": 5,
+      "name": "田川 翔琉",
+      "snum": "015568",
+      "style": "逃",
+      "score": "85.75",
+      "back": 6,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305"
+      }
+    },
+    {
+      "number": 6,
+      "name": "吉永 好宏",
+      "snum": "013353",
+      "style": "追",
+      "score": "85.14",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305"
+      }
+    },
+    {
+      "number": 7,
+      "name": "長松 大祐",
+      "snum": "015658",
+      "style": "逃",
+      "score": "84.38",
+      "back": 5,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610047305"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610047305"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-04T03:21:18.339Z"
+}

@@ -59,7 +59,28 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
+          python3 - <<'PY'
+          from datetime import datetime, timedelta
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          import shutil
+          
+          today = datetime.now(ZoneInfo("Asia/Tokyo")).date()
+          cutoff = today - timedelta(days=6)
+          for folder in Path("data").iterdir():
+              if not folder.is_dir() or folder.is_symlink():
+                  continue
+              try:
+                  saved_date = datetime.strptime(folder.name, "%Y-%m-%d").date()
+              except ValueError:
+                  continue
+              if folder.name != saved_date.isoformat():
+                  continue
+              if saved_date < cutoff:
+                  shutil.rmtree(folder)
+                  print(f"保存期限を過ぎたデータを削除: {folder.name}")
+          PY
+          git add -A data/
           if ! git diff --cached --quiet; then
             git commit -m "出走表を更新"
             git push

@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-05",
+  "venue": "防府",
+  "race": 4,
+  "raceId": "202610056304",
+  "riders": [
+    {
+      "number": 1,
+      "name": "田口 守",
+      "snum": "014351",
+      "style": "両",
+      "score": "77.43",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304"
+      }
+    },
+    {
+      "number": 2,
+      "name": "山崎 翼",
+      "snum": "014494",
+      "style": "逃",
+      "score": "82.89",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304"
+      }
+    },
+    {
+      "number": 3,
+      "name": "倉野 隆太郎",
+      "snum": "014166",
+      "style": "追",
+      "score": "82.38",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304"
+      }
+    },
+    {
+      "number": 4,
+      "name": "山崎 岳志",
+      "snum": "012920",
+      "style": "追",
+      "score": "85.50",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304"
+      }
+    },
+    {
+      "number": 5,
+      "name": "中澤 央治",
+      "snum": "011634",
+      "style": "追",
+      "score": "83.33",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304"
+      }
+    },
+    {
+      "number": 6,
+      "name": "三浦 靖",
+      "snum": "010900",
+      "style": "追",
+      "score": "77.36",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304"
+      }
+    },
+    {
+      "number": 7,
+      "name": "川又 裕樹",
+      "snum": "014638",
+      "style": "追",
+      "score": "84.50",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610056304"
+      }
+    }
+  ],
+  "lines": [
+    [
+      2,
+      7,
+      4
+    ],
+    [
+      1
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      5
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610056304"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-05T00:31:40.609Z"
+}

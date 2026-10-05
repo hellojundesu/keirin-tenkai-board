@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-05",
+  "venue": "松戸",
+  "race": 1,
+  "raceId": "202610053101",
+  "riders": [
+    {
+      "number": 1,
+      "name": "大薗 宏",
+      "snum": "012634",
+      "style": "追",
+      "score": "74.67",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610053101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610053101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610053101"
+      }
+    },
+    {
+      "number": 2,
+      "name": "齋藤 輝彦",
+      "snum": "014301",
+      "style": "追",
+      "score": "68.69",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610053101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610053101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610053101"
+      }
+    },
+    {
+      "number": 3,
+      "name": "平川 雅晃",
+      "snum": "015044",
+      "style": "逃",
+      "score": "71.29",
+      "back": 9,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610053101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610053101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610053101"
+      }
+    },
+    {
+      "number": 4,
+      "name": "塚本 諭",
+      "snum": "013676",
+      "style": "追",
+      "score": "70.62",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610053101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610053101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610053101"
+      }
+    },
+    {
+      "number": 5,
+      "name": "浦野 慈生",
+      "snum": "014932",
+      "style": "両",
+      "score": "67.87",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610053101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610053101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610053101"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610053101"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-05T00:31:25.842Z"
+}

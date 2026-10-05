@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-05",
+  "venue": "奈良",
+  "race": 7,
+  "raceId": "202610055307",
+  "riders": [
+    {
+      "number": 1,
+      "name": "八日市屋浩之",
+      "snum": "013274",
+      "style": "追",
+      "score": "96.58",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307"
+      }
+    },
+    {
+      "number": 2,
+      "name": "中川 貴徳",
+      "snum": "014141",
+      "style": "追",
+      "score": "101.80",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307"
+      }
+    },
+    {
+      "number": 3,
+      "name": "永井 哉多",
+      "snum": "015610",
+      "style": "逃",
+      "score": "96.41",
+      "back": 12,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307"
+      }
+    },
+    {
+      "number": 4,
+      "name": "原田 翔真",
+      "snum": "015630",
+      "style": "逃",
+      "score": "99.00",
+      "back": 5,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307"
+      }
+    },
+    {
+      "number": 5,
+      "name": "土屋 壮登",
+      "snum": "014864",
+      "style": "追",
+      "score": "102.96",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307"
+      }
+    },
+    {
+      "number": 6,
+      "name": "奥村 諭志",
+      "snum": "015191",
+      "style": "両",
+      "score": "93.89",
+      "back": 3,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307"
+      }
+    },
+    {
+      "number": 7,
+      "name": "不破 将登",
+      "snum": "014394",
+      "style": "両",
+      "score": "99.07",
+      "back": 1,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610055307"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      7,
+      1
+    ],
+    [
+      3,
+      5,
+      2
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610055307"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-05T00:30:58.904Z"
+}

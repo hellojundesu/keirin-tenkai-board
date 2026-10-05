@@ -99,30 +99,43 @@
       "name": "渡邊 颯太",
       "snum": "015100",
       "style": "逃",
-      "score": null,
+      "score": "0.00",
       "back": 0,
       "start": 0,
       "sources": {
         "style": "https://keirin.jp/pc/racelist",
-        "score": null,
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610057302",
         "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610057302",
         "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610057302"
       }
     }
   ],
-  "lines": [],
+  "lines": [
+    [
+      2,
+      3
+    ],
+    [
+      1
+    ],
+    [
+      4
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      7
+    ]
+  ],
   "source": "KEIRIN.JP / netkeirin",
-  "lineSource": null,
+  "lineSource": "KEIRIN.JP",
   "scoreType": "出走表掲載の競走得点",
   "sourceUrls": [
     "https://keirin.jp/pc/racelist",
     "https://keirin.netkeiba.com/race/entry/?race_id=202610057302"
   ],
-  "missingFields": [
-    {
-      "number": 7,
-      "field": "score"
-    }
-  ],
-  "updatedAt": "2026-10-05T00:31:45.773Z"
+  "missingFields": [],
+  "updatedAt": "2026-10-05T07:06:29.131Z"
 }

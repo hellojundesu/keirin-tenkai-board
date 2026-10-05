@@ -42,7 +42,7 @@ export function extractProfile() {
   }
   const score=valueFor('競走得点'),style=valueFor('脚質'),back=valueFor('バック回数');
   return {snum:document.querySelector('#PlayerNo')?.textContent.trim(),
-    score:/^\d{2,3}\.\d{1,2}$/.test(score||'')?score:null,
+    score:/^(?:\d{2,3}\.\d{1,2}|0(?:\.0{1,2})?)$/.test(score||'')?score:null,
     style:/^(逃|両|追)$/.test(style||'')?style:null,
     back:/^\d{1,3}(?:回)?$/.test(back||'')?Number(back.replace('回','')):null};
 }
@@ -75,7 +75,7 @@ export function extractSupplement(expectedRaceId) {
     const read=label=>visibleText(row.cells[indices[label]]);
     const score=read('競走得点'),style=read('脚質');
     return [{number:count(read('車')),snum:match[1].padStart(6,'0'),
-      score:/^\d{2,3}\.\d{1,2}$/.test(score)?score:null,
+      score:/^(?:\d{2,3}\.\d{1,2}|0(?:\.0{1,2})?)$/.test(score)?score:null,
       style:/^(逃|両|追)$/.test(style)?style:null,back:count(read('B')),start:count(read('S'))}];
   });
 }

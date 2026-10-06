@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-06",
+  "venue": "前橋",
+  "race": 2,
+  "raceId": "202610062202",
+  "riders": [
+    {
+      "number": 1,
+      "name": "吉川 美穂",
+      "snum": "015587",
+      "style": "両",
+      "score": "56.96",
+      "back": 6,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202"
+      }
+    },
+    {
+      "number": 2,
+      "name": "西島 叶子",
+      "snum": "015504",
+      "style": "両",
+      "score": "54.83",
+      "back": 5,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202"
+      }
+    },
+    {
+      "number": 3,
+      "name": "戸田 瑞姫",
+      "snum": "015667",
+      "style": "両",
+      "score": "53.18",
+      "back": 2,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202"
+      }
+    },
+    {
+      "number": 4,
+      "name": "中野 咲",
+      "snum": "015149",
+      "style": "両",
+      "score": "51.63",
+      "back": 2,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202"
+      }
+    },
+    {
+      "number": 5,
+      "name": "野寺 楓",
+      "snum": "015674",
+      "style": "追",
+      "score": "51.06",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202"
+      }
+    },
+    {
+      "number": 6,
+      "name": "佐藤 乃愛",
+      "snum": "015849",
+      "style": "両",
+      "score": "47.62",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202"
+      }
+    },
+    {
+      "number": 7,
+      "name": "南 彩乃",
+      "snum": "015217",
+      "style": "追",
+      "score": "47.60",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610062202"
+      }
+    }
+  ],
+  "lines": [
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      1
+    ],
+    [
+      6
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610062202"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-06T00:32:13.027Z"
+}

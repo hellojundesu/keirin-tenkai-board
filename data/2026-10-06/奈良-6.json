@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-06",
+  "venue": "奈良",
+  "race": 6,
+  "raceId": "202610065306",
+  "riders": [
+    {
+      "number": 1,
+      "name": "小谷 実",
+      "snum": "014313",
+      "style": "追",
+      "score": "94.28",
+      "back": 0,
+      "start": 14,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306"
+      }
+    },
+    {
+      "number": 2,
+      "name": "望月 永悟",
+      "snum": "013115",
+      "style": "追",
+      "score": "98.39",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306"
+      }
+    },
+    {
+      "number": 3,
+      "name": "塩崎 隼秀",
+      "snum": "015646",
+      "style": "両",
+      "score": "97.54",
+      "back": 6,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306"
+      }
+    },
+    {
+      "number": 4,
+      "name": "河崎 正晴",
+      "snum": "015660",
+      "style": "逃",
+      "score": "98.96",
+      "back": 3,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306"
+      }
+    },
+    {
+      "number": 5,
+      "name": "門田 凌",
+      "snum": "015201",
+      "style": "両",
+      "score": "96.67",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306"
+      }
+    },
+    {
+      "number": 6,
+      "name": "宝満 大作",
+      "snum": "013722",
+      "style": "追",
+      "score": "93.27",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306"
+      }
+    },
+    {
+      "number": 7,
+      "name": "齋藤 登志信",
+      "snum": "013306",
+      "style": "追",
+      "score": "97.62",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610065306"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3,
+      5,
+      1,
+      6
+    ],
+    [
+      4,
+      2,
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610065306"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-06T00:31:47.676Z"
+}

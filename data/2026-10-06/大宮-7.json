@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-06",
+  "venue": "大宮",
+  "race": 7,
+  "raceId": "202610062507",
+  "riders": [
+    {
+      "number": 1,
+      "name": "高木 佑真",
+      "snum": "015399",
+      "style": "両",
+      "score": "50.30",
+      "back": 1,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507"
+      }
+    },
+    {
+      "number": 2,
+      "name": "中村 由香里",
+      "snum": "014902",
+      "style": "追",
+      "score": "51.17",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507"
+      }
+    },
+    {
+      "number": 3,
+      "name": "永禮 美瑠",
+      "snum": "015492",
+      "style": "両",
+      "score": "54.05",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507"
+      }
+    },
+    {
+      "number": 4,
+      "name": "田野口 佳奈",
+      "snum": "015864",
+      "style": "両",
+      "score": "49.14",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507"
+      }
+    },
+    {
+      "number": 5,
+      "name": "國村 美留莉",
+      "snum": "015498",
+      "style": "追",
+      "score": "48.83",
+      "back": 2,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507"
+      }
+    },
+    {
+      "number": 6,
+      "name": "金田 舞夏",
+      "snum": "015774",
+      "style": "両",
+      "score": "47.71",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507"
+      }
+    },
+    {
+      "number": 7,
+      "name": "太田 りゆ",
+      "snum": "015218",
+      "style": "逃",
+      "score": "58.71",
+      "back": 9,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610062507"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3
+    ],
+    [
+      1
+    ],
+    [
+      7
+    ],
+    [
+      2
+    ],
+    [
+      5
+    ],
+    [
+      4
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610062507"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-06T00:31:36.694Z"
+}

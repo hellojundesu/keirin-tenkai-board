@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-06",
+  "venue": "防府",
+  "race": 7,
+  "raceId": "202610066307",
+  "riders": [
+    {
+      "number": 1,
+      "name": "守谷 陽介",
+      "snum": "013884",
+      "style": "両",
+      "score": "92.67",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307"
+      }
+    },
+    {
+      "number": 2,
+      "name": "真鍋 顕汰",
+      "snum": "015625",
+      "style": "逃",
+      "score": "94.72",
+      "back": 11,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307"
+      }
+    },
+    {
+      "number": 3,
+      "name": "末廣 快理",
+      "snum": "015634",
+      "style": "逃",
+      "score": "91.96",
+      "back": 12,
+      "start": 12,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307"
+      }
+    },
+    {
+      "number": 4,
+      "name": "多田 晃紀",
+      "snum": "014952",
+      "style": "逃",
+      "score": "90.71",
+      "back": 9,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307"
+      }
+    },
+    {
+      "number": 5,
+      "name": "吉田 茂生",
+      "snum": "014672",
+      "style": "両",
+      "score": "91.79",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307"
+      }
+    },
+    {
+      "number": 6,
+      "name": "岡田 啓渡",
+      "snum": "014850",
+      "style": "両",
+      "score": "87.21",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307"
+      }
+    },
+    {
+      "number": 7,
+      "name": "大瀬戸潤一郎",
+      "snum": "014486",
+      "style": "追",
+      "score": "88.96",
+      "back": 1,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610066307"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3,
+      6
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      4,
+      1,
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610066307"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-06T00:32:31.319Z"
+}

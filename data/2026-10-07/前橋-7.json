@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-07",
+  "venue": "前橋",
+  "race": 7,
+  "raceId": "202610072207",
+  "riders": [
+    {
+      "number": 1,
+      "name": "伊藤 大志",
+      "snum": "013747",
+      "style": "追",
+      "score": "94.67",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207"
+      }
+    },
+    {
+      "number": 2,
+      "name": "高橋 雅之",
+      "snum": "014082",
+      "style": "追",
+      "score": "93.57",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207"
+      }
+    },
+    {
+      "number": 3,
+      "name": "岡部 伶音",
+      "snum": "015691",
+      "style": "逃",
+      "score": "92.81",
+      "back": 9,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207"
+      }
+    },
+    {
+      "number": 4,
+      "name": "西村 剛",
+      "snum": "015803",
+      "style": "逃",
+      "score": "89.90",
+      "back": 15,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207"
+      }
+    },
+    {
+      "number": 5,
+      "name": "田口 裕一",
+      "snum": "014818",
+      "style": "追",
+      "score": "87.83",
+      "back": 0,
+      "start": 11,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207"
+      }
+    },
+    {
+      "number": 6,
+      "name": "新井 僚太郎",
+      "snum": "014813",
+      "style": "両",
+      "score": "85.50",
+      "back": 8,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207"
+      }
+    },
+    {
+      "number": 7,
+      "name": "田頭 寛之",
+      "snum": "015107",
+      "style": "両",
+      "score": "85.14",
+      "back": 2,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610072207"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610072207"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-07T00:33:04.571Z"
+}

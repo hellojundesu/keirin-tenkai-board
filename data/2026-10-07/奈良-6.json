@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-07",
+  "venue": "奈良",
+  "race": 6,
+  "raceId": "202610075306",
+  "riders": [
+    {
+      "number": 1,
+      "name": "菅原 晃",
+      "snum": "013744",
+      "style": "追",
+      "score": "99.10",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306"
+      }
+    },
+    {
+      "number": 2,
+      "name": "塩崎 隼秀",
+      "snum": "015646",
+      "style": "両",
+      "score": "97.54",
+      "back": 6,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306"
+      }
+    },
+    {
+      "number": 3,
+      "name": "伊藤 慶太郎",
+      "snum": "015041",
+      "style": "両",
+      "score": "97.53",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306"
+      }
+    },
+    {
+      "number": 4,
+      "name": "坂田 康季",
+      "snum": "015653",
+      "style": "逃",
+      "score": "103.23",
+      "back": 12,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306"
+      }
+    },
+    {
+      "number": 5,
+      "name": "坂田 章",
+      "snum": "014330",
+      "style": "追",
+      "score": "98.62",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306"
+      }
+    },
+    {
+      "number": 6,
+      "name": "谷田 泰平",
+      "snum": "014307",
+      "style": "追",
+      "score": "94.43",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306"
+      }
+    },
+    {
+      "number": 7,
+      "name": "望月 永悟",
+      "snum": "013115",
+      "style": "追",
+      "score": "98.39",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610075306"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610075306"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-07T00:32:55.777Z"
+}

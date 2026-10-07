@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-07",
+  "venue": "大垣",
+  "race": 2,
+  "raceId": "202610074402",
+  "riders": [
+    {
+      "number": 1,
+      "name": "山崎 光展",
+      "snum": "014316",
+      "style": "両",
+      "score": "72.45",
+      "back": 2,
+      "start": 15,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610074402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610074402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610074402"
+      }
+    },
+    {
+      "number": 2,
+      "name": "川本 恵二",
+      "snum": "013210",
+      "style": "追",
+      "score": "71.96",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610074402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610074402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610074402"
+      }
+    },
+    {
+      "number": 3,
+      "name": "千澤 大輔",
+      "snum": "014429",
+      "style": "追",
+      "score": "68.29",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610074402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610074402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610074402"
+      }
+    },
+    {
+      "number": 4,
+      "name": "亀井 道佳",
+      "snum": "013525",
+      "style": "追",
+      "score": "67.83",
+      "back": 0,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610074402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610074402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610074402"
+      }
+    },
+    {
+      "number": 5,
+      "name": "遠澤 健二",
+      "snum": "011364",
+      "style": "追",
+      "score": "66.54",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610074402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610074402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610074402"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610074402"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-07T00:33:16.811Z"
+}

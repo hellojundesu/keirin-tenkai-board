@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-07",
+  "venue": "大宮",
+  "race": 4,
+  "raceId": "202610072504",
+  "riders": [
+    {
+      "number": 1,
+      "name": "一ノ瀬 匠",
+      "snum": "014267",
+      "style": "逃",
+      "score": "86.35",
+      "back": 9,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504"
+      }
+    },
+    {
+      "number": 2,
+      "name": "佐々木 省司",
+      "snum": "013748",
+      "style": "追",
+      "score": "91.88",
+      "back": 0,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504"
+      }
+    },
+    {
+      "number": 3,
+      "name": "布居 大地",
+      "snum": "015185",
+      "style": "逃",
+      "score": "85.13",
+      "back": 4,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504"
+      }
+    },
+    {
+      "number": 4,
+      "name": "川木 敬大",
+      "snum": "013645",
+      "style": "追",
+      "score": "86.50",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504"
+      }
+    },
+    {
+      "number": 5,
+      "name": "吉川 裕二",
+      "snum": "013817",
+      "style": "追",
+      "score": "85.61",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504"
+      }
+    },
+    {
+      "number": 6,
+      "name": "桶谷 明誉",
+      "snum": "014410",
+      "style": "追",
+      "score": "83.53",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504"
+      }
+    },
+    {
+      "number": 7,
+      "name": "高本 和也",
+      "snum": "015618",
+      "style": "逃",
+      "score": "89.81",
+      "back": 9,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610072504"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      5
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      6
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610072504"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-07T00:32:31.338Z"
+}

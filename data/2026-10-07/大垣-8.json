@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-07",
+  "venue": "大垣",
+  "race": 8,
+  "raceId": "202610074408",
+  "riders": [
+    {
+      "number": 1,
+      "name": "疋田 力也",
+      "snum": "015536",
+      "style": "両",
+      "score": "94.22",
+      "back": 4,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408"
+      }
+    },
+    {
+      "number": 2,
+      "name": "太刀川 一成",
+      "snum": "014819",
+      "style": "追",
+      "score": "91.22",
+      "back": 0,
+      "start": 14,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408"
+      }
+    },
+    {
+      "number": 3,
+      "name": "金田 涼馬",
+      "snum": "015594",
+      "style": "逃",
+      "score": "89.83",
+      "back": 12,
+      "start": 11,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408"
+      }
+    },
+    {
+      "number": 4,
+      "name": "菊谷 信一",
+      "snum": "014098",
+      "style": "追",
+      "score": "88.19",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408"
+      }
+    },
+    {
+      "number": 5,
+      "name": "丹波 孝佑",
+      "snum": "014674",
+      "style": "逃",
+      "score": "86.29",
+      "back": 14,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408"
+      }
+    },
+    {
+      "number": 6,
+      "name": "小浦 凪",
+      "snum": "015447",
+      "style": "両",
+      "score": "84.52",
+      "back": 3,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408"
+      }
+    },
+    {
+      "number": 7,
+      "name": "東 鉄也",
+      "snum": "013952",
+      "style": "両",
+      "score": "80.74",
+      "back": 3,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610074408"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610074408"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-07T00:33:20.018Z"
+}

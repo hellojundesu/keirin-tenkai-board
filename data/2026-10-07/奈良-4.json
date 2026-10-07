@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-07",
+  "venue": "奈良",
+  "race": 4,
+  "raceId": "202610075304",
+  "riders": [
+    {
+      "number": 1,
+      "name": "加藤 駿",
+      "snum": "015899",
+      "style": "逃",
+      "score": "89.14",
+      "back": 13,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304"
+      }
+    },
+    {
+      "number": 2,
+      "name": "阿久津 修",
+      "snum": "013924",
+      "style": "追",
+      "score": "88.14",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304"
+      }
+    },
+    {
+      "number": 3,
+      "name": "佐竹 和也",
+      "snum": "013589",
+      "style": "追",
+      "score": "87.79",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304"
+      }
+    },
+    {
+      "number": 4,
+      "name": "福田 要",
+      "snum": "015665",
+      "style": "両",
+      "score": "89.48",
+      "back": 1,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304"
+      }
+    },
+    {
+      "number": 5,
+      "name": "野木 義規",
+      "snum": "012708",
+      "style": "追",
+      "score": "82.17",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304"
+      }
+    },
+    {
+      "number": 6,
+      "name": "利川 寛太",
+      "snum": "015924",
+      "style": "逃",
+      "score": "80.67",
+      "back": 15,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304"
+      }
+    },
+    {
+      "number": 7,
+      "name": "小笹 隼人",
+      "snum": "015003",
+      "style": "両",
+      "score": "91.00",
+      "back": 1,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610075304"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      7
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610075304"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-07T00:32:54.695Z"
+}

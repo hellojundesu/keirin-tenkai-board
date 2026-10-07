@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-07",
+  "venue": "高知",
+  "race": 5,
+  "raceId": "202610077405",
+  "riders": [
+    {
+      "number": 1,
+      "name": "岡崎 克政",
+      "snum": "014257",
+      "style": "逃",
+      "score": "72.82",
+      "back": 20,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405"
+      }
+    },
+    {
+      "number": 2,
+      "name": "東 隆之",
+      "snum": "014855",
+      "style": "追",
+      "score": "69.14",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405"
+      }
+    },
+    {
+      "number": 3,
+      "name": "中野 楚樂",
+      "snum": "015959",
+      "style": "逃",
+      "score": "80.89",
+      "back": 9,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405"
+      }
+    },
+    {
+      "number": 4,
+      "name": "佐藤 和典",
+      "snum": "012586",
+      "style": "追",
+      "score": "77.41",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405"
+      }
+    },
+    {
+      "number": 5,
+      "name": "高嶋 一朗",
+      "snum": "011935",
+      "style": "追",
+      "score": "69.97",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405"
+      }
+    },
+    {
+      "number": 6,
+      "name": "小林 宏年",
+      "snum": "011142",
+      "style": "追",
+      "score": "67.38",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405"
+      }
+    },
+    {
+      "number": 7,
+      "name": "松田 直也",
+      "snum": "014272",
+      "style": "追",
+      "score": "70.43",
+      "back": 3,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610077405"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3,
+      4,
+      6
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      7
+    ],
+    [
+      2
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610077405"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-07T00:33:24.937Z"
+}

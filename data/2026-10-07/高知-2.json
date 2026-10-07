@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-07",
+  "venue": "高知",
+  "race": 2,
+  "raceId": "202610077402",
+  "riders": [
+    {
+      "number": 1,
+      "name": "宮本 龍一",
+      "snum": "014266",
+      "style": "追",
+      "score": "73.00",
+      "back": 0,
+      "start": 11,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402"
+      }
+    },
+    {
+      "number": 2,
+      "name": "黒崎 直行",
+      "snum": "011341",
+      "style": "追",
+      "score": "71.33",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402"
+      }
+    },
+    {
+      "number": 3,
+      "name": "野見 泰要",
+      "snum": "014880",
+      "style": "逃",
+      "score": "70.36",
+      "back": 17,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402"
+      }
+    },
+    {
+      "number": 4,
+      "name": "喜納 隆志",
+      "snum": "014275",
+      "style": "追",
+      "score": "68.68",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402"
+      }
+    },
+    {
+      "number": 5,
+      "name": "里見 恒平",
+      "snum": "014739",
+      "style": "逃",
+      "score": "78.33",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402"
+      }
+    },
+    {
+      "number": 6,
+      "name": "増成 富夫",
+      "snum": "012299",
+      "style": "逃",
+      "score": "67.88",
+      "back": 5,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402"
+      }
+    },
+    {
+      "number": 7,
+      "name": "森田 瑞基",
+      "snum": "016014",
+      "style": "逃",
+      "score": "76.89",
+      "back": 12,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610077402"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610077402"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-07T00:33:23.172Z"
+}

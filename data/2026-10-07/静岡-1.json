@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-07",
+  "venue": "静岡",
+  "race": 1,
+  "raceId": "202610073801",
+  "riders": [
+    {
+      "number": 1,
+      "name": "吉野 猛",
+      "snum": "012893",
+      "style": "追",
+      "score": "70.90",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801"
+      }
+    },
+    {
+      "number": 2,
+      "name": "野口 修平",
+      "snum": "014994",
+      "style": "逃",
+      "score": "76.67",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801"
+      }
+    },
+    {
+      "number": 3,
+      "name": "早坂 道義",
+      "snum": "013926",
+      "style": "追",
+      "score": "71.19",
+      "back": 0,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801"
+      }
+    },
+    {
+      "number": 4,
+      "name": "磯村 蓮太",
+      "snum": "015355",
+      "style": "逃",
+      "score": "68.10",
+      "back": 9,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801"
+      }
+    },
+    {
+      "number": 5,
+      "name": "竜門 孝宗",
+      "snum": "014483",
+      "style": "追",
+      "score": "68.67",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801"
+      }
+    },
+    {
+      "number": 6,
+      "name": "井上 典善",
+      "snum": "012277",
+      "style": "追",
+      "score": "63.78",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801"
+      }
+    },
+    {
+      "number": 7,
+      "name": "佐藤 譲士郎",
+      "snum": "015698",
+      "style": "逃",
+      "score": "77.21",
+      "back": 7,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610073801"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      1,
+      5
+    ],
+    [
+      7,
+      3,
+      2,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610073801"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-07T00:33:07.759Z"
+}

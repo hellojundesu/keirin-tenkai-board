@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-08",
+  "venue": "大宮",
+  "race": 9,
+  "raceId": "202610082509",
+  "riders": [
+    {
+      "number": 1,
+      "name": "栗山 和樹",
+      "snum": "015815",
+      "style": "逃",
+      "score": "105.80",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509"
+      }
+    },
+    {
+      "number": 2,
+      "name": "北井 佑季",
+      "snum": "015527",
+      "style": "逃",
+      "score": "105.44",
+      "back": 8,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509"
+      }
+    },
+    {
+      "number": 3,
+      "name": "川口 雄太",
+      "snum": "015197",
+      "style": "両",
+      "score": "102.17",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509"
+      }
+    },
+    {
+      "number": 4,
+      "name": "南 潤",
+      "snum": "015186",
+      "style": "逃",
+      "score": "104.44",
+      "back": 13,
+      "start": 11,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509"
+      }
+    },
+    {
+      "number": 5,
+      "name": "高市 訓但",
+      "snum": "014622",
+      "style": "追",
+      "score": "96.76",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509"
+      }
+    },
+    {
+      "number": 6,
+      "name": "前反 祐一郎",
+      "snum": "013438",
+      "style": "追",
+      "score": "95.79",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509"
+      }
+    },
+    {
+      "number": 7,
+      "name": "荒澤 貴史",
+      "snum": "013669",
+      "style": "追",
+      "score": "102.67",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082509"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      1
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      3,
+      5,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610082509"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-08T00:31:03.058Z"
+}

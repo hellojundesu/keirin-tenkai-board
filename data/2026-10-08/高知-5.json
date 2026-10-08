@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-08",
+  "venue": "高知",
+  "race": 5,
+  "raceId": "202610087405",
+  "riders": [
+    {
+      "number": 1,
+      "name": "才迫 勇馬",
+      "snum": "014487",
+      "style": "逃",
+      "score": "78.92",
+      "back": 18,
+      "start": 19,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405"
+      }
+    },
+    {
+      "number": 2,
+      "name": "森田 瑞基",
+      "snum": "016014",
+      "style": "逃",
+      "score": "76.89",
+      "back": 12,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405"
+      }
+    },
+    {
+      "number": 3,
+      "name": "大越 啓介",
+      "snum": "014578",
+      "style": "追",
+      "score": "73.94",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405"
+      }
+    },
+    {
+      "number": 4,
+      "name": "爲田 学",
+      "snum": "012507",
+      "style": "追",
+      "score": "69.79",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405"
+      }
+    },
+    {
+      "number": 5,
+      "name": "赤松 秀展",
+      "snum": "013063",
+      "style": "追",
+      "score": "72.67",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405"
+      }
+    },
+    {
+      "number": 6,
+      "name": "久保 将史",
+      "snum": "014463",
+      "style": "両",
+      "score": "64.40",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405"
+      }
+    },
+    {
+      "number": 7,
+      "name": "中野 楚樂",
+      "snum": "015959",
+      "style": "逃",
+      "score": "80.89",
+      "back": 9,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610087405"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610087405"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-08T00:31:47.509Z"
+}

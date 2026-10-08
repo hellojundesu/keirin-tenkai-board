@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-08",
+  "venue": "大宮",
+  "race": 7,
+  "raceId": "202610082507",
+  "riders": [
+    {
+      "number": 1,
+      "name": "菱田 浩二",
+      "snum": "014604",
+      "style": "逃",
+      "score": "97.45",
+      "back": 9,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507"
+      }
+    },
+    {
+      "number": 2,
+      "name": "阿部 将大",
+      "snum": "015474",
+      "style": "逃",
+      "score": "108.64",
+      "back": 5,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507"
+      }
+    },
+    {
+      "number": 3,
+      "name": "長谷部 翔",
+      "snum": "015097",
+      "style": "両",
+      "score": "98.30",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507"
+      }
+    },
+    {
+      "number": 4,
+      "name": "三谷 政史",
+      "snum": "014310",
+      "style": "追",
+      "score": "98.68",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507"
+      }
+    },
+    {
+      "number": 5,
+      "name": "山口 貴弘",
+      "snum": "014268",
+      "style": "追",
+      "score": "99.19",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507"
+      }
+    },
+    {
+      "number": 6,
+      "name": "徳丸 泰教",
+      "snum": "014481",
+      "style": "追",
+      "score": "94.24",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507"
+      }
+    },
+    {
+      "number": 7,
+      "name": "角田 光",
+      "snum": "015786",
+      "style": "逃",
+      "score": "95.58",
+      "back": 6,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082507"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      4,
+      6
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      7,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610082507"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-08T00:31:01.569Z"
+}

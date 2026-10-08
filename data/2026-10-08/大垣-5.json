@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-08",
+  "venue": "大垣",
+  "race": 5,
+  "raceId": "202610084405",
+  "riders": [
+    {
+      "number": 1,
+      "name": "秋末 蓮",
+      "snum": "015828",
+      "style": "逃",
+      "score": "86.71",
+      "back": 12,
+      "start": 11,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405"
+      }
+    },
+    {
+      "number": 2,
+      "name": "吉川 悟",
+      "snum": "013285",
+      "style": "追",
+      "score": "83.67",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405"
+      }
+    },
+    {
+      "number": 3,
+      "name": "梅原 大治",
+      "snum": "013417",
+      "style": "追",
+      "score": "83.56",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405"
+      }
+    },
+    {
+      "number": 4,
+      "name": "竹田 和幸",
+      "snum": "013196",
+      "style": "追",
+      "score": "83.29",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405"
+      }
+    },
+    {
+      "number": 5,
+      "name": "佐藤 明",
+      "snum": "013112",
+      "style": "追",
+      "score": "82.00",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405"
+      }
+    },
+    {
+      "number": 6,
+      "name": "阿部 宏之",
+      "snum": "013453",
+      "style": "追",
+      "score": "79.19",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405"
+      }
+    },
+    {
+      "number": 7,
+      "name": "阿久津 浩之",
+      "snum": "014366",
+      "style": "逃",
+      "score": "78.75",
+      "back": 7,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084405"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610084405"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-08T00:31:41.028Z"
+}

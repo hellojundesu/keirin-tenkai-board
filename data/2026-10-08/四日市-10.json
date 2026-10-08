@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-08",
+  "venue": "四日市",
+  "race": 10,
+  "raceId": "202610084810",
+  "riders": [
+    {
+      "number": 1,
+      "name": "吉本 卓仁",
+      "snum": "014045",
+      "style": "両",
+      "score": "101.91",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810"
+      }
+    },
+    {
+      "number": 2,
+      "name": "長田 龍拳",
+      "snum": "015440",
+      "style": "逃",
+      "score": "102.74",
+      "back": 10,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810"
+      }
+    },
+    {
+      "number": 3,
+      "name": "南部 翔大",
+      "snum": "015825",
+      "style": "逃",
+      "score": "102.36",
+      "back": 11,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810"
+      }
+    },
+    {
+      "number": 4,
+      "name": "立部 楓真",
+      "snum": "015385",
+      "style": "逃",
+      "score": "104.36",
+      "back": 9,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810"
+      }
+    },
+    {
+      "number": 5,
+      "name": "杉森 輝大",
+      "snum": "014930",
+      "style": "追",
+      "score": "107.70",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810"
+      }
+    },
+    {
+      "number": 6,
+      "name": "尾形 鉄馬",
+      "snum": "015036",
+      "style": "追",
+      "score": "101.47",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810"
+      }
+    },
+    {
+      "number": 7,
+      "name": "藤井 栄二",
+      "snum": "014767",
+      "style": "両",
+      "score": "102.55",
+      "back": 0,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084810"
+      }
+    }
+  ],
+  "lines": [
+    [
+      2,
+      5,
+      6
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      3,
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610084810"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-08T00:31:23.409Z"
+}

@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-08",
+  "venue": "大宮",
+  "race": 10,
+  "raceId": "202610082510",
+  "riders": [
+    {
+      "number": 1,
+      "name": "山田 雄大",
+      "snum": "015429",
+      "style": "逃",
+      "score": "89.00",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510"
+      }
+    },
+    {
+      "number": 2,
+      "name": "吉川 裕二",
+      "snum": "013817",
+      "style": "追",
+      "score": "85.61",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510"
+      }
+    },
+    {
+      "number": 3,
+      "name": "古賀 勝大",
+      "snum": "015365",
+      "style": "両",
+      "score": "96.00",
+      "back": 2,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510"
+      }
+    },
+    {
+      "number": 4,
+      "name": "久樹 克門",
+      "snum": "015285",
+      "style": "逃",
+      "score": "92.33",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510"
+      }
+    },
+    {
+      "number": 5,
+      "name": "布居 大地",
+      "snum": "015185",
+      "style": "逃",
+      "score": "85.13",
+      "back": 4,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510"
+      }
+    },
+    {
+      "number": 6,
+      "name": "江本 博明",
+      "snum": "014079",
+      "style": "追",
+      "score": "80.67",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510"
+      }
+    },
+    {
+      "number": 7,
+      "name": "一ノ瀬 匠",
+      "snum": "014267",
+      "style": "逃",
+      "score": "86.35",
+      "back": 9,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082510"
+      }
+    }
+  ],
+  "lines": [
+    [
+      5,
+      3
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      4
+    ],
+    [
+      7,
+      2
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610082510"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-08T00:31:03.615Z"
+}

@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-08",
+  "venue": "大垣",
+  "race": 2,
+  "raceId": "202610084402",
+  "riders": [
+    {
+      "number": 1,
+      "name": "藤縄 洋介",
+      "snum": "014033",
+      "style": "両",
+      "score": "71.08",
+      "back": 0,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402"
+      }
+    },
+    {
+      "number": 2,
+      "name": "瀧本 匡平",
+      "snum": "014595",
+      "style": "両",
+      "score": "69.48",
+      "back": 10,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402"
+      }
+    },
+    {
+      "number": 3,
+      "name": "志村 正洋",
+      "snum": "013109",
+      "style": "追",
+      "score": "69.40",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402"
+      }
+    },
+    {
+      "number": 4,
+      "name": "戸ノ下 太郎",
+      "snum": "013027",
+      "style": "追",
+      "score": "68.21",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402"
+      }
+    },
+    {
+      "number": 5,
+      "name": "亀井 道佳",
+      "snum": "013525",
+      "style": "追",
+      "score": "67.83",
+      "back": 0,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402"
+      }
+    },
+    {
+      "number": 6,
+      "name": "中嶋 響",
+      "snum": "015824",
+      "style": "逃",
+      "score": "64.56",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610084402"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610084402"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-08T00:31:39.558Z"
+}

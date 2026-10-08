@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-08",
+  "venue": "大宮",
+  "race": 6,
+  "raceId": "202610082506",
+  "riders": [
+    {
+      "number": 1,
+      "name": "山田 駿斗",
+      "snum": "015706",
+      "style": "逃",
+      "score": "102.00",
+      "back": 6,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506"
+      }
+    },
+    {
+      "number": 2,
+      "name": "伊藤 裕貴",
+      "snum": "014831",
+      "style": "両",
+      "score": "99.04",
+      "back": 3,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506"
+      }
+    },
+    {
+      "number": 3,
+      "name": "瀬戸 栄作",
+      "snum": "015130",
+      "style": "両",
+      "score": "95.45",
+      "back": 2,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506"
+      }
+    },
+    {
+      "number": 4,
+      "name": "明田 春喜",
+      "snum": "013976",
+      "style": "追",
+      "score": "96.39",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506"
+      }
+    },
+    {
+      "number": 5,
+      "name": "中原 航大",
+      "snum": "015727",
+      "style": "逃",
+      "score": "95.20",
+      "back": 11,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506"
+      }
+    },
+    {
+      "number": 6,
+      "name": "佐藤 成人",
+      "snum": "012688",
+      "style": "追",
+      "score": "94.08",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506"
+      }
+    },
+    {
+      "number": 7,
+      "name": "朝倉 佳弘",
+      "snum": "014071",
+      "style": "追",
+      "score": "98.41",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610082506"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      7,
+      4
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      5,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610082506"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-08T00:31:00.475Z"
+}

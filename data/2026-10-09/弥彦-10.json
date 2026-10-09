@@ -1,0 +1,173 @@
+{
+  "date": "2026-10-09",
+  "venue": "弥彦",
+  "race": 10,
+  "raceId": "202610092110",
+  "riders": [
+    {
+      "number": 1,
+      "name": "松浦 悠士",
+      "snum": "014681",
+      "style": "両",
+      "score": "115.23",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110"
+      }
+    },
+    {
+      "number": 2,
+      "name": "阿部 拓真",
+      "snum": "015035",
+      "style": "両",
+      "score": "114.44",
+      "back": 0,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110"
+      }
+    },
+    {
+      "number": 3,
+      "name": "荒井 崇博",
+      "snum": "013516",
+      "style": "両",
+      "score": "114.39",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110"
+      }
+    },
+    {
+      "number": 4,
+      "name": "河端 朋之",
+      "snum": "014484",
+      "style": "逃",
+      "score": "109.91",
+      "back": 11,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110"
+      }
+    },
+    {
+      "number": 5,
+      "name": "菊池 岳仁",
+      "snum": "015412",
+      "style": "逃",
+      "score": "112.53",
+      "back": 9,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110"
+      }
+    },
+    {
+      "number": 6,
+      "name": "真鍋 智寛",
+      "snum": "015647",
+      "style": "逃",
+      "score": "102.93",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110"
+      }
+    },
+    {
+      "number": 7,
+      "name": "嘉永 泰斗",
+      "snum": "015298",
+      "style": "逃",
+      "score": "114.35",
+      "back": 5,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110"
+      }
+    },
+    {
+      "number": 8,
+      "name": "室井 蓮太朗",
+      "snum": "015645",
+      "style": "両",
+      "score": "109.06",
+      "back": 3,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110"
+      }
+    },
+    {
+      "number": 9,
+      "name": "新山 響平",
+      "snum": "015034",
+      "style": "逃",
+      "score": "114.96",
+      "back": 14,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092110"
+      }
+    }
+  ],
+  "lines": [
+    [
+      9,
+      2
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      8,
+      6
+    ],
+    [
+      5
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610092110"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-09T00:34:15.990Z"
+}

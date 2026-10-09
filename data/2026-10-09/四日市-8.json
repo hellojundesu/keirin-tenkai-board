@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-09",
+  "venue": "四日市",
+  "race": 8,
+  "raceId": "202610094808",
+  "riders": [
+    {
+      "number": 1,
+      "name": "貴志 修己",
+      "snum": "015458",
+      "style": "逃",
+      "score": "101.54",
+      "back": 13,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808"
+      }
+    },
+    {
+      "number": 2,
+      "name": "堤 洋",
+      "snum": "012987",
+      "style": "追",
+      "score": "101.38",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808"
+      }
+    },
+    {
+      "number": 3,
+      "name": "堀内 俊介",
+      "snum": "015050",
+      "style": "両",
+      "score": "102.14",
+      "back": 6,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808"
+      }
+    },
+    {
+      "number": 4,
+      "name": "上田 裕和",
+      "snum": "013783",
+      "style": "追",
+      "score": "95.71",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808"
+      }
+    },
+    {
+      "number": 5,
+      "name": "尾形 鉄馬",
+      "snum": "015036",
+      "style": "追",
+      "score": "101.47",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808"
+      }
+    },
+    {
+      "number": 6,
+      "name": "根本 哲吏",
+      "snum": "014571",
+      "style": "両",
+      "score": "93.69",
+      "back": 2,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808"
+      }
+    },
+    {
+      "number": 7,
+      "name": "小川 三士郎",
+      "snum": "015837",
+      "style": "逃",
+      "score": "100.61",
+      "back": 9,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094808"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      4
+    ],
+    [
+      3,
+      6,
+      5
+    ],
+    [
+      7,
+      2
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610094808"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-09T00:34:36.327Z"
+}

@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-09",
+  "venue": "四日市",
+  "race": 6,
+  "raceId": "202610094806",
+  "riders": [
+    {
+      "number": 1,
+      "name": "土屋 裕二",
+      "snum": "013420",
+      "style": "追",
+      "score": "95.63",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806"
+      }
+    },
+    {
+      "number": 2,
+      "name": "小谷 実",
+      "snum": "014313",
+      "style": "追",
+      "score": "94.11",
+      "back": 0,
+      "start": 17,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806"
+      }
+    },
+    {
+      "number": 3,
+      "name": "成清 貴之",
+      "snum": "012813",
+      "style": "追",
+      "score": "97.92",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806"
+      }
+    },
+    {
+      "number": 4,
+      "name": "山本 拳也",
+      "snum": "015124",
+      "style": "追",
+      "score": "100.18",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806"
+      }
+    },
+    {
+      "number": 5,
+      "name": "酒井 拳蔵",
+      "snum": "015113",
+      "style": "両",
+      "score": "94.86",
+      "back": 2,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806"
+      }
+    },
+    {
+      "number": 6,
+      "name": "高橋 成英",
+      "snum": "014026",
+      "style": "両",
+      "score": "91.75",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806"
+      }
+    },
+    {
+      "number": 7,
+      "name": "植原 琢也",
+      "snum": "015244",
+      "style": "両",
+      "score": "95.00",
+      "back": 3,
+      "start": 14,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094806"
+      }
+    }
+  ],
+  "lines": [
+    [
+      7,
+      3,
+      1
+    ],
+    [
+      4
+    ],
+    [
+      5,
+      2,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610094806"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-09T00:34:34.941Z"
+}

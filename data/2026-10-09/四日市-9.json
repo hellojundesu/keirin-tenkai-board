@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-09",
+  "venue": "四日市",
+  "race": 9,
+  "raceId": "202610094809",
+  "riders": [
+    {
+      "number": 1,
+      "name": "照井 拓成",
+      "snum": "015326",
+      "style": "両",
+      "score": "102.27",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809"
+      }
+    },
+    {
+      "number": 2,
+      "name": "吉本 卓仁",
+      "snum": "014045",
+      "style": "両",
+      "score": "101.91",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809"
+      }
+    },
+    {
+      "number": 3,
+      "name": "畑段 嵐士",
+      "snum": "015004",
+      "style": "追",
+      "score": "103.27",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809"
+      }
+    },
+    {
+      "number": 4,
+      "name": "塩島 嵩一朗",
+      "snum": "015807",
+      "style": "逃",
+      "score": "102.69",
+      "back": 14,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809"
+      }
+    },
+    {
+      "number": 5,
+      "name": "南部 翔大",
+      "snum": "015825",
+      "style": "逃",
+      "score": "102.36",
+      "back": 11,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809"
+      }
+    },
+    {
+      "number": 6,
+      "name": "高橋 昇平",
+      "snum": "014729",
+      "style": "追",
+      "score": "98.65",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809"
+      }
+    },
+    {
+      "number": 7,
+      "name": "才迫 開",
+      "snum": "014883",
+      "style": "両",
+      "score": "101.85",
+      "back": 4,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610094809"
+      }
+    }
+  ],
+  "lines": [
+    [
+      5,
+      3
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      1
+    ],
+    [
+      4,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610094809"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-09T00:34:37.006Z"
+}

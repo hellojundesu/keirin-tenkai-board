@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-09",
+  "venue": "奈良",
+  "race": 2,
+  "raceId": "202610095302",
+  "riders": [
+    {
+      "number": 1,
+      "name": "藤井 準也",
+      "snum": "015000",
+      "style": "両",
+      "score": "76.33",
+      "back": 3,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302"
+      }
+    },
+    {
+      "number": 2,
+      "name": "加藤 昌平",
+      "snum": "013366",
+      "style": "追",
+      "score": "73.65",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302"
+      }
+    },
+    {
+      "number": 3,
+      "name": "楠本 政明",
+      "snum": "015739",
+      "style": "逃",
+      "score": "70.57",
+      "back": 5,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302"
+      }
+    },
+    {
+      "number": 4,
+      "name": "黒川 渉",
+      "snum": "014979",
+      "style": "両",
+      "score": "70.20",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302"
+      }
+    },
+    {
+      "number": 5,
+      "name": "土居 佑次",
+      "snum": "015286",
+      "style": "逃",
+      "score": "69.79",
+      "back": 3,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302"
+      }
+    },
+    {
+      "number": 6,
+      "name": "池上 孝之",
+      "snum": "012530",
+      "style": "追",
+      "score": "68.55",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302"
+      }
+    },
+    {
+      "number": 7,
+      "name": "取鳥 敬一",
+      "snum": "012537",
+      "style": "追",
+      "score": "67.10",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610095302"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3,
+      2
+    ],
+    [
+      1,
+      4,
+      6
+    ],
+    [
+      5,
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610095302"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-09T00:34:59.655Z"
+}

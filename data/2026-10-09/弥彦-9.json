@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-09",
+  "venue": "弥彦",
+  "race": 9,
+  "raceId": "202610092109",
+  "riders": [
+    {
+      "number": 1,
+      "name": "中釜 章成",
+      "snum": "015272",
+      "style": "逃",
+      "score": "109.69",
+      "back": 7,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109"
+      }
+    },
+    {
+      "number": 2,
+      "name": "阿部 力也",
+      "snum": "014794",
+      "style": "追",
+      "score": "113.04",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109"
+      }
+    },
+    {
+      "number": 3,
+      "name": "小倉 竜二",
+      "snum": "013140",
+      "style": "追",
+      "score": "110.28",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109"
+      }
+    },
+    {
+      "number": 4,
+      "name": "松崎 広太",
+      "snum": "015692",
+      "style": "逃",
+      "score": "107.43",
+      "back": 19,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109"
+      }
+    },
+    {
+      "number": 5,
+      "name": "村上 博幸",
+      "snum": "013791",
+      "style": "追",
+      "score": "110.00",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109"
+      }
+    },
+    {
+      "number": 6,
+      "name": "坂本 貴史",
+      "snum": "014348",
+      "style": "両",
+      "score": "101.58",
+      "back": 3,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109"
+      }
+    },
+    {
+      "number": 7,
+      "name": "雨谷 一樹",
+      "snum": "014505",
+      "style": "両",
+      "score": "109.83",
+      "back": 0,
+      "start": 12,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109"
+      }
+    },
+    {
+      "number": 8,
+      "name": "椎木尾 拓哉",
+      "snum": "014318",
+      "style": "追",
+      "score": "105.39",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109"
+      }
+    },
+    {
+      "number": 9,
+      "name": "石原 颯",
+      "snum": "015465",
+      "style": "逃",
+      "score": "115.33",
+      "back": 12,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610092109"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      5,
+      8
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      9,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610092109"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-09T00:34:14.768Z"
+}

@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-09",
+  "venue": "武雄",
+  "race": 4,
+  "raceId": "202610098404",
+  "riders": [
+    {
+      "number": 1,
+      "name": "秋永 昂人",
+      "snum": "014686",
+      "style": "追",
+      "score": "70.58",
+      "back": 1,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404"
+      }
+    },
+    {
+      "number": 2,
+      "name": "清家 大夢",
+      "snum": "016005",
+      "style": "逃",
+      "score": "68.82",
+      "back": 13,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404"
+      }
+    },
+    {
+      "number": 3,
+      "name": "桜井 雄太",
+      "snum": "014829",
+      "style": "逃",
+      "score": "75.53",
+      "back": 4,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404"
+      }
+    },
+    {
+      "number": 4,
+      "name": "黒木 誠一",
+      "snum": "011715",
+      "style": "両",
+      "score": "68.13",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404"
+      }
+    },
+    {
+      "number": 5,
+      "name": "藤野 一良",
+      "snum": "013131",
+      "style": "追",
+      "score": "77.08",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404"
+      }
+    },
+    {
+      "number": 6,
+      "name": "吉田 悟",
+      "snum": "015571",
+      "style": "逃",
+      "score": "66.89",
+      "back": 6,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404"
+      }
+    },
+    {
+      "number": 7,
+      "name": "住村 実",
+      "snum": "013505",
+      "style": "追",
+      "score": "68.00",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610098404"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610098404"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-09T00:35:14.133Z"
+}

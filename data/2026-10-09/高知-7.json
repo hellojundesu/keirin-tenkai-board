@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-09",
+  "venue": "高知",
+  "race": 7,
+  "raceId": "202610097407",
+  "riders": [
+    {
+      "number": 1,
+      "name": "松本 悠平",
+      "snum": "016004",
+      "style": "逃",
+      "score": "80.89",
+      "back": 13,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407"
+      }
+    },
+    {
+      "number": 2,
+      "name": "沢田 桂太郎",
+      "snum": "016019",
+      "style": "逃",
+      "score": "81.33",
+      "back": 19,
+      "start": 16,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407"
+      }
+    },
+    {
+      "number": 3,
+      "name": "柳沼 鼓太朗",
+      "snum": "015964",
+      "style": "逃",
+      "score": "77.90",
+      "back": 10,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407"
+      }
+    },
+    {
+      "number": 4,
+      "name": "佐藤 和典",
+      "snum": "012586",
+      "style": "追",
+      "score": "77.41",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407"
+      }
+    },
+    {
+      "number": 5,
+      "name": "中野 楚樂",
+      "snum": "015959",
+      "style": "逃",
+      "score": "80.89",
+      "back": 9,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407"
+      }
+    },
+    {
+      "number": 6,
+      "name": "大越 啓介",
+      "snum": "014578",
+      "style": "追",
+      "score": "73.94",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407"
+      }
+    },
+    {
+      "number": 7,
+      "name": "才迫 勇馬",
+      "snum": "014487",
+      "style": "逃",
+      "score": "78.92",
+      "back": 18,
+      "start": 19,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610097407"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      7
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      2
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610097407"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-09T00:35:10.269Z"
+}

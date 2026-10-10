@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-10",
+  "venue": "富山",
+  "race": 10,
+  "raceId": "202610104610",
+  "riders": [
+    {
+      "number": 1,
+      "name": "佐藤 博紀",
+      "snum": "014499",
+      "style": "両",
+      "score": "103.30",
+      "back": 1,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610"
+      }
+    },
+    {
+      "number": 2,
+      "name": "上田 尭弥",
+      "snum": "015296",
+      "style": "逃",
+      "score": "99.88",
+      "back": 6,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610"
+      }
+    },
+    {
+      "number": 3,
+      "name": "山中 貴雄",
+      "snum": "014108",
+      "style": "追",
+      "score": "98.13",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610"
+      }
+    },
+    {
+      "number": 4,
+      "name": "一戸 康宏",
+      "snum": "014863",
+      "style": "両",
+      "score": "98.39",
+      "back": 5,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610"
+      }
+    },
+    {
+      "number": 5,
+      "name": "青木 瑞樹",
+      "snum": "015725",
+      "style": "逃",
+      "score": "103.64",
+      "back": 14,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610"
+      }
+    },
+    {
+      "number": 6,
+      "name": "網谷 竜次",
+      "snum": "014186",
+      "style": "追",
+      "score": "96.58",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610"
+      }
+    },
+    {
+      "number": 7,
+      "name": "市橋 司優人",
+      "snum": "014955",
+      "style": "両",
+      "score": "102.52",
+      "back": 3,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104610"
+      }
+    }
+  ],
+  "lines": [
+    [
+      2,
+      7
+    ],
+    [
+      5,
+      3,
+      6
+    ],
+    [
+      1
+    ],
+    [
+      4
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610104610"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-10T00:32:42.381Z"
+}

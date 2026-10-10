@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-10",
+  "venue": "奈良",
+  "race": 3,
+  "raceId": "202610105303",
+  "riders": [
+    {
+      "number": 1,
+      "name": "渡邊 諒馬",
+      "snum": "016007",
+      "style": "逃",
+      "score": "79.10",
+      "back": 5,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303"
+      }
+    },
+    {
+      "number": 2,
+      "name": "宮崎 一彰",
+      "snum": "014778",
+      "style": "追",
+      "score": "76.59",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303"
+      }
+    },
+    {
+      "number": 3,
+      "name": "松本 大地",
+      "snum": "013451",
+      "style": "追",
+      "score": "76.37",
+      "back": 1,
+      "start": 18,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303"
+      }
+    },
+    {
+      "number": 4,
+      "name": "加藤 大輔",
+      "snum": "013897",
+      "style": "追",
+      "score": "73.50",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303"
+      }
+    },
+    {
+      "number": 5,
+      "name": "古川 大輔",
+      "snum": "014780",
+      "style": "両",
+      "score": "72.22",
+      "back": 12,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303"
+      }
+    },
+    {
+      "number": 6,
+      "name": "楠本 政明",
+      "snum": "015739",
+      "style": "逃",
+      "score": "70.57",
+      "back": 5,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303"
+      }
+    },
+    {
+      "number": 7,
+      "name": "坂本 智哉",
+      "snum": "013492",
+      "style": "追",
+      "score": "67.57",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610105303"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610105303"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-10T00:33:03.447Z"
+}

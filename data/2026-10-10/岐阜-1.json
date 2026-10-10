@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-10",
+  "venue": "岐阜",
+  "race": 1,
+  "raceId": "202610104301",
+  "riders": [
+    {
+      "number": 1,
+      "name": "臼井 昌巨",
+      "snum": "014027",
+      "style": "両",
+      "score": "71.55",
+      "back": 4,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301"
+      }
+    },
+    {
+      "number": 2,
+      "name": "大竹 慎吾",
+      "snum": "011198",
+      "style": "追",
+      "score": "65.33",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301"
+      }
+    },
+    {
+      "number": 3,
+      "name": "川西 亮介",
+      "snum": "013794",
+      "style": "追",
+      "score": "67.24",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301"
+      }
+    },
+    {
+      "number": 4,
+      "name": "鰐渕 正利",
+      "snum": "012208",
+      "style": "追",
+      "score": "73.10",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301"
+      }
+    },
+    {
+      "number": 5,
+      "name": "中西 勇",
+      "snum": "015841",
+      "style": "逃",
+      "score": "76.17",
+      "back": 11,
+      "start": 18,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301"
+      }
+    },
+    {
+      "number": 6,
+      "name": "増田 鉄男",
+      "snum": "012913",
+      "style": "追",
+      "score": "64.75",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301"
+      }
+    },
+    {
+      "number": 7,
+      "name": "松丸 裕紀",
+      "snum": "013767",
+      "style": "追",
+      "score": "72.23",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104301"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610104301"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-10T00:32:53.331Z"
+}

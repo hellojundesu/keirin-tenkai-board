@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-10",
+  "venue": "富山",
+  "race": 6,
+  "raceId": "202610104606",
+  "riders": [
+    {
+      "number": 1,
+      "name": "鈴木 奈央",
+      "snum": "015144",
+      "style": "両",
+      "score": "56.95",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606"
+      }
+    },
+    {
+      "number": 2,
+      "name": "森 この芽",
+      "snum": "016037",
+      "style": "両",
+      "score": "45.14",
+      "back": 2,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606"
+      }
+    },
+    {
+      "number": 3,
+      "name": "溝口 香奈",
+      "snum": "015075",
+      "style": "追",
+      "score": "46.67",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606"
+      }
+    },
+    {
+      "number": 4,
+      "name": "杉浦 菜留",
+      "snum": "015490",
+      "style": "両",
+      "score": "52.26",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606"
+      }
+    },
+    {
+      "number": 5,
+      "name": "奥井 迪",
+      "snum": "015020",
+      "style": "逃",
+      "score": "54.19",
+      "back": 2,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606"
+      }
+    },
+    {
+      "number": 6,
+      "name": "新井 美菜",
+      "snum": "015397",
+      "style": "追",
+      "score": "47.44",
+      "back": 2,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606"
+      }
+    },
+    {
+      "number": 7,
+      "name": "成海 綾香",
+      "snum": "015957",
+      "style": "両",
+      "score": "50.12",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104606"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610104606"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-10T00:32:39.787Z"
+}

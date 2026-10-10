@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-10",
+  "venue": "岐阜",
+  "race": 4,
+  "raceId": "202610104304",
+  "riders": [
+    {
+      "number": 1,
+      "name": "篠田 樹",
+      "snum": "015295",
+      "style": "逃",
+      "score": "69.20",
+      "back": 9,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304"
+      }
+    },
+    {
+      "number": 2,
+      "name": "陶器 一馬",
+      "snum": "013796",
+      "style": "追",
+      "score": "71.21",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304"
+      }
+    },
+    {
+      "number": 3,
+      "name": "吉岡 竜太",
+      "snum": "016003",
+      "style": "逃",
+      "score": "79.43",
+      "back": 16,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304"
+      }
+    },
+    {
+      "number": 4,
+      "name": "安達 豪太",
+      "snum": "015912",
+      "style": "逃",
+      "score": "70.50",
+      "back": 4,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304"
+      }
+    },
+    {
+      "number": 5,
+      "name": "小川 巧",
+      "snum": "011417",
+      "style": "追",
+      "score": "73.58",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304"
+      }
+    },
+    {
+      "number": 6,
+      "name": "重 一徳",
+      "snum": "011451",
+      "style": "追",
+      "score": "67.38",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304"
+      }
+    },
+    {
+      "number": 7,
+      "name": "梶原 秀庸",
+      "snum": "013128",
+      "style": "追",
+      "score": "69.85",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610104304"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      2,
+      7
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      1,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610104304"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-10T00:32:55.438Z"
+}

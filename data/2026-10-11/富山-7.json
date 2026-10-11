@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-11",
+  "venue": "富山",
+  "race": 7,
+  "raceId": "202610114607",
+  "riders": [
+    {
+      "number": 1,
+      "name": "奥井 迪",
+      "snum": "015020",
+      "style": "逃",
+      "score": "54.19",
+      "back": 2,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607"
+      }
+    },
+    {
+      "number": 2,
+      "name": "今西 瑠花",
+      "snum": "015951",
+      "style": "両",
+      "score": "47.07",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607"
+      }
+    },
+    {
+      "number": 3,
+      "name": "北岡 マリア",
+      "snum": "015947",
+      "style": "両",
+      "score": "56.14",
+      "back": 3,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607"
+      }
+    },
+    {
+      "number": 4,
+      "name": "溝口 香奈",
+      "snum": "015075",
+      "style": "追",
+      "score": "46.67",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607"
+      }
+    },
+    {
+      "number": 5,
+      "name": "杉浦 菜留",
+      "snum": "015490",
+      "style": "両",
+      "score": "52.26",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607"
+      }
+    },
+    {
+      "number": 6,
+      "name": "蛯原 杏奈",
+      "snum": "015573",
+      "style": "追",
+      "score": "50.50",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607"
+      }
+    },
+    {
+      "number": 7,
+      "name": "森 この芽",
+      "snum": "016037",
+      "style": "両",
+      "score": "45.14",
+      "back": 2,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610114607"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610114607"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-11T00:31:09.414Z"
+}

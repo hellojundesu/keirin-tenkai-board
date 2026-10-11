@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-11",
+  "venue": "弥彦",
+  "race": 8,
+  "raceId": "202610112108",
+  "riders": [
+    {
+      "number": 1,
+      "name": "山田 英明",
+      "snum": "014047",
+      "style": "両",
+      "score": "112.93",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108"
+      }
+    },
+    {
+      "number": 2,
+      "name": "浅井 康太",
+      "snum": "014089",
+      "style": "両",
+      "score": "114.29",
+      "back": 1,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108"
+      }
+    },
+    {
+      "number": 3,
+      "name": "嶋津 拓弥",
+      "snum": "014935",
+      "style": "追",
+      "score": "111.33",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108"
+      }
+    },
+    {
+      "number": 4,
+      "name": "河端 朋之",
+      "snum": "014484",
+      "style": "逃",
+      "score": "109.91",
+      "back": 11,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108"
+      }
+    },
+    {
+      "number": 5,
+      "name": "小原 太樹",
+      "snum": "014462",
+      "style": "追",
+      "score": "112.85",
+      "back": 1,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108"
+      }
+    },
+    {
+      "number": 6,
+      "name": "小原 佑太",
+      "snum": "015324",
+      "style": "逃",
+      "score": "105.67",
+      "back": 15,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108"
+      }
+    },
+    {
+      "number": 7,
+      "name": "山口 拳矢",
+      "snum": "015451",
+      "style": "両",
+      "score": "115.27",
+      "back": 3,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108"
+      }
+    },
+    {
+      "number": 8,
+      "name": "山形 一気",
+      "snum": "014554",
+      "style": "追",
+      "score": "107.50",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108"
+      }
+    },
+    {
+      "number": 9,
+      "name": "伊藤 旭",
+      "snum": "015475",
+      "style": "両",
+      "score": "109.94",
+      "back": 3,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112108"
+      }
+    }
+  ],
+  "lines": [
+    [
+      6,
+      5,
+      3
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      4,
+      8
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610112108"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-11T00:30:59.165Z"
+}

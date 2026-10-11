@@ -1,0 +1,173 @@
+{
+  "date": "2026-10-11",
+  "venue": "弥彦",
+  "race": 10,
+  "raceId": "202610112110",
+  "riders": [
+    {
+      "number": 1,
+      "name": "脇本 雄太",
+      "snum": "014396",
+      "style": "逃",
+      "score": "114.53",
+      "back": 2,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110"
+      }
+    },
+    {
+      "number": 2,
+      "name": "荒井 崇博",
+      "snum": "013516",
+      "style": "両",
+      "score": "114.39",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110"
+      }
+    },
+    {
+      "number": 3,
+      "name": "吉田 拓矢",
+      "snum": "015039",
+      "style": "両",
+      "score": "120.79",
+      "back": 2,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110"
+      }
+    },
+    {
+      "number": 4,
+      "name": "村上 博幸",
+      "snum": "013791",
+      "style": "追",
+      "score": "110.00",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110"
+      }
+    },
+    {
+      "number": 5,
+      "name": "深谷 知広",
+      "snum": "014534",
+      "style": "逃",
+      "score": "116.27",
+      "back": 9,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110"
+      }
+    },
+    {
+      "number": 6,
+      "name": "木村 皆斗",
+      "snum": "015516",
+      "style": "逃",
+      "score": "108.57",
+      "back": 14,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110"
+      }
+    },
+    {
+      "number": 7,
+      "name": "佐々木 眞也",
+      "snum": "015439",
+      "style": "両",
+      "score": "110.80",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110"
+      }
+    },
+    {
+      "number": 8,
+      "name": "室井 蓮太朗",
+      "snum": "015645",
+      "style": "両",
+      "score": "109.06",
+      "back": 3,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110"
+      }
+    },
+    {
+      "number": 9,
+      "name": "嘉永 泰斗",
+      "snum": "015298",
+      "style": "逃",
+      "score": "114.35",
+      "back": 5,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610112110"
+      }
+    }
+  ],
+  "lines": [
+    [
+      5,
+      7
+    ],
+    [
+      9,
+      2
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      8
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610112110"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-11T00:31:00.686Z"
+}

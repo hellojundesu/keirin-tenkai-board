@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-11",
+  "venue": "奈良",
+  "race": 1,
+  "raceId": "202610115301",
+  "riders": [
+    {
+      "number": 1,
+      "name": "古川 大輔",
+      "snum": "014780",
+      "style": "両",
+      "score": "72.22",
+      "back": 12,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301"
+      }
+    },
+    {
+      "number": 2,
+      "name": "中嶋 樹",
+      "snum": "015542",
+      "style": "逃",
+      "score": "69.17",
+      "back": 6,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301"
+      }
+    },
+    {
+      "number": 3,
+      "name": "古閑 良介",
+      "snum": "012847",
+      "style": "追",
+      "score": "68.67",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301"
+      }
+    },
+    {
+      "number": 4,
+      "name": "池上 孝之",
+      "snum": "012530",
+      "style": "追",
+      "score": "68.55",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301"
+      }
+    },
+    {
+      "number": 5,
+      "name": "古田 義明",
+      "snum": "013272",
+      "style": "追",
+      "score": "67.48",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301"
+      }
+    },
+    {
+      "number": 6,
+      "name": "取鳥 敬一",
+      "snum": "012537",
+      "style": "追",
+      "score": "67.10",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610115301"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610115301"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-11T00:31:40.975Z"
+}

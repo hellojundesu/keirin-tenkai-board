@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-11",
+  "venue": "奈良",
+  "race": 6,
+  "raceId": "202610115306",
+  "riders": [
+    {
+      "number": 1,
+      "name": "金ヶ江 勇気",
+      "snum": "015208",
+      "style": "両",
+      "score": "93.07",
+      "back": 1,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306"
+      }
+    },
+    {
+      "number": 2,
+      "name": "西村 豊",
+      "snum": "013640",
+      "style": "追",
+      "score": "91.06",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306"
+      }
+    },
+    {
+      "number": 3,
+      "name": "上野 恭哉",
+      "snum": "015556",
+      "style": "両",
+      "score": "89.58",
+      "back": 5,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306"
+      }
+    },
+    {
+      "number": 4,
+      "name": "森崎 英登",
+      "snum": "015812",
+      "style": "逃",
+      "score": "85.44",
+      "back": 16,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306"
+      }
+    },
+    {
+      "number": 5,
+      "name": "峰重 祐之介",
+      "snum": "014843",
+      "style": "追",
+      "score": "84.46",
+      "back": 0,
+      "start": 12,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306"
+      }
+    },
+    {
+      "number": 6,
+      "name": "山本 康旗",
+      "snum": "015933",
+      "style": "逃",
+      "score": "82.00",
+      "back": 8,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306"
+      }
+    },
+    {
+      "number": 7,
+      "name": "茅野 寛史",
+      "snum": "014789",
+      "style": "追",
+      "score": "80.00",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610115306"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610115306"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-11T00:31:44.186Z"
+}

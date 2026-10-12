@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-12",
+  "venue": "富山",
+  "race": 6,
+  "raceId": "202610124606",
+  "riders": [
+    {
+      "number": 1,
+      "name": "幸田 望夢",
+      "snum": "015340",
+      "style": "逃",
+      "score": "97.04",
+      "back": 7,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606"
+      }
+    },
+    {
+      "number": 2,
+      "name": "吉川 起也",
+      "snum": "014248",
+      "style": "両",
+      "score": "98.31",
+      "back": 3,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606"
+      }
+    },
+    {
+      "number": 3,
+      "name": "張野 幸聖",
+      "snum": "015366",
+      "style": "逃",
+      "score": "96.78",
+      "back": 4,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606"
+      }
+    },
+    {
+      "number": 4,
+      "name": "市橋 司優人",
+      "snum": "014955",
+      "style": "両",
+      "score": "102.52",
+      "back": 3,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606"
+      }
+    },
+    {
+      "number": 5,
+      "name": "柿沼 信也",
+      "snum": "014147",
+      "style": "追",
+      "score": "96.80",
+      "back": 0,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606"
+      }
+    },
+    {
+      "number": 6,
+      "name": "長屋 秀明",
+      "snum": "015448",
+      "style": "逃",
+      "score": "94.58",
+      "back": 3,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606"
+      }
+    },
+    {
+      "number": 7,
+      "name": "水谷 好宏",
+      "snum": "014309",
+      "style": "両",
+      "score": "96.88",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610124606"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      5
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610124606"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-12T00:33:33.951Z"
+}

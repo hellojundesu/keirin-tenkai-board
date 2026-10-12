@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-12",
+  "venue": "いわき平",
+  "race": 1,
+  "raceId": "202610121301",
+  "riders": [
+    {
+      "number": 1,
+      "name": "石井 貴子",
+      "snum": "015023",
+      "style": "両",
+      "score": "57.24",
+      "back": 3,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301"
+      }
+    },
+    {
+      "number": 2,
+      "name": "當銘 直美",
+      "snum": "015308",
+      "style": "両",
+      "score": "54.43",
+      "back": 4,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301"
+      }
+    },
+    {
+      "number": 3,
+      "name": "林 真奈美",
+      "snum": "015153",
+      "style": "両",
+      "score": "53.38",
+      "back": 3,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301"
+      }
+    },
+    {
+      "number": 4,
+      "name": "藤巻 絵里佳",
+      "snum": "015134",
+      "style": "追",
+      "score": "49.87",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301"
+      }
+    },
+    {
+      "number": 5,
+      "name": "北津留 千羽",
+      "snum": "015954",
+      "style": "両",
+      "score": "49.43",
+      "back": 3,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301"
+      }
+    },
+    {
+      "number": 6,
+      "name": "栗山 百花",
+      "snum": "016032",
+      "style": "両",
+      "score": "49.23",
+      "back": 6,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301"
+      }
+    },
+    {
+      "number": 7,
+      "name": "高橋 朋恵",
+      "snum": "015082",
+      "style": "追",
+      "score": "49.07",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610121301"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610121301"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-12T00:33:50.635Z"
+}

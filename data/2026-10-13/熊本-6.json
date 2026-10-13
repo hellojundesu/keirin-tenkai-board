@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-13",
+  "venue": "熊本",
+  "race": 6,
+  "raceId": "202610138706",
+  "riders": [
+    {
+      "number": 1,
+      "name": "山崎 駿哉",
+      "snum": "015279",
+      "style": "逃",
+      "score": "87.83",
+      "back": 8,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706"
+      }
+    },
+    {
+      "number": 2,
+      "name": "山田 哲也",
+      "snum": "014749",
+      "style": "追",
+      "score": "84.00",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706"
+      }
+    },
+    {
+      "number": 3,
+      "name": "村瀬 大和",
+      "snum": "015538",
+      "style": "逃",
+      "score": "83.70",
+      "back": 11,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706"
+      }
+    },
+    {
+      "number": 4,
+      "name": "園田 鉄兵",
+      "snum": "014344",
+      "style": "追",
+      "score": "82.44",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706"
+      }
+    },
+    {
+      "number": 5,
+      "name": "富安 保充",
+      "snum": "014169",
+      "style": "追",
+      "score": "82.00",
+      "back": 1,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706"
+      }
+    },
+    {
+      "number": 6,
+      "name": "河村 章憲",
+      "snum": "013580",
+      "style": "追",
+      "score": "81.12",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706"
+      }
+    },
+    {
+      "number": 7,
+      "name": "屋良 朝春",
+      "snum": "014374",
+      "style": "両",
+      "score": "80.32",
+      "back": 4,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610138706"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610138706"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-13T00:35:45.143Z"
+}

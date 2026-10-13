@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-13",
+  "venue": "いわき平",
+  "race": 3,
+  "raceId": "202610131303",
+  "riders": [
+    {
+      "number": 1,
+      "name": "泉 文人",
+      "snum": "014717",
+      "style": "両",
+      "score": "86.32",
+      "back": 6,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303"
+      }
+    },
+    {
+      "number": 2,
+      "name": "川田 忍",
+      "snum": "013854",
+      "style": "両",
+      "score": "85.44",
+      "back": 2,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303"
+      }
+    },
+    {
+      "number": 3,
+      "name": "巴 直也",
+      "snum": "014867",
+      "style": "追",
+      "score": "84.90",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303"
+      }
+    },
+    {
+      "number": 4,
+      "name": "高谷 雅彦",
+      "snum": "012336",
+      "style": "両",
+      "score": "84.76",
+      "back": 5,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303"
+      }
+    },
+    {
+      "number": 5,
+      "name": "小林 裕一朗",
+      "snum": "015167",
+      "style": "両",
+      "score": "79.17",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303"
+      }
+    },
+    {
+      "number": 6,
+      "name": "福森 慎太郎",
+      "snum": "013629",
+      "style": "逃",
+      "score": "78.42",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303"
+      }
+    },
+    {
+      "number": 7,
+      "name": "松山 正和",
+      "snum": "013039",
+      "style": "追",
+      "score": "77.88",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610131303"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610131303"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-13T00:35:19.856Z"
+}

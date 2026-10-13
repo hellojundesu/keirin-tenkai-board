@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-13",
+  "venue": "熊本",
+  "race": 9,
+  "raceId": "202610138709",
+  "riders": [
+    {
+      "number": 1,
+      "name": "小玉 拓真",
+      "snum": "014679",
+      "style": "両",
+      "score": "96.81",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709"
+      }
+    },
+    {
+      "number": 2,
+      "name": "桑原 亮",
+      "snum": "014194",
+      "style": "追",
+      "score": "92.29",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709"
+      }
+    },
+    {
+      "number": 3,
+      "name": "谷口 力也",
+      "snum": "015569",
+      "style": "逃",
+      "score": "89.50",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709"
+      }
+    },
+    {
+      "number": 4,
+      "name": "下岡 優季",
+      "snum": "014997",
+      "style": "逃",
+      "score": "89.38",
+      "back": 21,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709"
+      }
+    },
+    {
+      "number": 5,
+      "name": "松下 綾馬",
+      "snum": "015639",
+      "style": "逃",
+      "score": "88.70",
+      "back": 21,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709"
+      }
+    },
+    {
+      "number": 6,
+      "name": "工藤 文彦",
+      "snum": "014612",
+      "style": "追",
+      "score": "88.38",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709"
+      }
+    },
+    {
+      "number": 7,
+      "name": "小林 卓人",
+      "snum": "013283",
+      "style": "追",
+      "score": "88.08",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610138709"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610138709"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-13T00:35:47.077Z"
+}

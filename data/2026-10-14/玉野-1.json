@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-14",
+  "venue": "玉野",
+  "race": 1,
+  "raceId": "202610146101",
+  "riders": [
+    {
+      "number": 1,
+      "name": "平山 優太",
+      "snum": "015515",
+      "style": "両",
+      "score": "80.21",
+      "back": 5,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101"
+      }
+    },
+    {
+      "number": 2,
+      "name": "佐野 洋継",
+      "snum": "014603",
+      "style": "両",
+      "score": "79.04",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101"
+      }
+    },
+    {
+      "number": 3,
+      "name": "佐野 恭太",
+      "snum": "014387",
+      "style": "両",
+      "score": "83.77",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101"
+      }
+    },
+    {
+      "number": 4,
+      "name": "添田 龍児",
+      "snum": "015617",
+      "style": "逃",
+      "score": "85.53",
+      "back": 16,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101"
+      }
+    },
+    {
+      "number": 5,
+      "name": "眞砂 英作",
+      "snum": "015642",
+      "style": "逃",
+      "score": "84.04",
+      "back": 9,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101"
+      }
+    },
+    {
+      "number": 6,
+      "name": "篠崎 高志",
+      "snum": "012719",
+      "style": "追",
+      "score": "78.42",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101"
+      }
+    },
+    {
+      "number": 7,
+      "name": "佐々木 孝司",
+      "snum": "013668",
+      "style": "逃",
+      "score": "79.78",
+      "back": 10,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610146101"
+      }
+    }
+  ],
+  "lines": [
+    [
+      7,
+      1
+    ],
+    [
+      2
+    ],
+    [
+      4,
+      3,
+      6
+    ],
+    [
+      5
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610146101"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-14T00:41:06.457Z"
+}

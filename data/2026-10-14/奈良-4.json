@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-14",
+  "venue": "奈良",
+  "race": 4,
+  "raceId": "202610145304",
+  "riders": [
+    {
+      "number": 1,
+      "name": "山口 聖矢",
+      "snum": "015359",
+      "style": "両",
+      "score": "86.81",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304"
+      }
+    },
+    {
+      "number": 2,
+      "name": "立花 成泰",
+      "snum": "013493",
+      "style": "追",
+      "score": "84.44",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304"
+      }
+    },
+    {
+      "number": 3,
+      "name": "小笠原 匠海",
+      "snum": "015975",
+      "style": "逃",
+      "score": "82.20",
+      "back": 18,
+      "start": 13,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304"
+      }
+    },
+    {
+      "number": 4,
+      "name": "愛敬 博之",
+      "snum": "014390",
+      "style": "追",
+      "score": "89.04",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304"
+      }
+    },
+    {
+      "number": 5,
+      "name": "田村 浩章",
+      "snum": "013506",
+      "style": "追",
+      "score": "80.52",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304"
+      }
+    },
+    {
+      "number": 6,
+      "name": "加藤 正法",
+      "snum": "014533",
+      "style": "追",
+      "score": "79.92",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304"
+      }
+    },
+    {
+      "number": 7,
+      "name": "山信田 学",
+      "snum": "013556",
+      "style": "追",
+      "score": "80.71",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610145304"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      4,
+      6
+    ],
+    [
+      3,
+      7,
+      2
+    ],
+    [
+      5
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610145304"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-14T00:40:57.588Z"
+}

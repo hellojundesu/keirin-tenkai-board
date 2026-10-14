@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-14",
+  "venue": "大宮",
+  "race": 6,
+  "raceId": "202610142506",
+  "riders": [
+    {
+      "number": 1,
+      "name": "小原 乃亜",
+      "snum": "016028",
+      "style": "両",
+      "score": "57.37",
+      "back": 11,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506"
+      }
+    },
+    {
+      "number": 2,
+      "name": "戸田 瑞姫",
+      "snum": "015667",
+      "style": "両",
+      "score": "53.04",
+      "back": 2,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506"
+      }
+    },
+    {
+      "number": 3,
+      "name": "中村 美那",
+      "snum": "015488",
+      "style": "両",
+      "score": "54.20",
+      "back": 3,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506"
+      }
+    },
+    {
+      "number": 4,
+      "name": "太田 瑛美",
+      "snum": "015586",
+      "style": "両",
+      "score": "54.86",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506"
+      }
+    },
+    {
+      "number": 5,
+      "name": "尾方 真生",
+      "snum": "015501",
+      "style": "逃",
+      "score": "56.97",
+      "back": 18,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506"
+      }
+    },
+    {
+      "number": 6,
+      "name": "村田 奈穂",
+      "snum": "015410",
+      "style": "両",
+      "score": "54.40",
+      "back": 4,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506"
+      }
+    },
+    {
+      "number": 7,
+      "name": "吉川 美穂",
+      "snum": "015587",
+      "style": "両",
+      "score": "57.10",
+      "back": 6,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610142506"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1
+    ],
+    [
+      3
+    ],
+    [
+      2
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610142506"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-14T00:41:48.733Z"
+}

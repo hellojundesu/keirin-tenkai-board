@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-14",
+  "venue": "奈良",
+  "race": 12,
+  "raceId": "202610145312",
+  "riders": [
+    {
+      "number": 1,
+      "name": "杉本 正隆",
+      "snum": "014504",
+      "style": "追",
+      "score": "103.40",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312"
+      }
+    },
+    {
+      "number": 2,
+      "name": "中井 太祐",
+      "snum": "014605",
+      "style": "両",
+      "score": "107.20",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312"
+      }
+    },
+    {
+      "number": 3,
+      "name": "青柳 靖起",
+      "snum": "015473",
+      "style": "逃",
+      "score": "105.52",
+      "back": 15,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312"
+      }
+    },
+    {
+      "number": 4,
+      "name": "大川 剛",
+      "snum": "015598",
+      "style": "逃",
+      "score": "104.78",
+      "back": 15,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312"
+      }
+    },
+    {
+      "number": 5,
+      "name": "南 潤",
+      "snum": "015186",
+      "style": "逃",
+      "score": "104.57",
+      "back": 15,
+      "start": 12,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312"
+      }
+    },
+    {
+      "number": 6,
+      "name": "中本 匠栄",
+      "snum": "014635",
+      "style": "追",
+      "score": "98.67",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312"
+      }
+    },
+    {
+      "number": 7,
+      "name": "恩田 淳平",
+      "snum": "014809",
+      "style": "追",
+      "score": "107.54",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610145312"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      7,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610145312"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-14T00:41:04.228Z"
+}

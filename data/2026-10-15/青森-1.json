@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-15",
+  "venue": "青森",
+  "race": 1,
+  "raceId": "202610151201",
+  "riders": [
+    {
+      "number": 1,
+      "name": "藤井 凜太郎",
+      "snum": "016012",
+      "style": "逃",
+      "score": "69.07",
+      "back": 7,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201"
+      }
+    },
+    {
+      "number": 2,
+      "name": "浦崎 貴史",
+      "snum": "012930",
+      "style": "追",
+      "score": "69.67",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201"
+      }
+    },
+    {
+      "number": 3,
+      "name": "櫻井 利之",
+      "snum": "014866",
+      "style": "両",
+      "score": "71.28",
+      "back": 3,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201"
+      }
+    },
+    {
+      "number": 4,
+      "name": "須藤 雄太",
+      "snum": "014014",
+      "style": "追",
+      "score": "67.43",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201"
+      }
+    },
+    {
+      "number": 5,
+      "name": "徳吉 正治",
+      "snum": "014042",
+      "style": "追",
+      "score": "68.89",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201"
+      }
+    },
+    {
+      "number": 6,
+      "name": "伊藤 司",
+      "snum": "013531",
+      "style": "逃",
+      "score": "64.26",
+      "back": 2,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201"
+      }
+    },
+    {
+      "number": 7,
+      "name": "吉田 彰久",
+      "snum": "013359",
+      "style": "追",
+      "score": "72.26",
+      "back": 0,
+      "start": 12,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610151201"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610151201"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-15T00:40:51.448Z"
+}

@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-15",
+  "venue": "玉野",
+  "race": 5,
+  "raceId": "202610156105",
+  "riders": [
+    {
+      "number": 1,
+      "name": "依田 翔大",
+      "snum": "015702",
+      "style": "逃",
+      "score": "102.83",
+      "back": 3,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105"
+      }
+    },
+    {
+      "number": 2,
+      "name": "小谷 実",
+      "snum": "014313",
+      "style": "追",
+      "score": "94.17",
+      "back": 0,
+      "start": 18,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105"
+      }
+    },
+    {
+      "number": 3,
+      "name": "瀬戸 晋作",
+      "snum": "015067",
+      "style": "両",
+      "score": "99.16",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105"
+      }
+    },
+    {
+      "number": 4,
+      "name": "真崎 新太郎",
+      "snum": "013679",
+      "style": "追",
+      "score": "96.89",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105"
+      }
+    },
+    {
+      "number": 5,
+      "name": "齋藤 登志信",
+      "snum": "013306",
+      "style": "追",
+      "score": "97.14",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105"
+      }
+    },
+    {
+      "number": 6,
+      "name": "伊豆田 浩人",
+      "snum": "013879",
+      "style": "追",
+      "score": "0.00",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105"
+      }
+    },
+    {
+      "number": 7,
+      "name": "宝満 大作",
+      "snum": "013722",
+      "style": "追",
+      "score": "93.24",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610156105"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3,
+      2,
+      7
+    ],
+    [
+      1,
+      4,
+      5
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610156105"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-15T00:40:34.612Z"
+}

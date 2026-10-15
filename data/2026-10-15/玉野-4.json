@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-15",
+  "venue": "玉野",
+  "race": 4,
+  "raceId": "202610156104",
+  "riders": [
+    {
+      "number": 1,
+      "name": "佐藤 雅彦",
+      "snum": "013827",
+      "style": "追",
+      "score": "89.58",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104"
+      }
+    },
+    {
+      "number": 2,
+      "name": "橋本 陸",
+      "snum": "015652",
+      "style": "逃",
+      "score": "87.33",
+      "back": 14,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104"
+      }
+    },
+    {
+      "number": 3,
+      "name": "木村 浩宣",
+      "snum": "014619",
+      "style": "逃",
+      "score": "88.74",
+      "back": 3,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104"
+      }
+    },
+    {
+      "number": 4,
+      "name": "松坂 英司",
+      "snum": "013471",
+      "style": "追",
+      "score": "87.37",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104"
+      }
+    },
+    {
+      "number": 5,
+      "name": "太田黒 大心",
+      "snum": "012924",
+      "style": "追",
+      "score": "86.11",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104"
+      }
+    },
+    {
+      "number": 6,
+      "name": "夏目 新吾",
+      "snum": "014938",
+      "style": "逃",
+      "score": "83.78",
+      "back": 4,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104"
+      }
+    },
+    {
+      "number": 7,
+      "name": "神開 将暢",
+      "snum": "012546",
+      "style": "追",
+      "score": "87.00",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610156104"
+      }
+    }
+  ],
+  "lines": [
+    [
+      6,
+      4,
+      1
+    ],
+    [
+      2,
+      7,
+      5
+    ],
+    [
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610156104"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-15T00:40:33.751Z"
+}

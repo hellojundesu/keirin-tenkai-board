@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-16",
+  "venue": "別府",
+  "race": 9,
+  "raceId": "202610168609",
+  "riders": [
+    {
+      "number": 1,
+      "name": "平尾 一晃",
+      "snum": "015211",
+      "style": "逃",
+      "score": "101.28",
+      "back": 5,
+      "start": 14,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609"
+      }
+    },
+    {
+      "number": 2,
+      "name": "高橋 昇平",
+      "snum": "014729",
+      "style": "追",
+      "score": "98.91",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609"
+      }
+    },
+    {
+      "number": 3,
+      "name": "貴志 修己",
+      "snum": "015458",
+      "style": "逃",
+      "score": "101.94",
+      "back": 15,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609"
+      }
+    },
+    {
+      "number": 4,
+      "name": "瓜生 崇智",
+      "snum": "015132",
+      "style": "追",
+      "score": "101.28",
+      "back": 0,
+      "start": 12,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609"
+      }
+    },
+    {
+      "number": 5,
+      "name": "安彦 統賀",
+      "snum": "015604",
+      "style": "両",
+      "score": "96.65",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609"
+      }
+    },
+    {
+      "number": 6,
+      "name": "中園 和剛",
+      "snum": "014043",
+      "style": "追",
+      "score": "95.90",
+      "back": 0,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609"
+      }
+    },
+    {
+      "number": 7,
+      "name": "藤田 勝也",
+      "snum": "014398",
+      "style": "追",
+      "score": "104.84",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610168609"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      4,
+      6
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      3,
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610168609"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-16T00:40:38.664Z"
+}

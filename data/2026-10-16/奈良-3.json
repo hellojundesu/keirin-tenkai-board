@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-16",
+  "venue": "奈良",
+  "race": 3,
+  "raceId": "202610165303",
+  "riders": [
+    {
+      "number": 1,
+      "name": "原田 峻治",
+      "snum": "015834",
+      "style": "逃",
+      "score": "83.10",
+      "back": 12,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303"
+      }
+    },
+    {
+      "number": 2,
+      "name": "西谷 岳文",
+      "snum": "014315",
+      "style": "両",
+      "score": "82.04",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303"
+      }
+    },
+    {
+      "number": 3,
+      "name": "田川 翔琉",
+      "snum": "015568",
+      "style": "逃",
+      "score": "86.00",
+      "back": 6,
+      "start": 11,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303"
+      }
+    },
+    {
+      "number": 4,
+      "name": "渡邊 一洋",
+      "snum": "012738",
+      "style": "追",
+      "score": "82.67",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303"
+      }
+    },
+    {
+      "number": 5,
+      "name": "青井 賢治",
+      "snum": "013439",
+      "style": "追",
+      "score": "91.88",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303"
+      }
+    },
+    {
+      "number": 6,
+      "name": "山信田 学",
+      "snum": "013556",
+      "style": "追",
+      "score": "80.71",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303"
+      }
+    },
+    {
+      "number": 7,
+      "name": "肥後 尚己",
+      "snum": "013582",
+      "style": "追",
+      "score": "88.96",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610165303"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      5,
+      4
+    ],
+    [
+      7
+    ],
+    [
+      2
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610165303"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-16T00:40:22.159Z"
+}

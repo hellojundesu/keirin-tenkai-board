@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-17",
+  "venue": "高知",
+  "race": 7,
+  "raceId": "202610177407",
+  "riders": [
+    {
+      "number": 1,
+      "name": "田中 大我",
+      "snum": "015363",
+      "style": "逃",
+      "score": "104.19",
+      "back": 10,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407"
+      }
+    },
+    {
+      "number": 2,
+      "name": "伊勢崎 彰大",
+      "snum": "013410",
+      "style": "追",
+      "score": "100.07",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407"
+      }
+    },
+    {
+      "number": 3,
+      "name": "古川 尚耶",
+      "snum": "014221",
+      "style": "追",
+      "score": "96.34",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407"
+      }
+    },
+    {
+      "number": 4,
+      "name": "佐々木 則幸",
+      "snum": "013295",
+      "style": "追",
+      "score": "99.83",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407"
+      }
+    },
+    {
+      "number": 5,
+      "name": "三谷 政史",
+      "snum": "014310",
+      "style": "追",
+      "score": "98.21",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407"
+      }
+    },
+    {
+      "number": 6,
+      "name": "古川 宗行",
+      "snum": "014514",
+      "style": "追",
+      "score": "94.25",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407"
+      }
+    },
+    {
+      "number": 7,
+      "name": "塚本 瑠羽",
+      "snum": "015529",
+      "style": "逃",
+      "score": "100.35",
+      "back": 3,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610177407"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      5,
+      4
+    ],
+    [
+      7,
+      2,
+      3
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610177407"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-17T00:41:05.277Z"
+}

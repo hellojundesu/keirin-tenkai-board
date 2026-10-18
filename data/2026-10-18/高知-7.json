@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-18",
+  "venue": "高知",
+  "race": 7,
+  "raceId": "202610187407",
+  "riders": [
+    {
+      "number": 1,
+      "name": "房州 輝也",
+      "snum": "014137",
+      "style": "両",
+      "score": "94.40",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407"
+      }
+    },
+    {
+      "number": 2,
+      "name": "阿部 大樹",
+      "snum": "014370",
+      "style": "両",
+      "score": "98.61",
+      "back": 1,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407"
+      }
+    },
+    {
+      "number": 3,
+      "name": "坂本 亮馬",
+      "snum": "014114",
+      "style": "追",
+      "score": "98.82",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407"
+      }
+    },
+    {
+      "number": 4,
+      "name": "塩島 嵩一朗",
+      "snum": "015807",
+      "style": "逃",
+      "score": "102.77",
+      "back": 14,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407"
+      }
+    },
+    {
+      "number": 5,
+      "name": "松本 憲斗",
+      "snum": "015570",
+      "style": "逃",
+      "score": "100.08",
+      "back": 2,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407"
+      }
+    },
+    {
+      "number": 6,
+      "name": "坂本 周作",
+      "snum": "014982",
+      "style": "逃",
+      "score": "93.89",
+      "back": 7,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407"
+      }
+    },
+    {
+      "number": 7,
+      "name": "古川 宗行",
+      "snum": "014514",
+      "style": "追",
+      "score": "94.25",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610187407"
+      }
+    }
+  ],
+  "lines": [
+    [
+      6,
+      1
+    ],
+    [
+      4,
+      2,
+      7
+    ],
+    [
+      5,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610187407"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-18T00:41:20.175Z"
+}

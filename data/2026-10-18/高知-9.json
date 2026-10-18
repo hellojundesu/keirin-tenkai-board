@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-18",
+  "venue": "高知",
+  "race": 9,
+  "raceId": "202610187409",
+  "riders": [
+    {
+      "number": 1,
+      "name": "原 誠宏",
+      "snum": "014188",
+      "style": "追",
+      "score": "103.96",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409"
+      }
+    },
+    {
+      "number": 2,
+      "name": "横山 尚則",
+      "snum": "014804",
+      "style": "追",
+      "score": "106.06",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409"
+      }
+    },
+    {
+      "number": 3,
+      "name": "伊勢崎 彰大",
+      "snum": "013410",
+      "style": "追",
+      "score": "100.07",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409"
+      }
+    },
+    {
+      "number": 4,
+      "name": "武田 亮",
+      "snum": "015347",
+      "style": "逃",
+      "score": "101.93",
+      "back": 9,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409"
+      }
+    },
+    {
+      "number": 5,
+      "name": "佐々木 則幸",
+      "snum": "013295",
+      "style": "追",
+      "score": "99.83",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409"
+      }
+    },
+    {
+      "number": 6,
+      "name": "河崎 正晴",
+      "snum": "015660",
+      "style": "逃",
+      "score": "98.19",
+      "back": 4,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409"
+      }
+    },
+    {
+      "number": 7,
+      "name": "福田 知也",
+      "snum": "013945",
+      "style": "追",
+      "score": "99.82",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610187409"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      2,
+      3,
+      7
+    ],
+    [
+      6,
+      1,
+      5
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610187409"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-18T00:41:21.881Z"
+}

@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-19",
+  "venue": "富山",
+  "race": 1,
+  "raceId": "202610194601",
+  "riders": [
+    {
+      "number": 1,
+      "name": "伊狩 知人",
+      "snum": "013728",
+      "style": "追",
+      "score": "69.20",
+      "back": 0,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601"
+      }
+    },
+    {
+      "number": 2,
+      "name": "村上 貴彦",
+      "snum": "014808",
+      "style": "両",
+      "score": "75.92",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601"
+      }
+    },
+    {
+      "number": 3,
+      "name": "野口 修平",
+      "snum": "014994",
+      "style": "逃",
+      "score": "73.00",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601"
+      }
+    },
+    {
+      "number": 4,
+      "name": "上野 幸星",
+      "snum": "015905",
+      "style": "逃",
+      "score": "67.81",
+      "back": 10,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601"
+      }
+    },
+    {
+      "number": 5,
+      "name": "門馬 琢麿",
+      "snum": "014987",
+      "style": "逃",
+      "score": "68.64",
+      "back": 2,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601"
+      }
+    },
+    {
+      "number": 6,
+      "name": "久保 将史",
+      "snum": "014463",
+      "style": "両",
+      "score": "65.39",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601"
+      }
+    },
+    {
+      "number": 7,
+      "name": "野崎 修一",
+      "snum": "011346",
+      "style": "追",
+      "score": "65.96",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610194601"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      1,
+      7
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610194601"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-19T00:41:38.095Z"
+}

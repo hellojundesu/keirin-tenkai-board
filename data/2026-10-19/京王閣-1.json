@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-19",
+  "venue": "京王閣",
+  "race": 1,
+  "raceId": "202610192701",
+  "riders": [
+    {
+      "number": 1,
+      "name": "島川 将貴",
+      "snum": "015122",
+      "style": "逃",
+      "score": "103.11",
+      "back": 7,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701"
+      }
+    },
+    {
+      "number": 2,
+      "name": "城 幸弘",
+      "snum": "014515",
+      "style": "追",
+      "score": "95.58",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701"
+      }
+    },
+    {
+      "number": 3,
+      "name": "元砂 勇雪",
+      "snum": "014946",
+      "style": "追",
+      "score": "98.87",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701"
+      }
+    },
+    {
+      "number": 4,
+      "name": "中井 俊亮",
+      "snum": "014945",
+      "style": "両",
+      "score": "99.54",
+      "back": 4,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701"
+      }
+    },
+    {
+      "number": 5,
+      "name": "相川 永伍",
+      "snum": "014448",
+      "style": "追",
+      "score": "94.96",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701"
+      }
+    },
+    {
+      "number": 6,
+      "name": "松岡 健介",
+      "snum": "013878",
+      "style": "両",
+      "score": "94.78",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701"
+      }
+    },
+    {
+      "number": 7,
+      "name": "木村 幸希",
+      "snum": "015118",
+      "style": "両",
+      "score": "97.20",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610192701"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      7,
+      2
+    ],
+    [
+      5
+    ],
+    [
+      4,
+      3,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610192701"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-19T00:41:05.278Z"
+}

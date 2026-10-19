@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-19",
+  "venue": "取手",
+  "race": 3,
+  "raceId": "202610192303",
+  "riders": [
+    {
+      "number": 1,
+      "name": "西川 弘資",
+      "snum": "012287",
+      "style": "追",
+      "score": "71.29",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303"
+      }
+    },
+    {
+      "number": 2,
+      "name": "加美山 隆行",
+      "snum": "014209",
+      "style": "追",
+      "score": "67.25",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303"
+      }
+    },
+    {
+      "number": 3,
+      "name": "柳澤 達也",
+      "snum": "012753",
+      "style": "追",
+      "score": "68.33",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303"
+      }
+    },
+    {
+      "number": 4,
+      "name": "嶋貫 高大",
+      "snum": "014128",
+      "style": "追",
+      "score": "66.00",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303"
+      }
+    },
+    {
+      "number": 5,
+      "name": "白井 輝",
+      "snum": "015996",
+      "style": "逃",
+      "score": "76.05",
+      "back": 8,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303"
+      }
+    },
+    {
+      "number": 6,
+      "name": "中嶋 響",
+      "snum": "015824",
+      "style": "逃",
+      "score": "64.92",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303"
+      }
+    },
+    {
+      "number": 7,
+      "name": "山田 祐太",
+      "snum": "015241",
+      "style": "逃",
+      "score": "71.90",
+      "back": 12,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610192303"
+      }
+    }
+  ],
+  "lines": [
+    [
+      7,
+      2,
+      4
+    ],
+    [
+      5,
+      1,
+      3
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610192303"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-19T00:41:31.171Z"
+}

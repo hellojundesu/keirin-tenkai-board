@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-19",
+  "venue": "武雄",
+  "race": 6,
+  "raceId": "202610198406",
+  "riders": [
+    {
+      "number": 1,
+      "name": "吉田 晏生",
+      "snum": "015700",
+      "style": "逃",
+      "score": "90.80",
+      "back": 10,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406"
+      }
+    },
+    {
+      "number": 2,
+      "name": "上野 恭哉",
+      "snum": "015556",
+      "style": "両",
+      "score": "89.59",
+      "back": 5,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406"
+      }
+    },
+    {
+      "number": 3,
+      "name": "小川 祐司",
+      "snum": "014556",
+      "style": "両",
+      "score": "85.38",
+      "back": 8,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406"
+      }
+    },
+    {
+      "number": 4,
+      "name": "三好 恵一郎",
+      "snum": "014728",
+      "style": "両",
+      "score": "92.65",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406"
+      }
+    },
+    {
+      "number": 5,
+      "name": "林 明宏",
+      "snum": "013296",
+      "style": "追",
+      "score": "86.67",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406"
+      }
+    },
+    {
+      "number": 6,
+      "name": "鈴木 達也",
+      "snum": "014575",
+      "style": "追",
+      "score": "84.07",
+      "back": 0,
+      "start": 11,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406"
+      }
+    },
+    {
+      "number": 7,
+      "name": "川野 深",
+      "snum": "015558",
+      "style": "逃",
+      "score": "85.38",
+      "back": 9,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610198406"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      4,
+      6
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      3,
+      5
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610198406"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-19T00:41:52.757Z"
+}

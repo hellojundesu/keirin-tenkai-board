@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-20",
+  "venue": "広島",
+  "race": 5,
+  "raceId": "202610206205",
+  "riders": [
+    {
+      "number": 1,
+      "name": "生野 優翔",
+      "snum": "015932",
+      "style": "逃",
+      "score": "88.63",
+      "back": 10,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205"
+      }
+    },
+    {
+      "number": 2,
+      "name": "山口 龍也",
+      "snum": "015212",
+      "style": "追",
+      "score": "88.52",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205"
+      }
+    },
+    {
+      "number": 3,
+      "name": "高井 流星",
+      "snum": "015277",
+      "style": "逃",
+      "score": "88.23",
+      "back": 16,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205"
+      }
+    },
+    {
+      "number": 4,
+      "name": "隅 貴史",
+      "snum": "014185",
+      "style": "追",
+      "score": "88.14",
+      "back": 0,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205"
+      }
+    },
+    {
+      "number": 5,
+      "name": "鮫島 康治",
+      "snum": "015187",
+      "style": "逃",
+      "score": "85.13",
+      "back": 6,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205"
+      }
+    },
+    {
+      "number": 6,
+      "name": "上田 学",
+      "snum": "012544",
+      "style": "追",
+      "score": "84.47",
+      "back": 0,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205"
+      }
+    },
+    {
+      "number": 7,
+      "name": "岡崎 祥伍",
+      "snum": "014598",
+      "style": "追",
+      "score": "82.00",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610206205"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610206205"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-20T00:43:39.619Z"
+}

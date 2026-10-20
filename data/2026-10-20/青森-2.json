@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-20",
+  "venue": "青森",
+  "race": 2,
+  "raceId": "202610201202",
+  "riders": [
+    {
+      "number": 1,
+      "name": "鈴木 康平",
+      "snum": "015710",
+      "style": "逃",
+      "score": "66.64",
+      "back": 10,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202"
+      }
+    },
+    {
+      "number": 2,
+      "name": "富永 昌久",
+      "snum": "013972",
+      "style": "追",
+      "score": "69.03",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202"
+      }
+    },
+    {
+      "number": 3,
+      "name": "佐藤 裕輝",
+      "snum": "014650",
+      "style": "逃",
+      "score": "65.07",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202"
+      }
+    },
+    {
+      "number": 4,
+      "name": "渡邊 政幸",
+      "snum": "014069",
+      "style": "追",
+      "score": "69.50",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202"
+      }
+    },
+    {
+      "number": 5,
+      "name": "早坂 道義",
+      "snum": "013926",
+      "style": "追",
+      "score": "71.07",
+      "back": 0,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202"
+      }
+    },
+    {
+      "number": 6,
+      "name": "竹村 達也",
+      "snum": "014777",
+      "style": "両",
+      "score": "63.81",
+      "back": 2,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202"
+      }
+    },
+    {
+      "number": 7,
+      "name": "横瀬 聡",
+      "snum": "012547",
+      "style": "追",
+      "score": "68.37",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610201202"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610201202"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-20T00:43:12.256Z"
+}

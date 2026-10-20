@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-20",
+  "venue": "川崎",
+  "race": 8,
+  "raceId": "202610203408",
+  "riders": [
+    {
+      "number": 1,
+      "name": "小原 唯志",
+      "snum": "014858",
+      "style": "逃",
+      "score": "89.83",
+      "back": 5,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408"
+      }
+    },
+    {
+      "number": 2,
+      "name": "田中 孝彦",
+      "snum": "014164",
+      "style": "追",
+      "score": "87.70",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408"
+      }
+    },
+    {
+      "number": 3,
+      "name": "高橋 清太郎",
+      "snum": "014614",
+      "style": "追",
+      "score": "86.07",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408"
+      }
+    },
+    {
+      "number": 4,
+      "name": "田中 誇士",
+      "snum": "014937",
+      "style": "両",
+      "score": "84.95",
+      "back": 4,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408"
+      }
+    },
+    {
+      "number": 5,
+      "name": "眞砂 英作",
+      "snum": "015642",
+      "style": "逃",
+      "score": "83.62",
+      "back": 9,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408"
+      }
+    },
+    {
+      "number": 6,
+      "name": "米嶋 賢二",
+      "snum": "013147",
+      "style": "追",
+      "score": "78.85",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408"
+      }
+    },
+    {
+      "number": 7,
+      "name": "野間 司",
+      "snum": "014364",
+      "style": "追",
+      "score": "83.59",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610203408"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      7
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610203408"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-20T00:43:32.026Z"
+}

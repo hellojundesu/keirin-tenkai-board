@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-21",
+  "venue": "前橋",
+  "race": 2,
+  "raceId": "202610212202",
+  "riders": [
+    {
+      "number": 1,
+      "name": "山原 さくら",
+      "snum": "014974",
+      "style": "両",
+      "score": "58.44",
+      "back": 13,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202"
+      }
+    },
+    {
+      "number": 2,
+      "name": "元砂 七夕美",
+      "snum": "015076",
+      "style": "両",
+      "score": "55.19",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202"
+      }
+    },
+    {
+      "number": 3,
+      "name": "太田 瑛美",
+      "snum": "015586",
+      "style": "両",
+      "score": "54.79",
+      "back": 2,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202"
+      }
+    },
+    {
+      "number": 4,
+      "name": "加藤 恵",
+      "snum": "015216",
+      "style": "両",
+      "score": "51.00",
+      "back": 11,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202"
+      }
+    },
+    {
+      "number": 5,
+      "name": "千葉 捺美",
+      "snum": "015940",
+      "style": "両",
+      "score": "50.35",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202"
+      }
+    },
+    {
+      "number": 6,
+      "name": "三宅 玲奈",
+      "snum": "015078",
+      "style": "追",
+      "score": "46.55",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202"
+      }
+    },
+    {
+      "number": 7,
+      "name": "渡辺 ゆかり",
+      "snum": "014904",
+      "style": "追",
+      "score": "45.91",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610212202"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4
+    ],
+    [
+      3
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610212202"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-21T00:41:35.565Z"
+}

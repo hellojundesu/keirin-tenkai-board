@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-21",
+  "venue": "川崎",
+  "race": 7,
+  "raceId": "202610213407",
+  "riders": [
+    {
+      "number": 1,
+      "name": "田中 誇士",
+      "snum": "014937",
+      "style": "両",
+      "score": "84.95",
+      "back": 4,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407"
+      }
+    },
+    {
+      "number": 2,
+      "name": "佐藤 政利",
+      "snum": "014155",
+      "style": "追",
+      "score": "83.08",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407"
+      }
+    },
+    {
+      "number": 3,
+      "name": "小竹 洋平",
+      "snum": "014601",
+      "style": "両",
+      "score": "85.67",
+      "back": 1,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407"
+      }
+    },
+    {
+      "number": 4,
+      "name": "野津 宏介",
+      "snum": "015930",
+      "style": "逃",
+      "score": "87.40",
+      "back": 11,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407"
+      }
+    },
+    {
+      "number": 5,
+      "name": "内村 竜也",
+      "snum": "014324",
+      "style": "追",
+      "score": "81.00",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407"
+      }
+    },
+    {
+      "number": 6,
+      "name": "吉田 夢希斗",
+      "snum": "015883",
+      "style": "逃",
+      "score": "79.93",
+      "back": 11,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407"
+      }
+    },
+    {
+      "number": 7,
+      "name": "佐野 恭太",
+      "snum": "014387",
+      "style": "両",
+      "score": "83.20",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610213407"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      3,
+      5
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      6,
+      2
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610213407"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-21T00:41:53.259Z"
+}

@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-21",
+  "venue": "小田原",
+  "race": 10,
+  "raceId": "202610213610",
+  "riders": [
+    {
+      "number": 1,
+      "name": "谷内 健太",
+      "snum": "015822",
+      "style": "逃",
+      "score": "106.29",
+      "back": 19,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610"
+      }
+    },
+    {
+      "number": 2,
+      "name": "山口 富生",
+      "snum": "012450",
+      "style": "追",
+      "score": "107.00",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610"
+      }
+    },
+    {
+      "number": 3,
+      "name": "鈴木 陸来",
+      "snum": "015441",
+      "style": "逃",
+      "score": "102.42",
+      "back": 5,
+      "start": 16,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610"
+      }
+    },
+    {
+      "number": 4,
+      "name": "東口 善朋",
+      "snum": "013730",
+      "style": "追",
+      "score": "109.60",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610"
+      }
+    },
+    {
+      "number": 5,
+      "name": "皿屋 豊",
+      "snum": "015179",
+      "style": "両",
+      "score": "104.58",
+      "back": 3,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610"
+      }
+    },
+    {
+      "number": 6,
+      "name": "兼本 将太",
+      "snum": "015477",
+      "style": "逃",
+      "score": "102.30",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610"
+      }
+    },
+    {
+      "number": 7,
+      "name": "道場 晃規",
+      "snum": "015443",
+      "style": "逃",
+      "score": "110.28",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610213610"
+      }
+    }
+  ],
+  "lines": [
+    [
+      7,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610213610"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-21T00:41:08.704Z"
+}

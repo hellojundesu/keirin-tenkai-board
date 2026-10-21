@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-21",
+  "venue": "松阪",
+  "race": 3,
+  "raceId": "202610214703",
+  "riders": [
+    {
+      "number": 1,
+      "name": "中村 弘之輔",
+      "snum": "015083",
+      "style": "両",
+      "score": "90.91",
+      "back": 9,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703"
+      }
+    },
+    {
+      "number": 2,
+      "name": "稲村 好将",
+      "snum": "013400",
+      "style": "追",
+      "score": "87.38",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703"
+      }
+    },
+    {
+      "number": 3,
+      "name": "志水 祐彦",
+      "snum": "014400",
+      "style": "追",
+      "score": "86.25",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703"
+      }
+    },
+    {
+      "number": 4,
+      "name": "白石 大輔",
+      "snum": "013916",
+      "style": "両",
+      "score": "86.07",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703"
+      }
+    },
+    {
+      "number": 5,
+      "name": "添田 龍児",
+      "snum": "015617",
+      "style": "逃",
+      "score": "85.48",
+      "back": 17,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703"
+      }
+    },
+    {
+      "number": 6,
+      "name": "油谷 蒼",
+      "snum": "015829",
+      "style": "逃",
+      "score": "80.80",
+      "back": 5,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703"
+      }
+    },
+    {
+      "number": 7,
+      "name": "鈴木 裕斗",
+      "snum": "014713",
+      "style": "両",
+      "score": "77.78",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610214703"
+      }
+    }
+  ],
+  "lines": [
+    [
+      5,
+      2
+    ],
+    [
+      1,
+      4,
+      7
+    ],
+    [
+      6,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610214703"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-21T00:41:59.429Z"
+}

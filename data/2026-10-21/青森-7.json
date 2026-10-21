@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-21",
+  "venue": "青森",
+  "race": 7,
+  "raceId": "202610211207",
+  "riders": [
+    {
+      "number": 1,
+      "name": "田崎 隼翔",
+      "snum": "015967",
+      "style": "逃",
+      "score": "79.25",
+      "back": 10,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207"
+      }
+    },
+    {
+      "number": 2,
+      "name": "渡邊 諒馬",
+      "snum": "016007",
+      "style": "逃",
+      "score": "79.13",
+      "back": 7,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207"
+      }
+    },
+    {
+      "number": 3,
+      "name": "田中 衛太",
+      "snum": "016018",
+      "style": "逃",
+      "score": "80.22",
+      "back": 15,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207"
+      }
+    },
+    {
+      "number": 4,
+      "name": "織茂 雄一郎",
+      "snum": "015801",
+      "style": "両",
+      "score": "76.17",
+      "back": 8,
+      "start": 24,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207"
+      }
+    },
+    {
+      "number": 5,
+      "name": "田上 晃也",
+      "snum": "015371",
+      "style": "逃",
+      "score": "80.10",
+      "back": 9,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207"
+      }
+    },
+    {
+      "number": 6,
+      "name": "龍門 慎太郎",
+      "snum": "014550",
+      "style": "追",
+      "score": "71.41",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207"
+      }
+    },
+    {
+      "number": 7,
+      "name": "中西 将太郎",
+      "snum": "015978",
+      "style": "逃",
+      "score": "78.80",
+      "back": 11,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610211207"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      7,
+      4
+    ],
+    [
+      2,
+      5,
+      6
+    ],
+    [
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610211207"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-21T00:41:27.617Z"
+}

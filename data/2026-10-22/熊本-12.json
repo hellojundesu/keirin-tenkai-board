@@ -1,0 +1,175 @@
+{
+  "date": "2026-10-22",
+  "venue": "熊本",
+  "race": 12,
+  "raceId": "202610228712",
+  "riders": [
+    {
+      "number": 1,
+      "name": "深谷 知広",
+      "snum": "014534",
+      "style": "逃",
+      "score": "117.07",
+      "back": 10,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712"
+      }
+    },
+    {
+      "number": 2,
+      "name": "嘉永 泰斗",
+      "snum": "015298",
+      "style": "逃",
+      "score": "114.33",
+      "back": 5,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712"
+      }
+    },
+    {
+      "number": 3,
+      "name": "眞杉 匠",
+      "snum": "015242",
+      "style": "逃",
+      "score": "118.81",
+      "back": 3,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712"
+      }
+    },
+    {
+      "number": 4,
+      "name": "山口 拳矢",
+      "snum": "015451",
+      "style": "両",
+      "score": "115.13",
+      "back": 3,
+      "start": 11,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712"
+      }
+    },
+    {
+      "number": 5,
+      "name": "菅田 壱道",
+      "snum": "014129",
+      "style": "両",
+      "score": "115.63",
+      "back": 1,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712"
+      }
+    },
+    {
+      "number": 6,
+      "name": "簗田 一輝",
+      "snum": "015051",
+      "style": "両",
+      "score": "112.30",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712"
+      }
+    },
+    {
+      "number": 7,
+      "name": "松本 貴治",
+      "snum": "015203",
+      "style": "両",
+      "score": "119.50",
+      "back": 3,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712"
+      }
+    },
+    {
+      "number": 8,
+      "name": "坂井 洋",
+      "snum": "015341",
+      "style": "両",
+      "score": "114.76",
+      "back": 5,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712"
+      }
+    },
+    {
+      "number": 9,
+      "name": "脇本 雄太",
+      "snum": "014396",
+      "style": "逃",
+      "score": "115.13",
+      "back": 2,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610228712"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      6,
+      5
+    ],
+    [
+      3,
+      8
+    ],
+    [
+      2
+    ],
+    [
+      7
+    ],
+    [
+      4
+    ],
+    [
+      9
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610228712"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-22T00:42:27.311Z"
+}

@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-23",
+  "venue": "四日市",
+  "race": 1,
+  "raceId": "202610234801",
+  "riders": [
+    {
+      "number": 1,
+      "name": "高谷 雅彦",
+      "snum": "012336",
+      "style": "両",
+      "score": "84.25",
+      "back": 5,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801"
+      }
+    },
+    {
+      "number": 2,
+      "name": "高比良 豪",
+      "snum": "013659",
+      "style": "追",
+      "score": "82.90",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801"
+      }
+    },
+    {
+      "number": 3,
+      "name": "横内 裕人",
+      "snum": "014851",
+      "style": "両",
+      "score": "83.88",
+      "back": 5,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801"
+      }
+    },
+    {
+      "number": 4,
+      "name": "山信田 学",
+      "snum": "013556",
+      "style": "追",
+      "score": "81.63",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801"
+      }
+    },
+    {
+      "number": 5,
+      "name": "三槻 智清",
+      "snum": "013370",
+      "style": "追",
+      "score": "81.73",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801"
+      }
+    },
+    {
+      "number": 6,
+      "name": "井上 将志",
+      "snum": "014841",
+      "style": "両",
+      "score": "79.17",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801"
+      }
+    },
+    {
+      "number": 7,
+      "name": "寺林 正秋",
+      "snum": "014281",
+      "style": "追",
+      "score": "86.37",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234801"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      7,
+      4
+    ],
+    [
+      3,
+      2,
+      5
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610234801"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-23T00:43:56.552Z"
+}

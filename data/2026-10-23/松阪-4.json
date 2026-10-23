@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-23",
+  "venue": "松阪",
+  "race": 4,
+  "raceId": "202610234704",
+  "riders": [
+    {
+      "number": 1,
+      "name": "土田 栄二",
+      "snum": "015338",
+      "style": "逃",
+      "score": "92.00",
+      "back": 13,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704"
+      }
+    },
+    {
+      "number": 2,
+      "name": "岩辺 陸",
+      "snum": "015893",
+      "style": "逃",
+      "score": "90.50",
+      "back": 12,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704"
+      }
+    },
+    {
+      "number": 3,
+      "name": "肥後 尚己",
+      "snum": "013582",
+      "style": "追",
+      "score": "88.89",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704"
+      }
+    },
+    {
+      "number": 4,
+      "name": "台 和紀",
+      "snum": "013555",
+      "style": "追",
+      "score": "88.63",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704"
+      }
+    },
+    {
+      "number": 5,
+      "name": "高橋 陽介",
+      "snum": "013985",
+      "style": "追",
+      "score": "85.83",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704"
+      }
+    },
+    {
+      "number": 6,
+      "name": "油谷 蒼",
+      "snum": "015829",
+      "style": "逃",
+      "score": "80.80",
+      "back": 5,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704"
+      }
+    },
+    {
+      "number": 7,
+      "name": "加藤 正法",
+      "snum": "014533",
+      "style": "追",
+      "score": "79.44",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234704"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610234704"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-23T00:44:55.737Z"
+}

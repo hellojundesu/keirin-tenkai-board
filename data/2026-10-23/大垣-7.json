@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-23",
+  "venue": "大垣",
+  "race": 7,
+  "raceId": "202610234407",
+  "riders": [
+    {
+      "number": 1,
+      "name": "筒井 裕哉",
+      "snum": "014031",
+      "style": "追",
+      "score": "90.83",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407"
+      }
+    },
+    {
+      "number": 2,
+      "name": "比佐 宝太",
+      "snum": "015602",
+      "style": "逃",
+      "score": "91.33",
+      "back": 8,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407"
+      }
+    },
+    {
+      "number": 3,
+      "name": "河上 陽一",
+      "snum": "014737",
+      "style": "両",
+      "score": "82.41",
+      "back": 1,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407"
+      }
+    },
+    {
+      "number": 4,
+      "name": "松田 安綱",
+      "snum": "015911",
+      "style": "逃",
+      "score": "92.78",
+      "back": 10,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407"
+      }
+    },
+    {
+      "number": 5,
+      "name": "甲斐 康昭",
+      "snum": "014008",
+      "style": "追",
+      "score": "83.58",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407"
+      }
+    },
+    {
+      "number": 6,
+      "name": "中村 美千隆",
+      "snum": "013345",
+      "style": "両",
+      "score": "82.07",
+      "back": 5,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407"
+      }
+    },
+    {
+      "number": 7,
+      "name": "保科 千春",
+      "snum": "014796",
+      "style": "追",
+      "score": "91.04",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610234407"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      1,
+      6
+    ],
+    [
+      3
+    ],
+    [
+      2,
+      7,
+      5
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610234407"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-23T00:44:50.721Z"
+}

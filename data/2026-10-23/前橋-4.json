@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-23",
+  "venue": "前橋",
+  "race": 4,
+  "raceId": "202610232204",
+  "riders": [
+    {
+      "number": 1,
+      "name": "本馬 鎌",
+      "snum": "015087",
+      "style": "両",
+      "score": "76.10",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204"
+      }
+    },
+    {
+      "number": 2,
+      "name": "細田 純平",
+      "snum": "014772",
+      "style": "両",
+      "score": "72.28",
+      "back": 4,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204"
+      }
+    },
+    {
+      "number": 3,
+      "name": "岡崎 克政",
+      "snum": "014257",
+      "style": "逃",
+      "score": "72.20",
+      "back": 23,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204"
+      }
+    },
+    {
+      "number": 4,
+      "name": "邊見 斎",
+      "snum": "014218",
+      "style": "追",
+      "score": "71.25",
+      "back": 1,
+      "start": 20,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204"
+      }
+    },
+    {
+      "number": 5,
+      "name": "荒木 真慈",
+      "snum": "012550",
+      "style": "追",
+      "score": "70.10",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204"
+      }
+    },
+    {
+      "number": 6,
+      "name": "三浦 綾",
+      "snum": "014986",
+      "style": "逃",
+      "score": "69.96",
+      "back": 6,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204"
+      }
+    },
+    {
+      "number": 7,
+      "name": "岡嵜 浩一",
+      "snum": "012509",
+      "style": "追",
+      "score": "68.00",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610232204"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610232204"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-23T00:44:29.477Z"
+}

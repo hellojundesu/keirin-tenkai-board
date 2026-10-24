@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-24",
+  "venue": "大垣",
+  "race": 4,
+  "raceId": "202610244404",
+  "riders": [
+    {
+      "number": 1,
+      "name": "山崎 輝夫",
+      "snum": "014731",
+      "style": "追",
+      "score": "88.17",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404"
+      }
+    },
+    {
+      "number": 2,
+      "name": "二藤 元太",
+      "snum": "014466",
+      "style": "追",
+      "score": "92.86",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404"
+      }
+    },
+    {
+      "number": 3,
+      "name": "甲斐 康昭",
+      "snum": "014008",
+      "style": "追",
+      "score": "83.58",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404"
+      }
+    },
+    {
+      "number": 4,
+      "name": "武井 大介",
+      "snum": "013766",
+      "style": "追",
+      "score": "89.70",
+      "back": 0,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404"
+      }
+    },
+    {
+      "number": 5,
+      "name": "吉竹 尚城",
+      "snum": "015099",
+      "style": "逃",
+      "score": "89.50",
+      "back": 6,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404"
+      }
+    },
+    {
+      "number": 6,
+      "name": "須藤 直道",
+      "snum": "012417",
+      "style": "追",
+      "score": "82.24",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404"
+      }
+    },
+    {
+      "number": 7,
+      "name": "野木 義規",
+      "snum": "012708",
+      "style": "追",
+      "score": "82.67",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610244404"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610244404"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-24T00:47:44.248Z"
+}

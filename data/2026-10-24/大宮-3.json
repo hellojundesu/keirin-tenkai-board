@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-24",
+  "venue": "大宮",
+  "race": 3,
+  "raceId": "202610242503",
+  "riders": [
+    {
+      "number": 1,
+      "name": "天沼 雅貴",
+      "snum": "014496",
+      "style": "追",
+      "score": "69.07",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503"
+      }
+    },
+    {
+      "number": 2,
+      "name": "田中 智也",
+      "snum": "012885",
+      "style": "追",
+      "score": "69.45",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503"
+      }
+    },
+    {
+      "number": 3,
+      "name": "相澤 恵一",
+      "snum": "014432",
+      "style": "追",
+      "score": "70.50",
+      "back": 1,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503"
+      }
+    },
+    {
+      "number": 4,
+      "name": "大澤 哉太",
+      "snum": "014424",
+      "style": "両",
+      "score": "68.69",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503"
+      }
+    },
+    {
+      "number": 5,
+      "name": "山下 季秦",
+      "snum": "015974",
+      "style": "逃",
+      "score": "73.11",
+      "back": 8,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503"
+      }
+    },
+    {
+      "number": 6,
+      "name": "竜門 孝宗",
+      "snum": "014483",
+      "style": "追",
+      "score": "68.44",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503"
+      }
+    },
+    {
+      "number": 7,
+      "name": "舟山 佑京",
+      "snum": "015257",
+      "style": "逃",
+      "score": "76.42",
+      "back": 8,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610242503"
+      }
+    }
+  ],
+  "lines": [
+    [
+      5,
+      7,
+      1
+    ],
+    [
+      4,
+      3,
+      2
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610242503"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-24T00:47:23.737Z"
+}

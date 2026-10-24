@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-24",
+  "venue": "名古屋",
+  "race": 1,
+  "raceId": "202610244201",
+  "riders": [
+    {
+      "number": 1,
+      "name": "東 隆之",
+      "snum": "014855",
+      "style": "追",
+      "score": "69.44",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201"
+      }
+    },
+    {
+      "number": 2,
+      "name": "齋藤 仁",
+      "snum": "013588",
+      "style": "追",
+      "score": "69.09",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201"
+      }
+    },
+    {
+      "number": 3,
+      "name": "山崎 光展",
+      "snum": "014316",
+      "style": "両",
+      "score": "72.74",
+      "back": 3,
+      "start": 17,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201"
+      }
+    },
+    {
+      "number": 4,
+      "name": "岡崎 和久",
+      "snum": "013206",
+      "style": "追",
+      "score": "72.22",
+      "back": 0,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201"
+      }
+    },
+    {
+      "number": 5,
+      "name": "松本 大地",
+      "snum": "013451",
+      "style": "追",
+      "score": "76.47",
+      "back": 1,
+      "start": 21,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201"
+      }
+    },
+    {
+      "number": 6,
+      "name": "増田 鉄男",
+      "snum": "012913",
+      "style": "追",
+      "score": "64.87",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201"
+      }
+    },
+    {
+      "number": 7,
+      "name": "白濱 蓮",
+      "snum": "016017",
+      "style": "逃",
+      "score": "71.08",
+      "back": 7,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610244201"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610244201"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-24T00:47:35.813Z"
+}

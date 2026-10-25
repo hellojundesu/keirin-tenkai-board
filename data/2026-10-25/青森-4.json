@@ -110,14 +110,29 @@
       }
     }
   ],
-  "lines": [],
+  "lines": [
+    [
+      1,
+      4
+    ],
+    [
+      6,
+      2,
+      7
+    ],
+    [
+      5,
+      3
+    ]
+  ],
   "source": "KEIRIN.JP / netkeirin",
-  "lineSource": null,
+  "lineSource": "KEIRIN.JP",
   "scoreType": "出走表掲載の競走得点",
   "sourceUrls": [
     "https://keirin.jp/pc/racelist",
     "https://keirin.netkeiba.com/race/entry/?race_id=202610251204"
   ],
   "missingFields": [],
-  "updatedAt": "2026-10-25T00:37:53.146Z"
+  "updatedAt": "2026-10-25T00:37:53.146Z",
+  "lineUpdatedAt": "2026-10-25T09:15:26.304Z"
 }

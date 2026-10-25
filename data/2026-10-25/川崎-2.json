@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-25",
+  "venue": "川崎",
+  "race": 2,
+  "raceId": "202610253402",
+  "riders": [
+    {
+      "number": 1,
+      "name": "半田 水晶",
+      "snum": "015939",
+      "style": "逃",
+      "score": "56.17",
+      "back": 25,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402"
+      }
+    },
+    {
+      "number": 2,
+      "name": "熊谷 芽緯",
+      "snum": "015756",
+      "style": "逃",
+      "score": "55.26",
+      "back": 12,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402"
+      }
+    },
+    {
+      "number": 3,
+      "name": "長澤 彩",
+      "snum": "015027",
+      "style": "両",
+      "score": "50.56",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402"
+      }
+    },
+    {
+      "number": 4,
+      "name": "宮地 寧々",
+      "snum": "015150",
+      "style": "両",
+      "score": "50.19",
+      "back": 5,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402"
+      }
+    },
+    {
+      "number": 5,
+      "name": "高橋 智香",
+      "snum": "015222",
+      "style": "両",
+      "score": "50.04",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402"
+      }
+    },
+    {
+      "number": 6,
+      "name": "佐々木 恵理",
+      "snum": "015147",
+      "style": "両",
+      "score": "47.69",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402"
+      }
+    },
+    {
+      "number": 7,
+      "name": "今西 瑠花",
+      "snum": "015951",
+      "style": "両",
+      "score": "47.33",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610253402"
+      }
+    }
+  ],
+  "lines": [
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      1
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610253402"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-25T00:37:59.256Z"
+}

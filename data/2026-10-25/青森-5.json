@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-25",
+  "venue": "青森",
+  "race": 5,
+  "raceId": "202610251205",
+  "riders": [
+    {
+      "number": 1,
+      "name": "荒木 伸哉",
+      "snum": "013859",
+      "style": "追",
+      "score": "87.07",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205"
+      }
+    },
+    {
+      "number": 2,
+      "name": "高峰 賢治",
+      "snum": "012809",
+      "style": "追",
+      "score": "86.13",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205"
+      }
+    },
+    {
+      "number": 3,
+      "name": "伊藤 奎",
+      "snum": "015330",
+      "style": "追",
+      "score": "85.77",
+      "back": 1,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205"
+      }
+    },
+    {
+      "number": 4,
+      "name": "増田 利明",
+      "snum": "013423",
+      "style": "両",
+      "score": "83.93",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205"
+      }
+    },
+    {
+      "number": 5,
+      "name": "豊田 一馬",
+      "snum": "012800",
+      "style": "追",
+      "score": "82.52",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205"
+      }
+    },
+    {
+      "number": 6,
+      "name": "中里 福太郎",
+      "snum": "015293",
+      "style": "逃",
+      "score": "80.63",
+      "back": 2,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205"
+      }
+    },
+    {
+      "number": 7,
+      "name": "平山 優太",
+      "snum": "015515",
+      "style": "両",
+      "score": "80.53",
+      "back": 5,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610251205"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610251205"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-25T00:37:53.739Z"
+}

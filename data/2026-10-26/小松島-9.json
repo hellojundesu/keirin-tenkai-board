@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-26",
+  "venue": "小松島",
+  "race": 9,
+  "raceId": "202610267309",
+  "riders": [
+    {
+      "number": 1,
+      "name": "櫻井 正孝",
+      "snum": "014795",
+      "style": "追",
+      "score": "104.10",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309"
+      }
+    },
+    {
+      "number": 2,
+      "name": "小川 三士郎",
+      "snum": "015837",
+      "style": "逃",
+      "score": "100.59",
+      "back": 11,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309"
+      }
+    },
+    {
+      "number": 3,
+      "name": "中西 大",
+      "snum": "015058",
+      "style": "逃",
+      "score": "98.50",
+      "back": 3,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309"
+      }
+    },
+    {
+      "number": 4,
+      "name": "山本 拳也",
+      "snum": "015124",
+      "style": "追",
+      "score": "99.96",
+      "back": 1,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309"
+      }
+    },
+    {
+      "number": 5,
+      "name": "大川 剛",
+      "snum": "015598",
+      "style": "逃",
+      "score": "104.47",
+      "back": 16,
+      "start": 11,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309"
+      }
+    },
+    {
+      "number": 6,
+      "name": "中村 一将",
+      "snum": "013800",
+      "style": "両",
+      "score": "97.31",
+      "back": 2,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309"
+      }
+    },
+    {
+      "number": 7,
+      "name": "川口 雄太",
+      "snum": "015197",
+      "style": "両",
+      "score": "101.50",
+      "back": 2,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610267309"
+      }
+    }
+  ],
+  "lines": [
+    [
+      5,
+      1
+    ],
+    [
+      2,
+      7,
+      4
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610267309"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-26T00:52:22.854Z"
+}

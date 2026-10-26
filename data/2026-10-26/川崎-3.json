@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-26",
+  "venue": "川崎",
+  "race": 3,
+  "raceId": "202610263403",
+  "riders": [
+    {
+      "number": 1,
+      "name": "原岡 泰志郎",
+      "snum": "014821",
+      "style": "両",
+      "score": "87.29",
+      "back": 0,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403"
+      }
+    },
+    {
+      "number": 2,
+      "name": "山崎 敦雄",
+      "snum": "012590",
+      "style": "追",
+      "score": "87.16",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403"
+      }
+    },
+    {
+      "number": 3,
+      "name": "齋藤 一茂",
+      "snum": "014579",
+      "style": "逃",
+      "score": "84.96",
+      "back": 12,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403"
+      }
+    },
+    {
+      "number": 4,
+      "name": "伊藤 大理",
+      "snum": "013690",
+      "style": "追",
+      "score": "82.21",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403"
+      }
+    },
+    {
+      "number": 5,
+      "name": "齋藤 宗徳",
+      "snum": "014816",
+      "style": "逃",
+      "score": "81.32",
+      "back": 3,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403"
+      }
+    },
+    {
+      "number": 6,
+      "name": "石川 恭規",
+      "snum": "014282",
+      "style": "追",
+      "score": "80.96",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403"
+      }
+    },
+    {
+      "number": 7,
+      "name": "太田 真一",
+      "snum": "012955",
+      "style": "追",
+      "score": "80.59",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610263403"
+      }
+    }
+  ],
+  "lines": [
+    [
+      5,
+      1,
+      2
+    ],
+    [
+      3,
+      4,
+      7
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610263403"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-26T00:52:36.521Z"
+}

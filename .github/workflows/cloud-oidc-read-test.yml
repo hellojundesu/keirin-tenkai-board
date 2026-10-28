@@ -27,6 +27,7 @@ jobs:
           set -euo pipefail
           python3 - <<'PY'
           import json
+          import base64
           import os
           import urllib.error
           import urllib.parse
@@ -62,6 +63,40 @@ jobs:
           )
           with urllib.request.urlopen(oidc_request, timeout=20) as response:
               oidc_token = json.loads(response.read().decode("utf-8"))["value"]
+
+          encoded_claims = oidc_token.split(".")[1]
+          encoded_claims += "=" * (-len(encoded_claims) % 4)
+          claims = json.loads(base64.urlsafe_b64decode(encoded_claims).decode("utf-8"))
+          safe_claims = {
+              name: claims.get(name)
+              for name in (
+                  "iss", "aud", "repository", "ref", "environment", "sub",
+                  "workflow_ref", "job_workflow_ref", "run_id", "run_attempt",
+                  "iat", "nbf", "exp",
+              )
+          }
+          expected = {
+              "iss": "https://token.actions.githubusercontent.com",
+              "aud": audience,
+              "repository": "hellojundesu/keirin-tenkai-board",
+              "ref": "refs/heads/main",
+              "environment": "github-pages",
+              "sub": "repo:hellojundesu/keirin-tenkai-board:environment:github-pages",
+              "workflow_ref": "hellojundesu/keirin-tenkai-board/.github/workflows/cloud-oidc-read-test.yml@refs/heads/main",
+          }
+          effective_workflow_ref = claims.get("job_workflow_ref") or claims.get("workflow_ref")
+          mismatches = {
+              name: {"expected": value, "actual": safe_claims.get(name)}
+              for name, value in expected.items()
+              if name != "workflow_ref" and safe_claims.get(name) != value
+          }
+          if effective_workflow_ref != expected["workflow_ref"]:
+              mismatches["effective_workflow_ref"] = {
+                  "expected": expected["workflow_ref"],
+                  "actual": effective_workflow_ref,
+              }
+          print("OIDC_SAFE_CLAIMS=" + json.dumps(safe_claims, ensure_ascii=True, sort_keys=True))
+          print("OIDC_CLAIM_MISMATCHES=" + json.dumps(mismatches, ensure_ascii=True, sort_keys=True))
 
           # A valid token plus an invalid record identity must reach the
           # post-authentication validator and return HTTP 400. This separates

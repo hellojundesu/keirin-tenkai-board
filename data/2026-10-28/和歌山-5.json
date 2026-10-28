@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-28",
+  "venue": "和歌山",
+  "race": 5,
+  "raceId": "202610285505",
+  "riders": [
+    {
+      "number": 1,
+      "name": "石田 春海",
+      "snum": "015950",
+      "style": "両",
+      "score": "47.17",
+      "back": 3,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505"
+      }
+    },
+    {
+      "number": 2,
+      "name": "川田 ひな",
+      "snum": "015316",
+      "style": "追",
+      "score": "45.44",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505"
+      }
+    },
+    {
+      "number": 3,
+      "name": "松崎 光優",
+      "snum": "016029",
+      "style": "両",
+      "score": "46.75",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505"
+      }
+    },
+    {
+      "number": 4,
+      "name": "下条 未悠",
+      "snum": "015495",
+      "style": "両",
+      "score": "55.59",
+      "back": 5,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505"
+      }
+    },
+    {
+      "number": 5,
+      "name": "谷元 音羽",
+      "snum": "015777",
+      "style": "両",
+      "score": "49.22",
+      "back": 1,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505"
+      }
+    },
+    {
+      "number": 6,
+      "name": "安東 莉奈",
+      "snum": "015684",
+      "style": "追",
+      "score": "51.69",
+      "back": 1,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505"
+      }
+    },
+    {
+      "number": 7,
+      "name": "橋本 のこ",
+      "snum": "015945",
+      "style": "両",
+      "score": "46.14",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610285505"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610285505"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-28T05:27:03.453Z"
+}

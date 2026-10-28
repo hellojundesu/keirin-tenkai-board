@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-28",
+  "venue": "武雄",
+  "race": 1,
+  "raceId": "202610288401",
+  "riders": [
+    {
+      "number": 1,
+      "name": "高木 隆弘",
+      "snum": "012092",
+      "style": "追",
+      "score": "70.69",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401"
+      }
+    },
+    {
+      "number": 2,
+      "name": "沖本 尚織",
+      "snum": "013887",
+      "style": "追",
+      "score": "70.21",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401"
+      }
+    },
+    {
+      "number": 3,
+      "name": "川口 秀人",
+      "snum": "011427",
+      "style": "追",
+      "score": "67.21",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401"
+      }
+    },
+    {
+      "number": 4,
+      "name": "伊藤 翼",
+      "snum": "014382",
+      "style": "両",
+      "score": "68.78",
+      "back": 7,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401"
+      }
+    },
+    {
+      "number": 5,
+      "name": "富澤 洋祐",
+      "snum": "013421",
+      "style": "追",
+      "score": "71.76",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401"
+      }
+    },
+    {
+      "number": 6,
+      "name": "落合 豊",
+      "snum": "012556",
+      "style": "追",
+      "score": "63.67",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401"
+      }
+    },
+    {
+      "number": 7,
+      "name": "増成 富夫",
+      "snum": "012299",
+      "style": "逃",
+      "score": "68.28",
+      "back": 5,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610288401"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      1,
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7,
+      2,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610288401"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-28T05:27:15.193Z"
+}

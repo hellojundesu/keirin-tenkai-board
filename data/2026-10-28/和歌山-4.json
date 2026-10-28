@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-28",
+  "venue": "和歌山",
+  "race": 4,
+  "raceId": "202610285504",
+  "riders": [
+    {
+      "number": 1,
+      "name": "須々田 大昇",
+      "snum": "013303",
+      "style": "追",
+      "score": "69.76",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504"
+      }
+    },
+    {
+      "number": 2,
+      "name": "柴田 昌樹",
+      "snum": "013261",
+      "style": "追",
+      "score": "69.43",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504"
+      }
+    },
+    {
+      "number": 3,
+      "name": "坂本 英一",
+      "snum": "011574",
+      "style": "追",
+      "score": "75.84",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504"
+      }
+    },
+    {
+      "number": 4,
+      "name": "門馬 琢麿",
+      "snum": "014987",
+      "style": "逃",
+      "score": "68.50",
+      "back": 3,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504"
+      }
+    },
+    {
+      "number": 5,
+      "name": "織茂 雄一郎",
+      "snum": "015801",
+      "style": "両",
+      "score": "76.38",
+      "back": 8,
+      "start": 27,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504"
+      }
+    },
+    {
+      "number": 6,
+      "name": "岡田 大門",
+      "snum": "013861",
+      "style": "両",
+      "score": "68.41",
+      "back": 0,
+      "start": 11,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504"
+      }
+    },
+    {
+      "number": 7,
+      "name": "中川 昌久",
+      "snum": "014363",
+      "style": "追",
+      "score": "70.69",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610285504"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610285504"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-28T05:27:02.769Z"
+}

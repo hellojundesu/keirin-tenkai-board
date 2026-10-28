@@ -1,0 +1,80 @@
+name: Cloud OIDC read-only connectivity test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: keirin-cloud-oidc-read-test
+  cancel-in-progress: false
+
+jobs:
+  oidc-read:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment: github-pages
+    steps:
+      - name: Verify rejected and valid read-only requests
+        env:
+          # These are non-secret identifiers for this one-time manual test.
+          CLOUD_INGEST_ENDPOINT: https://ypkmorovfnjyesfojcil.supabase.co/functions/v1/cloud-ingest
+          CLOUD_INGEST_AUDIENCE: keirin-cloud-ingest-prod-v1
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.error
+          import urllib.parse
+          import urllib.request
+
+          endpoint = os.environ["CLOUD_INGEST_ENDPOINT"]
+          audience = os.environ["CLOUD_INGEST_AUDIENCE"]
+          payload = json.dumps({
+              "operation": "read",
+              "record_type": "cloud_acquisition_manifest",
+              "record_key": "2099-12-31",
+          }).encode("utf-8")
+
+          bad = urllib.request.Request(
+              endpoint,
+              data=payload,
+              headers={"Authorization": "Bearer invalid", "Content-Type": "application/json"},
+              method="POST",
+          )
+          try:
+              urllib.request.urlopen(bad, timeout=20)
+              raise RuntimeError("invalid token was unexpectedly accepted")
+          except urllib.error.HTTPError as exc:
+              if exc.code != 401:
+                  raise RuntimeError(f"invalid token returned unexpected HTTP {exc.code}") from exc
+
+          token_url = os.environ["ACTIONS_ID_TOKEN_REQUEST_URL"]
+          request_token = os.environ["ACTIONS_ID_TOKEN_REQUEST_TOKEN"]
+          separator = "&" if "?" in token_url else "?"
+          oidc_request = urllib.request.Request(
+              token_url + separator + urllib.parse.urlencode({"audience": audience}),
+              headers={"Authorization": f"Bearer {request_token}"},
+          )
+          with urllib.request.urlopen(oidc_request, timeout=20) as response:
+              oidc_token = json.loads(response.read().decode("utf-8"))["value"]
+
+          valid = urllib.request.Request(
+              endpoint,
+              data=payload,
+              headers={"Authorization": f"Bearer {oidc_token}", "Content-Type": "application/json"},
+              method="POST",
+          )
+          with urllib.request.urlopen(valid, timeout=30) as response:
+              body = json.loads(response.read().decode("utf-8"))
+              if response.status != 200 or "record" not in body:
+                  raise RuntimeError("valid OIDC read response was invalid")
+
+          print("OIDC invalid-token rejection: PASS")
+          print("OIDC authenticated read-only request: PASS")
+          PY
+

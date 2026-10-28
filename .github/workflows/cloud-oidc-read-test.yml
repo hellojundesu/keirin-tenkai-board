@@ -63,6 +63,27 @@ jobs:
           with urllib.request.urlopen(oidc_request, timeout=20) as response:
               oidc_token = json.loads(response.read().decode("utf-8"))["value"]
 
+          # A valid token plus an invalid record identity must reach the
+          # post-authentication validator and return HTTP 400. This separates
+          # OIDC rejection (403) from a downstream storage read failure.
+          probe_payload = json.dumps({
+              "operation": "read",
+              "record_type": "invalid_probe_type",
+              "record_key": "2099-12-31",
+          }).encode("utf-8")
+          probe = urllib.request.Request(
+              endpoint,
+              data=probe_payload,
+              headers={"Authorization": f"Bearer {oidc_token}", "Content-Type": "application/json"},
+              method="POST",
+          )
+          try:
+              urllib.request.urlopen(probe, timeout=30)
+              raise RuntimeError("OIDC probe unexpectedly succeeded")
+          except urllib.error.HTTPError as exc:
+              if exc.code != 400:
+                  raise RuntimeError(f"OIDC authentication probe returned HTTP {exc.code}") from exc
+
           valid = urllib.request.Request(
               endpoint,
               data=payload,
@@ -75,6 +96,7 @@ jobs:
                   raise RuntimeError("valid OIDC read response was invalid")
 
           print("OIDC invalid-token rejection: PASS")
+          print("OIDC signature and fixed-claim validation: PASS")
           print("OIDC authenticated read-only request: PASS")
           PY
 

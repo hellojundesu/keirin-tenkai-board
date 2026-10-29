@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-29",
+  "venue": "久留米",
+  "race": 4,
+  "raceId": "202610298304",
+  "riders": [
+    {
+      "number": 1,
+      "name": "田代 匠",
+      "snum": "015650",
+      "style": "逃",
+      "score": "86.67",
+      "back": 15,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304"
+      }
+    },
+    {
+      "number": 2,
+      "name": "芳野 匠",
+      "snum": "014332",
+      "style": "追",
+      "score": "84.85",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304"
+      }
+    },
+    {
+      "number": 3,
+      "name": "中武 三四郎",
+      "snum": "015273",
+      "style": "逃",
+      "score": "83.25",
+      "back": 16,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304"
+      }
+    },
+    {
+      "number": 4,
+      "name": "藤野 貴章",
+      "snum": "014625",
+      "style": "追",
+      "score": "82.88",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304"
+      }
+    },
+    {
+      "number": 5,
+      "name": "藤井 稜也",
+      "snum": "015357",
+      "style": "両",
+      "score": "81.52",
+      "back": 3,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304"
+      }
+    },
+    {
+      "number": 6,
+      "name": "宮本 佳樹",
+      "snum": "013219",
+      "style": "追",
+      "score": "78.08",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304"
+      }
+    },
+    {
+      "number": 7,
+      "name": "中岡 海",
+      "snum": "015736",
+      "style": "逃",
+      "score": "76.38",
+      "back": 2,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610298304"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      7,
+      2,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610298304"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-29T05:35:58.072Z"
+}

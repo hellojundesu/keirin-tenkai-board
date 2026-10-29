@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-29",
+  "venue": "久留米",
+  "race": 9,
+  "raceId": "202610298309",
+  "riders": [
+    {
+      "number": 1,
+      "name": "竹内 翼",
+      "snum": "015120",
+      "style": "逃",
+      "score": "94.46",
+      "back": 10,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309"
+      }
+    },
+    {
+      "number": 2,
+      "name": "米嶋 恵介",
+      "snum": "015547",
+      "style": "両",
+      "score": "94.25",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309"
+      }
+    },
+    {
+      "number": 3,
+      "name": "北野 武史",
+      "snum": "013199",
+      "style": "追",
+      "score": "94.08",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309"
+      }
+    },
+    {
+      "number": 4,
+      "name": "森安 崇之",
+      "snum": "013653",
+      "style": "追",
+      "score": "92.79",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309"
+      }
+    },
+    {
+      "number": 5,
+      "name": "藏本 徹二",
+      "snum": "015193",
+      "style": "両",
+      "score": "90.88",
+      "back": 1,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309"
+      }
+    },
+    {
+      "number": 6,
+      "name": "野村 賢",
+      "snum": "015833",
+      "style": "逃",
+      "score": "88.26",
+      "back": 18,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309"
+      }
+    },
+    {
+      "number": 7,
+      "name": "入江 航太",
+      "snum": "015565",
+      "style": "逃",
+      "score": "87.74",
+      "back": 3,
+      "start": 13,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610298309"
+      }
+    }
+  ],
+  "lines": [
+    [
+      6,
+      1,
+      5,
+      2
+    ],
+    [
+      3
+    ],
+    [
+      7,
+      4
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610298309"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-29T05:36:01.527Z"
+}

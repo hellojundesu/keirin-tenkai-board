@@ -1,39 +1,130 @@
-name: Cloud manifest recovery 2026-10-29
+name: Cloud one-day acquisition and CAS trial
 
 on:
   workflow_dispatch:
+    inputs:
+      target_date:
+        description: Approved one-day trial date (JST)
+        required: true
+        default: '2026-10-29'
+        type: string
 
 permissions:
   contents: read
   id-token: write
 
 concurrency:
-  group: cloud-manifest-recovery-20261029
+  group: keirin-cloud-one-day-cas-trial
   cancel-in-progress: false
 
 jobs:
-  publish-manifest:
+  acquire-and-save:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 90
     environment: github-pages
     env:
+      APPROVED_TARGET_DATE: '2026-10-29'
       CLOUD_INGEST_ENDPOINT: https://ypkmorovfnjyesfojcil.supabase.co/functions/v1/cloud-ingest
       CLOUD_INGEST_AUDIENCE: keirin-cloud-ingest-prod-v1
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Publish manifest from the saved complete generation
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Restrict trial to the approved JST date
         shell: bash
+        env:
+          TARGET_DATE: ${{ inputs.target_date }}
         run: |
           set -euo pipefail
-          python3 automation/cloud/cloud_manifest_recover.py --target-date 2026-10-29 | tee "$RUNNER_TEMP/manifest-recovery.json"
-      - name: Upload sanitized evidence
+          TODAY_JST="$(TZ=Asia/Tokyo date +%F)"
+          test "$TARGET_DATE" = "$APPROVED_TARGET_DATE"
+          test "$TODAY_JST" = "$APPROVED_TARGET_DATE"
+
+      - name: Install the existing acquisition dependencies
+        run: npm install --prefix automation
+
+      - name: Acquire the approved day
+        id: scrape
+        run: node automation/scrape.mjs
+
+      - name: Verify the acquired generation is complete
+        env:
+          TARGET_DATE: ${{ inputs.target_date }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/keirin-one-day-trial"
+          python3 automation/cloud/cloud_manifest_audit.py "data/$TARGET_DATE" \
+            --output "$RUNNER_TEMP/keirin-one-day-trial/completeness.json"
+
+      - name: Save one complete generation through limited CAS
+        env:
+          TARGET_DATE: ${{ inputs.target_date }}
+        run: |
+          set -euo pipefail
+          python3 automation/cloud/cloud_actions_rpc_publish.py --live \
+            --data-root data --target-date "$TARGET_DATE" --max-days 1 \
+            --queue-root "$RUNNER_TEMP/keirin-one-day-trial/queue-first" \
+            --state "$RUNNER_TEMP/keirin-one-day-trial/state-first.json" \
+            --report "$RUNNER_TEMP/keirin-one-day-trial/publish-first.json"
+
+      - name: Resend identical generation and require unchanged decisions
+        env:
+          TARGET_DATE: ${{ inputs.target_date }}
+        run: |
+          set -euo pipefail
+          python3 automation/cloud/cloud_actions_rpc_publish.py --live \
+            --data-root data --target-date "$TARGET_DATE" --max-days 1 \
+            --queue-root "$RUNNER_TEMP/keirin-one-day-trial/queue-second" \
+            --state "$RUNNER_TEMP/keirin-one-day-trial/state-second.json" \
+            --report "$RUNNER_TEMP/keirin-one-day-trial/publish-second.json"
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          root = Path(os.environ["RUNNER_TEMP"]) / "keirin-one-day-trial"
+          first = json.loads((root / "publish-first.json").read_text(encoding="utf-8"))
+          second = json.loads((root / "publish-second.json").read_text(encoding="utf-8"))
+          if first.get("days_success") != 1 or second.get("days_success") != 1:
+              raise SystemExit("one-day publication did not complete")
+          day = second["reports"][0]
+          races = int(day["phases"]["normalization"]["valid_races"])
+          counts = day["phases"]["save"]["counts"]
+          expected = races + 2
+          if counts.get("unchanged") != expected or sum(counts.values()) != expected:
+              raise SystemExit(f"identical resend was not fully unchanged: {counts}")
+          if not day.get("publication", {}).get("published"):
+              raise SystemExit("complete manifest was not published")
+          summary = {
+              "target_date": day["race_date"],
+              "race_count": races,
+              "record_count": expected,
+              "manifest_published": True,
+              "identical_resend_unchanged": counts["unchanged"],
+          }
+          (root / "trial-summary.json").write_text(
+              json.dumps(summary, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
+          print(json.dumps(summary, ensure_ascii=True, sort_keys=True))
+          PY
+
+      - name: Upload sanitized trial evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: cloud-manifest-recovery-20261029
-          path: ${{ runner.temp }}/manifest-recovery.json
+          name: cloud-one-day-cas-trial
+          path: |
+            ${{ runner.temp }}/keirin-one-day-trial/completeness.json
+            ${{ runner.temp }}/keirin-one-day-trial/publish-first.json
+            ${{ runner.temp }}/keirin-one-day-trial/publish-second.json
+            ${{ runner.temp }}/keirin-one-day-trial/trial-summary.json
           if-no-files-found: warn
           retention-days: 14
+
 

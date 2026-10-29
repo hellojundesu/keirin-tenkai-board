@@ -1,137 +1,129 @@
-name: Cloud OIDC read-only connectivity test
+name: Cloud one-day acquisition and CAS trial
 
 on:
   workflow_dispatch:
+    inputs:
+      target_date:
+        description: Approved one-day trial date (JST)
+        required: true
+        default: '2026-10-29'
+        type: string
 
 permissions:
   contents: read
   id-token: write
 
 concurrency:
-  group: keirin-cloud-oidc-read-test
+  group: keirin-cloud-one-day-cas-trial
   cancel-in-progress: false
 
 jobs:
-  oidc-read:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
+  acquire-and-save:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
     environment: github-pages
+    env:
+      APPROVED_TARGET_DATE: '2026-10-29'
+      CLOUD_INGEST_ENDPOINT: https://ypkmorovfnjyesfojcil.supabase.co/functions/v1/cloud-ingest
+      CLOUD_INGEST_AUDIENCE: keirin-cloud-ingest-prod-v1
     steps:
-      - name: Verify rejected and valid read-only requests
-        env:
-          # These are non-secret identifiers for this one-time manual test.
-          CLOUD_INGEST_ENDPOINT: https://ypkmorovfnjyesfojcil.supabase.co/functions/v1/cloud-ingest
-          CLOUD_INGEST_AUDIENCE: keirin-cloud-ingest-prod-v1
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Restrict trial to the approved JST date
         shell: bash
+        env:
+          TARGET_DATE: ${{ inputs.target_date }}
         run: |
           set -euo pipefail
+          TODAY_JST="$(TZ=Asia/Tokyo date +%F)"
+          test "$TARGET_DATE" = "$APPROVED_TARGET_DATE"
+          test "$TODAY_JST" = "$APPROVED_TARGET_DATE"
+
+      - name: Install the existing acquisition dependencies
+        run: npm install --prefix automation
+
+      - name: Acquire the approved day
+        id: scrape
+        run: node automation/scrape.mjs
+
+      - name: Verify the acquired generation is complete
+        env:
+          TARGET_DATE: ${{ inputs.target_date }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/keirin-one-day-trial"
+          python3 automation/cloud/cloud_manifest_audit.py "data/$TARGET_DATE" \
+            --output "$RUNNER_TEMP/keirin-one-day-trial/completeness.json"
+
+      - name: Save one complete generation through limited CAS
+        env:
+          TARGET_DATE: ${{ inputs.target_date }}
+        run: |
+          set -euo pipefail
+          python3 automation/cloud/cloud_actions_rpc_publish.py --live \
+            --data-root data --target-date "$TARGET_DATE" --max-days 1 \
+            --queue-root "$RUNNER_TEMP/keirin-one-day-trial/queue-first" \
+            --state "$RUNNER_TEMP/keirin-one-day-trial/state-first.json" \
+            --report "$RUNNER_TEMP/keirin-one-day-trial/publish-first.json"
+
+      - name: Resend identical generation and require unchanged decisions
+        env:
+          TARGET_DATE: ${{ inputs.target_date }}
+        run: |
+          set -euo pipefail
+          python3 automation/cloud/cloud_actions_rpc_publish.py --live \
+            --data-root data --target-date "$TARGET_DATE" --max-days 1 \
+            --queue-root "$RUNNER_TEMP/keirin-one-day-trial/queue-second" \
+            --state "$RUNNER_TEMP/keirin-one-day-trial/state-second.json" \
+            --report "$RUNNER_TEMP/keirin-one-day-trial/publish-second.json"
           python3 - <<'PY'
           import json
-          import base64
           import os
-          import urllib.error
-          import urllib.parse
-          import urllib.request
+          from pathlib import Path
 
-          endpoint = os.environ["CLOUD_INGEST_ENDPOINT"]
-          audience = os.environ["CLOUD_INGEST_AUDIENCE"]
-          payload = json.dumps({
-              "operation": "read",
-              "record_type": "cloud_acquisition_manifest",
-              "record_key": "2099-12-31",
-          }).encode("utf-8")
-
-          bad = urllib.request.Request(
-              endpoint,
-              data=payload,
-              headers={"Authorization": "Bearer invalid", "Content-Type": "application/json"},
-              method="POST",
-          )
-          try:
-              urllib.request.urlopen(bad, timeout=20)
-              raise RuntimeError("invalid token was unexpectedly accepted")
-          except urllib.error.HTTPError as exc:
-              if exc.code != 401:
-                  raise RuntimeError(f"invalid token returned unexpected HTTP {exc.code}") from exc
-
-          token_url = os.environ["ACTIONS_ID_TOKEN_REQUEST_URL"]
-          request_token = os.environ["ACTIONS_ID_TOKEN_REQUEST_TOKEN"]
-          separator = "&" if "?" in token_url else "?"
-          oidc_request = urllib.request.Request(
-              token_url + separator + urllib.parse.urlencode({"audience": audience}),
-              headers={"Authorization": f"Bearer {request_token}"},
-          )
-          with urllib.request.urlopen(oidc_request, timeout=20) as response:
-              oidc_token = json.loads(response.read().decode("utf-8"))["value"]
-
-          encoded_claims = oidc_token.split(".")[1]
-          encoded_claims += "=" * (-len(encoded_claims) % 4)
-          claims = json.loads(base64.urlsafe_b64decode(encoded_claims).decode("utf-8"))
-          safe_claims = {
-              name: claims.get(name)
-              for name in (
-                  "iss", "aud", "repository", "ref", "environment", "sub",
-                  "workflow_ref", "job_workflow_ref", "run_id", "run_attempt",
-                  "iat", "nbf", "exp",
-              )
+          root = Path(os.environ["RUNNER_TEMP"]) / "keirin-one-day-trial"
+          first = json.loads((root / "publish-first.json").read_text(encoding="utf-8"))
+          second = json.loads((root / "publish-second.json").read_text(encoding="utf-8"))
+          if first.get("days_success") != 1 or second.get("days_success") != 1:
+              raise SystemExit("one-day publication did not complete")
+          day = second["reports"][0]
+          races = int(day["phases"]["normalization"]["valid_races"])
+          counts = day["phases"]["save"]["counts"]
+          expected = races + 2
+          if counts.get("unchanged") != expected or sum(counts.values()) != expected:
+              raise SystemExit(f"identical resend was not fully unchanged: {counts}")
+          if not day.get("publication", {}).get("published"):
+              raise SystemExit("complete manifest was not published")
+          summary = {
+              "target_date": day["race_date"],
+              "race_count": races,
+              "record_count": expected,
+              "manifest_published": True,
+              "identical_resend_unchanged": counts["unchanged"],
           }
-          expected = {
-              "iss": "https://token.actions.githubusercontent.com",
-              "aud": audience,
-              "repository": "hellojundesu/keirin-tenkai-board",
-              "ref": "refs/heads/main",
-              "environment": "github-pages",
-              "sub": "repo:hellojundesu/keirin-tenkai-board:environment:github-pages",
-              "workflow_ref": "hellojundesu/keirin-tenkai-board/.github/workflows/cloud-oidc-read-test.yml@refs/heads/main",
-          }
-          effective_workflow_ref = claims.get("job_workflow_ref") or claims.get("workflow_ref")
-          mismatches = {
-              name: {"expected": value, "actual": safe_claims.get(name)}
-              for name, value in expected.items()
-              if name != "workflow_ref" and safe_claims.get(name) != value
-          }
-          if effective_workflow_ref != expected["workflow_ref"]:
-              mismatches["effective_workflow_ref"] = {
-                  "expected": expected["workflow_ref"],
-                  "actual": effective_workflow_ref,
-              }
-          print("OIDC_SAFE_CLAIMS=" + json.dumps(safe_claims, ensure_ascii=True, sort_keys=True))
-          print("OIDC_CLAIM_MISMATCHES=" + json.dumps(mismatches, ensure_ascii=True, sort_keys=True))
-
-          # A valid token plus an invalid record identity must reach the
-          # post-authentication validator and return HTTP 400. This separates
-          # OIDC rejection (403) from a downstream storage read failure.
-          probe_payload = json.dumps({
-              "operation": "read",
-              "record_type": "invalid_probe_type",
-              "record_key": "2099-12-31",
-          }).encode("utf-8")
-          probe = urllib.request.Request(
-              endpoint,
-              data=probe_payload,
-              headers={"Authorization": f"Bearer {oidc_token}", "Content-Type": "application/json"},
-              method="POST",
+          (root / "trial-summary.json").write_text(
+              json.dumps(summary, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
           )
-          try:
-              urllib.request.urlopen(probe, timeout=30)
-              raise RuntimeError("OIDC probe unexpectedly succeeded")
-          except urllib.error.HTTPError as exc:
-              if exc.code != 400:
-                  raise RuntimeError(f"OIDC authentication probe returned HTTP {exc.code}") from exc
-
-          valid = urllib.request.Request(
-              endpoint,
-              data=payload,
-              headers={"Authorization": f"Bearer {oidc_token}", "Content-Type": "application/json"},
-              method="POST",
-          )
-          with urllib.request.urlopen(valid, timeout=30) as response:
-              body = json.loads(response.read().decode("utf-8"))
-              if response.status != 200 or "record" not in body:
-                  raise RuntimeError("valid OIDC read response was invalid")
-
-          print("OIDC invalid-token rejection: PASS")
-          print("OIDC signature and fixed-claim validation: PASS")
-          print("OIDC authenticated read-only request: PASS")
+          print(json.dumps(summary, ensure_ascii=True, sort_keys=True))
           PY
+
+      - name: Upload sanitized trial evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cloud-one-day-cas-trial
+          path: |
+            ${{ runner.temp }}/keirin-one-day-trial/completeness.json
+            ${{ runner.temp }}/keirin-one-day-trial/publish-first.json
+            ${{ runner.temp }}/keirin-one-day-trial/publish-second.json
+            ${{ runner.temp }}/keirin-one-day-trial/trial-summary.json
+          if-no-files-found: warn
+          retention-days: 14
 

@@ -1,10 +1,10 @@
-name: Cloud one-day acquisition and CAS trial
+name: Cloud one-day comment CAS trial
 
 on:
   workflow_dispatch:
     inputs:
       target_date:
-        description: Approved one-day trial date (JST)
+        description: Approved one-day comment trial date (JST)
         required: true
         default: '2026-10-29'
         type: string
@@ -14,11 +14,11 @@ permissions:
   id-token: write
 
 concurrency:
-  group: keirin-cloud-one-day-cas-trial
+  group: keirin-cloud-comment-one-day-trial
   cancel-in-progress: false
 
 jobs:
-  acquire-and-save:
+  comment-trial:
     runs-on: ubuntu-24.04
     timeout-minutes: 90
     environment: github-pages
@@ -26,91 +26,156 @@ jobs:
       APPROVED_TARGET_DATE: '2026-10-29'
       CLOUD_INGEST_ENDPOINT: https://ypkmorovfnjyesfojcil.supabase.co/functions/v1/cloud-ingest
       CLOUD_INGEST_AUDIENCE: keirin-cloud-ingest-prod-v1
+      COMMENT_ROOT: ${{ github.workspace }}/.comment-trial
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-
-      - name: Restrict trial to the approved JST date
+      - name: Restrict trial to the approved saved day
         shell: bash
         env:
           TARGET_DATE: ${{ inputs.target_date }}
         run: |
           set -euo pipefail
-          TODAY_JST="$(TZ=Asia/Tokyo date +%F)"
           test "$TARGET_DATE" = "$APPROVED_TARGET_DATE"
-          test "$TODAY_JST" = "$APPROVED_TARGET_DATE"
+          test -f "data/$TARGET_DATE/manifest.json"
+          mkdir -p "$COMMENT_ROOT/cache"
 
-      - name: Install the existing acquisition dependencies
-        run: npm install --prefix automation
+      - name: Restore meeting-resolution checkpoint
+        id: restore-meetings
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ github.workspace }}/.comment-trial/meetings.json
+          key: cloud-comment-meetings-${{ inputs.target_date }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            cloud-comment-meetings-${{ inputs.target_date }}-
 
-      - name: Acquire the approved day
-        id: scrape
-        run: node automation/scrape.mjs
-
-      - name: Verify the acquired generation is complete
+      - name: Build the saved-day comment catalog
+        id: catalog
         env:
           TARGET_DATE: ${{ inputs.target_date }}
         run: |
           set -euo pipefail
-          mkdir -p "$RUNNER_TEMP/keirin-one-day-trial"
-          python3 automation/cloud/cloud_manifest_audit.py "data/$TARGET_DATE" \
-            --output "$RUNNER_TEMP/keirin-one-day-trial/completeness.json"
+          python3 automation/comments/cloud_comment_catalog.py "data/$TARGET_DATE" \
+            --output "$COMMENT_ROOT/catalog.json"
 
-      - name: Save one complete generation through limited CAS
-        env:
-          TARGET_DATE: ${{ inputs.target_date }}
+      - name: Check one meeting candidate per venue
+        id: meeting
+        continue-on-error: true
         run: |
           set -euo pipefail
-          python3 automation/cloud/cloud_actions_rpc_publish.py --live \
-            --data-root data --target-date "$TARGET_DATE" --max-days 1 \
-            --queue-root "$RUNNER_TEMP/keirin-one-day-trial/queue-first" \
-            --state "$RUNNER_TEMP/keirin-one-day-trial/state-first.json" \
-            --report "$RUNNER_TEMP/keirin-one-day-trial/publish-first.json"
+          python3 automation/comments/cloud_comment_meeting_resolver.py --live \
+            --catalog "$COMMENT_ROOT/catalog.json" \
+            --state "$COMMENT_ROOT/meetings.json" \
+            --cache-root "$COMMENT_ROOT/cache"
 
-      - name: Resend identical generation and require unchanged decisions
-        env:
-          TARGET_DATE: ${{ inputs.target_date }}
+      - name: Check whether every race has confirmed meeting evidence
+        id: readiness
+        if: always() && steps.catalog.outcome == 'success'
+        shell: bash
         run: |
-          set -euo pipefail
-          python3 automation/cloud/cloud_actions_rpc_publish.py --live \
-            --data-root data --target-date "$TARGET_DATE" --max-days 1 \
-            --queue-root "$RUNNER_TEMP/keirin-one-day-trial/queue-second" \
-            --state "$RUNNER_TEMP/keirin-one-day-trial/state-second.json" \
-            --report "$RUNNER_TEMP/keirin-one-day-trial/publish-second.json"
           python3 - <<'PY'
           import json
           import os
           from pathlib import Path
 
-          root = Path(os.environ["RUNNER_TEMP"]) / "keirin-one-day-trial"
-          first = json.loads((root / "publish-first.json").read_text(encoding="utf-8"))
-          second = json.loads((root / "publish-second.json").read_text(encoding="utf-8"))
-          if first.get("days_success") != 1 or second.get("days_success") != 1:
-              raise SystemExit("one-day publication did not complete")
-          day = second["reports"][0]
-          races = int(day["phases"]["normalization"]["valid_races"])
-          counts = day["phases"]["save"]["counts"]
-          expected = races + 2
-          if counts.get("unchanged") != expected or sum(counts.values()) != expected:
-              raise SystemExit(f"identical resend was not fully unchanged: {counts}")
-          if not day.get("publication", {}).get("published"):
-              raise SystemExit("complete manifest was not published")
+          root = Path(os.environ["COMMENT_ROOT"])
+          catalog = json.loads((root / "catalog.json").read_text(encoding="utf-8"))
+          state_path = root / "meetings.json"
+          state = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {}
+          meetings = state.get("meetings") or {}
+          expected = {str(row["race_id"]) for row in catalog.get("races") or []}
+          confirmed = {race_id for race_id, row in meetings.items() if row.get("evidence_status") == "confirmed"}
+          missing = sorted(expected - confirmed)
+          ready = not missing and bool(expected)
+          print(f"ready={'true' if ready else 'false'}")
+          print(f"expected={len(expected)} confirmed={len(expected - set(missing))} missing={len(missing)}")
+          with Path(os.environ["GITHUB_OUTPUT"]).open("a", encoding="utf-8") as handle:
+              handle.write(f"ready={'true' if ready else 'false'}\n")
+              handle.write(f"expected={len(expected)}\n")
+              handle.write(f"missing={len(missing)}\n")
+          PY
+
+      - name: Save meeting-resolution checkpoint
+        if: always() && hashFiles(format('{0}/meetings.json', env.COMMENT_ROOT)) != ''
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ github.workspace }}/.comment-trial/meetings.json
+          key: cloud-comment-meetings-${{ inputs.target_date }}-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Acquire inspection and post-race comments
+        id: acquire
+        if: steps.readiness.outputs.ready == 'true'
+        continue-on-error: true
+        env:
+          TARGET_DATE: ${{ inputs.target_date }}
+          COMMENT_PAGE_CACHE: ${{ runner.temp }}/keirin-cloud-comments/cache
+        run: |
+          set -euo pipefail
+          python3 automation/comments/cloud_comment_acquisition.py --live \
+            --catalog "$COMMENT_ROOT/catalog.json" \
+            --meeting-evidence "$COMMENT_ROOT/meetings.json" \
+            --state-db "$COMMENT_ROOT/state.sqlite3" \
+            --output "$COMMENT_ROOT/records.json" \
+            --run-report "$COMMENT_ROOT/acquisition-report.json" \
+            --today "$TARGET_DATE"
+
+      - name: Save the independent comment generation through limited CAS
+        id: publish
+        if: steps.acquire.outcome == 'success'
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          python3 automation/comments/cloud_comment_rpc_publish.py --live \
+            --records "$COMMENT_ROOT/records.json" \
+            --queue "$COMMENT_ROOT/queue.json" \
+            --report "$COMMENT_ROOT/publish-report.json"
+
+      - name: Verify the stored manifest and every dependency
+        id: verify
+        if: steps.publish.outcome == 'success'
+        continue-on-error: true
+        env:
+          TARGET_DATE: ${{ inputs.target_date }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          import os
+          import sys
+          from pathlib import Path
+
+          root = Path(os.environ["COMMENT_ROOT"])
+          sys.path[:0] = ["automation/comments", "automation/cloud"]
+          from cloud_comment_integration import validate_comment_generation
+          from cloud_oidc_gateway_client import OIDCGatewayClient
+
+          client = OIDCGatewayClient(os.environ["CLOUD_INGEST_ENDPOINT"], os.environ["CLOUD_INGEST_AUDIENCE"])
+          target = os.environ["TARGET_DATE"]
+          manifest_response = client.call({"operation": "read", "record_type": "cloud_comment_manifest", "record_key": target})
+          manifest = (manifest_response or {}).get("record")
+          if not manifest:
+              raise SystemExit("comment manifest was not stored")
+          race_ids = (manifest.get("payload") or {}).get("race_ids") or []
+          records = []
+          for race_id in race_ids:
+              response = client.call({"operation": "read", "record_type": "cloud_race_comment", "record_key": race_id})
+              record = (response or {}).get("record")
+              if not record:
+                  raise SystemExit(f"comment dependency missing: {race_id}")
+              records.append(record)
+          records.append(manifest)
+          checked = validate_comment_generation(records)
           summary = {
-              "target_date": day["race_date"],
-              "race_count": races,
-              "record_count": expected,
-              "manifest_published": True,
-              "identical_resend_unchanged": counts["unchanged"],
+              "target_date": target,
+              "race_count": len(race_ids),
+              "stored_records": len(records),
+              "manifest_status": checked["status"],
+              "state_counts": checked["state_counts"],
+              "retry_required": checked["retry_required"],
           }
-          (root / "trial-summary.json").write_text(
-              json.dumps(summary, ensure_ascii=False, indent=2) + "\n",
-              encoding="utf-8",
-          )
+          (root / "verification.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
           print(json.dumps(summary, ensure_ascii=True, sort_keys=True))
           PY
 
@@ -118,12 +183,15 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: cloud-one-day-cas-trial
+          name: cloud-comment-one-day-trial-${{ github.run_id }}-${{ github.run_attempt }}
           path: |
-            ${{ runner.temp }}/keirin-one-day-trial/completeness.json
-            ${{ runner.temp }}/keirin-one-day-trial/publish-first.json
-            ${{ runner.temp }}/keirin-one-day-trial/publish-second.json
-            ${{ runner.temp }}/keirin-one-day-trial/trial-summary.json
+            ${{ github.workspace }}/.comment-trial/acquisition-report.json
+            ${{ github.workspace }}/.comment-trial/publish-report.json
+            ${{ github.workspace }}/.comment-trial/verification.json
+            ${{ github.workspace }}/.comment-trial/meetings.json
           if-no-files-found: warn
           retention-days: 14
 
+      - name: Reflect comment trial failures in the job result
+        if: always() && (steps.readiness.outputs.ready != 'true' || steps.acquire.outcome == 'failure' || steps.publish.outcome == 'failure' || steps.verify.outcome == 'failure')
+        run: exit 1

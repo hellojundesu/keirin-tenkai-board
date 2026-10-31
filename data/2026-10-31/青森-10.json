@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-31",
+  "venue": "青森",
+  "race": 10,
+  "raceId": "202610311210",
+  "riders": [
+    {
+      "number": 1,
+      "name": "才迫 開",
+      "snum": "014883",
+      "style": "両",
+      "score": "102.15",
+      "back": 4,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210"
+      }
+    },
+    {
+      "number": 2,
+      "name": "西村 光太",
+      "snum": "014537",
+      "style": "追",
+      "score": "104.90",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210"
+      }
+    },
+    {
+      "number": 3,
+      "name": "丸山 留依",
+      "snum": "015896",
+      "style": "逃",
+      "score": "102.58",
+      "back": 13,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210"
+      }
+    },
+    {
+      "number": 4,
+      "name": "佐藤 和也",
+      "snum": "014427",
+      "style": "追",
+      "score": "105.13",
+      "back": 1,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210"
+      }
+    },
+    {
+      "number": 5,
+      "name": "北村 信明",
+      "snum": "014327",
+      "style": "追",
+      "score": "100.68",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210"
+      }
+    },
+    {
+      "number": 6,
+      "name": "伊藤 裕貴",
+      "snum": "014831",
+      "style": "両",
+      "score": "98.83",
+      "back": 3,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210"
+      }
+    },
+    {
+      "number": 7,
+      "name": "和田 圭",
+      "snum": "014210",
+      "style": "追",
+      "score": "110.29",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610311210"
+      }
+    }
+  ],
+  "lines": [
+    [
+      6,
+      2
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      7,
+      4
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610311210"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-31T05:23:29.931Z"
+}

@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-31",
+  "venue": "青森",
+  "race": 1,
+  "raceId": "202610311201",
+  "riders": [
+    {
+      "number": 1,
+      "name": "伊藤 歩登",
+      "snum": "015275",
+      "style": "逃",
+      "score": "85.17",
+      "back": 8,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201"
+      }
+    },
+    {
+      "number": 2,
+      "name": "佐々木 健司",
+      "snum": "013006",
+      "style": "追",
+      "score": "81.68",
+      "back": 0,
+      "start": 11,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201"
+      }
+    },
+    {
+      "number": 3,
+      "name": "藤原 亮太",
+      "snum": "014615",
+      "style": "両",
+      "score": "80.44",
+      "back": 2,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201"
+      }
+    },
+    {
+      "number": 4,
+      "name": "東 鉄也",
+      "snum": "013952",
+      "style": "両",
+      "score": "81.03",
+      "back": 3,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201"
+      }
+    },
+    {
+      "number": 5,
+      "name": "栗林 巧",
+      "snum": "013984",
+      "style": "追",
+      "score": "81.00",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201"
+      }
+    },
+    {
+      "number": 6,
+      "name": "田中 孝法",
+      "snum": "014195",
+      "style": "追",
+      "score": "79.68",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201"
+      }
+    },
+    {
+      "number": 7,
+      "name": "郡 英治",
+      "snum": "012466",
+      "style": "追",
+      "score": "81.41",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610311201"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      4,
+      5
+    ],
+    [
+      2
+    ],
+    [
+      3,
+      7,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610311201"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-31T05:23:24.404Z"
+}

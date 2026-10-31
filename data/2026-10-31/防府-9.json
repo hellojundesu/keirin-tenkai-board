@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-31",
+  "venue": "防府",
+  "race": 9,
+  "raceId": "202610316309",
+  "riders": [
+    {
+      "number": 1,
+      "name": "山田 久徳",
+      "snum": "014317",
+      "style": "両",
+      "score": "111.10",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309"
+      }
+    },
+    {
+      "number": 2,
+      "name": "寺沼 拓摩",
+      "snum": "015349",
+      "style": "両",
+      "score": "105.31",
+      "back": 5,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309"
+      }
+    },
+    {
+      "number": 3,
+      "name": "中川 聖大",
+      "snum": "015651",
+      "style": "逃",
+      "score": "99.59",
+      "back": 14,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309"
+      }
+    },
+    {
+      "number": 4,
+      "name": "牧 剛央",
+      "snum": "013368",
+      "style": "追",
+      "score": "99.05",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309"
+      }
+    },
+    {
+      "number": 5,
+      "name": "南部 翔大",
+      "snum": "015825",
+      "style": "逃",
+      "score": "102.87",
+      "back": 12,
+      "start": 11,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309"
+      }
+    },
+    {
+      "number": 6,
+      "name": "坂田 章",
+      "snum": "014330",
+      "style": "追",
+      "score": "97.74",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309"
+      }
+    },
+    {
+      "number": 7,
+      "name": "志村 龍己",
+      "snum": "014664",
+      "style": "追",
+      "score": "102.09",
+      "back": 0,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309"
+      }
+    },
+    {
+      "number": 8,
+      "name": "大塚 玲",
+      "snum": "014017",
+      "style": "追",
+      "score": "98.27",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309"
+      }
+    },
+    {
+      "number": 9,
+      "name": "川口 公太朗",
+      "snum": "014700",
+      "style": "追",
+      "score": "103.00",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610316309"
+      }
+    }
+  ],
+  "lines": [
+    [
+      5,
+      1,
+      9
+    ],
+    [
+      2,
+      7,
+      8
+    ],
+    [
+      3,
+      4,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610316309"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-31T05:23:20.561Z"
+}

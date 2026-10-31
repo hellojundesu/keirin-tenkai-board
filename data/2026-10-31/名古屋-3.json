@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-31",
+  "venue": "名古屋",
+  "race": 3,
+  "raceId": "202610314203",
+  "riders": [
+    {
+      "number": 1,
+      "name": "菱沼 元樹",
+      "snum": "015164",
+      "style": "逃",
+      "score": "75.82",
+      "back": 19,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203"
+      }
+    },
+    {
+      "number": 2,
+      "name": "藤井 孝則",
+      "snum": "013489",
+      "style": "追",
+      "score": "72.58",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203"
+      }
+    },
+    {
+      "number": 3,
+      "name": "平川 雅晃",
+      "snum": "015044",
+      "style": "逃",
+      "score": "71.37",
+      "back": 10,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203"
+      }
+    },
+    {
+      "number": 4,
+      "name": "相澤 恵一",
+      "snum": "014432",
+      "style": "追",
+      "score": "70.67",
+      "back": 1,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203"
+      }
+    },
+    {
+      "number": 5,
+      "name": "三浦 綾",
+      "snum": "014986",
+      "style": "逃",
+      "score": "70.10",
+      "back": 7,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203"
+      }
+    },
+    {
+      "number": 6,
+      "name": "高嶋 一朗",
+      "snum": "011935",
+      "style": "追",
+      "score": "69.82",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203"
+      }
+    },
+    {
+      "number": 7,
+      "name": "高尾 剛文",
+      "snum": "012319",
+      "style": "追",
+      "score": "69.14",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202610314203"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      2
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      3
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202610314203"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-10-31T05:23:59.604Z"
+}

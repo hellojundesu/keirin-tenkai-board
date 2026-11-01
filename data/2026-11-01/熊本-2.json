@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-01",
+  "venue": "熊本",
+  "race": 2,
+  "raceId": "202611018702",
+  "riders": [
+    {
+      "number": 1,
+      "name": "肥後 公允",
+      "snum": "014179",
+      "style": "両",
+      "score": "69.95",
+      "back": 1,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702"
+      }
+    },
+    {
+      "number": 2,
+      "name": "岡崎 克政",
+      "snum": "014257",
+      "style": "逃",
+      "score": "71.62",
+      "back": 15,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702"
+      }
+    },
+    {
+      "number": 3,
+      "name": "長崎 達也",
+      "snum": "014019",
+      "style": "両",
+      "score": "67.29",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702"
+      }
+    },
+    {
+      "number": 4,
+      "name": "高橋 由記",
+      "snum": "013927",
+      "style": "追",
+      "score": "69.35",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702"
+      }
+    },
+    {
+      "number": 5,
+      "name": "富永 昌久",
+      "snum": "013972",
+      "style": "追",
+      "score": "69.70",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702"
+      }
+    },
+    {
+      "number": 6,
+      "name": "清水 広幸",
+      "snum": "011382",
+      "style": "追",
+      "score": "62.73",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702"
+      }
+    },
+    {
+      "number": 7,
+      "name": "廣川 貞治",
+      "snum": "011790",
+      "style": "追",
+      "score": "65.43",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611018702"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611018702"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-01T05:51:00.458Z"
+}

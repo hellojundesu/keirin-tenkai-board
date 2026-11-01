@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-01",
+  "venue": "久留米",
+  "race": 4,
+  "raceId": "202611018304",
+  "riders": [
+    {
+      "number": 1,
+      "name": "栗田 貴徳",
+      "snum": "014331",
+      "style": "追",
+      "score": "88.57",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304"
+      }
+    },
+    {
+      "number": 2,
+      "name": "渡邉 直弥",
+      "snum": "015264",
+      "style": "両",
+      "score": "82.88",
+      "back": 4,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304"
+      }
+    },
+    {
+      "number": 3,
+      "name": "堀 政美",
+      "snum": "012164",
+      "style": "追",
+      "score": "83.95",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304"
+      }
+    },
+    {
+      "number": 4,
+      "name": "小林 信晴",
+      "snum": "013571",
+      "style": "追",
+      "score": "89.74",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304"
+      }
+    },
+    {
+      "number": 5,
+      "name": "齋藤 一茂",
+      "snum": "014579",
+      "style": "逃",
+      "score": "84.38",
+      "back": 10,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304"
+      }
+    },
+    {
+      "number": 6,
+      "name": "赤井 学",
+      "snum": "013106",
+      "style": "追",
+      "score": "81.75",
+      "back": 0,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304"
+      }
+    },
+    {
+      "number": 7,
+      "name": "加藤 駿",
+      "snum": "015899",
+      "style": "逃",
+      "score": "90.27",
+      "back": 8,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611018304"
+      }
+    }
+  ],
+  "lines": [
+    [
+      7,
+      4
+    ],
+    [
+      1
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      5,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611018304"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-01T05:50:22.677Z"
+}

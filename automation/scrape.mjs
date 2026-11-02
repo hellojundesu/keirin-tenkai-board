@@ -4,19 +4,29 @@ import {resolve,join} from 'node:path';
 import {parseArgs} from 'node:util';
 import {extractRace,extractProfile,extractSupplement} from './parsers.mjs';
 import {fillMissingLines} from './fill-lines.mjs';
-import {resolveTargetDate} from './target-date.mjs';
 
-const {values:options}=parseArgs({options:{venue:{type:'string'},race:{type:'string'},'data-root':{type:'string'},evidence:{type:'string'},schedule:{type:'string'},'lines-only':{type:'boolean',default:false}}});
+const {values:options}=parseArgs({options:{venue:{type:'string'},race:{type:'string'},'data-root':{type:'string'},evidence:{type:'string'},'lines-only':{type:'boolean',default:false},'target-date':{type:'string'}}});
 if(options.race&&(!options.venue||!/^([1-9]|1[0-2])$/.test(options.race)))throw Error('--race は --venue と1〜12を指定してください');
 const VENUES='函館 青森 いわき平 弥彦 前橋 取手 宇都宮 大宮 西武園 京王閣 立川 松戸 千葉 川崎 平塚 小田原 伊東 静岡 名古屋 岐阜 大垣 豊橋 富山 松阪 四日市 福井 奈良 向日町 和歌山 岸和田 玉野 広島 防府 高松 小松島 高知 松山 小倉 久留米 武雄 佐世保 別府 熊本'.split(' ');
 if(options.venue&&!VENUES.includes(options.venue))throw Error('会場名が不正です');
-const date=resolveTargetDate({schedule:options.schedule});
+const currentDate=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+const date=options['target-date']||currentDate;
+const parsedDate=new Date(date+'T00:00:00Z');
+if(!/^\d{4}-\d{2}-\d{2}$/.test(date)||Number.isNaN(parsedDate.valueOf())||parsedDate.toISOString().slice(0,10)!==date)throw Error('--target-date は YYYY-MM-DD で指定してください');
 const directory=join(resolve(options['data-root']||'data'),date);
 await mkdir(directory,{recursive:true});
 if(options.evidence)await mkdir(resolve(options.evidence),{recursive:true});
 const manifestPath=join(directory,'manifest.json');
 let prior={};try{prior=JSON.parse(await readFile(manifestPath,'utf8'))}catch{}
+if(date!==currentDate){
+  console.error(`対象日 ${date} は現在の公開日 ${currentDate} と異なるため保留します。別日へ切り替えません。`);
+  process.exit(75);
+}
 if(options['lines-only']){
+  if(prior.date!==date||!Array.isArray(prior.races)){
+    console.error(`対象日 ${date} のmanifestがないためライン補完を保留します。`);
+    process.exit(75);
+  }
   let lineBrowser,linePage,currentVenue;
   try{
     const report=await fillMissingLines({directory,date,manifest:prior,venue:options.venue,race:options.race,getCard:async(venue,race)=>{

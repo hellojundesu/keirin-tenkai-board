@@ -1,6 +1,11 @@
-name: 選手コメントを手動取得
+name: 選手コメント定期・手動取得
 
 on:
+  schedule:
+    # 09:00 / 21:30 JST: 当日。04:00 JST: UTC上の前日を補完。
+    - cron: '0 0 * * *'
+    - cron: '30 12 * * *'
+    - cron: '0 19 * * *'
   workflow_dispatch:
     inputs:
       target_date:
@@ -60,7 +65,7 @@ jobs:
           PY
 
   comment-trial:
-    if: inputs.operation == 'acquire' || inputs.operation == 'acquire-confirmed'
+    if: github.event_name == 'schedule' || inputs.operation == 'acquire' || inputs.operation == 'acquire-confirmed'
     runs-on: ubuntu-24.04
     timeout-minutes: 90
     environment: github-pages
@@ -73,10 +78,26 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: 予定実行枠から対象日を固定
+        id: target
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_SCHEDULE: ${{ github.event.schedule || '' }}
+          MANUAL_TARGET_DATE: ${{ inputs.target_date || '' }}
+        run: |
+          set -euo pipefail
+          target_date="$(python3 automation/cloud/cloud_target_date.py \
+            --event-name "$EVENT_NAME" \
+            --schedule "$EVENT_SCHEDULE" \
+            --manual-date "$MANUAL_TARGET_DATE")"
+          echo "target_date=$target_date" >> "$GITHUB_OUTPUT"
+          echo "comment target date: $target_date"
+
       - name: 対象日と保存済み出走表を確認
         shell: bash
         env:
-          TARGET_DATE: ${{ inputs.target_date }}
+          TARGET_DATE: ${{ steps.target.outputs.target_date }}
         run: |
           set -euo pipefail
           python3 -c 'import datetime, os; value=os.environ["TARGET_DATE"]; assert datetime.date.fromisoformat(value).isoformat() == value'
@@ -88,14 +109,14 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: ${{ github.workspace }}/.comment-trial/meetings.json
-          key: cloud-comment-meetings-${{ inputs.target_date }}-${{ github.run_id }}-${{ github.run_attempt }}
+          key: cloud-comment-meetings-${{ steps.target.outputs.target_date }}-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
-            cloud-comment-meetings-${{ inputs.target_date }}-
+            cloud-comment-meetings-${{ steps.target.outputs.target_date }}-
 
       - name: Build the saved-day comment catalog
         id: catalog
         env:
-          TARGET_DATE: ${{ inputs.target_date }}
+          TARGET_DATE: ${{ steps.target.outputs.target_date }}
         run: |
           set -euo pipefail
           python3 automation/comments/cloud_comment_catalog.py "data/$TARGET_DATE" \
@@ -103,7 +124,7 @@ jobs:
 
       - name: Check one meeting candidate per venue
         id: meeting
-        if: inputs.operation == 'acquire'
+        if: github.event_name == 'schedule' || inputs.operation == 'acquire'
         continue-on-error: true
         run: |
           set -euo pipefail
@@ -115,7 +136,7 @@ jobs:
       - name: Limit this trial to the 31 confirmed races
         id: selection
         env:
-          COMMENT_OPERATION: ${{ inputs.operation }}
+          COMMENT_OPERATION: ${{ github.event_name == 'schedule' && 'acquire' || inputs.operation }}
         run: |
           set -euo pipefail
           python3 - <<'PY'
@@ -178,14 +199,14 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: ${{ github.workspace }}/.comment-trial/meetings.json
-          key: cloud-comment-meetings-${{ inputs.target_date }}-${{ github.run_id }}-${{ github.run_attempt }}
+          key: cloud-comment-meetings-${{ steps.target.outputs.target_date }}-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Acquire inspection and post-race comments
         id: acquire
         if: steps.readiness.outputs.ready == 'true'
         continue-on-error: true
         env:
-          TARGET_DATE: ${{ inputs.target_date }}
+          TARGET_DATE: ${{ steps.target.outputs.target_date }}
           COMMENT_PAGE_CACHE: ${{ runner.temp }}/keirin-cloud-comments/cache
         run: |
           set -euo pipefail
@@ -213,7 +234,7 @@ jobs:
         if: steps.publish.outcome == 'success'
         continue-on-error: true
         env:
-          TARGET_DATE: ${{ inputs.target_date }}
+          TARGET_DATE: ${{ steps.target.outputs.target_date }}
         run: |
           set -euo pipefail
           python3 - <<'PY'

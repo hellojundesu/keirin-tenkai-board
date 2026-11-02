@@ -4,6 +4,7 @@ import {resolve,join} from 'node:path';
 import {parseArgs} from 'node:util';
 import {extractRace,extractProfile,extractSupplement} from './parsers.mjs';
 import {fillMissingLines} from './fill-lines.mjs';
+import {resolveTargetDate} from './target-date.mjs';
 
 const {values:options}=parseArgs({options:{venue:{type:'string'},race:{type:'string'},'data-root':{type:'string'},evidence:{type:'string'},'lines-only':{type:'boolean',default:false},'target-date':{type:'string'}}});
 if(options.race&&(!options.venue||!/^([1-9]|1[0-2])$/.test(options.race)))throw Error('--race は --venue と1〜12を指定してください');

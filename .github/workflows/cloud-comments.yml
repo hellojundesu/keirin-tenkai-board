@@ -15,6 +15,7 @@ on:
         options:
           - oidc-read
           - acquire
+          - acquire-confirmed
 
 permissions:
   contents: read
@@ -59,7 +60,7 @@ jobs:
           PY
 
   comment-trial:
-    if: inputs.operation == 'acquire'
+    if: inputs.operation == 'acquire' || inputs.operation == 'acquire-confirmed'
     runs-on: ubuntu-24.04
     timeout-minutes: 90
     environment: github-pages
@@ -102,6 +103,7 @@ jobs:
 
       - name: Check one meeting candidate per venue
         id: meeting
+        if: inputs.operation == 'acquire'
         continue-on-error: true
         run: |
           set -euo pipefail
@@ -110,9 +112,43 @@ jobs:
             --state "$COMMENT_ROOT/meetings.json" \
             --cache-root "$COMMENT_ROOT/cache"
 
+      - name: Limit this trial to the 31 confirmed races
+        id: selection
+        env:
+          COMMENT_OPERATION: ${{ inputs.operation }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          root = Path(os.environ["COMMENT_ROOT"])
+          catalog = json.loads((root / "catalog.json").read_text(encoding="utf-8"))
+          selected = dict(catalog)
+          if os.environ["COMMENT_OPERATION"] == "acquire-confirmed":
+              state_path = root / "meetings.json"
+              if not state_path.exists():
+                  raise SystemExit("saved meeting checkpoint is missing")
+              state = json.loads(state_path.read_text(encoding="utf-8"))
+              meetings = state.get("meetings") or {}
+              races = [
+                  row for row in catalog.get("races") or []
+                  if (meetings.get(str(row["race_id"])) or {}).get("evidence_status") == "confirmed"
+              ]
+              if len(races) != 31:
+                  raise SystemExit(f"confirmed race count must be 31, got {len(races)}")
+              selected["races"] = races
+          (root / "catalog-selected.json").write_text(
+              json.dumps(selected, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
+          print(f"selected={len(selected.get('races') or [])}")
+          PY
+
       - name: Check whether every race has confirmed meeting evidence
         id: readiness
-        if: always() && steps.catalog.outcome == 'success'
+        if: steps.selection.outcome == 'success'
         shell: bash
         run: |
           python3 - <<'PY'
@@ -121,7 +157,7 @@ jobs:
           from pathlib import Path
 
           root = Path(os.environ["COMMENT_ROOT"])
-          catalog = json.loads((root / "catalog.json").read_text(encoding="utf-8"))
+          catalog = json.loads((root / "catalog-selected.json").read_text(encoding="utf-8"))
           state_path = root / "meetings.json"
           state = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {}
           meetings = state.get("meetings") or {}
@@ -154,7 +190,7 @@ jobs:
         run: |
           set -euo pipefail
           python3 automation/comments/cloud_comment_acquisition.py --live \
-            --catalog "$COMMENT_ROOT/catalog.json" \
+            --catalog "$COMMENT_ROOT/catalog-selected.json" \
             --meeting-evidence "$COMMENT_ROOT/meetings.json" \
             --state-db "$COMMENT_ROOT/state.sqlite3" \
             --output "$COMMENT_ROOT/records.json" \

@@ -1,0 +1,43 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {resolveTargetDate} from './target-date.mjs';
+
+test('通常のlines-onlyは当日を対象にする', () => {
+  assert.equal(
+    resolveTargetDate({
+      now: '2026-11-01T09:05:00Z', // 18:05 JST
+      schedule: '0 9 * * *',
+    }),
+    '2026-11-01',
+  );
+});
+
+test('lines-onlyが日付をまたいでも予定日を維持する', () => {
+  assert.equal(
+    resolveTargetDate({
+      now: '2026-11-01T16:30:00Z', // 11月2日 01:30 JST
+      schedule: '0 9 * * *',
+    }),
+    '2026-11-01',
+  );
+});
+
+test('full取得が日付をまたいでも予定日を維持する', () => {
+  assert.equal(
+    resolveTargetDate({
+      now: '2026-11-01T16:30:00Z',
+      schedule: '9 0 * * *',
+    }),
+    '2026-11-01',
+  );
+});
+
+test('未知のcronでは日付を推測しない', () => {
+  assert.throws(
+    () => resolveTargetDate({
+      now: '2026-11-01T09:05:00Z',
+      schedule: '1 2 * * *',
+    }),
+    /未対応の定期実行時刻/,
+  );
+});

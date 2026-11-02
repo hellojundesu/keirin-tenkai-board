@@ -7,6 +7,14 @@ on:
         description: コメント取得対象日（YYYY-MM-DD）
         required: true
         type: string
+      operation:
+        description: 実行内容
+        required: true
+        default: oidc-read
+        type: choice
+        options:
+          - oidc-read
+          - acquire
 
 permissions:
   contents: read
@@ -17,7 +25,41 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  oidc-read:
+    if: inputs.operation == 'oidc-read'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    environment: github-pages
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: コメント専用workflowのOIDC読み取り疎通
+        env:
+          CLOUD_INGEST_ENDPOINT: https://ypkmorovfnjyesfojcil.supabase.co/functions/v1/cloud-ingest
+          CLOUD_INGEST_AUDIENCE: keirin-cloud-ingest-prod-v1
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os
+          from automation.cloud.cloud_oidc_gateway_client import OIDCGatewayClient
+
+          result = OIDCGatewayClient(
+              os.environ["CLOUD_INGEST_ENDPOINT"],
+              os.environ["CLOUD_INGEST_AUDIENCE"],
+              retries=1,
+          ).call({
+              "operation": "read",
+              "record_type": "cloud_comment_manifest",
+              "record_key": "2099-12-31",
+          })
+          if not isinstance(result, dict) or "record" not in result:
+              raise SystemExit("OIDC read response is invalid")
+          print("comment workflow OIDC read-only connectivity: PASS")
+          PY
+
   comment-trial:
+    if: inputs.operation == 'acquire'
     runs-on: ubuntu-24.04
     timeout-minutes: 90
     environment: github-pages

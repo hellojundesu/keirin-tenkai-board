@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-02",
+  "venue": "熊本",
+  "race": 2,
+  "raceId": "202611028702",
+  "riders": [
+    {
+      "number": 1,
+      "name": "富永 昌久",
+      "snum": "013972",
+      "style": "追",
+      "score": "69.70",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702"
+      }
+    },
+    {
+      "number": 2,
+      "name": "藤田 晃英",
+      "snum": "013029",
+      "style": "追",
+      "score": "69.79",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702"
+      }
+    },
+    {
+      "number": 3,
+      "name": "肥後 公允",
+      "snum": "014179",
+      "style": "両",
+      "score": "69.95",
+      "back": 1,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702"
+      }
+    },
+    {
+      "number": 4,
+      "name": "湯浅 大輔",
+      "snum": "014519",
+      "style": "逃",
+      "score": "75.25",
+      "back": 0,
+      "start": 13,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702"
+      }
+    },
+    {
+      "number": 5,
+      "name": "南 蓮",
+      "snum": "015367",
+      "style": "追",
+      "score": "68.78",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702"
+      }
+    },
+    {
+      "number": 6,
+      "name": "赤星 俊光",
+      "snum": "013818",
+      "style": "追",
+      "score": "65.82",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702"
+      }
+    },
+    {
+      "number": 7,
+      "name": "村上 順規",
+      "snum": "013320",
+      "style": "追",
+      "score": "66.65",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611028702"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611028702"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-02T04:05:09.052Z"
+}

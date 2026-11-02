@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-02",
+  "venue": "豊橋",
+  "race": 11,
+  "raceId": "202611024511",
+  "riders": [
+    {
+      "number": 1,
+      "name": "小原 丈一郎",
+      "snum": "015323",
+      "style": "両",
+      "score": "102.96",
+      "back": 0,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511"
+      }
+    },
+    {
+      "number": 2,
+      "name": "中川 勝貴",
+      "snum": "015104",
+      "style": "追",
+      "score": "98.33",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511"
+      }
+    },
+    {
+      "number": 3,
+      "name": "山根 将太",
+      "snum": "015546",
+      "style": "逃",
+      "score": "97.20",
+      "back": 15,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511"
+      }
+    },
+    {
+      "number": 4,
+      "name": "近藤 誠二",
+      "snum": "013357",
+      "style": "追",
+      "score": "96.72",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511"
+      }
+    },
+    {
+      "number": 5,
+      "name": "徳田 匠",
+      "snum": "015540",
+      "style": "逃",
+      "score": "99.65",
+      "back": 12,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511"
+      }
+    },
+    {
+      "number": 6,
+      "name": "竹澤 浩司",
+      "snum": "014090",
+      "style": "両",
+      "score": "92.17",
+      "back": 9,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511"
+      }
+    },
+    {
+      "number": 7,
+      "name": "小堀 敢太",
+      "snum": "015778",
+      "style": "逃",
+      "score": "108.15",
+      "back": 8,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611024511"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3,
+      4
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611024511"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-02T04:04:33.415Z"
+}

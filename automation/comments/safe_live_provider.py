@@ -134,9 +134,19 @@ def _parse_page(
         registration_no = _normalise_registration_no(interview.get("playerId"))
         if not registration_no:
             continue
+        threads = interview.get("threads")
+        if not isinstance(threads, list):
+            by_registration[registration_no] = {
+                "status": "parse_failed",
+                "error": "comment threads are not an array",
+                "raw_hash": raw_hash,
+                "fetched_at": observed_at,
+            }
+            continue
         answers = [
             str(thread.get("answer") or "").strip()
-            for thread in interview.get("threads", [])
+            for thread in threads
+            if isinstance(thread, dict)
             if str(thread.get("answer") or "").strip()
         ]
         text = "\n".join(answers).strip()
@@ -147,7 +157,7 @@ def _parse_page(
                 "raw_hash": raw_hash,
                 "fetched_at": observed_at,
             }
-        elif interview.get("published") is False or explicit_not_published:
+        elif not threads or interview.get("published") is False or explicit_not_published:
             by_registration[registration_no] = {
                 "status": "not_published",
                 "publication_checked": True,
@@ -157,7 +167,7 @@ def _parse_page(
         else:
             by_registration[registration_no] = {
                 "status": "parse_failed",
-                "error": "empty comment without explicit publication state",
+                "error": "comment threads exist but contain no supported answer",
                 "raw_hash": raw_hash,
                 "fetched_at": observed_at,
             }

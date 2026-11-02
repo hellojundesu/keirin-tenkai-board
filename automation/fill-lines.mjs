@@ -19,7 +19,7 @@ export function mergeMissingLines(existing,fresh,now){
 
 export async function fillMissingLines({directory,date,manifest,getCard,venue,race,now=()=>new Date().toISOString()}){
   const report={date,mode:'lines-only',startedAt:now(),added:[],preserved:[],unavailable:[],errors:[]};
-  if(manifest.date!==date||!Array.isArray(manifest.races))throw Error('本日のmanifestがありません。朝の取得を先に実行してください。');
+  if(manifest.date!==date||!Array.isArray(manifest.races))throw Error(`${date}のmanifestがありません。朝の取得を先に実行してください。`);
   for(const entry of manifest.races){
     if(venue&&entry.venue!==venue||race&&Number(entry.race)!==Number(race))continue;
     const label={venue:entry.venue,race:Number(entry.race)};

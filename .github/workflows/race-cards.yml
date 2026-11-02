@@ -3,8 +3,8 @@ name: 出走表を毎朝取得
 on:
   push:
   schedule:
-    - cron: '9 0 * * *' # 09:09 JST. GitHub's scheduled start can be delayed.
-    - cron: '0 9 * * *' # 18:00 JST: fill missing lines only.
+    - cron: '9 0 * * *' # full
+    - cron: '0 9 * * *' # lines-only
   workflow_dispatch:
     inputs:
       mode:
@@ -14,6 +14,10 @@ on:
         options:
           - full
           - lines-only
+      target_date:
+        description: '再試行対象日（YYYY-MM-DD、空欄は実行予定日）'
+        type: string
+        required: false
 
 permissions:
   contents: write
@@ -39,39 +43,68 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+
+      - name: 予定された対象日を固定
+        id: target
+        if: github.event_name != 'push'
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_SCHEDULE: ${{ github.event.schedule }}
+          INPUT_TARGET_DATE: ${{ inputs.target_date }}
+        run: |
+          set -euo pipefail
+          target_date="$(python3 automation/cloud/cloud_target_date.py \
+            --event-name "$EVENT_NAME" \
+            --schedule "$EVENT_SCHEDULE" \
+            --manual-date "$INPUT_TARGET_DATE")"
+          echo "target_date=$target_date" >> "$GITHUB_OUTPUT"
+          echo "対象日を固定: $target_date"
+
       - name: ブラウザをインストール
         if: github.event_name != 'push'
         run: npm install --prefix automation
-      - name: 当日の出走表を取得
+
+      - name: 対象日の出走表を取得
         id: scrape
         if: github.event_name != 'push'
         continue-on-error: true
+        shell: bash
         env:
+          TARGET_DATE: ${{ steps.target.outputs.target_date }}
           LINES_ONLY: ${{ github.event.schedule == '0 9 * * *' || inputs.mode == 'lines-only' }}
         run: |
+          set -euo pipefail
           if [ "$LINES_ONLY" = "true" ]; then
-            node automation/scrape.mjs --lines-only
+            if [ ! -f "data/$TARGET_DATE/manifest.json" ]; then
+              echo "対象日 $TARGET_DATE のmanifestがないためライン補完を保留します。"
+              exit 75
+            fi
+            node automation/scrape.mjs --target-date "$TARGET_DATE" --lines-only
           else
-            node automation/scrape.mjs
+            node automation/scrape.mjs --target-date "$TARGET_DATE"
           fi
+
       - name: 公開用データを更新
-        if: github.event_name != 'push' && always()
+        if: github.event_name != 'push' && steps.scrape.outcome == 'success'
+        env:
+          TARGET_DATE: ${{ steps.target.outputs.target_date }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           python3 - <<'PY'
-          from datetime import datetime, timedelta
+          from datetime import date, timedelta
+          import os
           from pathlib import Path
-          from zoneinfo import ZoneInfo
           import shutil
-          
-          today = datetime.now(ZoneInfo("Asia/Tokyo")).date()
-          cutoff = today - timedelta(days=6)
+
+          target = date.fromisoformat(os.environ["TARGET_DATE"])
+          cutoff = target - timedelta(days=6)
           for folder in Path("data").iterdir():
               if not folder.is_dir() or folder.is_symlink():
                   continue
               try:
-                  saved_date = datetime.strptime(folder.name, "%Y-%m-%d").date()
+                  saved_date = date.fromisoformat(folder.name)
               except ValueError:
                   continue
               if folder.name != saved_date.isoformat():
@@ -85,6 +118,7 @@ jobs:
             git commit -m "出走表を更新"
             git push
           fi
+
       - name: 既存のサイトと出走表を公開用にまとめる
         run: |
           mkdir -p public
@@ -96,6 +130,7 @@ jobs:
       - name: 公開サイトを更新
         id: deployment
         uses: actions/deploy-pages@v4
+
       - name: 取得エラーを実行結果に表示
-        if: always() && steps.scrape.outcome == 'failure'
+        if: always() && github.event_name != 'push' && steps.scrape.outcome == 'failure'
         run: exit 1

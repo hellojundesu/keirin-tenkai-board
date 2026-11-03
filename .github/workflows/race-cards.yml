@@ -14,6 +14,11 @@ on:
         options:
           - full
           - lines-only
+          - publish-only
+      target_date:
+        description: '保存済み1日だけCAS保存（YYYY-MM-DD、publish-only用）'
+        type: string
+        required: false
 
 permissions:
   contents: write
@@ -39,12 +44,25 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '24'
-      - name: ブラウザをインストール
+      - name: 対象日を固定
+        id: target
         if: github.event_name != 'push'
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
+          MANUAL_DATE: ${{ inputs.target_date }}
+        run: |
+          set -euo pipefail
+          target_date="$(python3 automation/cloud/cloud_target_date.py \
+            --event-name "$EVENT_NAME" --schedule "$SCHEDULE" --manual-date "$MANUAL_DATE")"
+          echo "target_date=$target_date" >> "$GITHUB_OUTPUT"
+          echo "対象日: $target_date"
+      - name: ブラウザをインストール
+        if: github.event_name != 'push' && inputs.mode != 'publish-only'
         run: npm install --prefix automation
       - name: 当日の出走表を取得
         id: scrape
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' && inputs.mode != 'publish-only'
         continue-on-error: true
         env:
           LINES_ONLY: ${{ github.event.schedule == '0 9 * * *' || inputs.mode == 'lines-only' }}
@@ -59,8 +77,42 @@ jobs:
           else
             node automation/scrape.mjs "${SCHEDULE_ARGS[@]}"
           fi
+      - name: 保存世代の完全性を確認
+        id: completeness
+        if: github.event_name != 'push' && (steps.scrape.outcome == 'success' || inputs.mode == 'publish-only')
+        continue-on-error: true
+        env:
+          TARGET_DATE: ${{ steps.target.outputs.target_date }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/keirin-cloud-sync"
+          python3 automation/cloud/cloud_manifest_audit.py "data/$TARGET_DATE" \
+            --output "$RUNNER_TEMP/keirin-cloud-sync/completeness.json"
+      - name: 完全世代をSupabaseへ限定CAS保存
+        id: cloud_sync
+        if: github.event_name != 'push' && steps.completeness.outcome == 'success'
+        continue-on-error: true
+        env:
+          CLOUD_INGEST_ENDPOINT: https://ypkmorovfnjyesfojcil.supabase.co/functions/v1/cloud-ingest
+          CLOUD_INGEST_AUDIENCE: keirin-cloud-ingest-prod-v1
+          TARGET_DATE: ${{ steps.target.outputs.target_date }}
+        run: |
+          set -euo pipefail
+          python3 automation/cloud/cloud_actions_rpc_publish.py --live \
+            --data-root data --target-date "$TARGET_DATE" --max-days 1 \
+            --queue-root "$RUNNER_TEMP/keirin-cloud-sync/queue" \
+            --state "$RUNNER_TEMP/keirin-cloud-sync/state.json" \
+            --report "$RUNNER_TEMP/keirin-cloud-sync/report.json"
+      - name: クラウド保存証跡
+        if: always() && github.event_name != 'push'
+        uses: actions/upload-artifact@v4
+        with:
+          name: cloud-racecard-sync-report
+          path: ${{ runner.temp }}/keirin-cloud-sync/*.json
+          if-no-files-found: warn
+          retention-days: 14
       - name: 公開用データを更新
-        if: github.event_name != 'push' && always()
+        if: github.event_name != 'push' && inputs.mode != 'publish-only' && always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -91,16 +143,20 @@ jobs:
             git push
           fi
       - name: 既存のサイトと出走表を公開用にまとめる
+        if: github.event_name == 'push' || inputs.mode != 'publish-only'
         run: |
           mkdir -p public
           rsync -a --exclude='.git/' --exclude='.github/' --exclude='automation/' --exclude='public/' --exclude='node_modules/' ./ public/
       - uses: actions/configure-pages@v6
+        if: github.event_name == 'push' || inputs.mode != 'publish-only'
       - uses: actions/upload-pages-artifact@v5
+        if: github.event_name == 'push' || inputs.mode != 'publish-only'
         with:
           path: public
       - name: 公開サイトを更新
         id: deployment
+        if: github.event_name == 'push' || inputs.mode != 'publish-only'
         uses: actions/deploy-pages@v5
       - name: 取得エラーを実行結果に表示
-        if: always() && steps.scrape.outcome == 'failure'
+        if: always() && ((inputs.mode != 'publish-only' && steps.scrape.outcome == 'failure') || steps.completeness.outcome == 'failure' || steps.cloud_sync.outcome == 'failure')
         run: exit 1

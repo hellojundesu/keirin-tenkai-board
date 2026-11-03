@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-03",
+  "venue": "豊橋",
+  "race": 6,
+  "raceId": "202611034506",
+  "riders": [
+    {
+      "number": 1,
+      "name": "増茂 るるこ",
+      "snum": "014903",
+      "style": "両",
+      "score": "52.61",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506"
+      }
+    },
+    {
+      "number": 2,
+      "name": "吉川 美穂",
+      "snum": "015587",
+      "style": "両",
+      "score": "56.96",
+      "back": 6,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506"
+      }
+    },
+    {
+      "number": 3,
+      "name": "山本 さくら",
+      "snum": "015585",
+      "style": "両",
+      "score": "50.00",
+      "back": 8,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506"
+      }
+    },
+    {
+      "number": 4,
+      "name": "野寺 楓",
+      "snum": "015674",
+      "style": "追",
+      "score": "53.00",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506"
+      }
+    },
+    {
+      "number": 5,
+      "name": "鈴木 樹里",
+      "snum": "015402",
+      "style": "両",
+      "score": "50.25",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506"
+      }
+    },
+    {
+      "number": 6,
+      "name": "河内 桜雪",
+      "snum": "015669",
+      "style": "追",
+      "score": "53.80",
+      "back": 1,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506"
+      }
+    },
+    {
+      "number": 7,
+      "name": "藤原 亜衣里",
+      "snum": "014908",
+      "style": "追",
+      "score": "46.00",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611034506"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3
+    ],
+    [
+      2
+    ],
+    [
+      1
+    ],
+    [
+      6
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611034506"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-03T06:32:37.825Z"
+}

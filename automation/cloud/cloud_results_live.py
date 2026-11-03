@@ -190,17 +190,19 @@ def acquire_day(provider, day: str, state: dict[str, Any], *, now_jst: dt.dateti
     try:
         expected = fetch_expected(provider, day)
     except NoRaceDay:
+        expected_hash = hashlib.sha256(b"").hexdigest()
+        generation_id = hashlib.sha256(f"result\0{day}\0{expected_hash}".encode()).hexdigest()
         manifest = {
-            "schema_version": 1, "race_date": day, "generation_id": f"result-{day}-no-race",
+            "schema_version": 1, "race_date": day, "generation_id": generation_id,
             "generation_status": "complete", "day_state": "confirmed_no_race",
-            "expected_race_ids": [], "expected_race_hash": hashlib.sha256(b"").hexdigest(),
+            "expected_race_ids": [], "expected_race_hash": expected_hash,
             "counts": {"expected": 0, "complete": 0, "not_due": 0, "not_published": 0, "fetch_failed": 0, "parse_failed": 0, "partial_payout": 0, "skipped_complete": 0},
             "generated_at": utc_now(), "publishable_records": 0,
         }
         state.setdefault("days", {})[day] = {"manifest": manifest, "updated_at": utc_now()}
         return manifest, []
     expected_hash = hashlib.sha256("\n".join(row["race_id"] for row in expected).encode()).hexdigest()
-    generation_id = f"result-{day}-{expected_hash[:12]}"
+    generation_id = hashlib.sha256(f"result\0{day}\0{expected_hash}".encode()).hexdigest()
     day_state = state.setdefault("days", {}).setdefault(day, {"races": {}})
     records, counts = [], {key: 0 for key in ("expected", "complete", "not_due", "not_published", "fetch_failed", "parse_failed", "partial_payout", "skipped_complete")}
     counts["expected"] = len(expected)

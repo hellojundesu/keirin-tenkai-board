@@ -21,6 +21,10 @@ def build_catalog(day_directory: Path) -> dict:
             continue
         row = json.loads(path.read_text(encoding="utf-8"))
         race_id = str(row.get("raceId") or "")
+        if not race_id:
+            # line-refresh.json and future day-level metadata are not race cards.
+            # A missing race card is still detected by the manifest count below.
+            continue
         if len(race_id) != 12 or not race_id.isdigit() or race_id[:8] != race_date.replace("-", ""):
             raise ValueError(f"invalid race id: {path.name}")
         registrations = [str(rider.get("snum") or "").lstrip("0") for rider in row.get("riders") or []]

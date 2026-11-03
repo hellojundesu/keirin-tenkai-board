@@ -36,6 +36,9 @@ def semantic_payload(payload: dict) -> dict:
     race = value.get("race") or {}
     race["line_groups"] = canonical_line_groups(race.get("line_groups"))
     value["race"] = race
+    for entry in value.get("entries") or []:
+        if entry.get("race_score") is not None:
+            entry["race_score"] = float(entry["race_score"])
     return value
 
 

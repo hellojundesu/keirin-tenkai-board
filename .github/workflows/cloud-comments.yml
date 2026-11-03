@@ -2,10 +2,16 @@ name: 選手コメント定期・手動取得
 
 on:
   schedule:
-    # 09:00 / 21:30 JST: 当日。04:00 JST: UTC上の前日を補完。
-    - cron: '0 0 * * *'
+    # 21:30 JST: 当日の結果を再取得。04:00 JST: UTC上の前日を補完。
     - cron: '30 12 * * *'
     - cron: '0 19 * * *'
+  workflow_run:
+    workflows:
+      - 出走表を毎朝取得
+    types:
+      - completed
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       target_date:
@@ -24,6 +30,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
   id-token: write
 
 concurrency:
@@ -64,8 +71,48 @@ jobs:
           print("comment workflow OIDC read-only connectivity: PASS")
           PY
 
+  race-card-handoff:
+    if: github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'schedule'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      target_date: ${{ steps.handoff.outputs.target_date }}
+      mode: ${{ steps.handoff.outputs.mode }}
+    steps:
+      - name: 出走表取得の完了情報を取得
+        uses: actions/download-artifact@v7
+        with:
+          name: race-card-acquisition-complete
+          path: ${{ runner.temp }}/race-card-handoff
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: 対象日と取得モードを検証
+        id: handoff
+        shell: bash
+        run: |
+          set -euo pipefail
+          target_date="$(tr -d '\r\n' < "$RUNNER_TEMP/race-card-handoff/target-date.txt")"
+          mode="$(tr -d '\r\n' < "$RUNNER_TEMP/race-card-handoff/mode.txt")"
+          python3 -c 'import datetime, sys; value=sys.argv[1]; assert datetime.date.fromisoformat(value).isoformat() == value' "$target_date"
+          case "$mode" in
+            full|lines-only) ;;
+            *) echo "不明な取得モード: $mode" >&2; exit 1 ;;
+          esac
+          echo "target_date=$target_date" >> "$GITHUB_OUTPUT"
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
+          echo "race-card handoff: target_date=$target_date mode=$mode"
+
   comment-trial:
-    if: github.event_name == 'schedule' || inputs.operation == 'acquire' || inputs.operation == 'acquire-confirmed'
+    needs: race-card-handoff
+    if: >-
+      always() && (
+        github.event_name == 'schedule' ||
+        inputs.operation == 'acquire' ||
+        inputs.operation == 'acquire-confirmed' ||
+        (github.event_name == 'workflow_run' &&
+         needs.race-card-handoff.result == 'success' &&
+         needs.race-card-handoff.outputs.mode == 'full')
+      )
     runs-on: ubuntu-24.04
     timeout-minutes: 90
     environment: github-pages
@@ -85,12 +132,17 @@ jobs:
           EVENT_NAME: ${{ github.event_name }}
           EVENT_SCHEDULE: ${{ github.event.schedule || '' }}
           MANUAL_TARGET_DATE: ${{ inputs.target_date || '' }}
+          HANDOFF_TARGET_DATE: ${{ needs.race-card-handoff.outputs.target_date }}
         run: |
           set -euo pipefail
-          target_date="$(python3 automation/cloud/cloud_target_date.py \
-            --event-name "$EVENT_NAME" \
-            --schedule "$EVENT_SCHEDULE" \
-            --manual-date "$MANUAL_TARGET_DATE")"
+          if [ "$EVENT_NAME" = "workflow_run" ]; then
+            target_date="$HANDOFF_TARGET_DATE"
+          else
+            target_date="$(python3 automation/cloud/cloud_target_date.py \
+              --event-name "$EVENT_NAME" \
+              --schedule "$EVENT_SCHEDULE" \
+              --manual-date "$MANUAL_TARGET_DATE")"
+          fi
           echo "target_date=$target_date" >> "$GITHUB_OUTPUT"
           echo "comment target date: $target_date"
 
@@ -124,7 +176,7 @@ jobs:
 
       - name: Check one meeting candidate per venue
         id: meeting
-        if: github.event_name == 'schedule' || inputs.operation == 'acquire'
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_run' || inputs.operation == 'acquire'
         continue-on-error: true
         run: |
           set -euo pipefail
@@ -136,7 +188,7 @@ jobs:
       - name: Limit this trial to the 31 confirmed races
         id: selection
         env:
-          COMMENT_OPERATION: ${{ github.event_name == 'schedule' && 'acquire' || inputs.operation }}
+          COMMENT_OPERATION: ${{ (github.event_name == 'schedule' || github.event_name == 'workflow_run') && 'acquire' || inputs.operation }}
         run: |
           set -euo pipefail
           python3 - <<'PY'

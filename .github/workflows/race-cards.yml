@@ -165,7 +165,7 @@ jobs:
         if: github.event_name == 'push' || inputs.mode != 'publish-only'
         run: |
           mkdir -p public
-          rsync -a --exclude='.git/' --exclude='.github/' --exclude='automation/' --exclude='public/' --exclude='node_modules/' ./ public/
+          rsync -a --exclude='.git/' --exclude='.github/' --exclude='automation/' --exclude='public/' --exclude='node_modules/' --exclude='data/.cloud-result-state.json' ./ public/
       - uses: actions/configure-pages@v6
         if: github.event_name == 'push' || inputs.mode != 'publish-only'
       - uses: actions/upload-pages-artifact@v5

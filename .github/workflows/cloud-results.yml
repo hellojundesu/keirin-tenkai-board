@@ -1,0 +1,111 @@
+name: 結果・払戻を独立取得
+
+on:
+  schedule:
+    - cron: '30 19 * * *' # 04:30 JST: fetch the previous completed race day.
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: '対象日（YYYY-MM-DD、未指定時はJST前日）'
+        type: string
+        required: false
+
+permissions:
+  contents: write
+  id-token: write
+
+concurrency:
+  group: keirin-cloud-results
+  cancel-in-progress: false
+
+jobs:
+  acquire:
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: true
+      - name: 対象日を固定
+        id: target
+        env:
+          MANUAL_DATE: ${{ inputs.target_date }}
+        run: |
+          set -euo pipefail
+          if [ -n "$MANUAL_DATE" ]; then
+            python3 -c 'import datetime, os; value=os.environ["MANUAL_DATE"]; assert datetime.date.fromisoformat(value).isoformat() == value'
+            target_date="$MANUAL_DATE"
+            echo "explicit=true" >> "$GITHUB_OUTPUT"
+          else
+            target_date="$(TZ=Asia/Tokyo date -d 'yesterday' +%F)"
+            echo "explicit=false" >> "$GITHUB_OUTPUT"
+          fi
+          echo "target_date=$target_date" >> "$GITHUB_OUTPUT"
+          echo "対象日: $target_date"
+      - name: 結果・払戻と未実行日を取得
+        id: result_acquire
+        continue-on-error: true
+        env:
+          TARGET_DATE: ${{ steps.target.outputs.target_date }}
+          EXPLICIT_TARGET: ${{ steps.target.outputs.explicit }}
+          CONFIGURED_START_DATE: ${{ vars.CLOUD_RESULTS_START_DATE }}
+        run: |
+          set -euo pipefail
+          START_DATE="${CONFIGURED_START_DATE:-2026-11-03}"
+          target_args=()
+          if [ "$EXPLICIT_TARGET" = "true" ]; then
+            target_args+=(--target-date "$TARGET_DATE")
+          fi
+          mkdir -p "$RUNNER_TEMP/keirin-cloud-results"
+          if [ -f data/.cloud-result-state.json ]; then
+            cp data/.cloud-result-state.json "$RUNNER_TEMP/keirin-cloud-results/state.json"
+          fi
+          python3 automation/cloud/cloud_results_live.py --live \
+            --state "$RUNNER_TEMP/keirin-cloud-results/state.json" \
+            --output-root "$RUNNER_TEMP/keirin-cloud-results/bundles" \
+            --cache-root "$RUNNER_TEMP/keirin-cloud-results/cache" \
+            --start-date "$START_DATE" --today "$TARGET_DATE" --max-days 3 \
+            --request-budget 250 "${target_args[@]}"
+      - name: 確認済み結果・払戻を限定RPCへ送信
+        id: result_sync
+        if: steps.result_acquire.outcome == 'success' || steps.result_acquire.outcome == 'failure'
+        continue-on-error: true
+        env:
+          CLOUD_INGEST_ENDPOINT: https://ypkmorovfnjyesfojcil.supabase.co/functions/v1/cloud-ingest
+          CLOUD_INGEST_AUDIENCE: keirin-cloud-ingest-prod-v1
+        run: |
+          set -euo pipefail
+          python3 automation/cloud/cloud_results_rpc_publish.py --live \
+            --bundle-root "$RUNNER_TEMP/keirin-cloud-results/bundles" \
+            --queue "$RUNNER_TEMP/keirin-cloud-results/queue.json" \
+            --report "$RUNNER_TEMP/keirin-cloud-results/publish-report.json"
+      - name: 結果補完チェックポイントを保存
+        id: checkpoint
+        if: steps.result_sync.outcome == 'success'
+        run: |
+          set -euo pipefail
+          test -f "$RUNNER_TEMP/keirin-cloud-results/state.json"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp "$RUNNER_TEMP/keirin-cloud-results/state.json" data/.cloud-result-state.json
+          git add data/.cloud-result-state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "結果補完チェックポイントを更新"
+            git push
+          fi
+      - name: 結果・払戻取得証跡
+        if: always()
+        uses: actions/upload-artifact@v5
+        with:
+          name: cloud-results-report
+          path: |
+            ${{ runner.temp }}/keirin-cloud-results/*.json
+            ${{ runner.temp }}/keirin-cloud-results/bundles/*/result_manifest.json
+          if-no-files-found: warn
+          retention-days: 14
+      - name: 取得・保存エラーを実行結果に反映
+        if: always() && (steps.result_acquire.outcome == 'failure' || steps.result_sync.outcome == 'failure' || steps.checkpoint.outcome == 'failure')
+        run: exit 1

@@ -72,14 +72,37 @@ jobs:
           PY
 
   race-card-handoff:
-    if: github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'schedule'
+    if: >-
+      github.event_name == 'workflow_run' &&
+      github.event.workflow_run.conclusion == 'success' &&
+      (github.event.workflow_run.event == 'schedule' ||
+       github.event.workflow_run.event == 'workflow_dispatch')
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     outputs:
       target_date: ${{ steps.handoff.outputs.target_date }}
       mode: ${{ steps.handoff.outputs.mode }}
     steps:
+      - name: 出走表完了情報の有無を確認
+        id: artifact
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          UPSTREAM_RUN_ID: ${{ github.event.workflow_run.id }}
+        run: |
+          set -euo pipefail
+          response="$RUNNER_TEMP/race-card-handoff-artifacts.json"
+          curl --fail-with-body --silent --show-error \
+            --header "Accept: application/vnd.github+json" \
+            --header "Authorization: Bearer $GH_TOKEN" \
+            --header "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/runs/$UPSTREAM_RUN_ID/artifacts?name=race-card-acquisition-complete&per_page=1" \
+            --output "$response"
+          available="$(python3 -c 'import json,sys; data=json.load(open(sys.argv[1], encoding="utf-8")); print("true" if any(not row.get("expired", False) for row in data.get("artifacts", [])) else "false")' "$response")"
+          echo "available=$available" >> "$GITHUB_OUTPUT"
+          echo "race-card handoff artifact available: $available"
       - name: 出走表取得の完了情報を取得
+        if: steps.artifact.outputs.available == 'true'
         uses: actions/download-artifact@v7
         with:
           name: race-card-acquisition-complete
@@ -87,6 +110,7 @@ jobs:
           run-id: ${{ github.event.workflow_run.id }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: 対象日と取得モードを検証
+        if: steps.artifact.outputs.available == 'true'
         id: handoff
         shell: bash
         run: |

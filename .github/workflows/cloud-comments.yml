@@ -183,7 +183,8 @@ jobs:
           python3 automation/comments/cloud_comment_meeting_resolver.py --live \
             --catalog "$COMMENT_ROOT/catalog.json" \
             --state "$COMMENT_ROOT/meetings.json" \
-            --cache-root "$COMMENT_ROOT/cache"
+            --cache-root "$COMMENT_ROOT/cache" \
+            --max-candidates-per-venue 6
 
       - name: Limit this trial to the 31 confirmed races
         id: selection

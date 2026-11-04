@@ -71,7 +71,10 @@ def resolve_one_candidate_per_venue(
     state: dict[str, Any],
     transport: Callable[[str], PageResponse],
     cache_root: Path,
+    max_candidates_per_venue: int = 1,
 ) -> dict[str, Any]:
+    if not 1 <= max_candidates_per_venue <= 6:
+        raise ValueError("max_candidates_per_venue must be between 1 and 6")
     meetings = dict(state.get("meetings") or {})
     resolutions = dict(state.get("resolutions") or {})
     groups: dict[tuple[str, str], list[dict[str, Any]]] = {}
@@ -86,51 +89,56 @@ def resolve_one_candidate_per_venue(
         key = f"{race_date}:{venue_code}"
         resolution = resolutions.setdefault(key, {"attempted_offsets": [], "status": "unknown"})
         attempted = {int(value) for value in resolution.get("attempted_offsets") or []}
-        available = next((offset for offset in range(6) if offset not in attempted), None)
-        if available is None:
-            resolution.update(status="unknown", error="all_six_candidates_checked")
-            unresolved += len(races)
-            continue
         representative = sorted(races, key=lambda race: int(race["race_number"]))[0]
-        cup_id, day_index, url = candidate(representative, available)
-        response = transport(url)
-        requests += 1
-        resolution["attempted_offsets"] = sorted(attempted | {available})
-        cache_path = cache_root / f"{hashlib.sha256(url.encode()).hexdigest()}.json"
-        cache_path.write_text(json.dumps({"url": url, "status_code": response.status_code, "text": response.text}, ensure_ascii=False), encoding="utf-8")
-        if response.status_code in (403, 429) or "captcha" in response.text.lower():
-            resolution.update(status="fetch_failed", error=f"access_stopped_{response.status_code}")
-            stopped = True
+        venue_confirmed = False
+        for _ in range(max_candidates_per_venue):
+            available = next((offset for offset in range(6) if offset not in attempted), None)
+            if available is None:
+                resolution.update(status="unknown", error="all_six_candidates_checked")
+                break
+            cup_id, day_index, url = candidate(representative, available)
+            response = transport(url)
+            requests += 1
+            attempted.add(available)
+            resolution["attempted_offsets"] = sorted(attempted)
+            cache_path = cache_root / f"{hashlib.sha256(url.encode()).hexdigest()}.json"
+            cache_path.write_text(json.dumps({"url": url, "status_code": response.status_code, "text": response.text}, ensure_ascii=False), encoding="utf-8")
+            if response.status_code in (403, 429) or "captcha" in response.text.lower():
+                resolution.update(status="fetch_failed", error=f"access_stopped_{response.status_code}")
+                stopped = True
+                break
+            if not 200 <= response.status_code < 300:
+                resolution.update(status="fetch_failed", error=f"http_{response.status_code}")
+                continue
+            try:
+                page, raw_hash = _extract_state(response.text)
+                data = _query_data(page, ACTION_NAMES["inspection"])
+                page_race_id = str((data or {}).get("raceId") or "")
+            except (ValueError, TypeError, KeyError) as exc:
+                resolution.update(status="parse_failed", error=str(exc))
+                continue
+            if page_race_id != expected_page_race_id(representative):
+                resolution.update(status="ambiguous", error="page_race_id_mismatch")
+                continue
+            slug = VENUE_SLUGS[venue_code]
+            for race in races:
+                meetings[str(race["race_id"])] = {
+                    "venue_slug": slug,
+                    "cup_id": cup_id,
+                    "day_index": day_index,
+                    "evidence_status": "confirmed",
+                    "page_race_id": page_race_id,
+                    "source_url": url,
+                    "raw_sha256": raw_hash,
+                }
+                confirmed += 1
+            resolution.update(status="confirmed", cup_id=cup_id, day_index=day_index, error=None)
+            venue_confirmed = True
             break
-        if not 200 <= response.status_code < 300:
-            resolution.update(status="fetch_failed", error=f"http_{response.status_code}")
+        if stopped:
+            break
+        if not venue_confirmed:
             unresolved += len(races)
-            continue
-        try:
-            page, raw_hash = _extract_state(response.text)
-            data = _query_data(page, ACTION_NAMES["inspection"])
-            page_race_id = str((data or {}).get("raceId") or "")
-        except (ValueError, TypeError, KeyError) as exc:
-            resolution.update(status="parse_failed", error=str(exc))
-            unresolved += len(races)
-            continue
-        if page_race_id != expected_page_race_id(representative):
-            resolution.update(status="ambiguous", error="page_race_id_mismatch")
-            unresolved += len(races)
-            continue
-        slug = VENUE_SLUGS[venue_code]
-        for race in races:
-            meetings[str(race["race_id"])] = {
-                "venue_slug": slug,
-                "cup_id": cup_id,
-                "day_index": day_index,
-                "evidence_status": "confirmed",
-                "page_race_id": page_race_id,
-                "source_url": url,
-                "raw_sha256": raw_hash,
-            }
-            confirmed += 1
-        resolution.update(status="confirmed", cup_id=cup_id, day_index=day_index, error=None)
     return {
         "meetings": meetings,
         "resolutions": resolutions,
@@ -143,13 +151,20 @@ def main() -> int:
     parser.add_argument("--catalog", required=True, type=Path)
     parser.add_argument("--state", required=True, type=Path)
     parser.add_argument("--cache-root", required=True, type=Path)
+    parser.add_argument("--max-candidates-per-venue", type=int, choices=range(1, 7), default=1)
     parser.add_argument("--live", action="store_true")
     args = parser.parse_args()
     if not args.live:
         raise SystemExit("meeting resolution requires explicit --live")
     catalog = json.loads(args.catalog.read_text(encoding="utf-8"))
     state = json.loads(args.state.read_text(encoding="utf-8")) if args.state.exists() else {}
-    result = resolve_one_candidate_per_venue(catalog, state, default_transport, args.cache_root)
+    result = resolve_one_candidate_per_venue(
+        catalog,
+        state,
+        default_transport,
+        args.cache_root,
+        max_candidates_per_venue=args.max_candidates_per_venue,
+    )
     args.state.parent.mkdir(parents=True, exist_ok=True)
     args.state.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(result["last_run"], ensure_ascii=False))

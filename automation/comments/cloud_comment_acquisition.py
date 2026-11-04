@@ -27,7 +27,7 @@ CLOUD_SOURCE = HERE.parent / "cloud"
 if CLOUD_SOURCE.exists() and str(CLOUD_SOURCE) not in sys.path:
     sys.path.insert(0, str(CLOUD_SOURCE))
 
-from independent_comment_job import RaceCandidate, ensure_schema, export_manifest, run_job  # noqa: E402
+from independent_comment_job import JobPolicy, RaceCandidate, ensure_schema, export_manifest, run_job  # noqa: E402
 from safe_live_provider import (  # noqa: E402
     ConfirmedMeeting, PageResponse, SafeConfirmedMeetingProvider,
 )
@@ -167,6 +167,7 @@ def main() -> int:
     parser.add_argument("--saved-reports", type=Path)
     parser.add_argument("--meeting-evidence", type=Path)
     parser.add_argument("--live", action="store_true")
+    parser.add_argument("--force", action="store_true")
     args = parser.parse_args()
     today = date.fromisoformat(args.today)
     races = load_catalog(args.catalog)
@@ -196,6 +197,10 @@ def main() -> int:
         provider,
         today=today,
         now=datetime.now(timezone.utc),
+        policy=(
+            JobPolicy(retry_cooldown_hours=0, refresh_hours=0)
+            if args.force else JobPolicy()
+        ),
     )
     state = export_manifest(args.state_db, "cloud")
     expected = [{

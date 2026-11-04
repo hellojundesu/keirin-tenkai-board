@@ -285,15 +285,21 @@ jobs:
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
           COMMENT_PAGE_CACHE: ${{ runner.temp }}/keirin-cloud-comments/cache
+          FORCE_REFRESH: ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
         run: |
           set -euo pipefail
+          force_args=()
+          if [ "$FORCE_REFRESH" = "true" ]; then
+            force_args+=(--force)
+          fi
           python3 automation/comments/cloud_comment_acquisition.py --live \
             --catalog "$COMMENT_ROOT/catalog-selected.json" \
             --meeting-evidence "$COMMENT_ROOT/meetings.json" \
             --state-db "$COMMENT_ROOT/state.sqlite3" \
             --output "$COMMENT_ROOT/records.json" \
             --run-report "$COMMENT_ROOT/acquisition-report.json" \
-            --today "$TARGET_DATE"
+            --today "$TARGET_DATE" \
+            "${force_args[@]}"
 
       - name: Save the independent comment generation through limited CAS
         id: publish

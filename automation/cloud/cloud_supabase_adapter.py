@@ -10,7 +10,7 @@ import copy
 import json
 import sqlite3
 import urllib.parse
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Callable
 
@@ -178,6 +178,7 @@ def _rebase_generation_with_confirmed_lines(items: list[dict], store: Any) -> in
         raise ValueError("exactly one cloud acquisition manifest is required")
     manifest = manifests[0]
     race_date = manifest["payload"]["race_date"]
+    rebased_at = datetime.now(timezone.utc).isoformat()
     generation_meta = {
         "generation_id": generation_id,
         "race_date": race_date,
@@ -187,6 +188,7 @@ def _rebase_generation_with_confirmed_lines(items: list[dict], store: Any) -> in
     for row in cards:
         row["payload"]["cloud_generation"] = copy.deepcopy(generation_meta)
         row["content_hash"] = digest(row["payload"])
+        row["source_updated_at"] = rebased_at
 
     indexes = [
         item["record"] for item in items
@@ -201,10 +203,12 @@ def _rebase_generation_with_confirmed_lines(items: list[dict], store: Any) -> in
             entry["line_state"] = card["payload"]["race"]["line_state"]
     index["payload"]["cloud_generation"] = copy.deepcopy(generation_meta)
     index["content_hash"] = digest(index["payload"])
+    index["source_updated_at"] = rebased_at
 
     manifest["payload"]["generation_hash"] = generation_id
     manifest["payload"]["cloud_generation"] = copy.deepcopy(generation_meta)
     manifest["content_hash"] = digest(manifest["payload"])
+    manifest["source_updated_at"] = rebased_at
     return preserved
 
 

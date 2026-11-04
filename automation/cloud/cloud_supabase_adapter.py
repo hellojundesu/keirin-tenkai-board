@@ -46,6 +46,13 @@ def semantic_hash(record: dict) -> str:
     return digest(semantic_payload(record["payload"]))
 
 
+def semantic_fact_hash(record: dict) -> str:
+    """Hash the race fact without publication-generation metadata."""
+    payload = copy.deepcopy(record["payload"])
+    payload.pop("cloud_generation", None)
+    return digest(semantic_payload(payload))
+
+
 def prepare_complete_generation(records: list[dict]) -> list[dict]:
     manifests = [row for row in records if row["record_type"] == "cloud_acquisition_manifest"]
     if len(manifests) != 1:
@@ -108,6 +115,8 @@ def update_decision(current: dict | None, incoming: dict) -> str:
         return "insert"
     if semantic_hash(current) == semantic_hash(incoming):
         return "unchanged"
+    if semantic_fact_hash(current) == semantic_fact_hash(incoming):
+        return "refresh_generation"
     if (
         incoming.get("record_type") == "cloud_race_payout"
         and current.get("payload", {}).get("status") == "confirmed"
@@ -123,6 +132,80 @@ def update_decision(current: dict | None, incoming: dict) -> str:
     if current_time and (not incoming_time or incoming_time <= current_time):
         return "preserve_newer_current"
     return "update"
+
+
+def _rebase_generation_with_confirmed_lines(items: list[dict], store: Any) -> int:
+    """Carry forward confirmed cloud lines before publishing a new generation.
+
+    A lines-only run may not observe a line that is already confirmed in the
+    cloud.  Leaving that record in the old generation blocks the date index and
+    manifest forever.  Preserve the complete current fact, then recalculate the
+    generation and every dependent hash so CAS and manifest validation remain
+    strict.
+    """
+    cards = [
+        item["record"] for item in items
+        if item["record"]["record_type"] == "cloud_racecard"
+    ]
+    preserved = 0
+    for record in cards:
+        incoming_race = record.get("payload", {}).get("race", {})
+        if incoming_race.get("line_state") == "fetched":
+            continue
+        current = store.get(record["record_type"], record["record_key"])
+        current_race = (current or {}).get("payload", {}).get("race", {})
+        if current_race.get("line_state") != "fetched":
+            continue
+        payload = copy.deepcopy(current["payload"])
+        payload.pop("cloud_generation", None)
+        record["payload"] = payload
+        record["source_updated_at"] = current.get("source_updated_at")
+        preserved += 1
+
+    if not preserved:
+        return 0
+
+    cards.sort(key=lambda row: row["record_key"])
+    generation_id = digest([
+        digest({key: value for key, value in row["payload"].items() if key != "cloud_generation"})
+        for row in cards
+    ])
+    manifests = [
+        item["record"] for item in items
+        if item["record"]["record_type"] == "cloud_acquisition_manifest"
+    ]
+    if len(manifests) != 1:
+        raise ValueError("exactly one cloud acquisition manifest is required")
+    manifest = manifests[0]
+    race_date = manifest["payload"]["race_date"]
+    generation_meta = {
+        "generation_id": generation_id,
+        "race_date": race_date,
+        "generation_status": "complete",
+    }
+    cards_by_id = {row["record_key"]: row for row in cards}
+    for row in cards:
+        row["payload"]["cloud_generation"] = copy.deepcopy(generation_meta)
+        row["content_hash"] = digest(row["payload"])
+
+    indexes = [
+        item["record"] for item in items
+        if item["record"]["record_type"] == "cloud_races_index"
+    ]
+    if len(indexes) != 1:
+        raise ValueError("exactly one cloud races index is required")
+    index = indexes[0]
+    for entry in index["payload"].get("items") or []:
+        card = cards_by_id.get(str(entry.get("race_id") or ""))
+        if card:
+            entry["line_state"] = card["payload"]["race"]["line_state"]
+    index["payload"]["cloud_generation"] = copy.deepcopy(generation_meta)
+    index["content_hash"] = digest(index["payload"])
+
+    manifest["payload"]["generation_hash"] = generation_id
+    manifest["payload"]["cloud_generation"] = copy.deepcopy(generation_meta)
+    manifest["content_hash"] = digest(manifest["payload"])
+    return preserved
 
 
 class JsonMockStore:
@@ -270,6 +353,10 @@ def _same_generation_is_stored(store: Any, items: list[dict], generation_id: str
 def drain_queue(queue_path: Path, store: Any, after_read: Callable[[dict | None, dict], None] | None = None) -> dict:
     items = json.loads(queue_path.read_text(encoding="utf-8"))
     counts: dict[str, int] = {}
+    preserved = _rebase_generation_with_confirmed_lines(items, store)
+    if preserved:
+        counts["merge_confirmed_line"] = preserved
+        save_queue(queue_path, items)
     for item in items:
         if item["status"] == "done":
             continue

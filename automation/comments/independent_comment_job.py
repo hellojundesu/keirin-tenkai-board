@@ -106,7 +106,9 @@ class JobPolicy:
     retry_cooldown_hours: float = 6.0
     inspection_update_days: int = 0
     result_update_days: int = 3
-    refresh_hours: float = 12.0
+    # Morning, 21:30 JST, and next-day 04:00 JST runs must be able to
+    # re-check newly published comments without bypassing the 6-hour cooldown.
+    refresh_hours: float = 6.0
     processing_batch_size: int = 25
 
 

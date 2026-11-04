@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-04",
+  "venue": "大宮",
+  "race": 9,
+  "raceId": "202611042509",
+  "riders": [
+    {
+      "number": 1,
+      "name": "庄子 信弘",
+      "snum": "013604",
+      "style": "追",
+      "score": "99.62",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509"
+      }
+    },
+    {
+      "number": 2,
+      "name": "阪本 和也",
+      "snum": "015386",
+      "style": "追",
+      "score": "103.60",
+      "back": 0,
+      "start": 14,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509"
+      }
+    },
+    {
+      "number": 3,
+      "name": "原田 亮太",
+      "snum": "015352",
+      "style": "逃",
+      "score": "100.20",
+      "back": 6,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509"
+      }
+    },
+    {
+      "number": 4,
+      "name": "小酒 大勇",
+      "snum": "014929",
+      "style": "追",
+      "score": "95.57",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509"
+      }
+    },
+    {
+      "number": 5,
+      "name": "菊地 圭尚",
+      "snum": "013978",
+      "style": "追",
+      "score": "105.93",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509"
+      }
+    },
+    {
+      "number": 6,
+      "name": "小林 令",
+      "snum": "015092",
+      "style": "追",
+      "score": "94.33",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509"
+      }
+    },
+    {
+      "number": 7,
+      "name": "本郷 雄三",
+      "snum": "014786",
+      "style": "両",
+      "score": "100.75",
+      "back": 3,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611042509"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611042509"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-04T04:36:26.663Z"
+}

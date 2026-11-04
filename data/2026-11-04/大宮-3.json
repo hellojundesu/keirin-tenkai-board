@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-04",
+  "venue": "大宮",
+  "race": 3,
+  "raceId": "202611042503",
+  "riders": [
+    {
+      "number": 1,
+      "name": "原 真司",
+      "snum": "013782",
+      "style": "追",
+      "score": "88.68",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503"
+      }
+    },
+    {
+      "number": 2,
+      "name": "大関 祐也",
+      "snum": "015045",
+      "style": "逃",
+      "score": "80.13",
+      "back": 12,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503"
+      }
+    },
+    {
+      "number": 3,
+      "name": "上野 真吾",
+      "snum": "014300",
+      "style": "追",
+      "score": "88.33",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503"
+      }
+    },
+    {
+      "number": 4,
+      "name": "山田 哲也",
+      "snum": "014749",
+      "style": "追",
+      "score": "84.52",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503"
+      }
+    },
+    {
+      "number": 5,
+      "name": "辻田 祥大",
+      "snum": "015904",
+      "style": "逃",
+      "score": "89.43",
+      "back": 13,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503"
+      }
+    },
+    {
+      "number": 6,
+      "name": "鳥生 知八",
+      "snum": "013143",
+      "style": "追",
+      "score": "79.83",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503"
+      }
+    },
+    {
+      "number": 7,
+      "name": "大西 健士",
+      "snum": "013942",
+      "style": "追",
+      "score": "85.52",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611042503"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611042503"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-04T04:36:22.834Z"
+}

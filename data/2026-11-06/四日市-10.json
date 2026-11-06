@@ -1,0 +1,169 @@
+{
+  "date": "2026-11-06",
+  "venue": "四日市",
+  "race": 10,
+  "raceId": "202611064810",
+  "riders": [
+    {
+      "number": 1,
+      "name": "桑名 僚也",
+      "snum": "015520",
+      "style": "追",
+      "score": "104.56",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810"
+      }
+    },
+    {
+      "number": 2,
+      "name": "寺崎 浩平",
+      "snum": "015413",
+      "style": "逃",
+      "score": "116.50",
+      "back": 1,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810"
+      }
+    },
+    {
+      "number": 3,
+      "name": "林 昌幸",
+      "snum": "015555",
+      "style": "逃",
+      "score": "104.87",
+      "back": 12,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810"
+      }
+    },
+    {
+      "number": 4,
+      "name": "久木原 洋",
+      "snum": "014580",
+      "style": "追",
+      "score": "99.57",
+      "back": 2,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810"
+      }
+    },
+    {
+      "number": 5,
+      "name": "岩津 裕介",
+      "snum": "013880",
+      "style": "追",
+      "score": "111.93",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810"
+      }
+    },
+    {
+      "number": 6,
+      "name": "中園 和剛",
+      "snum": "014043",
+      "style": "追",
+      "score": "96.24",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810"
+      }
+    },
+    {
+      "number": 7,
+      "name": "金子 幸央",
+      "snum": "014861",
+      "style": "両",
+      "score": "109.83",
+      "back": 2,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810"
+      }
+    },
+    {
+      "number": 8,
+      "name": "鈴木 裕",
+      "snum": "014239",
+      "style": "両",
+      "score": "99.42",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810"
+      }
+    },
+    {
+      "number": 9,
+      "name": "三谷 竜生",
+      "snum": "014873",
+      "style": "両",
+      "score": "109.50",
+      "back": 1,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611064810"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3,
+      5,
+      6
+    ],
+    [
+      2,
+      9,
+      8
+    ],
+    [
+      7,
+      1,
+      4
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611064810"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-06T02:10:29.929Z"
+}

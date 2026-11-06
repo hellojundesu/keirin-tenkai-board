@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-06",
+  "venue": "熊本",
+  "race": 11,
+  "raceId": "202611068711",
+  "riders": [
+    {
+      "number": 1,
+      "name": "栗山 俊介",
+      "snum": "014944",
+      "style": "両",
+      "score": "99.85",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711"
+      }
+    },
+    {
+      "number": 2,
+      "name": "横山 尚則",
+      "snum": "014804",
+      "style": "追",
+      "score": "106.61",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711"
+      }
+    },
+    {
+      "number": 3,
+      "name": "内藤 秀久",
+      "snum": "014018",
+      "style": "追",
+      "score": "103.50",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711"
+      }
+    },
+    {
+      "number": 4,
+      "name": "上田 裕和",
+      "snum": "013783",
+      "style": "追",
+      "score": "95.93",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711"
+      }
+    },
+    {
+      "number": 5,
+      "name": "中西 大",
+      "snum": "015058",
+      "style": "逃",
+      "score": "98.73",
+      "back": 3,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711"
+      }
+    },
+    {
+      "number": 6,
+      "name": "佐藤 龍二",
+      "snum": "014384",
+      "style": "追",
+      "score": "88.00",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711"
+      }
+    },
+    {
+      "number": 7,
+      "name": "堀江 省吾",
+      "snum": "015522",
+      "style": "逃",
+      "score": "105.22",
+      "back": 14,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611068711"
+      }
+    }
+  ],
+  "lines": [
+    [
+      5,
+      1,
+      4
+    ],
+    [
+      7,
+      2,
+      3
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611068711"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-06T02:10:52.003Z"
+}

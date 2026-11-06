@@ -379,7 +379,12 @@ class SafeConfirmedMeetingProvider:
         self._prior_result_cache[key] = loaded
         return loaded
 
-    def fetch_many(self, races: list[RaceCandidate]) -> dict[str, Any]:
+    def fetch_many(
+        self,
+        races: list[RaceCandidate],
+        *,
+        kinds_by_race: dict[str, set[str]] | None = None,
+    ) -> dict[str, Any]:
         """Fetch today's inspection pages and join yesterday's result comments.
 
         A meeting's prior-day result pages are read once and shared by every
@@ -411,7 +416,13 @@ class SafeConfirmedMeetingProvider:
             }
             prepared[race.race_id] = (race, meeting, outcomes, observed_at)
 
+        requested = kinds_by_race or {
+            race.race_id: set(COMMENT_KINDS) for race in races
+        }
+
         for race, meeting, outcomes, observed_at in prepared.values():
+            if "inspection" not in requested.get(race.race_id, set(COMMENT_KINDS)):
+                continue
             if self.blocked:
                 break
             try:
@@ -441,6 +452,8 @@ class SafeConfirmedMeetingProvider:
                     }
 
         for race, meeting, outcomes, observed_at in prepared.values():
+            if "result" not in requested.get(race.race_id, set(COMMENT_KINDS)):
+                continue
             if self.blocked:
                 break
             if int(meeting.day_index) <= 1:

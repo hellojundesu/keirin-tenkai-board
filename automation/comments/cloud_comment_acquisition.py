@@ -14,7 +14,7 @@ import sqlite3
 import sys
 import urllib.error
 import urllib.request
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -157,6 +157,164 @@ def seed_from_cloud(
     return meetings
 
 
+TERMINAL_INSPECTION_STATUSES = {"fetched", "not_published"}
+
+
+def _cloud_record(client: OIDCGatewayClient, record_type: str, record_key: str) -> dict[str, Any] | None:
+    response = client.call({
+        "operation": "read",
+        "record_type": record_type,
+        "record_key": record_key,
+    })
+    record = (response or {}).get("record")
+    return record if isinstance(record, dict) else None
+
+
+def _terminal_meeting_inspections(
+    *,
+    client: OIDCGatewayClient,
+    prior_date: date,
+    venue_code: str,
+    cup_id: str,
+) -> dict[str, dict[str, Any]] | None:
+    """Load a complete prior-day inspection snapshot without source HTTP."""
+    date_key = prior_date.isoformat()
+    manifest = _cloud_record(client, "cloud_comment_manifest", date_key)
+    payload = (manifest or {}).get("payload") or {}
+    if payload.get("status") != "complete":
+        return None
+    prefix = prior_date.strftime("%Y%m%d") + str(venue_code).zfill(2)
+    race_ids = sorted(
+        str(value) for value in payload.get("race_ids") or []
+        if str(value).startswith(prefix)
+    )
+    if not race_ids:
+        return None
+
+    by_registration: dict[str, dict[str, Any]] = {}
+    meeting_records = 0
+    for race_id in race_ids:
+        record = _cloud_record(client, "cloud_race_comment", race_id)
+        race_payload = (record or {}).get("payload") or {}
+        evidence = race_payload.get("meeting_evidence") or {}
+        if str(evidence.get("cup_id") or "") != str(cup_id):
+            continue
+        meeting_records += 1
+        entries = race_payload.get("entries") or []
+        if not entries:
+            return None
+        for entry in entries:
+            registration_no = str(entry.get("registration_no") or "").lstrip("0")
+            state = entry.get("inspection") or {}
+            status = str(state.get("status") or "not_attempted")
+            if not registration_no or status not in TERMINAL_INSPECTION_STATUSES:
+                return None
+            if status == "fetched" and not str(state.get("text") or "").strip():
+                return None
+            previous = by_registration.get(registration_no)
+            if previous and (
+                previous.get("status") != status
+                or previous.get("content_hash") != state.get("content_hash")
+            ):
+                return None
+            by_registration[registration_no] = state
+    return by_registration if meeting_records and by_registration else None
+
+
+def seed_meeting_inspections(
+    state_db: Path,
+    races: list[RaceCandidate],
+    meetings: dict[str, ConfirmedMeeting],
+    client: OIDCGatewayClient,
+) -> dict[str, int]:
+    """Reuse fixed inspection comments throughout a confirmed meeting.
+
+    A prior snapshot is used only when every inspection state in that meeting
+    is terminal. Missing/failed snapshots do not suppress a source retry.
+    Riders added after that snapshot are explicitly not published, matching
+    the provider's meeting-wide publication behavior.
+    """
+    grouped: dict[tuple[str, str, str, int], list[RaceCandidate]] = {}
+    for race in races:
+        meeting = meetings.get(race.race_id)
+        if meeting and int(meeting.day_index) > 1:
+            key = (race.race_date, race.venue_code, meeting.cup_id, int(meeting.day_index))
+            grouped.setdefault(key, []).append(race)
+
+    connection = sqlite3.connect(state_db)
+    connection.row_factory = sqlite3.Row
+    ensure_schema(connection)
+    reused = late_entries = meetings_reused = 0
+    observed_at = datetime.now(timezone.utc).isoformat()
+    try:
+        for (race_date, venue_code, cup_id, day_index), meeting_races in grouped.items():
+            cached: dict[str, dict[str, Any]] | None = None
+            current_date = date.fromisoformat(race_date)
+            for offset in range(1, day_index):
+                cached = _terminal_meeting_inspections(
+                    client=client,
+                    prior_date=current_date - timedelta(days=offset),
+                    venue_code=venue_code,
+                    cup_id=cup_id,
+                )
+                if cached is not None:
+                    break
+            if cached is None:
+                continue
+            meetings_reused += 1
+            for race in meeting_races:
+                for registration_no in race.registration_numbers:
+                    existing = connection.execute(
+                        """SELECT fetch_status FROM source_comment_current
+                             WHERE source_instance='cloud' AND race_id=?
+                               AND registration_no=? AND comment_kind='inspection'""",
+                        (race.race_id, registration_no),
+                    ).fetchone()
+                    if existing and existing["fetch_status"] in TERMINAL_INSPECTION_STATUSES:
+                        continue
+                    source = cached.get(str(registration_no).lstrip("0"))
+                    if source is None:
+                        late_entries += 1
+                        source = {
+                            "status": "not_published",
+                            "text": None,
+                            "content_hash": None,
+                            "raw_hash": None,
+                            "provider": "meeting-inspection-cache:late-entry",
+                            "source_fetched_at": observed_at,
+                            "observed_at": observed_at,
+                            "last_attempt_at": observed_at,
+                            "attempts": 0,
+                            "revision": 0,
+                            "last_error": None,
+                        }
+                    else:
+                        reused += 1
+                    status = str(source.get("status"))
+                    text = str(source.get("text") or "").strip() or None
+                    connection.execute(
+                        """INSERT OR REPLACE INTO source_comment_current(
+                             source_instance,race_id,registration_no,comment_kind,comment_text,
+                             fetch_status,content_hash,raw_hash,provider,source_fetched_at,
+                             observed_at,last_attempt_at,attempts,revision,last_error
+                           ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                        (
+                            "cloud", race.race_id, registration_no, "inspection", text,
+                            status, source.get("content_hash"), source.get("raw_hash"),
+                            source.get("provider") or "meeting-inspection-cache",
+                            source.get("source_fetched_at") or observed_at,
+                            source.get("observed_at") or observed_at,
+                            source.get("last_attempt_at") or observed_at,
+                            int(source.get("attempts") or 0), int(source.get("revision") or 0),
+                            source.get("last_error"),
+                        ),
+                    )
+        connection.commit()
+    finally:
+        connection.close()
+    return {"meetings": meetings_reused, "reused": reused, "late_entries": late_entries}
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--catalog", required=True, type=Path)
@@ -183,12 +341,14 @@ def main() -> int:
         missing = sorted({race.race_id for race in races} - set(meetings))
         if missing:
             raise SystemExit(f"confirmed meeting evidence missing for {len(missing)} races")
+        inspection_reuse = seed_meeting_inspections(args.state_db, races, meetings, client)
         provider = SafeConfirmedMeetingProvider(meetings, transport=public_transport)
     else:
         if not args.saved_reports:
             raise SystemExit("offline mode requires --saved-reports")
         payload = json.loads(args.saved_reports.read_text(encoding="utf-8"))
         provider = SavedReportProvider(payload.get("reports") or payload)
+        inspection_reuse = {"meetings": 0, "reused": 0, "late_entries": 0}
     args.state_db.parent.mkdir(parents=True, exist_ok=True)
     report = run_job(
         args.state_db,
@@ -223,7 +383,11 @@ def main() -> int:
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps({"records": records}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     args.run_report.parent.mkdir(parents=True, exist_ok=True)
-    args.run_report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    args.run_report.write_text(json.dumps({
+        **report,
+        "inspection_reuse": inspection_reuse,
+        "external_http_requests": len(getattr(provider, "request_log", [])),
+    }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return 0
 
 

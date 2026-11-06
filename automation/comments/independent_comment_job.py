@@ -121,11 +121,20 @@ class CommentProvider(Protocol):
 def collect_provider_reports(
     provider: CommentProvider,
     planned: list[RaceCandidate],
+    kinds_by_race: dict[str, set[str]],
 ) -> tuple[dict[str, dict[str, Any]], dict[str, dict[str, str]]]:
     """Prefer the existing meeting-level provider contract when available."""
     fetch_many = getattr(provider, "fetch_many", None)
     if callable(fetch_many):
-        batch = fetch_many(planned)
+        # New providers can avoid opening an inspection page when only the
+        # prior-day result comment is still due. Keep older provider contracts
+        # working unchanged.
+        try:
+            batch = fetch_many(planned, kinds_by_race=kinds_by_race)
+        except TypeError as exc:
+            if "kinds_by_race" not in str(exc):
+                raise
+            batch = fetch_many(planned)
         reports = getattr(batch, "reports", None)
         errors = getattr(batch, "errors", None)
         if reports is None and isinstance(batch, dict):
@@ -162,10 +171,15 @@ def should_attempt(
         return False
     if row is None:
         return True
+    status = row["fetch_status"]
+    # Inspection comments are fixed for the whole meeting. Once the source
+    # returned a body or explicitly confirmed no publication, even a forced
+    # run must not fetch the same fact again. Failures remain retryable.
+    if kind == "inspection" and status in ("fetched", "not_published"):
+        return False
     last_attempt = parse_timestamp(row["last_attempt_at"])
     if last_attempt and now - last_attempt < timedelta(hours=policy.retry_cooldown_hours):
         return False
-    status = row["fetch_status"]
     if status in ("not_attempted", "fetch_failed", "parse_failed"):
         return True
     update_days = (
@@ -345,7 +359,11 @@ def run_job(
         for offset in range(0, len(planned), batch_size):
             batch_races = planned[offset:offset + batch_size]
             try:
-                provider_reports, provider_errors = collect_provider_reports(provider, batch_races)
+                provider_reports, provider_errors = collect_provider_reports(
+                    provider,
+                    batch_races,
+                    {race.race_id: kinds_by_race[race.race_id] for race in batch_races},
+                )
             except Exception as exc:
                 provider_reports = {}
                 provider_errors = {

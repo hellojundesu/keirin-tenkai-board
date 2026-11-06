@@ -170,7 +170,43 @@ jobs:
           echo "target_date=$target_date" >> "$GITHUB_OUTPUT"
           echo "comment target date: $target_date"
 
+      - name: 完全なコメント世代の有無を確認
+        id: comment_complete
+        shell: bash
+        env:
+          TARGET_DATE: ${{ steps.target.outputs.target_date }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os
+          from automation.cloud.cloud_oidc_gateway_client import OIDCGatewayClient
+
+          target = os.environ["TARGET_DATE"]
+          client = OIDCGatewayClient(
+              os.environ["CLOUD_INGEST_ENDPOINT"],
+              os.environ["CLOUD_INGEST_AUDIENCE"],
+              retries=1,
+          )
+          response = client.call({
+              "operation": "read",
+              "record_type": "cloud_comment_manifest",
+              "record_key": target,
+          })
+          record = (response or {}).get("record") or {}
+          payload = record.get("payload") or {}
+          complete = (
+              payload.get("dataset") == "cloud_comment_manifest"
+              and payload.get("race_date") == target
+              and payload.get("status") == "complete"
+              and bool((payload.get("cloud_generation") or {}).get("generation_id"))
+          )
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as handle:
+              handle.write(f"complete={'true' if complete else 'false'}\n")
+          print(f"comment manifest already complete: {'true' if complete else 'false'}")
+          PY
+
       - name: 対象日と保存済み出走表を確認
+        if: steps.comment_complete.outputs.complete != 'true'
         shell: bash
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
@@ -182,6 +218,7 @@ jobs:
 
       - name: Restore meeting-resolution checkpoint
         id: restore-meetings
+        if: steps.comment_complete.outputs.complete != 'true'
         uses: actions/cache/restore@v4
         with:
           path: ${{ github.workspace }}/.comment-trial/meetings.json
@@ -191,6 +228,7 @@ jobs:
 
       - name: Build the saved-day comment catalog
         id: catalog
+        if: steps.comment_complete.outputs.complete != 'true'
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
         run: |
@@ -200,7 +238,7 @@ jobs:
 
       - name: Check one meeting candidate per venue
         id: meeting
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_run' || inputs.operation == 'acquire'
+        if: steps.comment_complete.outputs.complete != 'true' && (github.event_name == 'schedule' || github.event_name == 'workflow_run' || inputs.operation == 'acquire')
         continue-on-error: true
         run: |
           set -euo pipefail
@@ -212,6 +250,7 @@ jobs:
 
       - name: Limit this trial to the 31 confirmed races
         id: selection
+        if: steps.comment_complete.outputs.complete != 'true'
         env:
           COMMENT_OPERATION: ${{ (github.event_name == 'schedule' || github.event_name == 'workflow_run') && 'acquire' || inputs.operation }}
         run: |
@@ -246,7 +285,7 @@ jobs:
 
       - name: Check whether every race has confirmed meeting evidence
         id: readiness
-        if: steps.selection.outcome == 'success'
+        if: steps.comment_complete.outputs.complete != 'true' && steps.selection.outcome == 'success'
         shell: bash
         run: |
           python3 - <<'PY'
@@ -272,7 +311,7 @@ jobs:
           PY
 
       - name: Save meeting-resolution checkpoint
-        if: always() && hashFiles(format('{0}/meetings.json', env.COMMENT_ROOT)) != ''
+        if: always() && steps.comment_complete.outputs.complete != 'true' && hashFiles(format('{0}/meetings.json', env.COMMENT_ROOT)) != ''
         uses: actions/cache/save@v4
         with:
           path: ${{ github.workspace }}/.comment-trial/meetings.json
@@ -280,7 +319,7 @@ jobs:
 
       - name: Acquire inspection and post-race comments
         id: acquire
-        if: steps.readiness.outputs.ready == 'true'
+        if: steps.comment_complete.outputs.complete != 'true' && steps.readiness.outputs.ready == 'true'
         continue-on-error: true
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
@@ -303,7 +342,7 @@ jobs:
 
       - name: Save the independent comment generation through limited CAS
         id: publish
-        if: steps.acquire.outcome == 'success'
+        if: steps.comment_complete.outputs.complete != 'true' && steps.acquire.outcome == 'success'
         continue-on-error: true
         run: |
           set -euo pipefail
@@ -314,7 +353,7 @@ jobs:
 
       - name: Verify the stored manifest and every dependency
         id: verify
-        if: steps.publish.outcome == 'success'
+        if: steps.comment_complete.outputs.complete != 'true' && steps.publish.outcome == 'success'
         continue-on-error: true
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
@@ -373,6 +412,6 @@ jobs:
           retention-days: 14
 
       - name: Reflect comment trial failures in the job result
-        if: always() && (steps.readiness.outputs.ready != 'true' || steps.acquire.outcome == 'failure' || steps.publish.outcome == 'failure' || steps.verify.outcome == 'failure')
+        if: always() && steps.comment_complete.outputs.complete != 'true' && (steps.readiness.outputs.ready != 'true' || steps.acquire.outcome == 'failure' || steps.publish.outcome == 'failure' || steps.verify.outcome == 'failure')
         run: exit 1
 

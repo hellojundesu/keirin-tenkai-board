@@ -62,7 +62,7 @@ jobs:
           echo "対象日: $target_date"
       - name: 既存の完全世代を確認
         id: existing_complete
-        if: github.event_name == 'schedule' && github.event.schedule != '0 9 * * *'
+        if: (github.event_name == 'schedule' && github.event.schedule != '0 9 * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'full')
         continue-on-error: true
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}

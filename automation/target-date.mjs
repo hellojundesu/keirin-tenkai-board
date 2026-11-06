@@ -1,5 +1,8 @@
 const SCHEDULE_TIMES = new Map([
   ['9 0 * * *', {hour: 9, minute: 9}],
+  ['39 0 * * *', {hour: 9, minute: 39}],
+  ['9 1 * * *', {hour: 10, minute: 9}],
+  ['39 1 * * *', {hour: 10, minute: 39}],
   ['0 9 * * *', {hour: 18, minute: 0}],
 ]);
 

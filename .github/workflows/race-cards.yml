@@ -4,6 +4,9 @@ on:
   push:
   schedule:
     - cron: '9 0 * * *' # 09:09 JST. GitHub's scheduled start can be delayed.
+    - cron: '39 0 * * *' # 09:39 JST: retry full acquisition only when still incomplete.
+    - cron: '9 1 * * *' # 10:09 JST: retry full acquisition only when still incomplete.
+    - cron: '39 1 * * *' # 10:39 JST: final morning retry when still incomplete.
     - cron: '0 9 * * *' # 18:00 JST: fill missing lines only.
   workflow_dispatch:
     inputs:
@@ -57,29 +60,41 @@ jobs:
             --event-name "$EVENT_NAME" --schedule "$SCHEDULE" --manual-date "$MANUAL_DATE")"
           echo "target_date=$target_date" >> "$GITHUB_OUTPUT"
           echo "対象日: $target_date"
+      - name: 既存の完全世代を確認
+        id: existing_complete
+        if: github.event_name == 'schedule' && github.event.schedule != '0 9 * * *'
+        continue-on-error: true
+        env:
+          TARGET_DATE: ${{ steps.target.outputs.target_date }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/keirin-existing-check"
+          python3 automation/cloud/cloud_manifest_audit.py "data/$TARGET_DATE" \
+            --output "$RUNNER_TEMP/keirin-existing-check/completeness.json"
       - name: ブラウザをインストール
-        if: github.event_name != 'push' && inputs.mode != 'publish-only'
+        if: github.event_name != 'push' && inputs.mode != 'publish-only' && (github.event.schedule == '0 9 * * *' || steps.existing_complete.outcome != 'success')
         run: npm install --prefix automation
       - name: 当日の出走表を取得
         id: scrape
-        if: github.event_name != 'push' && inputs.mode != 'publish-only'
+        if: github.event_name != 'push' && inputs.mode != 'publish-only' && (github.event.schedule == '0 9 * * *' || steps.existing_complete.outcome != 'success')
         continue-on-error: true
         env:
           LINES_ONLY: ${{ github.event.schedule == '0 9 * * *' || inputs.mode == 'lines-only' }}
           SCHEDULE: ${{ github.event.schedule }}
+          TARGET_DATE: ${{ steps.target.outputs.target_date }}
         run: |
           SCHEDULE_ARGS=()
           if [ -n "$SCHEDULE" ]; then
             SCHEDULE_ARGS+=(--schedule "$SCHEDULE")
           fi
           if [ "$LINES_ONLY" = "true" ]; then
-            node automation/scrape.mjs --lines-only "${SCHEDULE_ARGS[@]}"
+            node automation/scrape.mjs --target-date "$TARGET_DATE" --lines-only "${SCHEDULE_ARGS[@]}"
           else
-            node automation/scrape.mjs "${SCHEDULE_ARGS[@]}"
+            node automation/scrape.mjs --target-date "$TARGET_DATE" "${SCHEDULE_ARGS[@]}"
           fi
       - name: 保存世代の完全性を確認
         id: completeness
-        if: github.event_name != 'push' && (steps.scrape.outcome == 'success' || inputs.mode == 'publish-only')
+        if: github.event_name != 'push' && (steps.existing_complete.outcome == 'success' || steps.scrape.outcome == 'success' || inputs.mode == 'publish-only')
         continue-on-error: true
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
@@ -131,7 +146,7 @@ jobs:
           if-no-files-found: warn
           retention-days: 14
       - name: 公開用データを更新
-        if: github.event_name != 'push' && inputs.mode != 'publish-only' && always()
+        if: github.event_name != 'push' && inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success' && always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -162,19 +177,19 @@ jobs:
             git push
           fi
       - name: 既存のサイトと出走表を公開用にまとめる
-        if: github.event_name == 'push' || inputs.mode != 'publish-only'
+        if: github.event_name == 'push' || (inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success')
         run: |
           mkdir -p public
           rsync -a --exclude='.git/' --exclude='.github/' --exclude='automation/' --exclude='public/' --exclude='node_modules/' --exclude='data/.cloud-result-state.json' ./ public/
       - uses: actions/configure-pages@v6
-        if: github.event_name == 'push' || inputs.mode != 'publish-only'
+        if: github.event_name == 'push' || (inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success')
       - uses: actions/upload-pages-artifact@v5
-        if: github.event_name == 'push' || inputs.mode != 'publish-only'
+        if: github.event_name == 'push' || (inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success')
         with:
           path: public
       - name: 公開サイトを更新
         id: deployment
-        if: github.event_name == 'push' || inputs.mode != 'publish-only'
+        if: github.event_name == 'push' || (inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success')
         uses: actions/deploy-pages@v5
       - name: 取得エラーを実行結果に表示
         if: always() && ((inputs.mode != 'publish-only' && steps.scrape.outcome == 'failure') || steps.completeness.outcome == 'failure' || steps.cloud_sync.outcome == 'failure')

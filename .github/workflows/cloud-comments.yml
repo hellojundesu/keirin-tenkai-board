@@ -74,7 +74,8 @@ jobs:
   race-card-handoff:
     if: >-
       github.event_name == 'workflow_run' &&
-      github.event.workflow_run.conclusion == 'success' &&
+      (github.event.workflow_run.conclusion == 'success' ||
+       github.event.workflow_run.conclusion == 'failure') &&
       (github.event.workflow_run.event == 'schedule' ||
        github.event.workflow_run.event == 'workflow_dispatch')
     runs-on: ubuntu-24.04
@@ -135,7 +136,7 @@ jobs:
         inputs.operation == 'acquire-confirmed' ||
         (github.event_name == 'workflow_run' &&
          needs.race-card-handoff.result == 'success' &&
-         needs.race-card-handoff.outputs.mode == 'full')
+         (needs.race-card-handoff.outputs.mode == 'full' || needs.race-card-handoff.outputs.mode == 'lines-only'))
       )
     runs-on: ubuntu-24.04
     timeout-minutes: 90

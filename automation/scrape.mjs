@@ -2,7 +2,7 @@ import puppeteer from 'puppeteer';
 import {mkdir,readFile,writeFile} from 'node:fs/promises';
 import {resolve,join} from 'node:path';
 import {parseArgs} from 'node:util';
-import {extractRace,extractProfile,extractSupplement} from './parsers.mjs';
+import {extractRace,extractProfile,extractSupplement,extractSupplementLines} from './parsers.mjs';
 import {fillMissingLines} from './fill-lines.mjs';
 import {resolveTargetDate} from './target-date.mjs';
 
@@ -19,7 +19,7 @@ await mkdir(directory,{recursive:true});
 if(options.evidence)await mkdir(resolve(options.evidence),{recursive:true});
 const manifestPath=join(directory,'manifest.json');
 let prior={};try{prior=JSON.parse(await readFile(manifestPath,'utf8'))}catch{}
-if(options['target-date']&&date!==currentDate){
+if(!options['lines-only']&&options['target-date']&&date!==currentDate){
   console.error(`対象日 ${date} は現在の公開日 ${currentDate} と異なるため保留します。別日へ切り替えません。`);
   process.exit(75);
 }
@@ -34,7 +34,17 @@ if(options['lines-only']){
   }
   let lineBrowser,linePage,currentVenue;
   try{
-    const report=await fillMissingLines({directory,date,manifest:prior,venue:options.venue,race:options.race,getCard:async(venue,race)=>{
+    const ensureLinePage=async()=>{if(!lineBrowser){lineBrowser=await puppeteer.launch({headless:true,args:['--no-sandbox'],...(process.env.PUPPETEER_EXECUTABLE_PATH?{executablePath:process.env.PUPPETEER_EXECUTABLE_PATH}:{})});linePage=await lineBrowser.newPage()}};
+    const report=await fillMissingLines({directory,date,manifest:prior,venue:options.venue,race:options.race,getFallback:async saved=>{
+      if(!/^\d{12}$/.test(saved.raceId||'')||saved.raceId.slice(0,8)!==date.replaceAll('-','')||Number(saved.raceId.slice(10))!==Number(saved.race))throw Error('保存済みraceId不正');
+      await ensureLinePage();
+      currentVenue=null;
+      const extra=await supplement(linePage,saved.raceId);
+      const lines=await linePage.evaluate(extractSupplementLines,saved.raceId);
+      currentVenue=null;
+      return {raceId:saved.raceId,riders:extra.riders,lines,lineSource:'netkeirin'};
+    },getCard:async(venue,race)=>{
+      if(date!==currentDate)throw Error('過去日の公式出走表は参照不可。netkeirinへフォールバック');
       if(!lineBrowser){
         lineBrowser=await puppeteer.launch({headless:true,args:['--no-sandbox'],...(process.env.PUPPETEER_EXECUTABLE_PATH?{executablePath:process.env.PUPPETEER_EXECUTABLE_PATH}:{})});
         linePage=await lineBrowser.newPage();
@@ -120,6 +130,10 @@ try{
           const raceId=context.date+context.venueCode+String(race).padStart(2,'0');
           let extra=null;
           try{extra=await supplement(detail,raceId)}catch(e){manifest.warnings.push({venue,race,message:`B/S補完: ${e.message}`})}
+          let fallbackLines=[];
+          if(!card.lines.length&&extra){
+            try{fallbackLines=await detail.evaluate(extractSupplementLines,raceId)}catch(e){manifest.warnings.push({venue,race,message:`ライン補完: ${e.message}`})}
+          }
           // Do not trust a same-number rider from another roster. Match official
           // registration IDs as well, including leading zero normalization.
           const extraValid=extra&&extra.riders.length===card.riders.length&&new Set(extra.riders.map(r=>r.number)).size===card.riders.length&&card.riders.every(r=>extra.riders.some(x=>x.number===r.number&&x.snum===r.snum));
@@ -138,8 +152,19 @@ try{
             }
             riders.push(result);
           }
+          if(!card.lines.length&&extraValid&&fallbackLines.length){
+            const ids=fallbackLines.flat();
+            if(ids.length===riders.length&&new Set(ids).size===ids.length&&ids.every(n=>riders.some(r=>r.number===n))){card.lines=fallbackLines;card.lineSource='netkeirin'}
+          }
           const missingFields=riders.flatMap(r=>['style','back','start','score'].filter(key=>r[key]==null).map(field=>({number:r.number,field})));
           const data={date,venue,race,raceId,riders,lines:card.lines,source:extraValid?'KEIRIN.JP / netkeirin':'KEIRIN.JP',lineSource:card.lines.length?'KEIRIN.JP':null,scoreType:extraValid?'出走表掲載の競走得点':'直近4ヶ月の競走得点',sourceUrls:['https://keirin.jp/pc/racelist',...(extraValid?[extra.url]:[])],missingFields,updatedAt:new Date().toISOString()};
+          if(card.lineSource){data.lineSource=card.lineSource;data.lineUpdatedAt=data.updatedAt}
+          try{
+            const old=JSON.parse(await readFile(join(directory,`${venue}-${race}.json`),'utf8'));
+            if(old.raceId===raceId&&Array.isArray(old.lines)&&old.lines.length&&old.riders?.length===riders.length&&riders.every(r=>old.riders.some(x=>x.number===r.number&&x.snum===r.snum))){
+              data.lines=old.lines;data.lineSource=old.lineSource;data.lineUpdatedAt=old.lineUpdatedAt;
+            }
+          }catch(error){if(error.code!=='ENOENT')manifest.warnings.push({venue,race,message:`既存ライン確認: ${error.message}`})}
           await writeFile(join(directory,`${venue}-${race}.json`),JSON.stringify(data,null,2)+'\n');
           manifest.races.push({venue,race,updatedAt:data.updatedAt,missingFields:missingFields.length});
           if(missingFields.length)manifest.warnings.push({venue,race,message:'一部項目が未取得。推測値は使用していません。',missingFields});

@@ -94,7 +94,7 @@ jobs:
           fi
       - name: 保存世代の完全性を確認
         id: completeness
-        if: github.event_name != 'push' && (steps.existing_complete.outcome == 'success' || steps.scrape.outcome == 'success' || inputs.mode == 'publish-only')
+        if: always() && github.event_name != 'push'
         continue-on-error: true
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
@@ -103,11 +103,19 @@ jobs:
           mkdir -p "$RUNNER_TEMP/keirin-cloud-sync"
           python3 automation/cloud/cloud_manifest_audit.py "data/$TARGET_DATE" \
             --output "$RUNNER_TEMP/keirin-cloud-sync/completeness.json"
-      - name: コメント取得へ対象日と取得モードを渡す
-        if: github.event_name != 'push' && inputs.mode != 'publish-only' && github.event.schedule != '0 9 * * *' && inputs.mode != 'lines-only' && steps.completeness.outcome == 'success'
+      - name: コメント用の基本出走表を検証
+        id: comment_ready
+        if: always() && github.event_name != 'push' && inputs.mode != 'publish-only'
+        continue-on-error: true
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
-          ACQUISITION_MODE: full
+        run: |
+          python3 automation/comments/cloud_comment_catalog.py "data/$TARGET_DATE" --output "$RUNNER_TEMP/comment-catalog.json"
+      - name: コメント取得へ対象日と取得モードを渡す
+        if: always() && steps.comment_ready.outcome == 'success'
+        env:
+          TARGET_DATE: ${{ steps.target.outputs.target_date }}
+          ACQUISITION_MODE: ${{ (github.event.schedule == '0 9 * * *' || inputs.mode == 'lines-only') && 'lines-only' || 'full' }}
         run: |
           set -euo pipefail
           python3 -c 'import datetime, os; value=os.environ["TARGET_DATE"]; assert datetime.date.fromisoformat(value).isoformat() == value'
@@ -115,7 +123,7 @@ jobs:
           printf '%s\n' "$TARGET_DATE" > "$RUNNER_TEMP/race-card-handoff/target-date.txt"
           printf '%s\n' "$ACQUISITION_MODE" > "$RUNNER_TEMP/race-card-handoff/mode.txt"
       - name: コメント取得用の完了情報を保存
-        if: github.event_name != 'push' && inputs.mode != 'publish-only' && github.event.schedule != '0 9 * * *' && inputs.mode != 'lines-only' && steps.completeness.outcome == 'success'
+        if: always() && steps.comment_ready.outcome == 'success'
         uses: actions/upload-artifact@v5
         with:
           name: race-card-acquisition-complete

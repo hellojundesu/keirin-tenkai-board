@@ -47,6 +47,20 @@ export function extractProfile() {
     back:/^\d{1,3}(?:回)?$/.test(back||'')?Number(back.replace('回','')):null};
 }
 
+export function extractSupplementLines(expectedRaceId) {
+  const canonical=document.querySelector('link[rel="canonical"]')?.href;
+  if(!canonical||new URL(canonical).searchParams.get('race_id')!==expectedRaceId)throw Error('ライン補完レースID不一致');
+  const section=document.querySelector('section.Contents_Box.DeployYoso');
+  if(!section)return [];
+  const groups=[[]];
+  for(const box of section.querySelectorAll('.Shaban_InBox')){
+    const text=box.querySelector('.Shaban_Num')?.textContent.trim();
+    if(text&&/^[1-9]$/.test(text))groups.at(-1).push(Number(text));
+    else if(box.querySelector('.WakuSeparat')&&groups.at(-1).length)groups.push([]);
+  }
+  return groups.filter(group=>group.length);
+}
+
 export function extractSupplement(expectedRaceId) {
   const canonical=document.querySelector('link[rel="canonical"]')?.href;
   if(!canonical||new URL(canonical).searchParams.get('race_id')!==expectedRaceId)throw Error('補完出走表のレースID不一致');

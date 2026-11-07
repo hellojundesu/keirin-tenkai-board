@@ -12,9 +12,11 @@ def build_catalog(day_directory: Path) -> dict:
     if not manifest_path.exists():
         raise ValueError("race-card manifest is missing")
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    if manifest.get("status") != "complete":
+    if manifest.get("status") not in ("complete", "partial"):
         raise ValueError("race-card manifest is not complete")
     race_date = str(manifest.get("date") or day_directory.name)
+    if race_date != day_directory.name:
+        raise ValueError("race-card date mismatch")
     races = []
     for path in sorted(day_directory.glob("*.json")):
         if path.name == "manifest.json":
@@ -28,7 +30,12 @@ def build_catalog(day_directory: Path) -> dict:
         if len(race_id) != 12 or not race_id.isdigit() or race_id[:8] != race_date.replace("-", ""):
             raise ValueError(f"invalid race id: {path.name}")
         registrations = [str(rider.get("snum") or "").lstrip("0") for rider in row.get("riders") or []]
-        if not 5 <= len(registrations) <= 9 or any(not value.isdigit() for value in registrations):
+        numbers = [rider.get("number") for rider in row.get("riders") or []]
+        if (not 5 <= len(registrations) <= 9 or any(not value.isdigit() for value in registrations)
+            or len(set(registrations)) != len(registrations)
+            or len(set(numbers)) != len(numbers)
+            or any(not isinstance(n, int) or not 1 <= n <= 9 for n in numbers)
+            or row.get("date") != race_date or int(race_id[10:]) != row.get("race")):
             raise ValueError(f"invalid rider catalog: {path.name}")
         races.append({
             "race_id": race_id,
@@ -40,6 +47,14 @@ def build_catalog(day_directory: Path) -> dict:
     expected = manifest.get("races") or []
     if len(races) != len(expected):
         raise ValueError("race-card catalog count mismatch")
+    actual = {(row["race_number"], row["race_id"]) for row in races}
+    if len(actual) != len(races):
+        raise ValueError("duplicate race identity")
+    for entry in expected:
+        path = day_directory / f"{entry['venue']}-{entry['race']}.json"
+        saved = json.loads(path.read_text(encoding="utf-8"))
+        if saved.get("venue") != entry["venue"] or saved.get("race") != entry["race"]:
+            raise ValueError("manifest race identity mismatch")
     return {"source_instance": "cloud", "race_date": race_date, "races": races}
 
 

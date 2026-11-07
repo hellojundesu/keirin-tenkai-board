@@ -7,17 +7,17 @@ export function mergeMissingLines(existing,fresh,now){
   if(!fresh)return {reason:'unavailable'};
   const riders=existing.riders;
   if(!Array.isArray(riders)||!Array.isArray(fresh.riders)||riders.length!==fresh.riders.length)return {reason:'roster-mismatch'};
-  const norm=s=>String(s||'').replace(/[\s　]/g,'');
-  if(new Set(riders.map(r=>r.number)).size!==riders.length||new Set(fresh.riders.map(r=>r.number)).size!==riders.length||!riders.every(r=>fresh.riders.some(x=>x.number===r.number&&(r.snum?x.snum===r.snum:norm(x.name)===norm(r.name)))))return {reason:'roster-mismatch'};
+  const norm=s=>String(s||'').replace(/^0+/,'');
+  if(new Set(riders.map(r=>r.number)).size!==riders.length||new Set(fresh.riders.map(r=>r.number)).size!==riders.length||!riders.every(r=>fresh.riders.some(x=>x.number===r.number&&r.snum&&norm(x.snum)===norm(r.snum))))return {reason:'roster-mismatch'};
   const lines=fresh.lines;
   if(!Array.isArray(lines)||!lines.length)return {reason:'unavailable'};
   if(lines.some(g=>!Array.isArray(g)||!g.length))return {reason:'invalid-lines'};
   const ids=lines.flat();
   if(ids.length!==riders.length||new Set(ids).size!==ids.length||!ids.every(n=>Number.isInteger(n)&&riders.some(r=>r.number===n)))return {reason:'invalid-lines'};
-  return {reason:'added',data:{...existing,lines,lineSource:'KEIRIN.JP',lineUpdatedAt:now}};
+  return {reason:'added',data:{...existing,lines,lineSource:fresh.lineSource||'KEIRIN.JP',lineUpdatedAt:now}};
 }
 
-export async function fillMissingLines({directory,date,manifest,getCard,venue,race,now=()=>new Date().toISOString()}){
+export async function fillMissingLines({directory,date,manifest,getCard,getFallback,venue,race,now=()=>new Date().toISOString()}){
   const report={date,mode:'lines-only',startedAt:now(),added:[],preserved:[],unavailable:[],errors:[]};
   if(manifest.date!==date||!Array.isArray(manifest.races))throw Error(`${date}のmanifestがありません。朝の取得を先に実行してください。`);
   for(const entry of manifest.races){
@@ -29,8 +29,14 @@ export async function fillMissingLines({directory,date,manifest,getCard,venue,ra
       const saved=JSON.parse(await readFile(path,'utf8'));
       if(saved.date!==date||saved.venue!==entry.venue||Number(saved.race)!==label.race)throw Error('保存済みレースの日付・会場・レース不一致');
       if(saved.lines!=null&&(!Array.isArray(saved.lines)||saved.lines.length)){report.preserved.push(label);continue}
-      const fresh=await getCard(entry.venue,label.race);
-      const result=mergeMissingLines(saved,fresh,now());
+      let fresh=null;
+      try{fresh=await getCard(entry.venue,label.race)}catch(error){report.errors.push({...label,source:'KEIRIN.JP',message:error.message})}
+      let result=mergeMissingLines(saved,fresh,now());
+      if(result.reason==='unavailable'&&getFallback){
+        const fallback=await getFallback(saved);
+        if(fallback?.raceId!==saved.raceId)throw Error('補完元レースID不一致');
+        result=mergeMissingLines(saved,fallback,now());
+      }
       if(result.reason==='added'){
         // Atomic replacement only after successful parsing and roster validation.
         await writeFile(path+'.tmp',JSON.stringify(result.data,null,2)+'\n');

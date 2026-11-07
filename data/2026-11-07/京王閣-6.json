@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-07",
+  "venue": "京王閣",
+  "race": 6,
+  "raceId": "202611072706",
+  "riders": [
+    {
+      "number": 1,
+      "name": "守谷 陽介",
+      "snum": "013884",
+      "style": "両",
+      "score": "93.95",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706"
+      }
+    },
+    {
+      "number": 2,
+      "name": "稲留 敦貴",
+      "snum": "015845",
+      "style": "逃",
+      "score": "89.48",
+      "back": 10,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706"
+      }
+    },
+    {
+      "number": 3,
+      "name": "関根 健太郎",
+      "snum": "014822",
+      "style": "両",
+      "score": "88.75",
+      "back": 7,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706"
+      }
+    },
+    {
+      "number": 4,
+      "name": "落合 達彦",
+      "snum": "014528",
+      "style": "追",
+      "score": "86.59",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706"
+      }
+    },
+    {
+      "number": 5,
+      "name": "二條 祐也",
+      "snum": "014620",
+      "style": "追",
+      "score": "85.33",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706"
+      }
+    },
+    {
+      "number": 6,
+      "name": "橋谷 成海",
+      "snum": "015798",
+      "style": "逃",
+      "score": "84.71",
+      "back": 11,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706"
+      }
+    },
+    {
+      "number": 7,
+      "name": "井上 雄三",
+      "snum": "013932",
+      "style": "追",
+      "score": "83.76",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611072706"
+      }
+    }
+  ],
+  "lines": [
+    [
+      2,
+      1,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611072706"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-07T02:02:36.157Z"
+}

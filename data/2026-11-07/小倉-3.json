@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-07",
+  "venue": "小倉",
+  "race": 3,
+  "raceId": "202611078103",
+  "riders": [
+    {
+      "number": 1,
+      "name": "松永 真太",
+      "snum": "014265",
+      "style": "追",
+      "score": "77.33",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103"
+      }
+    },
+    {
+      "number": 2,
+      "name": "藤野 一良",
+      "snum": "013131",
+      "style": "追",
+      "score": "76.67",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103"
+      }
+    },
+    {
+      "number": 3,
+      "name": "宮道 良輔",
+      "snum": "015732",
+      "style": "逃",
+      "score": "72.89",
+      "back": 11,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103"
+      }
+    },
+    {
+      "number": 4,
+      "name": "駒壽 直人",
+      "snum": "016010",
+      "style": "逃",
+      "score": "70.00",
+      "back": 9,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103"
+      }
+    },
+    {
+      "number": 5,
+      "name": "土居 佑次",
+      "snum": "015286",
+      "style": "逃",
+      "score": "69.78",
+      "back": 3,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103"
+      }
+    },
+    {
+      "number": 6,
+      "name": "富永 昌久",
+      "snum": "013972",
+      "style": "追",
+      "score": "69.50",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103"
+      }
+    },
+    {
+      "number": 7,
+      "name": "小西 芳樹",
+      "snum": "012290",
+      "style": "追",
+      "score": "66.24",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611078103"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611078103"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-07T02:02:44.827Z"
+}

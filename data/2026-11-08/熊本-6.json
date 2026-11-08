@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-08",
+  "venue": "熊本",
+  "race": 6,
+  "raceId": "202611088706",
+  "riders": [
+    {
+      "number": 1,
+      "name": "河崎 正晴",
+      "snum": "015660",
+      "style": "逃",
+      "score": "96.21",
+      "back": 4,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706"
+      }
+    },
+    {
+      "number": 2,
+      "name": "小谷 実",
+      "snum": "014313",
+      "style": "追",
+      "score": "94.08",
+      "back": 0,
+      "start": 18,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706"
+      }
+    },
+    {
+      "number": 3,
+      "name": "中川 貴徳",
+      "snum": "014141",
+      "style": "追",
+      "score": "101.62",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706"
+      }
+    },
+    {
+      "number": 4,
+      "name": "大石 崇晴",
+      "snum": "015106",
+      "style": "両",
+      "score": "101.43",
+      "back": 1,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706"
+      }
+    },
+    {
+      "number": 5,
+      "name": "内田 玄希",
+      "snum": "014372",
+      "style": "追",
+      "score": "96.68",
+      "back": 0,
+      "start": 17,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706"
+      }
+    },
+    {
+      "number": 6,
+      "name": "加倉 正義",
+      "snum": "012478",
+      "style": "追",
+      "score": "92.88",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706"
+      }
+    },
+    {
+      "number": 7,
+      "name": "水谷 好宏",
+      "snum": "014309",
+      "style": "両",
+      "score": "97.67",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611088706"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      6
+    ],
+    [
+      3
+    ],
+    [
+      5
+    ],
+    [
+      4,
+      7,
+      2
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611088706"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-08T05:51:08.663Z",
+  "lineUpdatedAt": "2026-11-08T05:51:08.663Z"
+}

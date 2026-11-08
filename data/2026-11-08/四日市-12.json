@@ -1,0 +1,171 @@
+{
+  "date": "2026-11-08",
+  "venue": "四日市",
+  "race": 12,
+  "raceId": "202611084812",
+  "riders": [
+    {
+      "number": 1,
+      "name": "浅井 康太",
+      "snum": "014089",
+      "style": "両",
+      "score": "116.68",
+      "back": 0,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812"
+      }
+    },
+    {
+      "number": 2,
+      "name": "森田 優弥",
+      "snum": "015248",
+      "style": "逃",
+      "score": "113.39",
+      "back": 8,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812"
+      }
+    },
+    {
+      "number": 3,
+      "name": "寺崎 浩平",
+      "snum": "015413",
+      "style": "逃",
+      "score": "116.50",
+      "back": 1,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812"
+      }
+    },
+    {
+      "number": 4,
+      "name": "松谷 秀幸",
+      "snum": "014524",
+      "style": "追",
+      "score": "111.58",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812"
+      }
+    },
+    {
+      "number": 5,
+      "name": "古性 優作",
+      "snum": "014838",
+      "style": "両",
+      "score": "120.13",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812"
+      }
+    },
+    {
+      "number": 6,
+      "name": "桑名 僚也",
+      "snum": "015520",
+      "style": "追",
+      "score": "104.56",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812"
+      }
+    },
+    {
+      "number": 7,
+      "name": "新田 祐大",
+      "snum": "014054",
+      "style": "両",
+      "score": "113.20",
+      "back": 3,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812"
+      }
+    },
+    {
+      "number": 8,
+      "name": "脇本 勇希",
+      "snum": "015362",
+      "style": "逃",
+      "score": "108.17",
+      "back": 7,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812"
+      }
+    },
+    {
+      "number": 9,
+      "name": "中野 慎詞",
+      "snum": "015596",
+      "style": "逃",
+      "score": "111.71",
+      "back": 3,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611084812"
+      }
+    }
+  ],
+  "lines": [
+    [
+      8,
+      3,
+      5
+    ],
+    [
+      1
+    ],
+    [
+      9,
+      7,
+      4
+    ],
+    [
+      2,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611084812"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-08T05:50:51.673Z"
+}

@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-09",
+  "venue": "松戸",
+  "race": 7,
+  "raceId": "202611093107",
+  "riders": [
+    {
+      "number": 1,
+      "name": "小川 賢人",
+      "snum": "014956",
+      "style": "両",
+      "score": "98.00",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107"
+      }
+    },
+    {
+      "number": 2,
+      "name": "酒井 拳蔵",
+      "snum": "015113",
+      "style": "両",
+      "score": "94.11",
+      "back": 2,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107"
+      }
+    },
+    {
+      "number": 3,
+      "name": "櫻井 祐太郎",
+      "snum": "015417",
+      "style": "逃",
+      "score": "104.22",
+      "back": 14,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107"
+      }
+    },
+    {
+      "number": 4,
+      "name": "平尾 一晃",
+      "snum": "015211",
+      "style": "逃",
+      "score": "100.28",
+      "back": 5,
+      "start": 17,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107"
+      }
+    },
+    {
+      "number": 5,
+      "name": "飯野 祐太",
+      "snum": "014052",
+      "style": "両",
+      "score": "106.80",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107"
+      }
+    },
+    {
+      "number": 6,
+      "name": "宝満 大作",
+      "snum": "013722",
+      "style": "追",
+      "score": "93.55",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107"
+      }
+    },
+    {
+      "number": 7,
+      "name": "角 令央奈",
+      "snum": "014677",
+      "style": "両",
+      "score": "101.93",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611093107"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      1,
+      7
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      5
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611093107"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-09T06:03:59.217Z"
+}

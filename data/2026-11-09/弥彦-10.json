@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-09",
+  "venue": "弥彦",
+  "race": 10,
+  "raceId": "202611092110",
+  "riders": [
+    {
+      "number": 1,
+      "name": "川原 未紀",
+      "snum": "015941",
+      "style": "両",
+      "score": "51.50",
+      "back": 2,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110"
+      }
+    },
+    {
+      "number": 2,
+      "name": "太田 瑛美",
+      "snum": "015586",
+      "style": "両",
+      "score": "55.05",
+      "back": 2,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110"
+      }
+    },
+    {
+      "number": 3,
+      "name": "細田 愛未",
+      "snum": "015069",
+      "style": "両",
+      "score": "54.05",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110"
+      }
+    },
+    {
+      "number": 4,
+      "name": "梅川 風子",
+      "snum": "015219",
+      "style": "逃",
+      "score": "58.56",
+      "back": 12,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110"
+      }
+    },
+    {
+      "number": 5,
+      "name": "西島 叶子",
+      "snum": "015504",
+      "style": "両",
+      "score": "53.67",
+      "back": 7,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110"
+      }
+    },
+    {
+      "number": 6,
+      "name": "豊岡 英子",
+      "snum": "015313",
+      "style": "両",
+      "score": "52.58",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110"
+      }
+    },
+    {
+      "number": 7,
+      "name": "杉浦 菜留",
+      "snum": "015490",
+      "style": "両",
+      "score": "52.58",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611092110"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1
+    ],
+    [
+      3
+    ],
+    [
+      2
+    ],
+    [
+      6
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611092110"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-09T06:04:35.101Z"
+}

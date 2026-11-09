@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-09",
+  "venue": "高知",
+  "race": 9,
+  "raceId": "202611097409",
+  "riders": [
+    {
+      "number": 1,
+      "name": "嶋津 拓弥",
+      "snum": "014935",
+      "style": "追",
+      "score": "111.38",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409"
+      }
+    },
+    {
+      "number": 2,
+      "name": "佐藤 壮志",
+      "snum": "015749",
+      "style": "逃",
+      "score": "104.13",
+      "back": 12,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409"
+      }
+    },
+    {
+      "number": 3,
+      "name": "戸田 洋平",
+      "snum": "014259",
+      "style": "追",
+      "score": "99.63",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409"
+      }
+    },
+    {
+      "number": 4,
+      "name": "河村 雅章",
+      "snum": "014231",
+      "style": "追",
+      "score": "102.86",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409"
+      }
+    },
+    {
+      "number": 5,
+      "name": "嵯峨 昇喜郎",
+      "snum": "015235",
+      "style": "両",
+      "score": "106.59",
+      "back": 7,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409"
+      }
+    },
+    {
+      "number": 6,
+      "name": "西田 雅志",
+      "snum": "013498",
+      "style": "追",
+      "score": "98.83",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409"
+      }
+    },
+    {
+      "number": 7,
+      "name": "林 大悟",
+      "snum": "015129",
+      "style": "逃",
+      "score": "104.92",
+      "back": 8,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611097409"
+      }
+    }
+  ],
+  "lines": [
+    [
+      5,
+      1,
+      4
+    ],
+    [
+      2,
+      7,
+      3,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611097409"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-09T06:04:10.917Z",
+  "lineUpdatedAt": "2026-11-09T06:04:10.917Z"
+}

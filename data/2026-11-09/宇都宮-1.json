@@ -1,0 +1,142 @@
+{
+  "date": "2026-11-09",
+  "venue": "宇都宮",
+  "race": 1,
+  "raceId": "202611092401",
+  "riders": [
+    {
+      "number": 1,
+      "name": "町田 勝志",
+      "snum": "013037",
+      "style": "追",
+      "score": "68.74",
+      "back": 1,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401"
+      }
+    },
+    {
+      "number": 2,
+      "name": "近藤 直幹",
+      "snum": "012986",
+      "style": "追",
+      "score": "65.36",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401"
+      }
+    },
+    {
+      "number": 3,
+      "name": "加美山 隆行",
+      "snum": "014209",
+      "style": "追",
+      "score": "67.83",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401"
+      }
+    },
+    {
+      "number": 4,
+      "name": "渡辺 馨",
+      "snum": "014526",
+      "style": "両",
+      "score": "69.86",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401"
+      }
+    },
+    {
+      "number": 5,
+      "name": "清家 大夢",
+      "snum": "016005",
+      "style": "逃",
+      "score": "68.63",
+      "back": 12,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401"
+      }
+    },
+    {
+      "number": 6,
+      "name": "伊藤 司",
+      "snum": "013531",
+      "style": "逃",
+      "score": "63.13",
+      "back": 2,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401"
+      }
+    },
+    {
+      "number": 7,
+      "name": "高尾 剛文",
+      "snum": "012319",
+      "style": "追",
+      "score": "70.00",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611092401"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      1
+    ],
+    [
+      5,
+      2,
+      7
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611092401"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-09T06:04:37.675Z",
+  "lineUpdatedAt": "2026-11-09T06:04:37.675Z"
+}

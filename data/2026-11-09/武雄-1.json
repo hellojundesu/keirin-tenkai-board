@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-09",
+  "venue": "武雄",
+  "race": 1,
+  "raceId": "202611098401",
+  "riders": [
+    {
+      "number": 1,
+      "name": "武井 大介",
+      "snum": "013766",
+      "style": "追",
+      "score": "87.57",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401"
+      }
+    },
+    {
+      "number": 2,
+      "name": "田川 翔琉",
+      "snum": "015568",
+      "style": "逃",
+      "score": "86.14",
+      "back": 6,
+      "start": 11,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401"
+      }
+    },
+    {
+      "number": 3,
+      "name": "一ノ瀬 貴将",
+      "snum": "014703",
+      "style": "両",
+      "score": "80.65",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401"
+      }
+    },
+    {
+      "number": 4,
+      "name": "西本 健三郎",
+      "snum": "015879",
+      "style": "逃",
+      "score": "84.67",
+      "back": 14,
+      "start": 12,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401"
+      }
+    },
+    {
+      "number": 5,
+      "name": "紫原 政文",
+      "snum": "011854",
+      "style": "追",
+      "score": "88.31",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401"
+      }
+    },
+    {
+      "number": 6,
+      "name": "松山 正和",
+      "snum": "013039",
+      "style": "追",
+      "score": "78.59",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401"
+      }
+    },
+    {
+      "number": 7,
+      "name": "油谷 蒼",
+      "snum": "015829",
+      "style": "逃",
+      "score": "82.20",
+      "back": 4,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611098401"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      1,
+      6
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      7,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611098401"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-09T06:04:15.281Z",
+  "lineUpdatedAt": "2026-11-09T06:04:15.281Z"
+}

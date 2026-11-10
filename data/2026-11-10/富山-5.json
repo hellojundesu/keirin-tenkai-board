@@ -1,0 +1,146 @@
+{
+  "date": "2026-11-10",
+  "venue": "富山",
+  "race": 5,
+  "raceId": "202611104605",
+  "riders": [
+    {
+      "number": 1,
+      "name": "宇野 紅音",
+      "snum": "015764",
+      "style": "両",
+      "score": "53.33",
+      "back": 7,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605"
+      }
+    },
+    {
+      "number": 2,
+      "name": "千葉 捺美",
+      "snum": "015940",
+      "style": "両",
+      "score": "49.90",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605"
+      }
+    },
+    {
+      "number": 3,
+      "name": "國村 美留莉",
+      "snum": "015498",
+      "style": "追",
+      "score": "49.17",
+      "back": 2,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605"
+      }
+    },
+    {
+      "number": 4,
+      "name": "中野 咲",
+      "snum": "015149",
+      "style": "両",
+      "score": "51.78",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605"
+      }
+    },
+    {
+      "number": 5,
+      "name": "大谷 杏奈",
+      "snum": "015145",
+      "style": "両",
+      "score": "46.38",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605"
+      }
+    },
+    {
+      "number": 6,
+      "name": "大浦 彩瑛",
+      "snum": "015855",
+      "style": "逃",
+      "score": "56.74",
+      "back": 9,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605"
+      }
+    },
+    {
+      "number": 7,
+      "name": "中島 瞳",
+      "snum": "015853",
+      "style": "両",
+      "score": "55.78",
+      "back": 2,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611104605"
+      }
+    }
+  ],
+  "lines": [
+    [
+      7
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      4
+    ],
+    [
+      3
+    ],
+    [
+      6
+    ],
+    [
+      5
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611104605"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-10T07:05:56.728Z",
+  "lineUpdatedAt": "2026-11-10T07:05:56.728Z"
+}

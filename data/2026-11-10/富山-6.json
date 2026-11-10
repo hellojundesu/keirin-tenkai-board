@@ -1,0 +1,146 @@
+{
+  "date": "2026-11-10",
+  "venue": "富山",
+  "race": 6,
+  "raceId": "202611104606",
+  "riders": [
+    {
+      "number": 1,
+      "name": "加藤 恵",
+      "snum": "015216",
+      "style": "両",
+      "score": "51.77",
+      "back": 8,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606"
+      }
+    },
+    {
+      "number": 2,
+      "name": "星野 しほ",
+      "snum": "015759",
+      "style": "追",
+      "score": "47.96",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606"
+      }
+    },
+    {
+      "number": 3,
+      "name": "戸田 瑞姫",
+      "snum": "015667",
+      "style": "両",
+      "score": "53.48",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606"
+      }
+    },
+    {
+      "number": 4,
+      "name": "岡田 優歩",
+      "snum": "015949",
+      "style": "両",
+      "score": "55.00",
+      "back": 3,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606"
+      }
+    },
+    {
+      "number": 5,
+      "name": "塩田 日海",
+      "snum": "015673",
+      "style": "追",
+      "score": "52.94",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606"
+      }
+    },
+    {
+      "number": 6,
+      "name": "坂口 楓華",
+      "snum": "015225",
+      "style": "両",
+      "score": "58.07",
+      "back": 14,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606"
+      }
+    },
+    {
+      "number": 7,
+      "name": "佐々木 綾",
+      "snum": "015393",
+      "style": "両",
+      "score": "49.85",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611104606"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      5
+    ],
+    [
+      4
+    ],
+    [
+      6
+    ],
+    [
+      3
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611104606"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-10T07:05:57.251Z",
+  "lineUpdatedAt": "2026-11-10T07:05:57.251Z"
+}

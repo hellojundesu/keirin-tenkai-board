@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-10",
+  "venue": "武雄",
+  "race": 9,
+  "raceId": "202611108409",
+  "riders": [
+    {
+      "number": 1,
+      "name": "瀬戸 晋作",
+      "snum": "015067",
+      "style": "両",
+      "score": "100.14",
+      "back": 3,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409"
+      }
+    },
+    {
+      "number": 2,
+      "name": "黒田 淳",
+      "snum": "014613",
+      "style": "追",
+      "score": "98.81",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409"
+      }
+    },
+    {
+      "number": 3,
+      "name": "朝倉 智仁",
+      "snum": "015334",
+      "style": "逃",
+      "score": "104.14",
+      "back": 3,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409"
+      }
+    },
+    {
+      "number": 4,
+      "name": "泉 慶輔",
+      "snum": "014712",
+      "style": "追",
+      "score": "97.07",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409"
+      }
+    },
+    {
+      "number": 5,
+      "name": "橋本 宇宙",
+      "snum": "015744",
+      "style": "逃",
+      "score": "101.24",
+      "back": 11,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409"
+      }
+    },
+    {
+      "number": 6,
+      "name": "松尾 信太郎",
+      "snum": "014264",
+      "style": "追",
+      "score": "95.59",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409"
+      }
+    },
+    {
+      "number": 7,
+      "name": "高原 仁志",
+      "snum": "013741",
+      "style": "追",
+      "score": "96.42",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611108409"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3,
+      4
+    ],
+    [
+      2
+    ],
+    [
+      7
+    ],
+    [
+      5,
+      1,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611108409"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-10T07:05:30.531Z",
+  "lineUpdatedAt": "2026-11-10T07:05:30.531Z"
+}

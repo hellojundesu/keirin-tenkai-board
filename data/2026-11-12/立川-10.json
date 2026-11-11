@@ -1,0 +1,171 @@
+{
+  "date": "2026-11-12",
+  "venue": "立川",
+  "race": 10,
+  "raceId": "202611122810",
+  "riders": [
+    {
+      "number": 1,
+      "name": "伊藤 信",
+      "snum": "014253",
+      "style": "逃",
+      "score": "105.78",
+      "back": 2,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810"
+      }
+    },
+    {
+      "number": 2,
+      "name": "松坂 洋平",
+      "snum": "014020",
+      "style": "両",
+      "score": "105.19",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810"
+      }
+    },
+    {
+      "number": 3,
+      "name": "田中 誠",
+      "snum": "014041",
+      "style": "追",
+      "score": "101.00",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810"
+      }
+    },
+    {
+      "number": 4,
+      "name": "森山 智徳",
+      "snum": "014692",
+      "style": "両",
+      "score": "96.63",
+      "back": 8,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810"
+      }
+    },
+    {
+      "number": 5,
+      "name": "荒澤 貴史",
+      "snum": "013669",
+      "style": "追",
+      "score": "100.19",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810"
+      }
+    },
+    {
+      "number": 6,
+      "name": "中島 竜誠",
+      "snum": "015802",
+      "style": "逃",
+      "score": "91.35",
+      "back": 7,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810"
+      }
+    },
+    {
+      "number": 7,
+      "name": "日高 裕太",
+      "snum": "015619",
+      "style": "逃",
+      "score": "102.18",
+      "back": 12,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810"
+      }
+    },
+    {
+      "number": 8,
+      "name": "小榑 佑弥",
+      "snum": "015612",
+      "style": "逃",
+      "score": "93.76",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810"
+      }
+    },
+    {
+      "number": 9,
+      "name": "三谷 政史",
+      "snum": "014310",
+      "style": "追",
+      "score": "97.43",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611122810"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      9
+    ],
+    [
+      7,
+      2,
+      5
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      6,
+      8
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611122810"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-11T23:45:25.020Z"
+}

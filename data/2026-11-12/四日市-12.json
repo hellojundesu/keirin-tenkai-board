@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-12",
+  "venue": "四日市",
+  "race": 12,
+  "raceId": "202611124812",
+  "riders": [
+    {
+      "number": 1,
+      "name": "岡田 征陽",
+      "snum": "013685",
+      "style": "追",
+      "score": "101.11",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812"
+      }
+    },
+    {
+      "number": 2,
+      "name": "佐山 寛明",
+      "snum": "015269",
+      "style": "逃",
+      "score": "100.07",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812"
+      }
+    },
+    {
+      "number": 3,
+      "name": "望月 永悟",
+      "snum": "013115",
+      "style": "追",
+      "score": "98.08",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812"
+      }
+    },
+    {
+      "number": 4,
+      "name": "藤井 昭吾",
+      "snum": "014757",
+      "style": "両",
+      "score": "104.29",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812"
+      }
+    },
+    {
+      "number": 5,
+      "name": "今井 聡",
+      "snum": "015250",
+      "style": "追",
+      "score": "98.27",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812"
+      }
+    },
+    {
+      "number": 6,
+      "name": "後藤 悠",
+      "snum": "015325",
+      "style": "逃",
+      "score": "94.32",
+      "back": 4,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812"
+      }
+    },
+    {
+      "number": 7,
+      "name": "木村 皆斗",
+      "snum": "015516",
+      "style": "逃",
+      "score": "109.53",
+      "back": 13,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611124812"
+      }
+    }
+  ],
+  "lines": [
+    [
+      7,
+      1,
+      5
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      6,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611124812"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-11T23:45:38.556Z"
+}

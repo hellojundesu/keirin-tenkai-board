@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-12",
+  "venue": "佐世保",
+  "race": 5,
+  "raceId": "202611128505",
+  "riders": [
+    {
+      "number": 1,
+      "name": "林 明宏",
+      "snum": "013296",
+      "style": "追",
+      "score": "87.28",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505"
+      }
+    },
+    {
+      "number": 2,
+      "name": "三浦 稔希",
+      "snum": "013041",
+      "style": "追",
+      "score": "84.20",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505"
+      }
+    },
+    {
+      "number": 3,
+      "name": "小川 将人",
+      "snum": "012971",
+      "style": "追",
+      "score": "83.21",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505"
+      }
+    },
+    {
+      "number": 4,
+      "name": "辻 力",
+      "snum": "012681",
+      "style": "追",
+      "score": "81.12",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505"
+      }
+    },
+    {
+      "number": 5,
+      "name": "中村 泰輔",
+      "snum": "015459",
+      "style": "逃",
+      "score": "80.14",
+      "back": 3,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505"
+      }
+    },
+    {
+      "number": 6,
+      "name": "山本 貴章",
+      "snum": "013056",
+      "style": "追",
+      "score": "79.93",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505"
+      }
+    },
+    {
+      "number": 7,
+      "name": "中岡 海",
+      "snum": "015736",
+      "style": "逃",
+      "score": "76.28",
+      "back": 1,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611128505"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611128505"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-11T23:46:28.492Z"
+}

@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-12",
+  "venue": "富山",
+  "race": 3,
+  "raceId": "202611124603",
+  "riders": [
+    {
+      "number": 1,
+      "name": "光岡 義洋",
+      "snum": "012827",
+      "style": "追",
+      "score": "71.50",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603"
+      }
+    },
+    {
+      "number": 2,
+      "name": "中村 淳",
+      "snum": "012496",
+      "style": "追",
+      "score": "69.50",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603"
+      }
+    },
+    {
+      "number": 3,
+      "name": "南 大輔",
+      "snum": "013049",
+      "style": "追",
+      "score": "73.81",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603"
+      }
+    },
+    {
+      "number": 4,
+      "name": "竹田 慎一",
+      "snum": "014395",
+      "style": "両",
+      "score": "67.53",
+      "back": 4,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603"
+      }
+    },
+    {
+      "number": 5,
+      "name": "永橋 武司",
+      "snum": "014101",
+      "style": "両",
+      "score": "69.44",
+      "back": 2,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603"
+      }
+    },
+    {
+      "number": 6,
+      "name": "長崎 達也",
+      "snum": "014019",
+      "style": "両",
+      "score": "66.88",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603"
+      }
+    },
+    {
+      "number": 7,
+      "name": "瀧本 匡平",
+      "snum": "014595",
+      "style": "両",
+      "score": "70.77",
+      "back": 9,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611124603"
+      }
+    }
+  ],
+  "lines": [
+    [
+      7,
+      1,
+      3
+    ],
+    [
+      4,
+      2,
+      6
+    ],
+    [
+      5
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611124603"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-11T23:46:00.480Z"
+}

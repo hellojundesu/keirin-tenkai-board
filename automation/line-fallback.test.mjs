@@ -18,7 +18,31 @@ test('full acquisition retains date guard',async()=>{
  assert.match(source,/if\(!options\['lines-only'\]&&date!==currentDate\)/);
  assert.match(source,/fallbackLines=await detail.evaluate\(extractSupplementLines,raceId\)/);
 });
+
+test('evidence callback is initialized before the lines-only entry point',async()=>{
+ const source=await readFile(new URL('./scrape.mjs',import.meta.url),'utf8');
+ assert.ok(source.indexOf('const evidence=')<source.indexOf("if(options['lines-only'])"));
+});
+
+test('official failure followed by verified fallback is successful and retains warning',async()=>{
+ const directory=await mkdtemp(join(process.cwd(),'.line-test-'));
+ try{
+  await writeFile(join(directory,'青森-1.json'),JSON.stringify(saved));
+  const report=await fillMissingLines({directory,date:saved.date,manifest:{date:saved.date,races:[{venue:'青森',race:1}]},getCard:async()=>{throw Error('historical official page unavailable')},getFallback:async()=>({...saved,lines,lineSource:'netkeirin'})});
+  assert.equal(report.status,'complete');assert.equal(report.errors.length,0);assert.equal(report.sourceWarnings.length,1);assert.equal(report.added.length,1);
+ }finally{await rm(directory,{recursive:true,force:true})}
+});
 test('official lines win',()=>assert.equal(mergeMissingLines(saved,{riders,lines},'now').data.lineSource,'KEIRIN.JP'));
+
+for(const message of ['HTTP 403','HTTP 429','CAPTCHA'])test(`access restriction stops the batch: ${message}`,async()=>{
+ const directory=await mkdtemp(join(process.cwd(),'.line-test-'));let calls=0;
+ try{
+  await writeFile(join(directory,'青森-1.json'),JSON.stringify(saved));
+  await writeFile(join(directory,'青森-2.json'),JSON.stringify({...saved,race:2,raceId:'202611061202'}));
+  const report=await fillMissingLines({directory,date:saved.date,manifest:{date:saved.date,races:[{venue:'青森',race:1},{venue:'青森',race:2}]},getCard:async()=>{calls++;throw Error(message)},getFallback:async()=>{throw Error('fallback must not run')}});
+  assert.equal(calls,1);assert.equal(report.accessStopped,true);assert.equal(report.errors.length,1);assert.equal(report.added.length,0);
+ }finally{await rm(directory,{recursive:true,force:true})}
+});
 test('netkeirin provenance',()=>assert.equal(mergeMissingLines(saved,{riders,lines,lineSource:'netkeirin'},'now').data.lineSource,'netkeirin'));
 test('existing lines preserved',()=>assert.equal(mergeMissingLines({...saved,lines},null,'now').reason,'preserved'));
 test('roster mismatch rejected',()=>assert.equal(mergeMissingLines(saved,{riders:[],lines},'now').reason,'roster-mismatch'));

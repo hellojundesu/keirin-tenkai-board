@@ -18,7 +18,7 @@ export function mergeMissingLines(existing,fresh,now){
 }
 
 export async function fillMissingLines({directory,date,manifest,getCard,getFallback,venue,race,now=()=>new Date().toISOString()}){
-  const report={date,mode:'lines-only',startedAt:now(),added:[],preserved:[],unavailable:[],errors:[]};
+  const report={date,mode:'lines-only',startedAt:now(),added:[],preserved:[],unavailable:[],sourceWarnings:[],errors:[]};
   if(manifest.date!==date||!Array.isArray(manifest.races))throw Error(`${date}のmanifestがありません。朝の取得を先に実行してください。`);
   for(const entry of manifest.races){
     if(venue&&entry.venue!==venue||race&&Number(entry.race)!==Number(race))continue;
@@ -30,7 +30,10 @@ export async function fillMissingLines({directory,date,manifest,getCard,getFallb
       if(saved.date!==date||saved.venue!==entry.venue||Number(saved.race)!==label.race)throw Error('保存済みレースの日付・会場・レース不一致');
       if(saved.lines!=null&&(!Array.isArray(saved.lines)||saved.lines.length)){report.preserved.push(label);continue}
       let fresh=null;
-      try{fresh=await getCard(entry.venue,label.race)}catch(error){report.errors.push({...label,source:'KEIRIN.JP',message:error.message})}
+      try{fresh=await getCard(entry.venue,label.race)}catch(error){
+        if(/HTTP\s*(403|429)|CAPTCHA/i.test(error.message))throw error;
+        report.sourceWarnings.push({...label,source:'KEIRIN.JP',message:error.message})
+      }
       let result=mergeMissingLines(saved,fresh,now());
       if(result.reason==='unavailable'&&getFallback){
         const fallback=await getFallback(saved);
@@ -43,7 +46,7 @@ export async function fillMissingLines({directory,date,manifest,getCard,getFallb
         await rename(path+'.tmp',path);report.added.push(label);
       }else if(result.reason==='unavailable')report.unavailable.push(label);
       else report.errors.push({...label,message:result.reason});
-    }catch(e){report.errors.push({...label,message:e.message})}
+    }catch(e){report.errors.push({...label,message:e.message});if(/HTTP\s*(403|429)|CAPTCHA/i.test(e.message)){report.accessStopped=true;break}}
   }
   report.finishedAt=now();report.status=report.errors.length?'partial':'complete';
   await writeFile(join(directory,'line-refresh.json'),JSON.stringify(report,null,2)+'\n');

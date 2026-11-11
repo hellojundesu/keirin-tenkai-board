@@ -17,6 +17,7 @@ if(!/^\d{4}-\d{2}-\d{2}$/.test(date)||Number.isNaN(parsedDate.valueOf())||parsed
 const directory=join(resolve(options['data-root']||'data'),date);
 await mkdir(directory,{recursive:true});
 if(options.evidence)await mkdir(resolve(options.evidence),{recursive:true});
+const evidence=async(name,page)=>{if(options.evidence)await writeFile(join(resolve(options.evidence),name),await page.content())};
 const manifestPath=join(directory,'manifest.json');
 let prior={};try{prior=JSON.parse(await readFile(manifestPath,'utf8'))}catch{}
 if(!options['lines-only']&&options['target-date']&&date!==currentDate){
@@ -67,7 +68,6 @@ const saveManifest=async()=>{
   manifest.races.sort((a,b)=>a.venue.localeCompare(b.venue,'ja')||a.race-b.race);
   await writeFile(manifestPath,JSON.stringify(manifest,null,2)+'\n');
 };
-const evidence=async(name,page)=>{if(options.evidence)await writeFile(join(resolve(options.evidence),name),await page.content())};
 await saveManifest();
 
 async function top(page){

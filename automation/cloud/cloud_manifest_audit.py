@@ -45,10 +45,15 @@ def audit_day(day_dir: Path) -> dict:
         riders = payload.get("riders")
         if not isinstance(riders, list) or not 5 <= len(riders) <= 9:
             failures.append(f"invalid roster: {venue}/{race}")
+    expected = manifest.get("expectedRaces")
+    if expected is not None:
+        declared = [(row.get("venue"), row.get("race")) for row in expected]
+        if len(declared) != len(set(declared)) or set(declared) != identities:
+            failures.append("source expected race set differs")
     for venue in discovered or []:
         # Meetings can have fewer than 12 races. Require a contiguous 1..N set.
-        # Detecting a missing final race requires a future independent source count;
-        # the current scraper does not persist that source fact.
+        # New generations also compare the declared source race set above,
+        # including its terminal race. Legacy generations retain their prior gate.
         numbers = by_venue.get(venue, set())
         if not numbers or numbers != set(range(1, max(numbers) + 1)):
             failures.append(f"venue race set is incomplete: {venue}")
@@ -72,4 +77,5 @@ def main() -> int:
 
 
 if __name__ == "__main__": raise SystemExit(main())
+
 

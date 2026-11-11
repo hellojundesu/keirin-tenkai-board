@@ -155,7 +155,7 @@ jobs:
           if-no-files-found: warn
           retention-days: 14
       - name: 公開用データを更新
-        if: github.event_name != 'push' && inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success' && always()
+        if: always() && github.event_name != 'push' && inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success' && steps.completeness.outcome == 'success'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -186,19 +186,19 @@ jobs:
             git push
           fi
       - name: 既存のサイトと出走表を公開用にまとめる
-        if: github.event_name == 'push' || (inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success')
+        if: github.event_name == 'push' || (inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success' && steps.completeness.outcome == 'success')
         run: |
           mkdir -p public
-          rsync -a --exclude='.git/' --exclude='.github/' --exclude='automation/' --exclude='public/' --exclude='node_modules/' --exclude='data/.cloud-result-state.json' ./ public/
+          rsync -a --exclude='.git/' --exclude='.github/' --exclude='automation/' --exclude='public/' --exclude='node_modules/' --exclude='.racecard-work/' --exclude='data/.cloud-result-state.json' ./ public/
       - uses: actions/configure-pages@v6
-        if: github.event_name == 'push' || (inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success')
+        if: github.event_name == 'push' || (inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success' && steps.completeness.outcome == 'success')
       - uses: actions/upload-pages-artifact@v5
-        if: github.event_name == 'push' || (inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success')
+        if: github.event_name == 'push' || (inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success' && steps.completeness.outcome == 'success')
         with:
           path: public
           name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
       - name: 公開用成果物の存在を確認
-        if: github.event_name == 'push' || (inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success')
+        if: github.event_name == 'push' || (inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success' && steps.completeness.outcome == 'success')
         env:
           GH_TOKEN: ${{ github.token }}
           ARTIFACT_NAME: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
@@ -222,10 +222,28 @@ jobs:
           PY
       - name: 公開サイトを更新
         id: deployment
-        if: github.event_name == 'push' || (inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success')
+        if: github.event_name == 'push' || (inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success' && steps.completeness.outcome == 'success')
         uses: actions/deploy-pages@v5
         with:
           artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
       - name: 取得エラーを実行結果に表示
         if: always() && ((inputs.mode != 'publish-only' && steps.scrape.outcome == 'failure') || steps.completeness.outcome == 'failure' || steps.cloud_sync.outcome == 'failure')
-        run: exit 1
+        env:
+          TARGET_DATE: ${{ steps.target.outputs.target_date }}
+        run: |
+          echo "::error title=出走表取得できず::対象日 $TARGET_DATE の取得・完全性確認・保存のいずれかに失敗しました。直前の取得理由を確認してください。"
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          path = Path(os.environ["RUNNER_TEMP"]) / "keirin-cloud-sync" / "acquisition.json"
+          if path.exists():
+              report = json.loads(path.read_text(encoding="utf-8"))
+              lines = [f"## 出走表取得できず：{report['date']}"]
+              for error in report.get("errors", []):
+                  message = f"{error.get('code', '取得失敗')}: {error['message']}"
+                  print(message)
+                  lines.append("- " + message)
+              Path(os.environ["GITHUB_STEP_SUMMARY"]).open("a", encoding="utf-8").write("\n".join(lines) + "\n")
+          PY
+          exit 1
+

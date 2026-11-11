@@ -15,8 +15,8 @@ export function extractRace(race) {
       if(/^(逃|両|追)$/.test(text)){style=text;break}
     }
     return {number,name:a.textContent.replace(/\s+/g,' ').trim(),snum:a.getAttribute('onclick')?.match(/\d{6}/)?.[0]||null,style};
-  }).filter(x=>x.number>=1&&x.number<=9&&x.snum);
-  if(riders.length<5||riders.length>9||new Set(riders.map(r=>r.number)).size!==riders.length)throw Error(`${race}R: 車番または選手を確認できません`);
+  });
+  if(riders.length<5||riders.length>9||riders.some(r=>!Number.isInteger(r.number)||r.number<1||r.number>9||!r.snum)||new Set(riders.map(r=>r.number)).size!==riders.length)throw Error(`${race}R: 車番または選手を確認できません`);
   const row=card.querySelector(`[id^="slyoso_td_${race}_"]`)?.closest('tr');
   const cells=row?[...row.querySelectorAll('td')].map(td=>Number(td.textContent.trim())||0):[];
   const lines=[],seen=new Set();let group=[];
@@ -88,8 +88,50 @@ export function extractSupplement(expectedRaceId) {
     if(row.cells.length!==header.cells.length)throw Error('補完出走表のセル数不一致');
     const read=label=>visibleText(row.cells[indices[label]]);
     const score=read('競走得点'),style=read('脚質');
-    return [{number:count(read('車')),snum:match[1].padStart(6,'0'),
+    return [{number:count(read('車')),snum:match[1].padStart(6,'0'),name:visibleText(link.querySelector('.PlayerName')), 
       score:/^(?:\d{2,3}\.\d{1,2}|0(?:\.0{1,2})?)$/.test(score)?score:null,
       style:/^(逃|両|追)$/.test(style)?style:null,back:count(read('B')),start:count(read('S'))}];
   });
+}
+
+
+// Read-only parsers: no calls to authenticated or betting endpoints.
+export function extractNetSchedule({date,venueCode,known}){
+ const compact=date.replaceAll('-',''),norm=s=>s.replace(/[\s　]/g,'');
+ const venues=[...document.querySelectorAll('li[id^="btn_jyoname_"]')].map(el=>{
+  const code=el.id.match(/^btn_jyoname_(\d{2})$/)?.[1],name=known[code];
+  const text=norm(el.querySelector('a')?.textContent||'');
+  if(!name||!text.startsWith(name))throw Error(`競輪場コードと名称が一致しません: ${code}`);
+  return {code,name};
+ });
+ if(!venues.length||new Set(venues.map(v=>v.code)).size!==venues.length)throw Error('対象日の開催一覧が未掲載、または構造を確認できません');
+ const rows=[...document.querySelectorAll('li[id^="racing_color_"]')];
+ const races=rows.map(row=>{
+  const raceId=row.id.match(/^racing_color_(\d{12})$/)?.[1];
+  if(!raceId||!raceId.startsWith(compact)||venueCode&&raceId.slice(8,10)!==venueCode)throw Error(`日付・場コード不一致: 対象 ${date}/${venueCode||'一覧'} 実データ ${raceId||'確認不可'}`);
+  const race=Number(raceId.slice(-2)),starters=row.querySelector('.Race_Data')?.textContent.match(/(\d+)車/)?.[1];
+  if(!Number.isInteger(race)||race<1||race>12)throw Error('レース番号が不正です');
+  return {raceId,race,starters:starters?Number(starters):null};
+ });
+ if(!races.length)throw Error('対象日の出走表が未掲載、またはレース一覧を確認できません');
+ if(venueCode){const nums=races.map(r=>r.race).sort((a,b)=>a-b);if(new Set(nums).size!==nums.length||nums.some((n,i)=>n!==i+1))throw Error('対象日のレース一覧に欠損・重複があります')}
+ return {venues,races};
+}
+export function extractNetContext({raceId,venue}){
+ const canonical=document.querySelector('link[rel="canonical"]')?.href;
+ if(!canonical||new URL(canonical).hostname!=='keirin.netkeiba.com'||new URL(canonical).searchParams.get('race_id')!==raceId)throw Error('出走表の正規URL・raceIdが一致しません');
+ const description=document.querySelector('meta[name="description"]')?.content||document.title;
+ const m=description.match(/(\d{4})年(\d{1,2})月(\d{1,2})日\s*(\d{1,2})R/);
+ const actual=m?m[1]+m[2].padStart(2,'0')+m[3].padStart(2,'0')+raceId.slice(8,10)+m[4].padStart(2,'0'):null;
+ const tm=document.title.match(/(\d{4})年(\d{1,2})月(\d{1,2})日\s*(\d{1,2})R/);
+ if(tm&&tm[1]+tm[2].padStart(2,'0')+tm[3].padStart(2,'0')+raceId.slice(8,10)+tm[4].padStart(2,'0')!==raceId)throw Error('出走表タイトルの日付・R不一致');
+ const label=document.querySelector('.RaceList_NameBox h2')?.textContent.replace(/[\s　]/g,'').replace(/競輪場$/,'');
+ if(actual!==raceId||!(label===venue||venue==='伊東'&&label==='伊東温泉'))throw Error(`出走表の開催日・会場・R不一致: 対象 ${raceId}/${venue} 実表示 ${actual||'確認不可'}/${label||'確認不可'}`);
+ return {date:`${raceId.slice(0,4)}-${raceId.slice(4,6)}-${raceId.slice(6,8)}`,venueCode:raceId.slice(8,10),race:Number(raceId.slice(-2)),canonical};
+}
+export function extractOfficialRaces(){
+ const tables=[...document.querySelectorAll('#sldivSyusouList > table.sltbl_02, #sldivSyusouList > table.sltbl_02-2')];
+ const numbers=tables.map(t=>Number(t.innerText.match(/^\s*(\d{1,2})R(?:\s|　)/)?.[1]));
+ if(!numbers.length||numbers.some(n=>!Number.isInteger(n)||n<1||n>12)||new Set(numbers).size!==numbers.length)throw Error('公式出走表のレース番号を確認できません');
+ return numbers.sort((a,b)=>a-b);
 }

@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-11",
+  "venue": "佐世保",
+  "race": 6,
+  "raceId": "202611118506",
+  "riders": [
+    {
+      "number": 1,
+      "name": "大瀬戸潤一郎",
+      "snum": "014486",
+      "style": "追",
+      "score": "88.46",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506"
+      }
+    },
+    {
+      "number": 2,
+      "name": "中川 繁樹",
+      "snum": "014314",
+      "style": "逃",
+      "score": "88.08",
+      "back": 9,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506"
+      }
+    },
+    {
+      "number": 3,
+      "name": "林 明宏",
+      "snum": "013296",
+      "style": "追",
+      "score": "87.28",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506"
+      }
+    },
+    {
+      "number": 4,
+      "name": "田中 俊充",
+      "snum": "013047",
+      "style": "追",
+      "score": "84.76",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506"
+      }
+    },
+    {
+      "number": 5,
+      "name": "川野 正芳",
+      "snum": "013374",
+      "style": "追",
+      "score": "82.39",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506"
+      }
+    },
+    {
+      "number": 6,
+      "name": "小山 峻汰",
+      "snum": "015844",
+      "style": "逃",
+      "score": "79.33",
+      "back": 1,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506"
+      }
+    },
+    {
+      "number": 7,
+      "name": "中岡 海",
+      "snum": "015736",
+      "style": "逃",
+      "score": "76.28",
+      "back": 1,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611118506"
+      }
+    }
+  ],
+  "lines": [
+    [
+      2,
+      4
+    ],
+    [
+      1
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      6,
+      5
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611118506"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-11T05:58:24.522Z"
+}

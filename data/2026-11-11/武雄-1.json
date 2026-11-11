@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-11",
+  "venue": "武雄",
+  "race": 1,
+  "raceId": "202611118401",
+  "riders": [
+    {
+      "number": 1,
+      "name": "徳吉 広紀",
+      "snum": "013660",
+      "style": "追",
+      "score": "83.42",
+      "back": 0,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401"
+      }
+    },
+    {
+      "number": 2,
+      "name": "鮒田 博文",
+      "snum": "013271",
+      "style": "追",
+      "score": "84.24",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401"
+      }
+    },
+    {
+      "number": 3,
+      "name": "板崎 佑矢",
+      "snum": "014887",
+      "style": "両",
+      "score": "81.33",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401"
+      }
+    },
+    {
+      "number": 4,
+      "name": "天野 純平",
+      "snum": "015384",
+      "style": "逃",
+      "score": "81.20",
+      "back": 8,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401"
+      }
+    },
+    {
+      "number": 5,
+      "name": "油谷 蒼",
+      "snum": "015829",
+      "style": "逃",
+      "score": "82.20",
+      "back": 4,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401"
+      }
+    },
+    {
+      "number": 6,
+      "name": "興呂木 雄治",
+      "snum": "014563",
+      "style": "両",
+      "score": "79.80",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401"
+      }
+    },
+    {
+      "number": 7,
+      "name": "原田 峻治",
+      "snum": "015834",
+      "style": "逃",
+      "score": "84.00",
+      "back": 11,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611118401"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      1,
+      6
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      5,
+      2
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611118401"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-11T05:57:54.904Z",
+  "lineUpdatedAt": "2026-11-11T05:57:54.904Z"
+}

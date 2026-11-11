@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-11",
+  "venue": "松阪",
+  "race": 2,
+  "raceId": "202611114702",
+  "riders": [
+    {
+      "number": 1,
+      "name": "尾方 真生",
+      "snum": "015501",
+      "style": "逃",
+      "score": "57.21",
+      "back": 11,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702"
+      }
+    },
+    {
+      "number": 2,
+      "name": "當銘 直美",
+      "snum": "015308",
+      "style": "両",
+      "score": "54.35",
+      "back": 4,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702"
+      }
+    },
+    {
+      "number": 3,
+      "name": "伊澤 茉那",
+      "snum": "015854",
+      "style": "両",
+      "score": "52.88",
+      "back": 3,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702"
+      }
+    },
+    {
+      "number": 4,
+      "name": "荒川 ひかり",
+      "snum": "015135",
+      "style": "追",
+      "score": "52.48",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702"
+      }
+    },
+    {
+      "number": 5,
+      "name": "是永 ゆうき",
+      "snum": "015867",
+      "style": "追",
+      "score": "50.70",
+      "back": 2,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702"
+      }
+    },
+    {
+      "number": 6,
+      "name": "山本 さくら",
+      "snum": "015585",
+      "style": "両",
+      "score": "49.48",
+      "back": 11,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702"
+      }
+    },
+    {
+      "number": 7,
+      "name": "寺本 愛花",
+      "snum": "016041",
+      "style": "両",
+      "score": "47.85",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611114702"
+      }
+    }
+  ],
+  "lines": [
+    [
+      6
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611114702"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-11T05:58:16.203Z"
+}

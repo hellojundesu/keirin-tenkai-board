@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-11",
+  "venue": "四日市",
+  "race": 1,
+  "raceId": "202611114801",
+  "riders": [
+    {
+      "number": 1,
+      "name": "長谷川 飛向",
+      "snum": "015611",
+      "style": "逃",
+      "score": "89.62",
+      "back": 9,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801"
+      }
+    },
+    {
+      "number": 2,
+      "name": "水谷 将司",
+      "snum": "014999",
+      "style": "追",
+      "score": "89.95",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801"
+      }
+    },
+    {
+      "number": 3,
+      "name": "山崎 駿哉",
+      "snum": "015279",
+      "style": "逃",
+      "score": "88.29",
+      "back": 11,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801"
+      }
+    },
+    {
+      "number": 4,
+      "name": "樋口 瑛土",
+      "snum": "015091",
+      "style": "追",
+      "score": "83.50",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801"
+      }
+    },
+    {
+      "number": 5,
+      "name": "石坂 永伍",
+      "snum": "014321",
+      "style": "両",
+      "score": "86.14",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801"
+      }
+    },
+    {
+      "number": 6,
+      "name": "黒田 大介",
+      "snum": "013142",
+      "style": "追",
+      "score": "80.86",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801"
+      }
+    },
+    {
+      "number": 7,
+      "name": "藤井 稜也",
+      "snum": "015357",
+      "style": "両",
+      "score": "82.57",
+      "back": 2,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611114801"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      4
+    ],
+    [
+      3,
+      5,
+      6
+    ],
+    [
+      2
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611114801"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-11T05:57:36.488Z"
+}

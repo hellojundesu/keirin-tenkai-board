@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-11",
+  "venue": "福井",
+  "race": 7,
+  "raceId": "202611115107",
+  "riders": [
+    {
+      "number": 1,
+      "name": "外田 心斗",
+      "snum": "015380",
+      "style": "逃",
+      "score": "103.37",
+      "back": 9,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107"
+      }
+    },
+    {
+      "number": 2,
+      "name": "松田 治之",
+      "snum": "012834",
+      "style": "追",
+      "score": "100.23",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107"
+      }
+    },
+    {
+      "number": 3,
+      "name": "金子 哲大",
+      "snum": "014450",
+      "style": "両",
+      "score": "99.08",
+      "back": 6,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107"
+      }
+    },
+    {
+      "number": 4,
+      "name": "原 誠宏",
+      "snum": "014188",
+      "style": "追",
+      "score": "101.05",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107"
+      }
+    },
+    {
+      "number": 5,
+      "name": "佐藤 成人",
+      "snum": "012688",
+      "style": "追",
+      "score": "94.38",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107"
+      }
+    },
+    {
+      "number": 6,
+      "name": "上杉 嘉槻",
+      "snum": "015539",
+      "style": "逃",
+      "score": "94.03",
+      "back": 14,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107"
+      }
+    },
+    {
+      "number": 7,
+      "name": "稲葉 一真",
+      "snum": "014825",
+      "style": "追",
+      "score": "97.93",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611115107"
+      }
+    }
+  ],
+  "lines": [
+    [
+      6,
+      2,
+      5
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      3,
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611115107"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-11T05:57:48.898Z",
+  "lineUpdatedAt": "2026-11-11T05:57:48.898Z"
+}

@@ -24,6 +24,7 @@ on:
         required: false
 
 permissions:
+  actions: read
   contents: write
   pages: write
   id-token: write
@@ -195,10 +196,36 @@ jobs:
         if: github.event_name == 'push' || (inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success')
         with:
           path: public
+          name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: 公開用成果物の存在を確認
+        if: github.event_name == 'push' || (inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ARTIFACT_NAME: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+        run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request
+          url = f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['GITHUB_RUN_ID']}/artifacts?per_page=100"
+          for attempt in range(5):
+              request = urllib.request.Request(url, headers={"Authorization": "Bearer " + os.environ["GH_TOKEN"], "Accept": "application/vnd.github+json"})
+              with urllib.request.urlopen(request, timeout=20) as response:
+                  artifacts = json.load(response)["artifacts"]
+              matches = [item for item in artifacts if item["name"] == os.environ["ARTIFACT_NAME"] and not item["expired"]]
+              if len(matches) == 1:
+                  print("Pages artifact readiness: PASS")
+                  break
+              if len(matches) > 1:
+                  raise SystemExit("Duplicate Pages artifacts; publication stopped")
+              if attempt == 4:
+                  raise SystemExit("Pages artifact unavailable; publication stopped")
+              time.sleep(2)
+          PY
       - name: 公開サイトを更新
         id: deployment
         if: github.event_name == 'push' || (inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success')
         uses: actions/deploy-pages@v5
+        with:
+          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
       - name: 取得エラーを実行結果に表示
         if: always() && ((inputs.mode != 'publish-only' && steps.scrape.outcome == 'failure') || steps.completeness.outcome == 'failure' || steps.cloud_sync.outcome == 'failure')
         run: exit 1

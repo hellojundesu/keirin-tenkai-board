@@ -28,46 +28,100 @@ def save_json(path: Path, value: Any) -> None:
     temporary.replace(path)
 
 
-def published_generation(store: Any, race_date: str) -> dict:
+def capture_published_generation(store: Any, race_date: str) -> dict:
     manifest = store.get("cloud_acquisition_manifest", race_date)
     if not manifest:
-        return {"published": False, "reason": "complete_manifest_missing"}
+        return {"publication": {"published": False, "reason": "complete_manifest_missing"}, "records": []}
     manifest_payload = manifest.get("payload") or {}
     manifest_generation = (manifest_payload.get("cloud_generation") or {}).get("generation_id")
     if manifest_payload.get("status") != "complete" or not manifest_generation:
-        return {"published": False, "reason": "manifest_not_complete"}
+        return {"publication": {"published": False, "reason": "manifest_not_complete"}, "records": []}
     index = store.get("cloud_races_index", race_date)
     if not index:
-        return {"published": False, "reason": "date_index_missing"}
+        return {"publication": {"published": False, "reason": "date_index_missing"}, "records": []}
     index_payload = index.get("payload") or {}
     if (index_payload.get("cloud_generation") or {}).get("generation_id") != manifest_generation:
-        return {"published": False, "reason": "index_generation_mismatch"}
+        return {"publication": {"published": False, "reason": "index_generation_mismatch"}, "records": []}
     items = index_payload.get("items") or []
     if len(items) != int(manifest_payload.get("valid_races") or -1):
-        return {"published": False, "reason": "index_count_mismatch"}
+        return {"publication": {"published": False, "reason": "index_count_mismatch"}, "records": []}
     missing: list[str] = []
     mismatched: list[str] = []
+    cards: list[dict] = []
     for item in items:
         race_id = str(item.get("race_id") or "")
         card = store.get("cloud_racecard", race_id)
         if not card:
             missing.append(race_id)
             continue
+        cards.append(card)
         card_generation = (card.get("payload", {}).get("cloud_generation") or {}).get("generation_id")
         if card_generation != manifest_generation:
             mismatched.append(race_id)
     if missing or mismatched:
         return {
-            "published": False,
-            "reason": "card_generation_incomplete",
-            "missing": missing,
-            "mismatched": mismatched,
+            "publication": {
+                "published": False,
+                "reason": "card_generation_incomplete",
+                "missing": missing,
+                "mismatched": mismatched,
+            },
+            "records": [],
         }
     return {
-        "published": True,
-        "race_date": race_date,
-        "generation_id": manifest_generation,
-        "race_count": len(items),
+        "publication": {
+            "published": True,
+            "race_date": race_date,
+            "generation_id": manifest_generation,
+            "race_count": len(items),
+        },
+        # Restore dependencies first and the visibility marker last.
+        "records": [*cards, index, manifest],
+    }
+
+
+def published_generation(store: Any, race_date: str) -> dict:
+    return capture_published_generation(store, race_date)["publication"]
+
+
+def restore_published_generation(store: Any, race_date: str, snapshot: dict) -> dict:
+    errors: list[dict[str, Any]] = []
+    restored = unchanged = 0
+    for record in snapshot.get("records") or []:
+        current = store.get(record["record_type"], record["record_key"])
+        if current and current.get("content_hash") == record.get("content_hash"):
+            unchanged += 1
+            continue
+        expected_hash = current.get("content_hash") if current else None
+        try:
+            if store.cas_put(record, expected_hash):
+                restored += 1
+            else:
+                errors.append({
+                    "record_type": record["record_type"],
+                    "record_key": record["record_key"],
+                    "error": "rollback_cas_conflict",
+                    "expected_hash": expected_hash,
+                })
+        except Exception as exc:
+            errors.append({
+                "record_type": record["record_type"],
+                "record_key": record["record_key"],
+                "error": f"{type(exc).__name__}: {exc}",
+            })
+    active = published_generation(store, race_date)
+    expected_generation = (snapshot.get("publication") or {}).get("generation_id")
+    verified = bool(
+        active.get("published")
+        and active.get("generation_id") == expected_generation
+        and not errors
+    )
+    return {
+        "status": "restored" if verified else "failed",
+        "restored": restored,
+        "unchanged": unchanged,
+        "errors": errors,
+        "active_publication": active,
     }
 
 
@@ -105,11 +159,32 @@ def run_pipeline(
             report["status"] = "rejected_incomplete_generation"
             report["publication"] = {"published": False, "reason": "normalization_incomplete"}
             return report
+        previous = capture_published_generation(store, race_date)
+        report["previous_publication"] = previous["publication"]
         queued = enqueue_generation(records, queue_path)
         report["phases"]["enqueue"] = {"status": "complete", "records": queued}
         drained = drain_queue(queue_path, store)
         report["phases"]["save"] = {"status": "complete" if drained["pending"] == 0 else "partial", **drained}
-        publication = published_generation(store, race_date)
+        if drained["pending"] and previous["publication"].get("published"):
+            report["phases"]["rollback"] = restore_published_generation(store, race_date, previous)
+        active_publication = published_generation(store, race_date)
+        expected_generation = manifest["generation_hash"]
+        if drained["pending"]:
+            publication = {
+                "published": False,
+                "reason": "new_generation_not_published",
+                "generation_id": expected_generation,
+                "active_publication": active_publication,
+            }
+        elif not active_publication.get("published") or active_publication.get("generation_id") != expected_generation:
+            publication = {
+                "published": False,
+                "reason": "published_generation_mismatch",
+                "generation_id": expected_generation,
+                "active_publication": active_publication,
+            }
+        else:
+            publication = active_publication
         report["publication"] = publication
         report["phases"]["manifest"] = {
             "status": "published" if publication["published"] else "not_published",

@@ -179,31 +179,50 @@ jobs:
         run: |
           set -euo pipefail
           python3 - <<'PY'
+          import json
           import os
+          from pathlib import Path
+
           from automation.cloud.cloud_oidc_gateway_client import OIDCGatewayClient
+          from automation.comments.cloud_comment_integration import verify_stored_comment_generation
 
           target = os.environ["TARGET_DATE"]
+          evidence_path = Path(os.environ["COMMENT_ROOT"]) / "precheck-verification.json"
+          evidence_path.parent.mkdir(parents=True, exist_ok=True)
           client = OIDCGatewayClient(
               os.environ["CLOUD_INGEST_ENDPOINT"],
               os.environ["CLOUD_INGEST_AUDIENCE"],
               retries=1,
           )
-          response = client.call({
-              "operation": "read",
-              "record_type": "cloud_comment_manifest",
-              "record_key": target,
-          })
-          record = (response or {}).get("record") or {}
-          payload = record.get("payload") or {}
-          complete = (
-              payload.get("dataset") == "cloud_comment_manifest"
-              and payload.get("race_date") == target
-              and payload.get("status") == "complete"
-              and bool((payload.get("cloud_generation") or {}).get("generation_id"))
+
+          def read_record(record_type, record_key):
+              response = client.call({
+                  "operation": "read",
+                  "record_type": record_type,
+                  "record_key": record_key,
+              })
+              return (response or {}).get("record") or None
+
+          try:
+              result = verify_stored_comment_generation(read_record, target)
+              complete = True
+              evidence = {"complete": True, **result}
+          except Exception as exc:
+              # A missing, inconsistent, or temporarily unreadable generation
+              # must never cause comment acquisition to be skipped.
+              complete = False
+              evidence = {
+                  "complete": False,
+                  "race_date": target,
+                  "reason": f"{type(exc).__name__}: {exc}",
+              }
+          evidence_path.write_text(
+              json.dumps(evidence, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
           )
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as handle:
               handle.write(f"complete={'true' if complete else 'false'}\n")
-          print(f"comment manifest already complete: {'true' if complete else 'false'}")
+          print(json.dumps(evidence, ensure_ascii=True, sort_keys=True))
           PY
 
       - name: 対象日と保存済み出走表を確認
@@ -405,6 +424,7 @@ jobs:
         with:
           name: cloud-comment-one-day-trial-${{ github.run_id }}-${{ github.run_attempt }}
           path: |
+            ${{ github.workspace }}/.comment-trial/precheck-verification.json
             ${{ github.workspace }}/.comment-trial/acquisition-report.json
             ${{ github.workspace }}/.comment-trial/publish-report.json
             ${{ github.workspace }}/.comment-trial/verification.json

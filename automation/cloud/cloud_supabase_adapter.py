@@ -354,9 +354,18 @@ def _same_generation_is_stored(store: Any, items: list[dict], generation_id: str
     return True
 
 
-def drain_queue(queue_path: Path, store: Any, after_read: Callable[[dict | None, dict], None] | None = None) -> dict:
+def drain_queue(
+    queue_path: Path,
+    store: Any,
+    after_read: Callable[[dict | None, dict], None] | None = None,
+    *,
+    max_cas_attempts: int = 3,
+) -> dict:
+    if max_cas_attempts < 1:
+        raise ValueError("max_cas_attempts must be at least 1")
     items = json.loads(queue_path.read_text(encoding="utf-8"))
     counts: dict[str, int] = {}
+    errors: list[dict[str, Any]] = []
     preserved = _rebase_generation_with_confirmed_lines(items, store)
     if preserved:
         counts["merge_confirmed_line"] = preserved
@@ -384,29 +393,62 @@ def drain_queue(queue_path: Path, store: Any, after_read: Callable[[dict | None,
             item["last_error"] = decision
             save_queue(queue_path, items)
             continue
-        expected_hash = current.get("content_hash") if current else None
-        try:
-            if after_read:
-                after_read(current, record)
-            if not store.cas_put(record, expected_hash):
+        halt = False
+        for attempt in range(1, max_cas_attempts + 1):
+            if attempt > 1:
+                current = store.get(record["record_type"], record["record_key"])
+                retry_decision = update_decision(current, record)
+                if retry_decision == "unchanged":
+                    item["status"] = "done"
+                    item["decision"] = "verified_after_cas"
+                    item["last_error"] = None
+                    counts["verified_after_cas"] = counts.get("verified_after_cas", 0) + 1
+                    break
+                if retry_decision in {"preserve_confirmed_line", "preserve_newer_current", "preserve_complete_current"}:
+                    item["last_error"] = retry_decision
+                    break
+                counts["cas_retry"] = counts.get("cas_retry", 0) + 1
+            expected_hash = current.get("content_hash") if current else None
+            try:
+                if after_read and attempt == 1:
+                    after_read(current, record)
                 item["attempts"] += 1
+                if store.cas_put(record, expected_hash):
+                    item["status"] = "done"
+                    item["decision"] = decision
+                    item["last_error"] = None
+                    break
                 item["last_error"] = "cas_conflict"
-                counts["cas_conflict"] = counts.get("cas_conflict", 0) + 1
-                save_queue(queue_path, items)
-                continue
-            item["status"] = "done"
-            item["decision"] = decision
-            item["attempts"] += 1
-            item["last_error"] = None
-        except Exception as exc:
-            item["attempts"] += 1
-            item["last_error"] = str(exc)
-            counts["write_failed"] = counts.get("write_failed", 0) + 1
-            save_queue(queue_path, items)
-            break
+                item["last_expected_hash"] = expected_hash
+                item["last_gateway_result"] = copy.deepcopy(getattr(store, "last_write_result", None))
+                item["last_observed_hash"] = (store.get(record["record_type"], record["record_key"]) or {}).get("content_hash")
+            except Exception as exc:
+                item["last_error"] = f"{type(exc).__name__}: {exc}"
+                errors.append({
+                    "record_type": record["record_type"],
+                    "record_key": record["record_key"],
+                    "attempt": attempt,
+                    "error": item["last_error"],
+                })
+                counts["write_failed"] = counts.get("write_failed", 0) + 1
+                halt = True
+                break
+        if item["status"] != "done" and item.get("last_error") == "cas_conflict":
+            counts["cas_conflict"] = counts.get("cas_conflict", 0) + 1
+            errors.append({
+                "record_type": record["record_type"],
+                "record_key": record["record_key"],
+                "attempts": max_cas_attempts,
+                "error": "cas_conflict",
+                "expected_hash": item.get("last_expected_hash"),
+                "observed_hash": item.get("last_observed_hash"),
+                "gateway_result": item.get("last_gateway_result"),
+            })
         save_queue(queue_path, items)
+        if halt:
+            break
     pending = sum(item["status"] != "done" for item in items)
-    return {"counts": counts, "pending": pending, "completed": len(items) - pending}
+    return {"counts": counts, "pending": pending, "completed": len(items) - pending, "errors": errors}
 
 
 def local_generation_time(local_records: dict[tuple[str, str], dict]) -> datetime | None:

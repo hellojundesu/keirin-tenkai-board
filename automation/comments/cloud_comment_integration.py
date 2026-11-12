@@ -190,6 +190,42 @@ def validate_comment_generation(records: Iterable[dict[str, Any]]) -> dict[str, 
     return manifest
 
 
+def verify_stored_comment_generation(
+    read_record: Callable[[str, str], dict[str, Any] | None],
+    race_date: str,
+) -> dict[str, Any]:
+    """Read and validate a stored comment generation before it may be skipped."""
+    manifest = read_record("cloud_comment_manifest", race_date)
+    if not manifest:
+        raise ValueError("comment manifest is missing")
+    payload = manifest.get("payload") or {}
+    if payload.get("race_date") != race_date:
+        raise ValueError("comment manifest date mismatch")
+    race_ids = [str(value) for value in payload.get("race_ids") or []]
+    records: list[dict[str, Any]] = []
+    missing: list[str] = []
+    for race_id in race_ids:
+        record = read_record("cloud_race_comment", race_id)
+        if record:
+            records.append(record)
+        else:
+            missing.append(race_id)
+    if missing:
+        raise ValueError(f"comment dependencies missing: {','.join(missing)}")
+    checked = validate_comment_generation([*records, manifest])
+    if int(checked.get("retry_required") or 0) != 0:
+        raise ValueError("comment generation still requires retry")
+    return {
+        "status": "complete",
+        "race_date": race_date,
+        "race_count": len(race_ids),
+        "stored_records": len(records) + 1,
+        "generation_id": (checked.get("cloud_generation") or {}).get("generation_id"),
+        "state_counts": checked.get("state_counts") or {},
+        "retry_required": 0,
+    }
+
+
 def _save_queue(path: Path, items: list[dict[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(items, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

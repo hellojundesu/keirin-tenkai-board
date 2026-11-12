@@ -78,6 +78,7 @@ class OIDCGatewayClient:
 class OIDCGatewayStore:
     def __init__(self, client: OIDCGatewayClient):
         self.client = client
+        self.last_write_result = None
 
     def get(self, record_type, record_key):
         result = self.client.call({"operation": "read", "record_type": record_type, "record_key": record_key})
@@ -94,6 +95,30 @@ class OIDCGatewayStore:
             "source_updated_at": record.get("source_updated_at"), "expected_hash": expected_hash,
         })
         row = result[0] if isinstance(result, list) and result else result or {}
-        return row.get("action") in {"insert", "update", "unchanged"} and row.get("stored_hash") == record["content_hash"]
+        self.last_write_result = {
+            "action": row.get("action"),
+            "stored_hash": row.get("stored_hash"),
+            "requested_hash": record["content_hash"],
+        }
+        # The gateway may describe a generation-metadata-only update as
+        # refresh_generation.  The stored hash is the authoritative proof that
+        # the requested record won the CAS, regardless of the action label.
+        if row.get("stored_hash") == record["content_hash"]:
+            return True
+
+        # A gateway retry can complete the write but lose the response.  Read
+        # the key back before reporting a conflict so an idempotent success is
+        # not misclassified and retried forever.
+        stored = self.get(record["record_type"], record["record_key"])
+        if stored and (
+            stored.get("content_hash") == record["content_hash"]
+            or stored.get("payload") == record.get("payload")
+        ):
+            self.last_write_result["verified_after_write"] = True
+            self.last_write_result["stored_hash_after_read"] = stored.get("content_hash")
+            return True
+        self.last_write_result["verified_after_write"] = False
+        self.last_write_result["stored_hash_after_read"] = (stored or {}).get("content_hash")
+        return False
 
 

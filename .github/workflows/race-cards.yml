@@ -151,7 +151,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: cloud-racecard-sync-report
-          path: ${{ runner.temp }}/keirin-cloud-sync/*.json
+          path: ${{ runner.temp }}/keirin-cloud-sync/
           if-no-files-found: warn
           retention-days: 14
       - name: 公開用データを更新
@@ -230,8 +230,19 @@ jobs:
         if: always() && ((inputs.mode != 'publish-only' && steps.scrape.outcome == 'failure') || steps.completeness.outcome == 'failure' || steps.cloud_sync.outcome == 'failure')
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
+          SCRAPE_OUTCOME: ${{ steps.scrape.outcome }}
+          COMPLETENESS_OUTCOME: ${{ steps.completeness.outcome }}
+          CLOUD_SYNC_OUTCOME: ${{ steps.cloud_sync.outcome }}
         run: |
-          echo "::error title=出走表取得できず::対象日 $TARGET_DATE の取得・完全性確認・保存のいずれかに失敗しました。直前の取得理由を確認してください。"
+          if [ "$SCRAPE_OUTCOME" = "failure" ]; then
+            echo "::error title=出走表取得失敗::対象日 $TARGET_DATE の出走表取得に失敗しました。"
+          fi
+          if [ "$COMPLETENESS_OUTCOME" = "failure" ]; then
+            echo "::error title=出走表完全性確認失敗::対象日 $TARGET_DATE の保存データが完全性確認を通過しませんでした。"
+          fi
+          if [ "$CLOUD_SYNC_OUTCOME" = "failure" ]; then
+            echo "::error title=Supabase世代保存失敗::対象日 $TARGET_DATE のSupabase保存に失敗しました。GitHub上の出走表取得・Pages公開とは別の失敗です。cloud-racecard-sync-reportを確認してください。"
+          fi
           python3 - <<'PY'
           import json, os
           from pathlib import Path

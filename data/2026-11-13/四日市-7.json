@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-13",
+  "venue": "四日市",
+  "race": 7,
+  "raceId": "202611134807",
+  "riders": [
+    {
+      "number": 1,
+      "name": "青柳 靖起",
+      "snum": "015473",
+      "style": "逃",
+      "score": "104.88",
+      "back": 10,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807"
+      }
+    },
+    {
+      "number": 2,
+      "name": "平原 啓多",
+      "snum": "014582",
+      "style": "追",
+      "score": "98.06",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807"
+      }
+    },
+    {
+      "number": 3,
+      "name": "土屋 裕二",
+      "snum": "013420",
+      "style": "追",
+      "score": "95.29",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807"
+      }
+    },
+    {
+      "number": 4,
+      "name": "山口 貴弘",
+      "snum": "014268",
+      "style": "追",
+      "score": "98.90",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807"
+      }
+    },
+    {
+      "number": 5,
+      "name": "後藤 悠",
+      "snum": "015325",
+      "style": "逃",
+      "score": "94.32",
+      "back": 4,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807"
+      }
+    },
+    {
+      "number": 6,
+      "name": "島村 匠",
+      "snum": "015205",
+      "style": "両",
+      "score": "93.83",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611134807"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      4,
+      6
+    ],
+    [
+      5,
+      2,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611134807"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-13T06:26:27.973Z"
+}

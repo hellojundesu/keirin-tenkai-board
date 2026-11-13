@@ -1,0 +1,146 @@
+{
+  "date": "2026-11-13",
+  "venue": "松戸",
+  "race": 7,
+  "raceId": "202611133107",
+  "riders": [
+    {
+      "number": 1,
+      "name": "鈴木 奈央",
+      "snum": "015144",
+      "style": "両",
+      "score": "57.33",
+      "back": 2,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107"
+      }
+    },
+    {
+      "number": 2,
+      "name": "谷元 音羽",
+      "snum": "015777",
+      "style": "両",
+      "score": "49.79",
+      "back": 1,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107"
+      }
+    },
+    {
+      "number": 3,
+      "name": "蛯原 杏奈",
+      "snum": "015573",
+      "style": "追",
+      "score": "49.33",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107"
+      }
+    },
+    {
+      "number": 4,
+      "name": "緒方 詩央里",
+      "snum": "016043",
+      "style": "両",
+      "score": "54.18",
+      "back": 14,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107"
+      }
+    },
+    {
+      "number": 5,
+      "name": "普久原 美海",
+      "snum": "015852",
+      "style": "追",
+      "score": "50.33",
+      "back": 1,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107"
+      }
+    },
+    {
+      "number": 6,
+      "name": "田中 まい",
+      "snum": "014966",
+      "style": "両",
+      "score": "53.37",
+      "back": 6,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107"
+      }
+    },
+    {
+      "number": 7,
+      "name": "増茂 るるこ",
+      "snum": "014903",
+      "style": "両",
+      "score": "52.29",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611133107"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      4
+    ],
+    [
+      7
+    ],
+    [
+      3
+    ],
+    [
+      6
+    ],
+    [
+      5
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611133107"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-13T06:26:44.960Z",
+  "lineUpdatedAt": "2026-11-13T06:26:44.960Z"
+}

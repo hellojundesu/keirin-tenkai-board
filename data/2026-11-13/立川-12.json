@@ -1,0 +1,171 @@
+{
+  "date": "2026-11-13",
+  "venue": "立川",
+  "race": 12,
+  "raceId": "202611132812",
+  "riders": [
+    {
+      "number": 1,
+      "name": "小原 佑太",
+      "snum": "015324",
+      "style": "逃",
+      "score": "107.07",
+      "back": 12,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812"
+      }
+    },
+    {
+      "number": 2,
+      "name": "堀内 俊介",
+      "snum": "015050",
+      "style": "両",
+      "score": "102.65",
+      "back": 4,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812"
+      }
+    },
+    {
+      "number": 3,
+      "name": "伊藤 裕貴",
+      "snum": "014831",
+      "style": "両",
+      "score": "98.59",
+      "back": 3,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812"
+      }
+    },
+    {
+      "number": 4,
+      "name": "不破 将登",
+      "snum": "014394",
+      "style": "両",
+      "score": "97.59",
+      "back": 1,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812"
+      }
+    },
+    {
+      "number": 5,
+      "name": "武田 豊樹",
+      "snum": "013923",
+      "style": "追",
+      "score": "103.00",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812"
+      }
+    },
+    {
+      "number": 6,
+      "name": "森山 智徳",
+      "snum": "014692",
+      "style": "両",
+      "score": "96.63",
+      "back": 8,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812"
+      }
+    },
+    {
+      "number": 7,
+      "name": "高橋 築",
+      "snum": "015090",
+      "style": "両",
+      "score": "107.30",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812"
+      }
+    },
+    {
+      "number": 8,
+      "name": "長谷部 翔",
+      "snum": "015097",
+      "style": "両",
+      "score": "97.38",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812"
+      }
+    },
+    {
+      "number": 9,
+      "name": "久島 尚樹",
+      "snum": "014854",
+      "style": "両",
+      "score": "104.20",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611132812"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3,
+      4
+    ],
+    [
+      1,
+      7,
+      5
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      6,
+      9
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611132812"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-13T06:26:21.230Z"
+}

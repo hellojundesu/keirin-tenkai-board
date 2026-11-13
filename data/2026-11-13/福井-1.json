@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-13",
+  "venue": "福井",
+  "race": 1,
+  "raceId": "202611135101",
+  "riders": [
+    {
+      "number": 1,
+      "name": "齋藤 友幸",
+      "snum": "014086",
+      "style": "両",
+      "score": "80.62",
+      "back": 2,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611135101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611135101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611135101"
+      }
+    },
+    {
+      "number": 2,
+      "name": "田川 辰二",
+      "snum": "012779",
+      "style": "追",
+      "score": "79.54",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611135101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611135101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611135101"
+      }
+    },
+    {
+      "number": 3,
+      "name": "有馬 雄二",
+      "snum": "014094",
+      "style": "追",
+      "score": "79.92",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611135101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611135101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611135101"
+      }
+    },
+    {
+      "number": 4,
+      "name": "高鍋 邦彰",
+      "snum": "014489",
+      "style": "両",
+      "score": "80.72",
+      "back": 4,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611135101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611135101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611135101"
+      }
+    },
+    {
+      "number": 5,
+      "name": "佐野 洋継",
+      "snum": "014603",
+      "style": "両",
+      "score": "78.45",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611135101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611135101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611135101"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      2
+    ],
+    [
+      1
+    ],
+    [
+      5,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611135101"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-13T06:26:32.932Z",
+  "lineUpdatedAt": "2026-11-13T06:26:32.932Z"
+}

@@ -1,0 +1,105 @@
+{
+  "date": "2026-11-13",
+  "venue": "佐世保",
+  "race": 2,
+  "raceId": "202611138502",
+  "riders": [
+    {
+      "number": 1,
+      "name": "楠本 政明",
+      "snum": "015739",
+      "style": "逃",
+      "score": "70.42",
+      "back": 5,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611138502",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611138502",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611138502"
+      }
+    },
+    {
+      "number": 2,
+      "name": "後田 康成",
+      "snum": "012997",
+      "style": "追",
+      "score": "70.21",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611138502",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611138502",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611138502"
+      }
+    },
+    {
+      "number": 3,
+      "name": "木本 賢二",
+      "snum": "012529",
+      "style": "追",
+      "score": "70.17",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611138502",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611138502",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611138502"
+      }
+    },
+    {
+      "number": 4,
+      "name": "白井 一機",
+      "snum": "012206",
+      "style": "追",
+      "score": "67.94",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611138502",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611138502",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611138502"
+      }
+    },
+    {
+      "number": 5,
+      "name": "中野 彰人",
+      "snum": "014319",
+      "style": "追",
+      "score": "64.00",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611138502",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611138502",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611138502"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      4
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611138502"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-13T06:27:01.214Z"
+}

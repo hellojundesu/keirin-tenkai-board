@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-13",
+  "venue": "佐世保",
+  "race": 1,
+  "raceId": "202611138501",
+  "riders": [
+    {
+      "number": 1,
+      "name": "大林 亮介",
+      "snum": "013802",
+      "style": "追",
+      "score": "71.41",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611138501",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611138501",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611138501"
+      }
+    },
+    {
+      "number": 2,
+      "name": "梶原 秀庸",
+      "snum": "013128",
+      "style": "追",
+      "score": "70.50",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611138501",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611138501",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611138501"
+      }
+    },
+    {
+      "number": 3,
+      "name": "磯村 蓮太",
+      "snum": "015355",
+      "style": "逃",
+      "score": "70.39",
+      "back": 9,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611138501",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611138501",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611138501"
+      }
+    },
+    {
+      "number": 4,
+      "name": "白崎 芳典",
+      "snum": "013788",
+      "style": "追",
+      "score": "69.94",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611138501",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611138501",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611138501"
+      }
+    },
+    {
+      "number": 5,
+      "name": "曽我部 匡史",
+      "snum": "013508",
+      "style": "追",
+      "score": "69.11",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611138501",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611138501",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611138501"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      2,
+      4
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611138501"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-13T06:27:00.642Z"
+}

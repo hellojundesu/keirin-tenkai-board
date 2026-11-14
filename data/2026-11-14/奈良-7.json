@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-14",
+  "venue": "奈良",
+  "race": 7,
+  "raceId": "202611145307",
+  "riders": [
+    {
+      "number": 1,
+      "name": "宮内 善光",
+      "snum": "013929",
+      "style": "追",
+      "score": "89.73",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307"
+      }
+    },
+    {
+      "number": 2,
+      "name": "小原 唯志",
+      "snum": "014858",
+      "style": "逃",
+      "score": "89.30",
+      "back": 5,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307"
+      }
+    },
+    {
+      "number": 3,
+      "name": "鈴木 良太",
+      "snum": "013775",
+      "style": "追",
+      "score": "86.06",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307"
+      }
+    },
+    {
+      "number": 4,
+      "name": "吉川 悟",
+      "snum": "013285",
+      "style": "追",
+      "score": "82.38",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307"
+      }
+    },
+    {
+      "number": 5,
+      "name": "柴田 竜史",
+      "snum": "014532",
+      "style": "追",
+      "score": "81.78",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307"
+      }
+    },
+    {
+      "number": 6,
+      "name": "中武 三四郎",
+      "snum": "015273",
+      "style": "逃",
+      "score": "81.69",
+      "back": 10,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307"
+      }
+    },
+    {
+      "number": 7,
+      "name": "奈良 基",
+      "snum": "015085",
+      "style": "両",
+      "score": "80.67",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611145307"
+      }
+    }
+  ],
+  "lines": [
+    [
+      2,
+      1,
+      3,
+      5
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611145307"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-14T06:06:30.834Z"
+}

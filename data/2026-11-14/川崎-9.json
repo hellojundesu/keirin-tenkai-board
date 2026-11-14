@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-14",
+  "venue": "川崎",
+  "race": 9,
+  "raceId": "202611143409",
+  "riders": [
+    {
+      "number": 1,
+      "name": "徳丸 泰教",
+      "snum": "014481",
+      "style": "追",
+      "score": "94.29",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409"
+      }
+    },
+    {
+      "number": 2,
+      "name": "佐藤 博紀",
+      "snum": "014499",
+      "style": "両",
+      "score": "100.92",
+      "back": 2,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409"
+      }
+    },
+    {
+      "number": 3,
+      "name": "菅原 晃",
+      "snum": "013744",
+      "style": "追",
+      "score": "99.64",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409"
+      }
+    },
+    {
+      "number": 4,
+      "name": "紺野 哲也",
+      "snum": "012487",
+      "style": "追",
+      "score": "101.74",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409"
+      }
+    },
+    {
+      "number": 5,
+      "name": "水谷 好宏",
+      "snum": "014309",
+      "style": "両",
+      "score": "97.60",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409"
+      }
+    },
+    {
+      "number": 6,
+      "name": "加倉 正義",
+      "snum": "012478",
+      "style": "追",
+      "score": "92.92",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409"
+      }
+    },
+    {
+      "number": 7,
+      "name": "佐藤 壮志",
+      "snum": "015749",
+      "style": "逃",
+      "score": "104.15",
+      "back": 13,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611143409"
+      }
+    }
+  ],
+  "lines": [
+    [
+      2,
+      4
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      7,
+      3,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611143409"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-14T06:06:11.988Z"
+}

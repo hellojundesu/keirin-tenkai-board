@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-14",
+  "venue": "名古屋",
+  "race": 5,
+  "raceId": "202611144205",
+  "riders": [
+    {
+      "number": 1,
+      "name": "中島 淳",
+      "snum": "015797",
+      "style": "逃",
+      "score": "89.14",
+      "back": 14,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205"
+      }
+    },
+    {
+      "number": 2,
+      "name": "安部 達也",
+      "snum": "013550",
+      "style": "追",
+      "score": "87.32",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205"
+      }
+    },
+    {
+      "number": 3,
+      "name": "菅田 謙仁",
+      "snum": "015084",
+      "style": "両",
+      "score": "87.00",
+      "back": 4,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205"
+      }
+    },
+    {
+      "number": 4,
+      "name": "十文字 菊雄",
+      "snum": "012937",
+      "style": "追",
+      "score": "83.94",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205"
+      }
+    },
+    {
+      "number": 5,
+      "name": "堂村 知哉",
+      "snum": "013957",
+      "style": "追",
+      "score": "83.87",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205"
+      }
+    },
+    {
+      "number": 6,
+      "name": "中野 智公",
+      "snum": "014758",
+      "style": "追",
+      "score": "82.13",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205"
+      }
+    },
+    {
+      "number": 7,
+      "name": "石川 恭規",
+      "snum": "014282",
+      "style": "追",
+      "score": "81.13",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611144205"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      2,
+      5
+    ],
+    [
+      6
+    ],
+    [
+      3,
+      4,
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611144205"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-14T06:06:23.854Z"
+}

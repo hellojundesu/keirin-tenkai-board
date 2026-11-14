@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-14",
+  "venue": "川崎",
+  "race": 12,
+  "raceId": "202611143412",
+  "riders": [
+    {
+      "number": 1,
+      "name": "林 慶次郎",
+      "snum": "015207",
+      "style": "逃",
+      "score": "101.70",
+      "back": 6,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412"
+      }
+    },
+    {
+      "number": 2,
+      "name": "内藤 宣彦",
+      "snum": "012339",
+      "style": "追",
+      "score": "105.73",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412"
+      }
+    },
+    {
+      "number": 3,
+      "name": "大石 崇晴",
+      "snum": "015106",
+      "style": "両",
+      "score": "101.08",
+      "back": 2,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412"
+      }
+    },
+    {
+      "number": 4,
+      "name": "塩島 嵩一朗",
+      "snum": "015807",
+      "style": "逃",
+      "score": "102.72",
+      "back": 9,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412"
+      }
+    },
+    {
+      "number": 5,
+      "name": "中川 誠一郎",
+      "snum": "013745",
+      "style": "両",
+      "score": "107.39",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412"
+      }
+    },
+    {
+      "number": 6,
+      "name": "山下 渡",
+      "snum": "014138",
+      "style": "追",
+      "score": "100.68",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412"
+      }
+    },
+    {
+      "number": 7,
+      "name": "山形 一気",
+      "snum": "014554",
+      "style": "追",
+      "score": "107.04",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611143412"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      5,
+      7
+    ],
+    [
+      4,
+      2,
+      6
+    ],
+    [
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611143412"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-14T06:06:13.762Z"
+}

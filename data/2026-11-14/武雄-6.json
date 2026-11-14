@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-14",
+  "venue": "武雄",
+  "race": 6,
+  "raceId": "202611148406",
+  "riders": [
+    {
+      "number": 1,
+      "name": "関根 崇人",
+      "snum": "014360",
+      "style": "両",
+      "score": "71.54",
+      "back": 1,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406"
+      }
+    },
+    {
+      "number": 2,
+      "name": "横溝 貫太",
+      "snum": "016015",
+      "style": "逃",
+      "score": "78.82",
+      "back": 5,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406"
+      }
+    },
+    {
+      "number": 3,
+      "name": "高橋 由記",
+      "snum": "013927",
+      "style": "追",
+      "score": "69.15",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406"
+      }
+    },
+    {
+      "number": 4,
+      "name": "古城 英之",
+      "snum": "013216",
+      "style": "追",
+      "score": "70.30",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406"
+      }
+    },
+    {
+      "number": 5,
+      "name": "鈴木 規純",
+      "snum": "012938",
+      "style": "追",
+      "score": "68.96",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406"
+      }
+    },
+    {
+      "number": 6,
+      "name": "前島 恭平",
+      "snum": "014694",
+      "style": "逃",
+      "score": "64.44",
+      "back": 5,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406"
+      }
+    },
+    {
+      "number": 7,
+      "name": "瀬口 匠",
+      "snum": "014787",
+      "style": "両",
+      "score": "74.60",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611148406"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1
+    ],
+    [
+      2,
+      7,
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611148406"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-14T06:06:43.636Z",
+  "lineUpdatedAt": "2026-11-14T06:06:43.636Z"
+}

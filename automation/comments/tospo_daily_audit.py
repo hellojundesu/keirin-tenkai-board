@@ -41,7 +41,7 @@ def main():
     listing="https://keirin.tokyo-sports.co.jp/list/with-comments"
     links=Links();links.feed(fetch(listing))
     urls=list(dict.fromkeys(urljoin(listing,href) for href in links.links))
-    urls=[url for url in urls if re.fullmatch(r"https://keirin\\.tokyo-sports\\.co\\.jp/list/race/\\d{8}_\\d+",url)]
+    urls=[url for url in urls if re.fullmatch(r"https://keirin\.tokyo-sports\.co\.jp/list/race/\d{8}_\d+",url)]
     candidates={}
     for path in args.day.glob("*.json"):
         if path.name in ("manifest.json","line-refresh.json"):continue

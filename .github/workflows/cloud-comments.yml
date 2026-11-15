@@ -150,7 +150,21 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: 2026-11-15 JST はコメント取得を一時停止
+        id: pause
+        shell: bash
+        run: |
+          set -euo pipefail
+          today_jst="$(TZ=Asia/Tokyo date +%F)"
+          if [ "$today_jst" = "2026-11-15" ]; then
+            echo "paused=true" >> "$GITHUB_OUTPUT"
+            echo "WINTICKET 403 のため 2026-11-15 JST のコメント取得を休止。翌日自動再開。"
+          else
+            echo "paused=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: 予定実行枠から対象日を固定
+        if: steps.pause.outputs.paused != 'true'
         id: target
         shell: bash
         env:
@@ -172,6 +186,7 @@ jobs:
           echo "comment target date: $target_date"
 
       - name: 完全なコメント世代の有無を確認
+        if: steps.pause.outputs.paused != 'true'
         id: comment_complete
         shell: bash
         env:
@@ -226,7 +241,8 @@ jobs:
           PY
 
       - name: 対象日と保存済み出走表を確認
-        if: steps.comment_complete.outputs.complete != 'true'
+        if: steps.pause.outputs.paused != 'true'
+        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true'
         shell: bash
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
@@ -237,6 +253,7 @@ jobs:
           mkdir -p "$COMMENT_ROOT/cache"
 
       - name: Restore meeting-resolution checkpoint
+        if: steps.pause.outputs.paused != 'true'
         id: restore-meetings
         if: steps.comment_complete.outputs.complete != 'true'
         uses: actions/cache/restore@v4
@@ -247,6 +264,7 @@ jobs:
             cloud-comment-meetings-${{ steps.target.outputs.target_date }}-
 
       - name: Build the saved-day comment catalog
+        if: steps.pause.outputs.paused != 'true'
         id: catalog
         if: steps.comment_complete.outputs.complete != 'true'
         env:
@@ -257,6 +275,7 @@ jobs:
             --output "$COMMENT_ROOT/catalog.json"
 
       - name: Check one meeting candidate per venue
+        if: steps.pause.outputs.paused != 'true'
         id: meeting
         if: steps.comment_complete.outputs.complete != 'true' && (github.event_name == 'schedule' || github.event_name == 'workflow_run' || inputs.operation == 'acquire')
         continue-on-error: true
@@ -270,6 +289,7 @@ jobs:
             --known-meetings automation/comments/known_meetings.json
 
       - name: Limit this trial to the 31 confirmed races
+        if: steps.pause.outputs.paused != 'true'
         id: selection
         if: steps.comment_complete.outputs.complete != 'true'
         env:
@@ -305,6 +325,7 @@ jobs:
           PY
 
       - name: Check whether every race has confirmed meeting evidence
+        if: steps.pause.outputs.paused != 'true'
         id: readiness
         if: steps.comment_complete.outputs.complete != 'true' && steps.selection.outcome == 'success'
         shell: bash
@@ -332,13 +353,15 @@ jobs:
           PY
 
       - name: Save meeting-resolution checkpoint
-        if: always() && steps.comment_complete.outputs.complete != 'true' && hashFiles(format('{0}/meetings.json', env.COMMENT_ROOT)) != ''
+        if: steps.pause.outputs.paused != 'true'
+        if: steps.pause.outputs.paused != 'true' && always() && steps.comment_complete.outputs.complete != 'true' && hashFiles(format('{0}/meetings.json', env.COMMENT_ROOT)) != ''
         uses: actions/cache/save@v4
         with:
           path: ${{ github.workspace }}/.comment-trial/meetings.json
           key: cloud-comment-meetings-${{ steps.target.outputs.target_date }}-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Acquire inspection and post-race comments
+        if: steps.pause.outputs.paused != 'true'
         id: acquire
         if: steps.comment_complete.outputs.complete != 'true' && steps.readiness.outputs.ready == 'true'
         continue-on-error: true
@@ -362,6 +385,7 @@ jobs:
             "${force_args[@]}"
 
       - name: Save the independent comment generation through limited CAS
+        if: steps.pause.outputs.paused != 'true'
         id: publish
         if: steps.comment_complete.outputs.complete != 'true' && steps.acquire.outcome == 'success'
         continue-on-error: true
@@ -373,6 +397,7 @@ jobs:
             --report "$COMMENT_ROOT/publish-report.json"
 
       - name: Verify the stored manifest and every dependency
+        if: steps.pause.outputs.paused != 'true'
         id: verify
         if: steps.comment_complete.outputs.complete != 'true' && steps.publish.outcome == 'success'
         continue-on-error: true
@@ -420,7 +445,8 @@ jobs:
           PY
 
       - name: Upload sanitized trial evidence
-        if: always()
+        if: steps.pause.outputs.paused != 'true'
+        if: steps.pause.outputs.paused != 'true' && always()
         uses: actions/upload-artifact@v4
         with:
           name: cloud-comment-one-day-trial-${{ github.run_id }}-${{ github.run_attempt }}
@@ -434,6 +460,7 @@ jobs:
           retention-days: 14
 
       - name: Reflect comment trial failures in the job result
-        if: always() && steps.comment_complete.outputs.complete != 'true' && (steps.readiness.outputs.ready != 'true' || steps.acquire.outcome == 'failure' || steps.publish.outcome == 'failure' || steps.verify.outcome == 'failure')
+        if: steps.pause.outputs.paused != 'true'
+        if: steps.pause.outputs.paused != 'true' && always() && steps.comment_complete.outputs.complete != 'true' && (steps.readiness.outputs.ready != 'true' || steps.acquire.outcome == 'failure' || steps.publish.outcome == 'failure' || steps.verify.outcome == 'failure')
         run: exit 1
 

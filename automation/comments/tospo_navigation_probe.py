@@ -16,7 +16,7 @@ class Links(HTMLParser):
             d=dict(attrs)
             href=d.get("href")
             if href:self.items.append((href,d.get("class","")))
-for path in ("/list/with-comments","/list/"):
+for path in ("/list/with-comments","/list/race","/list/schedule"):
     url=BASE+path
     req=urllib.request.Request(url,headers={"User-Agent":"KeirinCommentCollector/1.0"})
     try:

@@ -2,7 +2,7 @@ name: 東スポ全レース導線調査
 on:
   push:
     branches: [main]
-    paths: ['.github/workflows/tospo-navigation.yml']
+    paths: ['.github/workflows/tospo-navigation.yml','automation/comments/tospo_navigation_probe.py']
   workflow_dispatch:
 permissions:
   contents: read

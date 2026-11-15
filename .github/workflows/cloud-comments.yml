@@ -1,17 +1,8 @@
 name: 選手コメント定期・手動取得
 
 on:
-  schedule:
-    # 21:30 JST: 当日の結果を再取得。04:00 JST: UTC上の前日を補完。
-    - cron: '30 12 * * *'
-    - cron: '0 19 * * *'
-  workflow_run:
-    workflows:
-      - 出走表を毎朝取得
-    types:
-      - completed
-    branches:
-      - main
+  # WINTICKET access restriction: automatic comment runs disabled.
+  # Manual diagnostics remain available; no automatic source access.
   workflow_dispatch:
     inputs:
       target_date:

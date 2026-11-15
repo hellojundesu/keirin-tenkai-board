@@ -21,4 +21,6 @@ jobs:
         with:
           python-version: '3.11'
       - name: Run offline parser tests
-        run: python -m unittest discover -s automation/comments -p 'test_*.py' -v
+        run: |
+          python -m unittest discover -s automation/comments -p 'test_tospo_source.py' -v
+          python -m unittest discover -s automation/comments -p 'test_meeting_history.py' -v

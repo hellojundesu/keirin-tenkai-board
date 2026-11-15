@@ -1,8 +1,8 @@
 """Resolve one immutable race-card target date for a workflow run.
 
-Scheduled runs use the most recent occurrence of their exact UTC cron time.
-This preserves the intended JST race date even when GitHub starts the job after
-midnight.  Manual runs may explicitly provide a date.
+Scheduled runs use the most recent occurrence of their exact UTC cron time,
+then convert that occurrence to JST. This preserves the intended Japanese race
+date even when GitHub starts the job late or after midnight.  Manual runs may explicitly provide a date.
 """
 
 from __future__ import annotations
@@ -47,7 +47,7 @@ def resolve_target_date(
         scheduled = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
         if now < scheduled:
             scheduled -= dt.timedelta(days=1)
-        return scheduled.date().isoformat()
+        return (scheduled + dt.timedelta(hours=9)).date().isoformat()
     return (now + dt.timedelta(hours=9)).date().isoformat()
 
 

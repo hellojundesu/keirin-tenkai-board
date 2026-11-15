@@ -1,0 +1,34 @@
+name: 東スポ日次コメント照合監査
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/tospo-daily-audit.yml']
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: '保存済み出走表の日付 (YYYY-MM-DD)'
+        required: true
+        default: '2026-11-15'
+        type: string
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit listing and matching against race cards
+        env:
+          TARGET_DATE: ${{ inputs.target_date || '2026-11-15' }}
+        run: |
+          set -euo pipefail
+          python3 automation/comments/tospo_daily_audit.py --day "data/$TARGET_DATE" --output "$RUNNER_TEMP/tospo-audit.json"
+      - name: Upload partial audit report for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tospo-audit
+          path: ${{ runner.temp }}/tospo-audit.json
+          if-no-files-found: warn
+          retention-days: 7

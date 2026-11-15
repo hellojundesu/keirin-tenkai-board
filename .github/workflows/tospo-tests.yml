@@ -5,6 +5,8 @@ on:
     paths:
       - 'automation/comments/tospo_source.py'
       - 'automation/comments/test_tospo_source.py'
+      - 'automation/comments/meeting_history.py'
+      - 'automation/comments/test_meeting_history.py'
       - '.github/workflows/tospo-tests.yml'
   workflow_dispatch:
 permissions:
@@ -19,4 +21,4 @@ jobs:
         with:
           python-version: '3.11'
       - name: Run offline parser tests
-        run: python -m unittest discover -s automation/comments -p 'test_tospo_source.py' -v
+        run: python -m unittest discover -s automation/comments -p 'test_*.py' -v

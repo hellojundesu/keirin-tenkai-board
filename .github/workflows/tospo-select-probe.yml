@@ -1,0 +1,15 @@
+name: 東スポレース全件URL構造検証
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/tospo-select-probe.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 automation/comments/tospo_select_probe.py

@@ -241,7 +241,6 @@ jobs:
           PY
 
       - name: 対象日と保存済み出走表を確認
-        if: steps.pause.outputs.paused != 'true'
         if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true'
         shell: bash
         env:
@@ -353,7 +352,6 @@ jobs:
           PY
 
       - name: Save meeting-resolution checkpoint
-        if: steps.pause.outputs.paused != 'true'
         if: steps.pause.outputs.paused != 'true' && always() && steps.comment_complete.outputs.complete != 'true' && hashFiles(format('{0}/meetings.json', env.COMMENT_ROOT)) != ''
         uses: actions/cache/save@v4
         with:
@@ -445,7 +443,6 @@ jobs:
           PY
 
       - name: Upload sanitized trial evidence
-        if: steps.pause.outputs.paused != 'true'
         if: steps.pause.outputs.paused != 'true' && always()
         uses: actions/upload-artifact@v4
         with:
@@ -460,7 +457,6 @@ jobs:
           retention-days: 14
 
       - name: Reflect comment trial failures in the job result
-        if: steps.pause.outputs.paused != 'true'
         if: steps.pause.outputs.paused != 'true' && always() && steps.comment_complete.outputs.complete != 'true' && (steps.readiness.outputs.ready != 'true' || steps.acquire.outcome == 'failure' || steps.publish.outcome == 'failure' || steps.verify.outcome == 'failure')
         run: exit 1
 

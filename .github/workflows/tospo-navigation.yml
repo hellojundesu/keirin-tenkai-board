@@ -1,0 +1,15 @@
+name: 東スポ全レース導線調査
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/tospo-navigation.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  navigation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 automation/comments/tospo_navigation_probe.py

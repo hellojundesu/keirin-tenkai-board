@@ -11,22 +11,30 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     steps:
-      - name: 正しい立川開催URLを1回だけ確認
+      - name: 公開トップと開催ページのHTTP応答を比較
         shell: bash
         run: |
           python3 - <<'PY'
-          import urllib.request, urllib.error
-          url = "https://www.winticket.jp/keirin/tachikawa/racecard/2026111228/4/1"
-          req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 KeirinCommentCollector/1.0", "Accept-Language": "ja"})
-          try:
-              with urllib.request.urlopen(req, timeout=20) as response:
-                  print(f"meeting_url_status={response.status}")
-                  print(f"final_url={response.url}")
-          except urllib.error.HTTPError as exc:
-              print(f"meeting_url_status={exc.code}")
-              print(f"final_url={exc.url}")
-              raise SystemExit(1)
-          except Exception as exc:
-              print(f"meeting_url_error={type(exc).__name__}: {exc}")
-              raise SystemExit(1)
+          import urllib.request, urllib.error, re
+          urls = [
+            "https://www.winticket.jp/",
+            "https://www.winticket.jp/keirin/tachikawa/racecard/2026111228/4/1",
+          ]
+          for url in urls:
+              req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 KeirinCommentCollector/1.0", "Accept-Language": "ja"})
+              try:
+                  response = urllib.request.urlopen(req, timeout=20)
+              except urllib.error.HTTPError as exc:
+                  response = exc
+              except Exception as exc:
+                  print(f"url={url} error={type(exc).__name__}: {exc}")
+                  continue
+              with response:
+                  body = response.read(2048).decode("utf-8", errors="replace")
+                  title = re.search(r"<title[^>]*>(.*?)</title>", body, re.I | re.S)
+                  print(f"url={url} status={response.status} final_url={response.url}")
+                  for key in ("server","content-type","via","x-cache","cf-ray","x-amz-cf-id","x-amzn-waf-action","retry-after"):
+                      if response.headers.get(key):
+                          print(f"  {key}: {response.headers.get(key)}")
+                  print(f"  title={title.group(1).strip()[:150] if title else 'not_found'}")
           PY

@@ -72,9 +72,11 @@ def resolve_one_candidate_per_venue(
     transport: Callable[[str], PageResponse],
     cache_root: Path,
     max_candidates_per_venue: int = 1,
+    known_meetings: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     if not 1 <= max_candidates_per_venue <= 6:
         raise ValueError("max_candidates_per_venue must be between 1 and 6")
+    known_meetings = known_meetings or {}
     meetings = dict(state.get("meetings") or {})
     resolutions = dict(state.get("resolutions") or {})
     groups: dict[tuple[str, str], list[dict[str, Any]]] = {}
@@ -91,8 +93,16 @@ def resolve_one_candidate_per_venue(
         attempted = {int(value) for value in resolution.get("attempted_offsets") or []}
         representative = sorted(races, key=lambda race: int(race["race_number"]))[0]
         venue_confirmed = False
-        for _ in range(max_candidates_per_venue):
-            available = next((offset for offset in range(6) if offset not in attempted), None)
+        known = known_meetings.get(key)
+        if known is not None:
+            known_start = date.fromisoformat(str(known["start_date"]))
+            offset = (date.fromisoformat(race_date) - known_start).days
+            if not 0 <= offset < 6:
+                raise ValueError(f"known meeting date out of range: {key}")
+            candidates = [offset]
+        else:
+            candidates = [offset for offset in range(6) if offset not in attempted][:max_candidates_per_venue]
+        for available in candidates:
             if available is None:
                 resolution.update(status="unknown", error="all_six_candidates_checked")
                 break
@@ -153,17 +163,20 @@ def main() -> int:
     parser.add_argument("--cache-root", required=True, type=Path)
     parser.add_argument("--max-candidates-per-venue", type=int, choices=range(1, 7), default=1)
     parser.add_argument("--live", action="store_true")
+    parser.add_argument("--known-meetings", type=Path)
     args = parser.parse_args()
     if not args.live:
         raise SystemExit("meeting resolution requires explicit --live")
     catalog = json.loads(args.catalog.read_text(encoding="utf-8"))
     state = json.loads(args.state.read_text(encoding="utf-8")) if args.state.exists() else {}
+    known_meetings = json.loads(args.known_meetings.read_text(encoding="utf-8")) if args.known_meetings and args.known_meetings.exists() else {}
     result = resolve_one_candidate_per_venue(
         catalog,
         state,
         default_transport,
         args.cache_root,
         max_candidates_per_venue=args.max_candidates_per_venue,
+        known_meetings=known_meetings,
     )
     args.state.parent.mkdir(parents=True, exist_ok=True)
     args.state.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -25,7 +25,7 @@ class TospoComment:
 
 
 def normalized_name(value: str) -> str:
-    return re.sub(r"\\s+", "", unicodedata.normalize("NFKC", value))
+    return re.sub(r"\s+", "", unicodedata.normalize("NFKC", value))
 
 
 def parse_race_text(
@@ -49,17 +49,17 @@ def parse_race_text(
         raise ValueError("invalid expected race")
     if "選手コメント" not in page_text:
         raise ValueError("comment section missing")
-    if not re.search(rf"(?<!\\d){race_number}\\s*R(?!\\d)", page_text):
+    if not re.search(rf"(?<!\d){race_number}\s*R(?!\d)", page_text):
         raise ValueError("race number mismatch")
     if venue not in page_text:
         raise ValueError("venue mismatch")
     # A caller must independently verify the page's date. We require a
     # date token as a secondary check, not a substitute for URL mapping.
     y, m, d = race_date.split("-")
-    if not re.search(rf"{int(m)}月\\s*{int(d)}日", page_text):
+    if not re.search(rf"{int(m)}月\s*{int(d)}日", page_text):
         raise ValueError("race date mismatch")
     section = page_text.split("選手コメント", 1)[1]
-    section = re.split(r"\\n\\s*(?:狙い目|ピックアップ|関連記事)\\s*\\n", section, maxsplit=1)[0]
+    section = re.split(r"\n\s*(?:狙い目|ピックアップ|関連記事)\s*\n", section, maxsplit=1)[0]
     lines = [x.strip() for x in section.splitlines() if x.strip()]
     output: dict[int, TospoComment] = {}
     for i, token in enumerate(lines):
@@ -73,7 +73,7 @@ def parse_race_text(
             continue
         text_parts = []
         for line in lines[i + 2:]:
-            if re.fullmatch(r"[1-9]", line) and line != token:
+            if re.fullmatch(r"[1-9]", line):
                 break
             text_parts.append(line)
         comment = " ".join(text_parts).strip()

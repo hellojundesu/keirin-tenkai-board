@@ -21,7 +21,7 @@ on:
       operation:
         description: 実行内容
         required: true
-        default: oidc-read
+        default: acquire
         type: choice
         options:
           - oidc-read

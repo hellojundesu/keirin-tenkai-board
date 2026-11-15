@@ -1,0 +1,32 @@
+name: WINTICKET開催ID・単発接続診断
+on:
+  push:
+    paths:
+      - .github/workflows/meeting-url-diagnostic.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: 正しい立川開催URLを1回だけ確認
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import urllib.request, urllib.error
+          url = "https://www.winticket.jp/keirin/tachikawa/racecard/2026111228/4/1"
+          req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 KeirinCommentCollector/1.0", "Accept-Language": "ja"})
+          try:
+              with urllib.request.urlopen(req, timeout=20) as response:
+                  print(f"meeting_url_status={response.status}")
+                  print(f"final_url={response.url}")
+          except urllib.error.HTTPError as exc:
+              print(f"meeting_url_status={exc.code}")
+              print(f"final_url={exc.url}")
+              raise SystemExit(1)
+          except Exception as exc:
+              print(f"meeting_url_error={type(exc).__name__}: {exc}")
+              raise SystemExit(1)
+          PY

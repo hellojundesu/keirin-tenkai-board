@@ -49,9 +49,6 @@ def main():
    if m:
     y,mo,d,venue,rn=m.groups();day=f"{int(y):04d}-{int(mo):02d}-{int(d):02d}"
     if day==target:
-     for card in catalog["races"]:
-      if card["race_number"]==int(rn) and card["venue_code"] in ():
-       pass
      matched[url]={"date":day,"venue":venue,"race_number":int(rn)}
    for link in links:
     if link not in seen and link not in queue:queue.append(link)

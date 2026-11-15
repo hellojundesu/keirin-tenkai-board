@@ -1,0 +1,21 @@
+name: 東スポ80レースURL全件探索
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/tospo-race-graph.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  discover:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 automation/comments/tospo_race_graph_probe.py --day data/2026-11-15 --output "$RUNNER_TEMP/tospo-urls.json"
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tospo-race-url-audit
+          path: ${{ runner.temp }}/tospo-urls.json
+          retention-days: 7

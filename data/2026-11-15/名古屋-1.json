@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-15",
+  "venue": "名古屋",
+  "race": 1,
+  "raceId": "202611154201",
+  "riders": [
+    {
+      "number": 1,
+      "name": "加藤 舞",
+      "snum": "015392",
+      "style": "逃",
+      "score": "53.93",
+      "back": 10,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201"
+      }
+    },
+    {
+      "number": 2,
+      "name": "西脇 美唯奈",
+      "snum": "015584",
+      "style": "両",
+      "score": "53.59",
+      "back": 3,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201"
+      }
+    },
+    {
+      "number": 3,
+      "name": "東 美月",
+      "snum": "015770",
+      "style": "両",
+      "score": "53.47",
+      "back": 2,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201"
+      }
+    },
+    {
+      "number": 4,
+      "name": "中村 由香里",
+      "snum": "014902",
+      "style": "追",
+      "score": "52.89",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201"
+      }
+    },
+    {
+      "number": 5,
+      "name": "土井 柚姫",
+      "snum": "015953",
+      "style": "両",
+      "score": "50.00",
+      "back": 1,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201"
+      }
+    },
+    {
+      "number": 6,
+      "name": "橋本 のこ",
+      "snum": "015945",
+      "style": "両",
+      "score": "47.04",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201"
+      }
+    },
+    {
+      "number": 7,
+      "name": "刈込 奈那",
+      "snum": "015581",
+      "style": "逃",
+      "score": "46.00",
+      "back": 7,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611154201"
+      }
+    }
+  ],
+  "lines": [
+    [
+      7
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611154201"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-15T04:23:41.464Z"
+}

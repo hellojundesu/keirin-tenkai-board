@@ -1,0 +1,18 @@
+name: 東スポ実ページコメント抽出検証
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'automation/comments/tospo_live_smoke.py'
+      - '.github/workflows/tospo-live-smoke.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  single-page:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test one public race page without authentication or persistence
+        run: python3 automation/comments/tospo_live_smoke.py

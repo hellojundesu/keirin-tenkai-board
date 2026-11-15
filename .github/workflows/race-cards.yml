@@ -155,7 +155,7 @@ jobs:
           if-no-files-found: warn
           retention-days: 14
       - name: 公開用データを更新
-        if: always() && github.event_name != 'push' && inputs.mode != 'publish-only' && steps.existing_complete.outcome != 'success' && steps.completeness.outcome == 'success'
+        if: always() && github.event_name != 'push' && inputs.mode != 'publish-only' && steps.completeness.outcome == 'success'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

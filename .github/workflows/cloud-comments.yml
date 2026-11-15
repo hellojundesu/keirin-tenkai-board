@@ -252,9 +252,8 @@ jobs:
           mkdir -p "$COMMENT_ROOT/cache"
 
       - name: Restore meeting-resolution checkpoint
-        if: steps.pause.outputs.paused != 'true'
         id: restore-meetings
-        if: steps.comment_complete.outputs.complete != 'true'
+        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true'
         uses: actions/cache/restore@v4
         with:
           path: ${{ github.workspace }}/.comment-trial/meetings.json
@@ -263,9 +262,8 @@ jobs:
             cloud-comment-meetings-${{ steps.target.outputs.target_date }}-
 
       - name: Build the saved-day comment catalog
-        if: steps.pause.outputs.paused != 'true'
         id: catalog
-        if: steps.comment_complete.outputs.complete != 'true'
+        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true'
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
         run: |
@@ -274,9 +272,8 @@ jobs:
             --output "$COMMENT_ROOT/catalog.json"
 
       - name: Check one meeting candidate per venue
-        if: steps.pause.outputs.paused != 'true'
         id: meeting
-        if: steps.comment_complete.outputs.complete != 'true' && (github.event_name == 'schedule' || github.event_name == 'workflow_run' || inputs.operation == 'acquire')
+        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true' && (github.event_name == 'schedule' || github.event_name == 'workflow_run' || inputs.operation == 'acquire')
         continue-on-error: true
         run: |
           set -euo pipefail
@@ -288,9 +285,8 @@ jobs:
             --known-meetings automation/comments/known_meetings.json
 
       - name: Limit this trial to the 31 confirmed races
-        if: steps.pause.outputs.paused != 'true'
         id: selection
-        if: steps.comment_complete.outputs.complete != 'true'
+        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true'
         env:
           COMMENT_OPERATION: ${{ (github.event_name == 'schedule' || github.event_name == 'workflow_run') && 'acquire' || inputs.operation }}
         run: |
@@ -324,9 +320,8 @@ jobs:
           PY
 
       - name: Check whether every race has confirmed meeting evidence
-        if: steps.pause.outputs.paused != 'true'
         id: readiness
-        if: steps.comment_complete.outputs.complete != 'true' && steps.selection.outcome == 'success'
+        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true' && steps.selection.outcome == 'success'
         shell: bash
         run: |
           python3 - <<'PY'
@@ -359,9 +354,8 @@ jobs:
           key: cloud-comment-meetings-${{ steps.target.outputs.target_date }}-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Acquire inspection and post-race comments
-        if: steps.pause.outputs.paused != 'true'
         id: acquire
-        if: steps.comment_complete.outputs.complete != 'true' && steps.readiness.outputs.ready == 'true'
+        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true' && steps.readiness.outputs.ready == 'true'
         continue-on-error: true
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
@@ -383,9 +377,8 @@ jobs:
             "${force_args[@]}"
 
       - name: Save the independent comment generation through limited CAS
-        if: steps.pause.outputs.paused != 'true'
         id: publish
-        if: steps.comment_complete.outputs.complete != 'true' && steps.acquire.outcome == 'success'
+        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true' && steps.acquire.outcome == 'success'
         continue-on-error: true
         run: |
           set -euo pipefail
@@ -395,9 +388,8 @@ jobs:
             --report "$COMMENT_ROOT/publish-report.json"
 
       - name: Verify the stored manifest and every dependency
-        if: steps.pause.outputs.paused != 'true'
         id: verify
-        if: steps.comment_complete.outputs.complete != 'true' && steps.publish.outcome == 'success'
+        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true' && steps.publish.outcome == 'success'
         continue-on-error: true
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}

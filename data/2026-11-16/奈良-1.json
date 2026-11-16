@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-16",
+  "venue": "奈良",
+  "race": 1,
+  "raceId": "202611165301",
+  "riders": [
+    {
+      "number": 1,
+      "name": "井坂 泰誓",
+      "snum": "015368",
+      "style": "両",
+      "score": "71.61",
+      "back": 7,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301"
+      }
+    },
+    {
+      "number": 2,
+      "name": "吉田 英二",
+      "snum": "013023",
+      "style": "追",
+      "score": "70.07",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301"
+      }
+    },
+    {
+      "number": 3,
+      "name": "樫村 伸平",
+      "snum": "014765",
+      "style": "追",
+      "score": "69.91",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301"
+      }
+    },
+    {
+      "number": 4,
+      "name": "吉原 友彦",
+      "snum": "013567",
+      "style": "両",
+      "score": "69.54",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301"
+      }
+    },
+    {
+      "number": 5,
+      "name": "齋藤 和也",
+      "snum": "013161",
+      "style": "追",
+      "score": "68.04",
+      "back": 4,
+      "start": 14,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301"
+      }
+    },
+    {
+      "number": 6,
+      "name": "伊狩 知人",
+      "snum": "013728",
+      "style": "追",
+      "score": "67.75",
+      "back": 0,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301"
+      }
+    },
+    {
+      "number": 7,
+      "name": "井上 典善",
+      "snum": "012277",
+      "style": "追",
+      "score": "63.83",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611165301"
+      }
+    }
+  ],
+  "lines": [
+    [
+      5,
+      2,
+      7
+    ],
+    [
+      1,
+      3,
+      6
+    ],
+    [
+      4
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611165301"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-16T06:11:22.501Z"
+}

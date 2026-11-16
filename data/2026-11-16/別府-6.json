@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-16",
+  "venue": "別府",
+  "race": 6,
+  "raceId": "202611168606",
+  "riders": [
+    {
+      "number": 1,
+      "name": "片岡 美奈",
+      "snum": "015851",
+      "style": "両",
+      "score": "49.21",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606"
+      }
+    },
+    {
+      "number": 2,
+      "name": "森 この芽",
+      "snum": "016037",
+      "style": "両",
+      "score": "45.17",
+      "back": 2,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606"
+      }
+    },
+    {
+      "number": 3,
+      "name": "磯村 光舞",
+      "snum": "015863",
+      "style": "両",
+      "score": "54.59",
+      "back": 1,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606"
+      }
+    },
+    {
+      "number": 4,
+      "name": "佐藤 友香",
+      "snum": "015133",
+      "style": "追",
+      "score": "45.67",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606"
+      }
+    },
+    {
+      "number": 5,
+      "name": "向井 円",
+      "snum": "015314",
+      "style": "追",
+      "score": "48.15",
+      "back": 0,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606"
+      }
+    },
+    {
+      "number": 6,
+      "name": "安東 莉奈",
+      "snum": "015684",
+      "style": "追",
+      "score": "52.09",
+      "back": 3,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606"
+      }
+    },
+    {
+      "number": 7,
+      "name": "石井 貴子",
+      "snum": "014962",
+      "style": "逃",
+      "score": "50.74",
+      "back": 9,
+      "start": 12,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168606"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611168606"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-16T06:11:09.091Z"
+}

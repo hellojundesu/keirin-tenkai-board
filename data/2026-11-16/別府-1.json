@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-16",
+  "venue": "別府",
+  "race": 1,
+  "raceId": "202611168601",
+  "riders": [
+    {
+      "number": 1,
+      "name": "伊藤 太一",
+      "snum": "014153",
+      "style": "追",
+      "score": "85.96",
+      "back": 1,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601"
+      }
+    },
+    {
+      "number": 2,
+      "name": "猪俣 康一",
+      "snum": "014747",
+      "style": "両",
+      "score": "85.59",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601"
+      }
+    },
+    {
+      "number": 3,
+      "name": "土井 慎二",
+      "snum": "015918",
+      "style": "逃",
+      "score": "84.63",
+      "back": 9,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601"
+      }
+    },
+    {
+      "number": 4,
+      "name": "伊藤 大理",
+      "snum": "013690",
+      "style": "追",
+      "score": "81.16",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601"
+      }
+    },
+    {
+      "number": 5,
+      "name": "阿部 功",
+      "snum": "014329",
+      "style": "追",
+      "score": "82.14",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601"
+      }
+    },
+    {
+      "number": 6,
+      "name": "阿部 宏之",
+      "snum": "013453",
+      "style": "追",
+      "score": "79.96",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601"
+      }
+    },
+    {
+      "number": 7,
+      "name": "三好 陽一",
+      "snum": "013970",
+      "style": "両",
+      "score": "83.46",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168601"
+      }
+    }
+  ],
+  "lines": [
+    [
+      2
+    ],
+    [
+      6
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      3,
+      7,
+      5
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611168601"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-16T06:11:06.305Z"
+}

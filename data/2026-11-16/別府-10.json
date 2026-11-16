@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-16",
+  "venue": "別府",
+  "race": 10,
+  "raceId": "202611168610",
+  "riders": [
+    {
+      "number": 1,
+      "name": "南 潤",
+      "snum": "015186",
+      "style": "逃",
+      "score": "103.44",
+      "back": 12,
+      "start": 14,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610"
+      }
+    },
+    {
+      "number": 2,
+      "name": "櫻井 正孝",
+      "snum": "014795",
+      "style": "追",
+      "score": "104.83",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610"
+      }
+    },
+    {
+      "number": 3,
+      "name": "中川 貴徳",
+      "snum": "014141",
+      "style": "追",
+      "score": "100.97",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610"
+      }
+    },
+    {
+      "number": 4,
+      "name": "福田 稔希",
+      "snum": "015794",
+      "style": "逃",
+      "score": "105.05",
+      "back": 7,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610"
+      }
+    },
+    {
+      "number": 5,
+      "name": "牧 剛央",
+      "snum": "013368",
+      "style": "追",
+      "score": "99.00",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610"
+      }
+    },
+    {
+      "number": 6,
+      "name": "高木 和仁",
+      "snum": "013070",
+      "style": "追",
+      "score": "97.44",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610"
+      }
+    },
+    {
+      "number": 7,
+      "name": "三神 遼矢",
+      "snum": "015876",
+      "style": "逃",
+      "score": "103.00",
+      "back": 13,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611168610"
+      }
+    }
+  ],
+  "lines": [
+    [
+      7,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      1,
+      5,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611168610"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-16T06:11:11.721Z"
+}

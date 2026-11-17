@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-17",
+  "venue": "高知",
+  "race": 9,
+  "raceId": "202611177409",
+  "riders": [
+    {
+      "number": 1,
+      "name": "小玉 拓真",
+      "snum": "014679",
+      "style": "両",
+      "score": "96.95",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409"
+      }
+    },
+    {
+      "number": 2,
+      "name": "山本 浩成",
+      "snum": "015562",
+      "style": "逃",
+      "score": "95.19",
+      "back": 14,
+      "start": 15,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409"
+      }
+    },
+    {
+      "number": 3,
+      "name": "鷲田 佳史",
+      "snum": "013959",
+      "style": "追",
+      "score": "93.78",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409"
+      }
+    },
+    {
+      "number": 4,
+      "name": "吉田 茂生",
+      "snum": "014672",
+      "style": "両",
+      "score": "93.43",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409"
+      }
+    },
+    {
+      "number": 5,
+      "name": "疋田 力也",
+      "snum": "015536",
+      "style": "両",
+      "score": "92.59",
+      "back": 7,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409"
+      }
+    },
+    {
+      "number": 6,
+      "name": "細中 翔太",
+      "snum": "015830",
+      "style": "逃",
+      "score": "91.88",
+      "back": 11,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409"
+      }
+    },
+    {
+      "number": 7,
+      "name": "岡崎 陸登",
+      "snum": "015734",
+      "style": "逃",
+      "score": "91.71",
+      "back": 7,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611177409"
+      }
+    }
+  ],
+  "lines": [
+    [
+      6,
+      1
+    ],
+    [
+      7
+    ],
+    [
+      2
+    ],
+    [
+      5,
+      4,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611177409"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-17T07:45:28.343Z"
+}

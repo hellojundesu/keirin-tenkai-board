@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-18",
+  "venue": "宇都宮",
+  "race": 3,
+  "raceId": "202611182403",
+  "riders": [
+    {
+      "number": 1,
+      "name": "鈴木 那樹",
+      "snum": "015986",
+      "style": "逃",
+      "score": "79.65",
+      "back": 16,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403"
+      }
+    },
+    {
+      "number": 2,
+      "name": "中川 飛隆",
+      "snum": "015886",
+      "style": "逃",
+      "score": "76.19",
+      "back": 2,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403"
+      }
+    },
+    {
+      "number": 3,
+      "name": "高橋 明久",
+      "snum": "014644",
+      "style": "逃",
+      "score": "72.83",
+      "back": 5,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403"
+      }
+    },
+    {
+      "number": 4,
+      "name": "相澤 恵一",
+      "snum": "014432",
+      "style": "追",
+      "score": "70.93",
+      "back": 1,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403"
+      }
+    },
+    {
+      "number": 5,
+      "name": "相樂 修",
+      "snum": "013184",
+      "style": "両",
+      "score": "70.67",
+      "back": 1,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403"
+      }
+    },
+    {
+      "number": 6,
+      "name": "中川 昌久",
+      "snum": "014363",
+      "style": "追",
+      "score": "69.05",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403"
+      }
+    },
+    {
+      "number": 7,
+      "name": "渡邊 政幸",
+      "snum": "014069",
+      "style": "追",
+      "score": "68.00",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611182403"
+      }
+    }
+  ],
+  "lines": [
+    [
+      2,
+      6,
+      7
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611182403"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-18T00:53:07.835Z"
+}

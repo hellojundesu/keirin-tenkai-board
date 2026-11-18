@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-18",
+  "venue": "高知",
+  "race": 9,
+  "raceId": "202611187409",
+  "riders": [
+    {
+      "number": 1,
+      "name": "小玉 拓真",
+      "snum": "014679",
+      "style": "両",
+      "score": "96.95",
+      "back": 1,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409"
+      }
+    },
+    {
+      "number": 2,
+      "name": "吉田 茂生",
+      "snum": "014672",
+      "style": "両",
+      "score": "93.43",
+      "back": 1,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409"
+      }
+    },
+    {
+      "number": 3,
+      "name": "下岡 優季",
+      "snum": "014997",
+      "style": "逃",
+      "score": "90.78",
+      "back": 17,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409"
+      }
+    },
+    {
+      "number": 4,
+      "name": "片山 弘城",
+      "snum": "012981",
+      "style": "追",
+      "score": "88.70",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409"
+      }
+    },
+    {
+      "number": 5,
+      "name": "近藤 範昌",
+      "snum": "013491",
+      "style": "追",
+      "score": "85.17",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409"
+      }
+    },
+    {
+      "number": 6,
+      "name": "後藤 祐貴",
+      "snum": "014951",
+      "style": "逃",
+      "score": "84.17",
+      "back": 7,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409"
+      }
+    },
+    {
+      "number": 7,
+      "name": "増田 仁",
+      "snum": "015281",
+      "style": "逃",
+      "score": "80.66",
+      "back": 16,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611187409"
+      }
+    }
+  ],
+  "lines": [],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": null,
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611187409"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-18T00:53:41.472Z"
+}

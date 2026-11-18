@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-18",
+  "venue": "西武園",
+  "race": 9,
+  "raceId": "202611182609",
+  "riders": [
+    {
+      "number": 1,
+      "name": "久木原 洋",
+      "snum": "014580",
+      "style": "追",
+      "score": "99.84",
+      "back": 2,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609"
+      }
+    },
+    {
+      "number": 2,
+      "name": "板垣 昴",
+      "snum": "015329",
+      "style": "逃",
+      "score": "99.62",
+      "back": 4,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609"
+      }
+    },
+    {
+      "number": 3,
+      "name": "佐伯 亮輔",
+      "snum": "015276",
+      "style": "逃",
+      "score": "97.35",
+      "back": 7,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609"
+      }
+    },
+    {
+      "number": 4,
+      "name": "森田 一郎",
+      "snum": "015799",
+      "style": "逃",
+      "score": "106.43",
+      "back": 13,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609"
+      }
+    },
+    {
+      "number": 5,
+      "name": "大矢 将大",
+      "snum": "013407",
+      "style": "追",
+      "score": "97.69",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609"
+      }
+    },
+    {
+      "number": 6,
+      "name": "奥村 諭志",
+      "snum": "015191",
+      "style": "両",
+      "score": "92.50",
+      "back": 5,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609"
+      }
+    },
+    {
+      "number": 7,
+      "name": "小野 大介",
+      "snum": "014134",
+      "style": "追",
+      "score": "98.30",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611182609"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      1,
+      5
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611182609"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-18T00:52:51.294Z"
+}

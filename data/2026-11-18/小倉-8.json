@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-18",
+  "venue": "小倉",
+  "race": 8,
+  "raceId": "202611188108",
+  "riders": [
+    {
+      "number": 1,
+      "name": "佐藤 水菜",
+      "snum": "015306",
+      "style": "逃",
+      "score": "67.67",
+      "back": 3,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108"
+      }
+    },
+    {
+      "number": 2,
+      "name": "山原 さくら",
+      "snum": "014974",
+      "style": "両",
+      "score": "58.27",
+      "back": 14,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108"
+      }
+    },
+    {
+      "number": 3,
+      "name": "柳原 真緒",
+      "snum": "015311",
+      "style": "両",
+      "score": "57.87",
+      "back": 6,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108"
+      }
+    },
+    {
+      "number": 4,
+      "name": "大浦 彩瑛",
+      "snum": "015855",
+      "style": "逃",
+      "score": "56.57",
+      "back": 9,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108"
+      }
+    },
+    {
+      "number": 5,
+      "name": "那須 萌美",
+      "snum": "015320",
+      "style": "両",
+      "score": "56.17",
+      "back": 1,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108"
+      }
+    },
+    {
+      "number": 6,
+      "name": "半田 水晶",
+      "snum": "015939",
+      "style": "逃",
+      "score": "56.96",
+      "back": 23,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108"
+      }
+    },
+    {
+      "number": 7,
+      "name": "太田 瑛美",
+      "snum": "015586",
+      "style": "両",
+      "score": "55.29",
+      "back": 3,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611188108"
+      }
+    }
+  ],
+  "lines": [
+    [
+      6
+    ],
+    [
+      2
+    ],
+    [
+      7
+    ],
+    [
+      5
+    ],
+    [
+      3
+    ],
+    [
+      1
+    ],
+    [
+      4
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611188108"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-18T00:52:38.343Z"
+}

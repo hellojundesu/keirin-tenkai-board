@@ -1,4 +1,4 @@
--- Candidate schema for per-venue atomic race-card publication.
+-- Implemented schema for per-venue atomic race-card publication.
 -- VALIDATION ONLY: this file is not wired to a production migration or workflow.
 
 begin;

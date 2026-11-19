@@ -1,6 +1,6 @@
-"""Offline candidate runner for per-venue atomic publication.
+"""Offline implementation runner for per-venue atomic publication.
 
-There is deliberately no live or production option.  The command exercises
+There is deliberately no live or production option.  The command executes
 the exact venue split, staging, CAS revision and day-index behavior against a
 persistent validation store.
 """

@@ -1,6 +1,6 @@
 # Atomic cloud generation publication — implementation contract
 
-Status: DESIGN / NOT DEPLOYED. No production database or workflow changes.
+Status: IMPLEMENTED ON VALIDATION BRANCH / NOT DEPLOYED. No production database or workflow changes.
 
 The original contract below describes the first day-level design.  The active
 validation design now publishes independently per venue; see

@@ -2,6 +2,12 @@
 
 Status: DESIGN / NOT DEPLOYED. No production database or workflow changes.
 
+The original contract below describes the first day-level design.  The active
+validation design now publishes independently per venue; see
+`venue-generation-migration-runbook.md` and
+`venue-generation-validation-result.md`.  The day-level pointer described
+below is retained as incident history and must not be deployed as-is.
+
 ## Confirmed incident
 On 2026-11-18, 79 racecards were present in generation A. A later run tried to move them to generation B. The existing `cloud_cas_write` RPC rejected 70 racecards as `stale_rejected` because `p_source_updated_at <= v_current.source_updated_at`. Nine Kochi cards moved to B; index/manifest remained on A. The in-place record update is not an atomic generation publication.
 

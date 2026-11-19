@@ -1,0 +1,172 @@
+{
+  "date": "2026-11-19",
+  "venue": "小倉",
+  "race": 2,
+  "raceId": "202611198102",
+  "riders": [
+    {
+      "number": 1,
+      "name": "中釜 章成",
+      "snum": "015272",
+      "style": "逃",
+      "score": "109.61",
+      "back": 5,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102"
+      }
+    },
+    {
+      "number": 2,
+      "name": "佐藤 礼文",
+      "snum": "015337",
+      "style": "追",
+      "score": "108.89",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102"
+      }
+    },
+    {
+      "number": 3,
+      "name": "中野 慎詞",
+      "snum": "015596",
+      "style": "逃",
+      "score": "112.36",
+      "back": 6,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102"
+      }
+    },
+    {
+      "number": 4,
+      "name": "北津留 翼",
+      "snum": "014113",
+      "style": "逃",
+      "score": "108.68",
+      "back": 5,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102"
+      }
+    },
+    {
+      "number": 5,
+      "name": "南 修二",
+      "snum": "013962",
+      "style": "追",
+      "score": "114.23",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102"
+      }
+    },
+    {
+      "number": 6,
+      "name": "上田 国広",
+      "snum": "014029",
+      "style": "追",
+      "score": "106.79",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102"
+      }
+    },
+    {
+      "number": 7,
+      "name": "新田 祐大",
+      "snum": "014054",
+      "style": "両",
+      "score": "112.95",
+      "back": 3,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102"
+      }
+    },
+    {
+      "number": 8,
+      "name": "園田 匠",
+      "snum": "013894",
+      "style": "追",
+      "score": "108.00",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102"
+      }
+    },
+    {
+      "number": 9,
+      "name": "佐々木 悠葵",
+      "snum": "015343",
+      "style": "両",
+      "score": "115.85",
+      "back": 9,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611198102"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      5,
+      6
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      9,
+      2
+    ],
+    [
+      4,
+      8
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611198102"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-19T07:12:14.736Z",
+  "lineUpdatedAt": "2026-11-19T07:12:14.736Z"
+}

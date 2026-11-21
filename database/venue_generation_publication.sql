@@ -536,6 +536,29 @@ begin
 end;
 $$;
 
+create or replace function public.cloud_read_active_venue_pointer(
+    p_dataset_family text, p_race_date date, p_venue_code text
+) returns jsonb
+language sql
+stable
+security invoker
+set search_path = ''
+as $$
+    select jsonb_build_object(
+        'pointer', (
+            select jsonb_build_object(
+                'generation_id', generation_id,
+                'revision', revision,
+                'updated_at', activated_at
+            )
+            from public.cloud_active_venue_generations
+            where dataset_family = p_dataset_family
+              and race_date = p_race_date
+              and venue_code = p_venue_code
+        )
+    );
+$$;
+
 create or replace function public.cloud_read_active_day_index(p_dataset_family text, p_race_date date)
 returns jsonb
 language sql
@@ -543,9 +566,13 @@ stable
 security invoker
 set search_path = ''
 as $$
-    select jsonb_build_object('revision', revision, 'payload', payload, 'updated_at', updated_at)
-    from public.cloud_active_day_indexes
-    where dataset_family = p_dataset_family and race_date = p_race_date;
+    select jsonb_build_object(
+        'day_index', (
+            select jsonb_build_object('revision', revision, 'payload', payload, 'updated_at', updated_at)
+            from public.cloud_active_day_indexes
+            where dataset_family = p_dataset_family and race_date = p_race_date
+        )
+    );
 $$;
 
 create or replace function public.cloud_read_active_venue_records(
@@ -571,6 +598,7 @@ $$;
 
 revoke all on function public.cloud_stage_venue_generation(text,date,text,text,text,jsonb,jsonb,text,jsonb) from public;
 revoke all on function public.cloud_publish_venue_generation(text,date,text,text,bigint,text,text) from public;
+revoke all on function public.cloud_read_active_venue_pointer(text,date,text) from public;
 revoke all on function public.cloud_read_active_day_index(text,date) from public;
 revoke all on function public.cloud_read_active_venue_records(text,date,text) from public;
 
@@ -585,6 +613,7 @@ begin
         grant usage, select on sequence public.cloud_venue_publication_audit_audit_id_seq to service_role;
         grant execute on function public.cloud_stage_venue_generation(text,date,text,text,text,jsonb,jsonb,text,jsonb) to service_role;
         grant execute on function public.cloud_publish_venue_generation(text,date,text,text,bigint,text,text) to service_role;
+        grant execute on function public.cloud_read_active_venue_pointer(text,date,text) to service_role;
         grant execute on function public.cloud_read_active_day_index(text,date) to service_role;
         grant execute on function public.cloud_read_active_venue_records(text,date,text) to service_role;
     end if;

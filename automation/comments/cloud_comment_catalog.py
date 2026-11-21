@@ -30,8 +30,9 @@ def build_catalog(day_directory: Path) -> dict:
             continue
         if len(race_id) != 12 or not race_id.isdigit() or race_id[:8] != race_date.replace("-", ""):
             raise ValueError(f"invalid race id: {path.name}")
-        registrations = [str(rider.get("snum") or "").lstrip("0") for rider in row.get("riders") or []]
-        numbers = [rider.get("number") for rider in row.get("riders") or []]
+        riders = row.get("riders") or []
+        registrations = [str(rider.get("snum") or "").lstrip("0") for rider in riders]
+        numbers = [rider.get("number") for rider in riders]
         if (not 5 <= len(registrations) <= 9 or any(not value.isdigit() for value in registrations)
             or len(set(registrations)) != len(registrations)
             or len(set(numbers)) != len(numbers)
@@ -42,8 +43,14 @@ def build_catalog(day_directory: Path) -> dict:
             "race_id": race_id,
             "race_date": race_date,
             "venue_code": race_id[8:10],
+            "venue": str(row.get("venue") or "").strip(),
             "race_number": int(race_id[10:12]),
             "registration_numbers": registrations,
+            "entries": [{
+                "registration_no": str(rider.get("snum") or "").lstrip("0"),
+                "car_number": int(rider["number"]),
+                "rider_name": str(rider.get("name") or "").strip(),
+            } for rider in riders],
         })
     expected = manifest.get("races") or []
     if len(races) != len(expected):
@@ -90,7 +97,8 @@ def build_catalog_from_active_venues(
             race = record_payload.get("race") or {}
             generation = record_payload.get("cloud_generation") or {}
             race_id = str(row.get("record_key") or "")
-            registrations = [str(entry.get("registration_no") or "") for entry in record_payload.get("entries") or []]
+            source_entries = record_payload.get("entries") or []
+            registrations = [str(entry.get("registration_no") or "") for entry in source_entries]
             if (
                 generation.get("generation_id") != generation_id
                 or race.get("race_id") != race_id
@@ -106,8 +114,14 @@ def build_catalog_from_active_venues(
                 "race_id": race_id,
                 "race_date": race_date,
                 "venue_code": venue_code,
+                "venue": str(race.get("venue") or race.get("venue_name") or "").strip(),
                 "race_number": int(race.get("race_number") or 0),
                 "registration_numbers": registrations,
+                "entries": [{
+                    "registration_no": str(entry.get("registration_no") or ""),
+                    "car_number": int(entry.get("bike_number") or 0),
+                    "rider_name": str(entry.get("rider_name") or "").strip(),
+                } for entry in source_entries],
                 "racecard_generation_id": generation_id,
             })
     races.sort(key=lambda row: row["race_id"])

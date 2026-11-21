@@ -1,8 +1,9 @@
 name: 選手コメント定期・手動取得
 
 on:
-  # WINTICKET access restriction: automatic comment runs disabled.
-  # Manual diagnostics remain available; no automatic source access.
+  workflow_run:
+    workflows: ["出走表を毎朝取得"]
+    types: [completed]
   workflow_dispatch:
     inputs:
       target_date:
@@ -15,9 +16,8 @@ on:
         default: acquire
         type: choice
         options:
-          - oidc-read
           - acquire
-          - acquire-confirmed
+          - oidc-read
 
 permissions:
   contents: read
@@ -25,12 +25,12 @@ permissions:
   id-token: write
 
 concurrency:
-  group: keirin-cloud-comment-one-day-trial
+  group: keirin-tospo-comments
   cancel-in-progress: false
 
 jobs:
   oidc-read:
-    if: inputs.operation == 'oidc-read'
+    if: github.event_name == 'workflow_dispatch' && inputs.operation == 'oidc-read'
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     environment: github-pages
@@ -75,9 +75,8 @@ jobs:
       target_date: ${{ steps.handoff.outputs.target_date }}
       mode: ${{ steps.handoff.outputs.mode }}
     steps:
-      - name: 出走表完了情報の有無を確認
+      - name: 出走表取得の完了情報を確認
         id: artifact
-        shell: bash
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           UPSTREAM_RUN_ID: ${{ github.event.workflow_run.id }}
@@ -92,7 +91,6 @@ jobs:
             --output "$response"
           available="$(python3 -c 'import json,sys; data=json.load(open(sys.argv[1], encoding="utf-8")); print("true" if any(not row.get("expired", False) for row in data.get("artifacts", [])) else "false")' "$response")"
           echo "available=$available" >> "$GITHUB_OUTPUT"
-          echo "race-card handoff artifact available: $available"
       - name: 出走表取得の完了情報を取得
         if: steps.artifact.outputs.available == 'true'
         uses: actions/download-artifact@v7
@@ -104,7 +102,6 @@ jobs:
       - name: 対象日と取得モードを検証
         if: steps.artifact.outputs.available == 'true'
         id: handoff
-        shell: bash
         run: |
           set -euo pipefail
           target_date="$(tr -d '\r\n' < "$RUNNER_TEMP/race-card-handoff/target-date.txt")"
@@ -116,51 +113,33 @@ jobs:
           esac
           echo "target_date=$target_date" >> "$GITHUB_OUTPUT"
           echo "mode=$mode" >> "$GITHUB_OUTPUT"
-          echo "race-card handoff: target_date=$target_date mode=$mode"
 
-  comment-trial:
+  acquire:
     needs: race-card-handoff
     if: >-
-      always() && (
-        github.event_name == 'schedule' ||
-        inputs.operation == 'acquire' ||
-        inputs.operation == 'acquire-confirmed' ||
+      always() && inputs.operation != 'oidc-read' && (
+        github.event_name == 'workflow_dispatch' ||
         (github.event_name == 'workflow_run' &&
          needs.race-card-handoff.result == 'success' &&
-         (needs.race-card-handoff.outputs.mode == 'full' || needs.race-card-handoff.outputs.mode == 'lines-only'))
+         (needs.race-card-handoff.outputs.mode == 'full' ||
+          needs.race-card-handoff.outputs.mode == 'lines-only'))
       )
     runs-on: ubuntu-24.04
-    timeout-minutes: 90
+    timeout-minutes: 30
     environment: github-pages
     env:
       CLOUD_INGEST_ENDPOINT: https://ypkmorovfnjyesfojcil.supabase.co/functions/v1/cloud-ingest
       CLOUD_INGEST_AUDIENCE: keirin-cloud-ingest-prod-v1
-      COMMENT_ROOT: ${{ github.workspace }}/.comment-trial
+      COMMENT_ROOT: ${{ github.workspace }}/.tospo-comments
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
 
-      - name: 2026-11-15 JST はコメント取得を一時停止
-        id: pause
-        shell: bash
-        run: |
-          set -euo pipefail
-          today_jst="$(TZ=Asia/Tokyo date +%F)"
-          if [ "$today_jst" = "2026-11-15" ]; then
-            echo "paused=true" >> "$GITHUB_OUTPUT"
-            echo "WINTICKET 403 のため 2026-11-15 JST のコメント取得を休止。翌日自動再開。"
-          else
-            echo "paused=false" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: 予定実行枠から対象日を固定
-        if: steps.pause.outputs.paused != 'true'
+      - name: 対象日を固定
         id: target
-        shell: bash
         env:
           EVENT_NAME: ${{ github.event_name }}
-          EVENT_SCHEDULE: ${{ github.event.schedule || '' }}
           MANUAL_TARGET_DATE: ${{ inputs.target_date || '' }}
           HANDOFF_TARGET_DATE: ${{ needs.race-card-handoff.outputs.target_date }}
         run: |
@@ -168,29 +147,27 @@ jobs:
           if [ "$EVENT_NAME" = "workflow_run" ]; then
             target_date="$HANDOFF_TARGET_DATE"
           else
-            target_date="$(python3 automation/cloud/cloud_target_date.py \
-              --event-name "$EVENT_NAME" \
-              --schedule "$EVENT_SCHEDULE" \
-              --manual-date "$MANUAL_TARGET_DATE")"
+            target_date="$MANUAL_TARGET_DATE"
           fi
+          python3 -c 'import datetime, sys; value=sys.argv[1]; assert datetime.date.fromisoformat(value).isoformat() == value' "$target_date"
           echo "target_date=$target_date" >> "$GITHUB_OUTPUT"
           echo "comment target date: $target_date"
 
-      - name: 完全なコメント世代の有無を確認
-        if: steps.pause.outputs.paused != 'true'
+      - name: 6時間以内の完全な東スポ世代を確認
         id: comment_complete
-        shell: bash
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
+          FORCE_REFRESH: ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
         run: |
           set -euo pipefail
           python3 - <<'PY'
           import json
           import os
+          from datetime import datetime, timedelta, timezone
           from pathlib import Path
 
           from automation.cloud.cloud_oidc_gateway_client import OIDCGatewayClient
-          from automation.comments.cloud_comment_integration import verify_stored_comment_generation
+          from automation.comments.cloud_comment_integration import verify_stored_tospo_generation
 
           target = os.environ["TARGET_DATE"]
           evidence_path = Path(os.environ["COMMENT_ROOT"]) / "precheck-verification.json"
@@ -209,52 +186,33 @@ jobs:
               })
               return (response or {}).get("record") or None
 
+          complete = False
           try:
-              result = verify_stored_comment_generation(read_record, target)
-              complete = True
-              evidence = {"complete": True, **result}
+              result = verify_stored_tospo_generation(read_record, target)
+              manifest = read_record("cloud_comment_manifest", target) or {}
+              observed = datetime.fromisoformat(str(manifest.get("source_updated_at") or "").replace("Z", "+00:00"))
+              age = datetime.now(timezone.utc) - observed.astimezone(timezone.utc)
+              complete = os.environ["FORCE_REFRESH"] != "true" and timedelta(0) <= age < timedelta(hours=6)
+              evidence = {"complete": complete, "age_seconds": int(age.total_seconds()), **result}
           except Exception as exc:
-              # A missing, inconsistent, or temporarily unreadable generation
-              # must never cause comment acquisition to be skipped.
-              complete = False
-              evidence = {
-                  "complete": False,
-                  "race_date": target,
-                  "reason": f"{type(exc).__name__}: {exc}",
-              }
-          evidence_path.write_text(
-              json.dumps(evidence, ensure_ascii=False, indent=2) + "\n",
-              encoding="utf-8",
-          )
+              evidence = {"complete": False, "race_date": target, "reason": f"{type(exc).__name__}: {exc}"}
+          evidence_path.write_text(json.dumps(evidence, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as handle:
               handle.write(f"complete={'true' if complete else 'false'}\n")
           print(json.dumps(evidence, ensure_ascii=True, sort_keys=True))
           PY
 
-      - name: 対象日と保存済み出走表を確認
-        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true'
-        shell: bash
+      - name: 保存済み出走表を確認
+        if: steps.comment_complete.outputs.complete != 'true'
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
         run: |
           set -euo pipefail
-          python3 -c 'import datetime, os; value=os.environ["TARGET_DATE"]; assert datetime.date.fromisoformat(value).isoformat() == value'
           test -f "data/$TARGET_DATE/manifest.json"
           mkdir -p "$COMMENT_ROOT/cache"
 
-      - name: Restore meeting-resolution checkpoint
-        id: restore-meetings
-        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true'
-        uses: actions/cache/restore@v4
-        with:
-          path: ${{ github.workspace }}/.comment-trial/meetings.json
-          key: cloud-comment-meetings-${{ steps.target.outputs.target_date }}-${{ github.run_id }}-${{ github.run_attempt }}
-          restore-keys: |
-            cloud-comment-meetings-${{ steps.target.outputs.target_date }}-
-
-      - name: Build the saved-day comment catalog
-        id: catalog
-        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true'
+      - name: コメント対象カタログを作成
+        if: steps.comment_complete.outputs.complete != 'true'
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
         run: |
@@ -262,114 +220,21 @@ jobs:
           python3 automation/comments/cloud_comment_catalog.py "data/$TARGET_DATE" \
             --output "$COMMENT_ROOT/catalog.json"
 
-      - name: Check one meeting candidate per venue
-        id: meeting
-        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true' && (github.event_name == 'schedule' || github.event_name == 'workflow_run' || inputs.operation == 'acquire')
+      - name: 東スポの出走表コメントを取得・照合
+        id: comment_acquire
+        if: steps.comment_complete.outputs.complete != 'true'
         continue-on-error: true
         run: |
           set -euo pipefail
-          python3 automation/comments/cloud_comment_meeting_resolver.py --live \
+          python3 automation/comments/tospo_comment_acquisition.py --live \
             --catalog "$COMMENT_ROOT/catalog.json" \
-            --state "$COMMENT_ROOT/meetings.json" \
             --cache-root "$COMMENT_ROOT/cache" \
-            --max-candidates-per-venue 6 \
-            --known-meetings automation/comments/known_meetings.json
-
-      - name: Limit this trial to the 31 confirmed races
-        id: selection
-        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true'
-        env:
-          COMMENT_OPERATION: ${{ (github.event_name == 'schedule' || github.event_name == 'workflow_run') && 'acquire' || inputs.operation }}
-        run: |
-          set -euo pipefail
-          python3 - <<'PY'
-          import json
-          import os
-          from pathlib import Path
-
-          root = Path(os.environ["COMMENT_ROOT"])
-          catalog = json.loads((root / "catalog.json").read_text(encoding="utf-8"))
-          selected = dict(catalog)
-          if os.environ["COMMENT_OPERATION"] == "acquire-confirmed":
-              state_path = root / "meetings.json"
-              if not state_path.exists():
-                  raise SystemExit("saved meeting checkpoint is missing")
-              state = json.loads(state_path.read_text(encoding="utf-8"))
-              meetings = state.get("meetings") or {}
-              races = [
-                  row for row in catalog.get("races") or []
-                  if (meetings.get(str(row["race_id"])) or {}).get("evidence_status") == "confirmed"
-              ]
-              if len(races) != 31:
-                  raise SystemExit(f"confirmed race count must be 31, got {len(races)}")
-              selected["races"] = races
-          (root / "catalog-selected.json").write_text(
-              json.dumps(selected, ensure_ascii=False, indent=2) + "\n",
-              encoding="utf-8",
-          )
-          print(f"selected={len(selected.get('races') or [])}")
-          PY
-
-      - name: Check whether every race has confirmed meeting evidence
-        id: readiness
-        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true' && steps.selection.outcome == 'success'
-        shell: bash
-        run: |
-          python3 - <<'PY'
-          import json
-          import os
-          from pathlib import Path
-
-          root = Path(os.environ["COMMENT_ROOT"])
-          catalog = json.loads((root / "catalog-selected.json").read_text(encoding="utf-8"))
-          state_path = root / "meetings.json"
-          state = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {}
-          meetings = state.get("meetings") or {}
-          expected = {str(row["race_id"]) for row in catalog.get("races") or []}
-          confirmed = {race_id for race_id, row in meetings.items() if row.get("evidence_status") == "confirmed"}
-          missing = sorted(expected - confirmed)
-          ready = not missing and bool(expected)
-          print(f"ready={'true' if ready else 'false'}")
-          print(f"expected={len(expected)} confirmed={len(expected - set(missing))} missing={len(missing)}")
-          with Path(os.environ["GITHUB_OUTPUT"]).open("a", encoding="utf-8") as handle:
-              handle.write(f"ready={'true' if ready else 'false'}\n")
-              handle.write(f"expected={len(expected)}\n")
-              handle.write(f"missing={len(missing)}\n")
-          PY
-
-      - name: Save meeting-resolution checkpoint
-        if: steps.pause.outputs.paused != 'true' && always() && steps.comment_complete.outputs.complete != 'true' && hashFiles(format('{0}/meetings.json', env.COMMENT_ROOT)) != ''
-        uses: actions/cache/save@v4
-        with:
-          path: ${{ github.workspace }}/.comment-trial/meetings.json
-          key: cloud-comment-meetings-${{ steps.target.outputs.target_date }}-${{ github.run_id }}-${{ github.run_attempt }}
-
-      - name: Acquire inspection and post-race comments
-        id: acquire
-        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true' && steps.readiness.outputs.ready == 'true'
-        continue-on-error: true
-        env:
-          TARGET_DATE: ${{ steps.target.outputs.target_date }}
-          COMMENT_PAGE_CACHE: ${{ runner.temp }}/keirin-cloud-comments/cache
-          FORCE_REFRESH: ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
-        run: |
-          set -euo pipefail
-          force_args=()
-          if [ "$FORCE_REFRESH" = "true" ]; then
-            force_args+=(--force)
-          fi
-          python3 automation/comments/cloud_comment_acquisition.py --live \
-            --catalog "$COMMENT_ROOT/catalog-selected.json" \
-            --meeting-evidence "$COMMENT_ROOT/meetings.json" \
-            --state-db "$COMMENT_ROOT/state.sqlite3" \
             --output "$COMMENT_ROOT/records.json" \
-            --run-report "$COMMENT_ROOT/acquisition-report.json" \
-            --today "$TARGET_DATE" \
-            "${force_args[@]}"
+            --run-report "$COMMENT_ROOT/acquisition-report.json"
 
-      - name: Save the independent comment generation through limited CAS
+      - name: 限定CASでコメント世代を保存
         id: publish
-        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true' && steps.acquire.outcome == 'success'
+        if: steps.comment_complete.outputs.complete != 'true' && steps.comment_acquire.outcome == 'success'
         continue-on-error: true
         run: |
           set -euo pipefail
@@ -378,9 +243,9 @@ jobs:
             --queue "$COMMENT_ROOT/queue.json" \
             --report "$COMMENT_ROOT/publish-report.json"
 
-      - name: Verify the stored manifest and every dependency
+      - name: 保存済み東スポ世代を全件検証
         id: verify
-        if: steps.pause.outputs.paused != 'true' && steps.comment_complete.outputs.complete != 'true' && steps.publish.outcome == 'success'
+        if: steps.comment_complete.outputs.complete != 'true' && steps.publish.outcome == 'success'
         continue-on-error: true
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
@@ -389,57 +254,41 @@ jobs:
           python3 - <<'PY'
           import json
           import os
-          import sys
           from pathlib import Path
 
-          root = Path(os.environ["COMMENT_ROOT"])
-          sys.path[:0] = ["automation/comments", "automation/cloud"]
-          from cloud_comment_integration import validate_comment_generation
-          from cloud_oidc_gateway_client import OIDCGatewayClient
+          from automation.cloud.cloud_oidc_gateway_client import OIDCGatewayClient
+          from automation.comments.cloud_comment_integration import verify_stored_tospo_generation
 
           client = OIDCGatewayClient(os.environ["CLOUD_INGEST_ENDPOINT"], os.environ["CLOUD_INGEST_AUDIENCE"])
           target = os.environ["TARGET_DATE"]
-          manifest_response = client.call({"operation": "read", "record_type": "cloud_comment_manifest", "record_key": target})
-          manifest = (manifest_response or {}).get("record")
-          if not manifest:
-              raise SystemExit("comment manifest was not stored")
-          race_ids = (manifest.get("payload") or {}).get("race_ids") or []
-          records = []
-          for race_id in race_ids:
-              response = client.call({"operation": "read", "record_type": "cloud_race_comment", "record_key": race_id})
-              record = (response or {}).get("record")
-              if not record:
-                  raise SystemExit(f"comment dependency missing: {race_id}")
-              records.append(record)
-          records.append(manifest)
-          checked = validate_comment_generation(records)
-          summary = {
-              "target_date": target,
-              "race_count": len(race_ids),
-              "stored_records": len(records),
-              "manifest_status": checked["status"],
-              "state_counts": checked["state_counts"],
-              "retry_required": checked["retry_required"],
-          }
+
+          def read_record(record_type, record_key):
+              response = client.call({"operation": "read", "record_type": record_type, "record_key": record_key})
+              return (response or {}).get("record") or None
+
+          summary = verify_stored_tospo_generation(read_record, target)
+          root = Path(os.environ["COMMENT_ROOT"])
           (root / "verification.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
           print(json.dumps(summary, ensure_ascii=True, sort_keys=True))
           PY
 
-      - name: Upload sanitized trial evidence
-        if: steps.pause.outputs.paused != 'true' && always()
+      - name: 検証証跡を保存
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: cloud-comment-one-day-trial-${{ github.run_id }}-${{ github.run_attempt }}
+          name: tospo-comment-acquisition-${{ github.run_id }}-${{ github.run_attempt }}
           path: |
-            ${{ github.workspace }}/.comment-trial/precheck-verification.json
-            ${{ github.workspace }}/.comment-trial/acquisition-report.json
-            ${{ github.workspace }}/.comment-trial/publish-report.json
-            ${{ github.workspace }}/.comment-trial/verification.json
-            ${{ github.workspace }}/.comment-trial/meetings.json
+            ${{ github.workspace }}/.tospo-comments/precheck-verification.json
+            ${{ github.workspace }}/.tospo-comments/acquisition-report.json
+            ${{ github.workspace }}/.tospo-comments/publish-report.json
+            ${{ github.workspace }}/.tospo-comments/verification.json
           if-no-files-found: warn
           retention-days: 14
 
-      - name: Reflect comment trial failures in the job result
-        if: steps.pause.outputs.paused != 'true' && always() && steps.comment_complete.outputs.complete != 'true' && (steps.readiness.outputs.ready != 'true' || steps.acquire.outcome == 'failure' || steps.publish.outcome == 'failure' || steps.verify.outcome == 'failure')
+      - name: 取得・保存・検証エラーを反映
+        if: >-
+          always() && steps.comment_complete.outputs.complete != 'true' &&
+          (steps.comment_acquire.outcome == 'failure' ||
+           steps.publish.outcome == 'failure' ||
+           steps.verify.outcome == 'failure')
         run: exit 1
-

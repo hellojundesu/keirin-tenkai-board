@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+from typing import Any, Callable
 
 
 def build_catalog(day_directory: Path) -> dict:
@@ -56,6 +57,66 @@ def build_catalog(day_directory: Path) -> dict:
         if saved.get("venue") != entry["venue"] or saved.get("race") != entry["race"]:
             raise ValueError("manifest race identity mismatch")
     return {"source_instance": "cloud", "race_date": race_date, "races": races}
+
+
+def build_catalog_from_active_venues(
+    day_index: dict[str, Any],
+    read_venue_records: Callable[[str, str, str], list[dict[str, Any]]],
+) -> dict:
+    """Build the same comment catalog from an atomic venue/day index.
+
+    The day index is the visibility boundary.  The callback must return records
+    from the exact active venue generation named by that index; mixed or stale
+    generations are rejected rather than silently combined.
+    """
+    payload = day_index.get("payload") or day_index
+    race_date = str(payload.get("race_date") or "")
+    family = str(payload.get("dataset_family") or "")
+    venues = list(payload.get("venues") or [])
+    if family != "racecard" or not race_date or not venues:
+        raise ValueError("active race-card day index is invalid")
+    races = []
+    seen: set[str] = set()
+    for venue in venues:
+        venue_code = str(venue.get("venue_code") or "")
+        generation_id = str(venue.get("generation_id") or "")
+        expected_ids = [str(value) for value in venue.get("race_ids") or []]
+        records = read_venue_records(family, race_date, venue_code)
+        actual_ids = sorted(str(row.get("record_key") or "") for row in records)
+        if actual_ids != sorted(expected_ids):
+            raise ValueError(f"active venue race set mismatch: {venue_code}")
+        for row in records:
+            record_payload = row.get("payload") or {}
+            race = record_payload.get("race") or {}
+            generation = record_payload.get("cloud_generation") or {}
+            race_id = str(row.get("record_key") or "")
+            registrations = [str(entry.get("registration_no") or "") for entry in record_payload.get("entries") or []]
+            if (
+                generation.get("generation_id") != generation_id
+                or race.get("race_id") != race_id
+                or str(race.get("race_date") or "") != race_date
+                or str(race.get("venue_code") or "").zfill(2) != venue_code
+                or race_id in seen
+                or not 5 <= len(registrations) <= 9
+                or len(registrations) != len(set(registrations))
+            ):
+                raise ValueError(f"active venue record mismatch: {race_id}")
+            seen.add(race_id)
+            races.append({
+                "race_id": race_id,
+                "race_date": race_date,
+                "venue_code": venue_code,
+                "race_number": int(race.get("race_number") or 0),
+                "registration_numbers": registrations,
+                "racecard_generation_id": generation_id,
+            })
+    races.sort(key=lambda row: row["race_id"])
+    return {
+        "source_instance": "cloud_active_venue_generations",
+        "race_date": race_date,
+        "day_index_revision": day_index.get("revision"),
+        "races": races,
+    }
 
 
 def main() -> int:

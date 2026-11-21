@@ -22,6 +22,13 @@ on:
         description: '保存済み1日だけCAS保存（YYYY-MM-DD、publish-only用）'
         type: string
         required: false
+      cloud_publication:
+        description: 'クラウド公開方式（通常はvenue、緊急切戻し時だけlegacy）'
+        type: choice
+        default: venue
+        options:
+          - venue
+          - legacy
 
 permissions:
   actions: read
@@ -131,21 +138,34 @@ jobs:
           path: ${{ runner.temp }}/race-card-handoff/
           if-no-files-found: error
           retention-days: 3
-      - name: 完全世代をSupabaseへ限定CAS保存
+      - name: 競輪場単位でSupabaseへ原子的に公開
         id: cloud_sync
-        if: github.event_name != 'push' && steps.completeness.outcome == 'success'
+        if: always() && github.event_name != 'push'
         continue-on-error: true
         env:
           CLOUD_INGEST_ENDPOINT: https://ypkmorovfnjyesfojcil.supabase.co/functions/v1/cloud-ingest
           CLOUD_INGEST_AUDIENCE: keirin-cloud-ingest-prod-v1
+          CLOUD_PUBLICATION: ${{ inputs.cloud_publication || 'venue' }}
+          COMPLETENESS_OUTCOME: ${{ steps.completeness.outcome }}
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
         run: |
           set -euo pipefail
-          python3 automation/cloud/cloud_actions_rpc_publish.py --live \
-            --data-root data --target-date "$TARGET_DATE" --max-days 1 \
-            --queue-root "$RUNNER_TEMP/keirin-cloud-sync/queue" \
-            --state "$RUNNER_TEMP/keirin-cloud-sync/state.json" \
-            --report "$RUNNER_TEMP/keirin-cloud-sync/report.json"
+          mkdir -p "$RUNNER_TEMP/keirin-cloud-sync"
+          if [ "$CLOUD_PUBLICATION" = "legacy" ]; then
+            if [ "$COMPLETENESS_OUTCOME" != "success" ]; then
+              echo "旧方式は日全体が完全な場合だけ実行できます。" >&2
+              exit 1
+            fi
+            python3 automation/cloud/cloud_actions_rpc_publish.py --live \
+              --data-root data --target-date "$TARGET_DATE" --max-days 1 \
+              --queue-root "$RUNNER_TEMP/keirin-cloud-sync/queue" \
+              --state "$RUNNER_TEMP/keirin-cloud-sync/state.json" \
+              --report "$RUNNER_TEMP/keirin-cloud-sync/report.json"
+          else
+            python3 automation/cloud/cloud_venue_publish.py --live \
+              --day-directory "data/$TARGET_DATE" \
+              --report "$RUNNER_TEMP/keirin-cloud-sync/report.json"
+          fi
       - name: クラウド保存証跡
         if: always() && github.event_name != 'push'
         uses: actions/upload-artifact@v4

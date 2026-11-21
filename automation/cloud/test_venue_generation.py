@@ -13,6 +13,7 @@ sys.path.insert(0, str(HERE))
 
 from cloud_independent_acquisition import build_day, digest
 from cloud_venue_generation import VenueGenerationMockStore, build_publishable_venues, build_venue_generations
+from cloud_venue_publish import VenueGatewayStore
 
 COMMENTS_DIR = HERE.parent / "comments"
 sys.path.insert(0, str(COMMENTS_DIR))
@@ -195,6 +196,39 @@ class VenueGenerationTests(unittest.TestCase):
             mixed[0]["payload"]["cloud_generation"]["generation_id"] = "0" * 64
             with self.assertRaisesRegex(ValueError, "record mismatch"):
                 build_catalog_from_active_venues(day, lambda *_: mixed)
+
+    def test_live_gateway_uses_venue_rpcs_and_revision(self):
+        class FakeClient:
+            def __init__(self):
+                self.calls = []
+
+            def call(self, payload):
+                self.calls.append(payload)
+                operation = payload["operation"]
+                if operation == "stage_venue_generation":
+                    return {"action": "staged"}
+                if operation == "read_venue_pointer":
+                    return {"pointer": {"revision": 4}}
+                if operation == "publish_venue_generation":
+                    return {"action": "published", "venue_revision": 5, "day_revision": 9}
+                if operation == "read_day_index":
+                    return {"day_index": {"revision": 9, "payload": {"venues": []}}}
+                raise AssertionError(operation)
+
+        client = FakeClient()
+        store = VenueGatewayStore(client)
+        batch = self.batches[0]
+        self.assertEqual(store.stage(batch), "staged")
+        revision = store.active_revision("racecard", batch["race_date"], batch["venue_code"])
+        self.assertEqual(revision, 4)
+        result = store.publish(batch, revision)
+        self.assertEqual(result["venue_revision"], 5)
+        self.assertEqual(store.read_day("racecard", batch["race_date"])["revision"], 9)
+        self.assertEqual([row["operation"] for row in client.calls], [
+            "stage_venue_generation", "read_venue_pointer",
+            "publish_venue_generation", "read_day_index",
+        ])
+        self.assertEqual(client.calls[2]["expected_revision"], 4)
 
 
 if __name__ == "__main__":

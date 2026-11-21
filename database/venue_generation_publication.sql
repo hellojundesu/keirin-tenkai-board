@@ -273,6 +273,11 @@ declare
     v_venue_revision bigint;
     v_day_revision bigint;
     v_day_payload jsonb;
+    v_day_generation_id text;
+    v_compat_index jsonb;
+    v_compat_manifest jsonb;
+    v_race_count integer;
+    v_source_updated_at timestamptz;
 begin
     if p_action not in ('published', 'rollback') or btrim(coalesce(p_actor, '')) = '' then
         raise exception using errcode = '22023', message = 'invalid publication audit identity';
@@ -401,6 +406,116 @@ begin
         payload = excluded.payload,
         updated_at = excluded.updated_at
     returning revision into v_day_revision;
+
+    -- Compatibility projection for existing readers.  Every currently active
+    -- venue is rewritten with one composite day generation in this same
+    -- transaction, so readers of shared_snapshots never observe a mixed day.
+    select pg_catalog.encode(extensions.digest(pg_catalog.convert_to(
+        string_agg(pointer.venue_code || ':' || pointer.generation_id, '|' order by pointer.venue_code),
+        'UTF8'
+    ), 'sha256'), 'hex')
+    into v_day_generation_id
+    from public.cloud_active_venue_generations pointer
+    where pointer.dataset_family = p_dataset_family and pointer.race_date = p_race_date;
+
+    with active_records as (
+        select record.record_key, record.payload, record.source_updated_at,
+               pointer.generation_id as venue_generation_id
+        from public.cloud_active_venue_generations pointer
+        join public.cloud_venue_generation_records record
+          on record.dataset_family = pointer.dataset_family
+         and record.race_date = pointer.race_date
+         and record.venue_code = pointer.venue_code
+         and record.generation_id = pointer.generation_id
+        where pointer.dataset_family = p_dataset_family and pointer.race_date = p_race_date
+    ), compatibility as (
+        select record_key,
+               jsonb_set(payload, '{cloud_generation}', jsonb_build_object(
+                   'generation_id', v_day_generation_id,
+                   'race_date', p_race_date,
+                   'generation_status', 'complete',
+                   'publication_unit', 'venue',
+                   'venue_generation_id', venue_generation_id
+               ), true) as payload,
+               source_updated_at
+        from active_records
+    ), hashed as (
+        select record_key, payload, source_updated_at,
+               pg_catalog.encode(extensions.digest(pg_catalog.convert_to(payload::text, 'UTF8'), 'sha256'), 'hex') as content_hash
+        from compatibility
+    )
+    insert into public.shared_snapshots(record_type, record_key, payload, content_hash, source_updated_at, updated_at)
+    select 'cloud_racecard', record_key, payload, content_hash, source_updated_at, clock_timestamp()
+    from hashed
+    on conflict (record_type, record_key) do update set
+        payload = excluded.payload,
+        content_hash = excluded.content_hash,
+        source_updated_at = excluded.source_updated_at,
+        updated_at = excluded.updated_at;
+
+    select count(*), max(record.source_updated_at), jsonb_build_object(
+        'schema_version', 2,
+        'race_date', p_race_date,
+        'items', coalesce(jsonb_agg(jsonb_build_object(
+            'race_id', record.record_key,
+            'race_date', record.payload #>> '{race,race_date}',
+            'venue_code', record.payload #>> '{race,venue_code}',
+            'venue_name', record.payload #>> '{race,venue_name}',
+            'race_number', (record.payload #>> '{race,race_number}')::integer,
+            'starters', (record.payload #>> '{race,starters}')::integer,
+            'line_state', record.payload #>> '{race,line_state}',
+            'source', 'cloud_racecard'
+        ) order by record.record_key), '[]'::jsonb),
+        'cloud_generation', jsonb_build_object(
+            'generation_id', v_day_generation_id,
+            'race_date', p_race_date,
+            'generation_status', 'complete',
+            'publication_unit', 'venue'
+        )
+    )
+    into v_race_count, v_source_updated_at, v_compat_index
+    from public.cloud_active_venue_generations pointer
+    join public.cloud_venue_generation_records record
+      on record.dataset_family = pointer.dataset_family
+     and record.race_date = pointer.race_date
+     and record.venue_code = pointer.venue_code
+     and record.generation_id = pointer.generation_id
+    where pointer.dataset_family = p_dataset_family and pointer.race_date = p_race_date;
+
+    v_source_updated_at := coalesce(v_source_updated_at, clock_timestamp());
+    v_compat_manifest := jsonb_build_object(
+        'schema_version', 2,
+        'dataset', 'cloud_acquisition_manifest',
+        'race_date', p_race_date,
+        'upstream_status', 'venue_atomic',
+        'status', 'complete',
+        'declared_races', v_race_count,
+        'valid_races', v_race_count,
+        'errors', '[]'::jsonb,
+        'generation_hash', v_day_generation_id,
+        'cloud_generation', jsonb_build_object(
+            'generation_id', v_day_generation_id,
+            'race_date', p_race_date,
+            'generation_status', 'complete',
+            'publication_unit', 'venue'
+        )
+    );
+
+    insert into public.shared_snapshots(record_type, record_key, payload, content_hash, source_updated_at, updated_at)
+    values (
+        'cloud_races_index', p_race_date::text, v_compat_index,
+        pg_catalog.encode(extensions.digest(pg_catalog.convert_to(v_compat_index::text, 'UTF8'), 'sha256'), 'hex'),
+        v_source_updated_at, clock_timestamp()
+    ), (
+        'cloud_acquisition_manifest', p_race_date::text, v_compat_manifest,
+        pg_catalog.encode(extensions.digest(pg_catalog.convert_to(v_compat_manifest::text, 'UTF8'), 'sha256'), 'hex'),
+        v_source_updated_at, clock_timestamp()
+    )
+    on conflict (record_type, record_key) do update set
+        payload = excluded.payload,
+        content_hash = excluded.content_hash,
+        source_updated_at = excluded.source_updated_at,
+        updated_at = excluded.updated_at;
 
     update public.cloud_venue_generations
     set status = 'published', published_at = coalesce(published_at, clock_timestamp())

@@ -15,6 +15,8 @@ from typing import Any, Callable, Iterable
 
 
 COMMENT_KINDS = ("inspection", "result")
+RACE_PRE_KIND = "race_pre"
+SUPPORTED_COMMENT_KINDS = (*COMMENT_KINDS, RACE_PRE_KIND)
 VALID_STATUSES = {
     "not_attempted", "not_published", "fetch_failed", "parse_failed", "fetched"
 }
@@ -163,6 +165,9 @@ def validate_comment_generation(records: Iterable[dict[str, Any]]) -> dict[str, 
     if len(manifests) != 1:
         raise ValueError("exactly one comment manifest is required")
     manifest = manifests[0]["payload"]
+    required_kinds = tuple(manifest.get("required_comment_kinds") or COMMENT_KINDS)
+    if not required_kinds or any(kind not in SUPPORTED_COMMENT_KINDS for kind in required_kinds):
+        raise ValueError("comment manifest required kinds are invalid")
     generation = (manifest.get("cloud_generation") or {}).get("generation_id")
     race_ids = manifest.get("race_ids") or []
     if manifest.get("status") != "complete" or not generation:
@@ -181,12 +186,14 @@ def validate_comment_generation(records: Iterable[dict[str, Any]]) -> dict[str, 
         if not registrations or len(registrations) != len(set(registrations)):
             raise ValueError("comment registration set mismatch")
         for entry in payload["entries"]:
-            for kind in COMMENT_KINDS:
+            for kind in tuple(dict.fromkeys((*COMMENT_KINDS, *required_kinds))):
                 state = entry.get(kind) or {}
                 if state.get("status") not in VALID_STATUSES or state.get("last_attempt_status") not in VALID_STATUSES:
                     raise ValueError("invalid comment state")
                 if state.get("status") == "fetched" and not str(state.get("text") or "").strip():
                     raise ValueError("fetched comment is empty")
+                if kind == RACE_PRE_KIND and state.get("status") == "not_published" and state.get("publication_checked") is not True:
+                    raise ValueError("race-pre not_published requires publication evidence")
     return manifest
 
 
@@ -226,6 +233,20 @@ def verify_stored_comment_generation(
     }
 
 
+def verify_stored_tospo_generation(
+    read_record: Callable[[str, str], dict[str, Any] | None],
+    race_date: str,
+) -> dict[str, Any]:
+    result = verify_stored_comment_generation(read_record, race_date)
+    manifest = read_record("cloud_comment_manifest", race_date)
+    payload = (manifest or {}).get("payload") or {}
+    if payload.get("source_provider") != "tospo-keirin":
+        raise ValueError("stored comment generation is not Tospo")
+    if payload.get("required_comment_kinds") != [RACE_PRE_KIND]:
+        raise ValueError("stored Tospo generation does not require race_pre")
+    return {**result, "source_provider": "tospo-keirin", "required_comment_kinds": [RACE_PRE_KIND]}
+
+
 def _save_queue(path: Path, items: list[dict[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(items, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -253,7 +274,7 @@ def _merge_preserving_fetched(current: dict[str, Any], incoming: dict[str, Any])
     current_entries = {str(row.get("registration_no")): row for row in current.get("payload", {}).get("entries", [])}
     for entry in merged.get("payload", {}).get("entries", []):
         old = current_entries.get(str(entry.get("registration_no"))) or {}
-        for kind in COMMENT_KINDS:
+        for kind in SUPPORTED_COMMENT_KINDS:
             old_state, new_state = old.get(kind) or {}, entry.get(kind) or {}
             if old_state.get("status") == "fetched" and new_state.get("status") != "fetched":
                 preserved = copy.deepcopy(old_state)

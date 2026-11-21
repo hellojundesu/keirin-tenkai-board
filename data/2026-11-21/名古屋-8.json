@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-21",
+  "venue": "名古屋",
+  "race": 8,
+  "raceId": "202611214208",
+  "riders": [
+    {
+      "number": 1,
+      "name": "内山 雅貴",
+      "snum": "015262",
+      "style": "逃",
+      "score": "96.14",
+      "back": 9,
+      "start": 16,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208"
+      }
+    },
+    {
+      "number": 2,
+      "name": "川口 直人",
+      "snum": "013632",
+      "style": "追",
+      "score": "92.33",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208"
+      }
+    },
+    {
+      "number": 3,
+      "name": "山本 隼人",
+      "snum": "015189",
+      "style": "追",
+      "score": "88.59",
+      "back": 0,
+      "start": 18,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208"
+      }
+    },
+    {
+      "number": 4,
+      "name": "丹波 孝佑",
+      "snum": "014674",
+      "style": "逃",
+      "score": "86.63",
+      "back": 13,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208"
+      }
+    },
+    {
+      "number": 5,
+      "name": "篠塚 光一",
+      "snum": "014102",
+      "style": "追",
+      "score": "86.31",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208"
+      }
+    },
+    {
+      "number": 6,
+      "name": "小浦 凪",
+      "snum": "015447",
+      "style": "両",
+      "score": "85.37",
+      "back": 6,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208"
+      }
+    },
+    {
+      "number": 7,
+      "name": "有賀 高士",
+      "snum": "011817",
+      "style": "追",
+      "score": "81.92",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611214208"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      3,
+      5
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611214208"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-21T06:55:55.993Z"
+}

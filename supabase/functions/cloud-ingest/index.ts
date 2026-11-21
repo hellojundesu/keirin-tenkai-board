@@ -130,14 +130,10 @@ Deno.serve(async (request) => {
 
     if (body.operation === "read_venue_pointer") {
       if (!validVenueIdentity(body)) return new Response("invalid venue identity", { status: 400 });
-      const query = new URLSearchParams({
-        select: "generation_id,revision,updated_at", dataset_family: `eq.${body.dataset_family}`,
-        race_date: `eq.${body.race_date}`, venue_code: `eq.${body.venue_code}`, limit: "1",
+      return rpc(supabaseUrl, commonHeaders, "cloud_read_active_venue_pointer", {
+        p_dataset_family: body.dataset_family, p_race_date: body.race_date,
+        p_venue_code: body.venue_code,
       });
-      const result = await fetch(`${supabaseUrl}/rest/v1/cloud_active_venue_generations?${query}`, { headers: commonHeaders });
-      if (!result.ok) throw new Error(`venue pointer read failed ${result.status}`);
-      const rows = await result.json();
-      return Response.json({ pointer: rows[0] || null });
     }
 
     if (body.operation === "publish_venue_generation") {
@@ -157,14 +153,9 @@ Deno.serve(async (request) => {
       if (body.dataset_family !== "racecard" || !/^\d{4}-\d{2}-\d{2}$/.test(String(body.race_date || ""))) {
         return new Response("invalid day identity", { status: 400 });
       }
-      const query = new URLSearchParams({
-        select: "revision,payload,updated_at", dataset_family: `eq.${body.dataset_family}`,
-        race_date: `eq.${body.race_date}`, limit: "1",
+      return rpc(supabaseUrl, commonHeaders, "cloud_read_active_day_index", {
+        p_dataset_family: body.dataset_family, p_race_date: body.race_date,
       });
-      const result = await fetch(`${supabaseUrl}/rest/v1/cloud_active_day_indexes?${query}`, { headers: commonHeaders });
-      if (!result.ok) throw new Error(`day index read failed ${result.status}`);
-      const rows = await result.json();
-      return Response.json({ day_index: rows[0] || null });
     }
 
     if (!validIdentity(String(body.record_type || ""), String(body.record_key || ""))) {

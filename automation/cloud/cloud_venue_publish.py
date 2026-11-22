@@ -77,17 +77,35 @@ def main() -> int:
         client = None
         store = VenueGenerationMockStore(args.validation_store)
     outcomes = []
+    failures = []
+    # One venue's failure must not prevent independent venues from publishing.
     for batch in batches:
-        stage_action = store.stage(batch)
-        expected_revision = store.active_revision("racecard", batch["race_date"], batch["venue_code"])
-        published = store.publish(batch, expected_revision)
-        publication = published if isinstance(published, dict) else published.__dict__
-        outcomes.append({"venue_code": batch["venue_code"], "venue_name": batch["venue_name"], "stage": stage_action, **publication})
+        venue_code = batch["venue_code"]
+        try:
+            stage_action = store.stage(batch)
+            expected_revision = store.active_revision("racecard", batch["race_date"], venue_code)
+            published = store.publish(batch, expected_revision)
+            publication = published if isinstance(published, dict) else published.__dict__
+            outcomes.append({"venue_code": venue_code, "venue_name": batch["venue_name"], "stage": stage_action, **publication})
+        except Exception as exc:
+            # Avoid copying exception text into public artifacts: upstream errors
+            # can include service details. The exception class is sufficient here.
+            failures.append({"venue_code": venue_code, "error_type": type(exc).__name__})
+            print(f"::error title=競輪場のクラウド公開失敗::{venue_code}: {type(exc).__name__}", flush=True)
+
+    day_index = None
+    if outcomes:
+        try:
+            day_index = store.read_day("racecard", acquisition["race_date"])
+        except Exception as exc:
+            failures.append({"venue_code": None, "operation": "read_day_index", "error_type": type(exc).__name__})
+            print(f"::error title=公開インデックスの確認失敗::{type(exc).__name__}", flush=True)
     report = {
         "mode": "live_oidc_rpc" if args.live else "offline_validation",
         "acquisition": acquisition,
         "outcomes": outcomes,
-        "day_index": store.read_day("racecard", acquisition["race_date"]),
+        "failures": failures,
+        "day_index": day_index,
         "external_http_requests": client.request_count if client else 0,
     }
     args.report.parent.mkdir(parents=True, exist_ok=True)
@@ -96,9 +114,10 @@ def main() -> int:
         "mode": report["mode"],
         "published_venues": len(outcomes),
         "rejected_venues": acquisition.get("rejected_venues", 0),
+        "failed_operations": len(failures),
     }, ensure_ascii=False))
-    return 0 if outcomes else 1
-
+    # Preserve a failing job for partial publication or failed readback.
+    return 0 if outcomes and not failures and not acquisition.get("rejected_venues", 0) else 1
 
 if __name__ == "__main__":
     raise SystemExit(main())

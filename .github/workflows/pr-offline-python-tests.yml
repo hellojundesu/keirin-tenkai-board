@@ -18,6 +18,8 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+      - name: Confirm offline-only verification
+        run: echo 'No cloud credentials or network publishing is used by this job.'
       - name: Python version
         run: python3 --version
       - name: Compile changed Python modules

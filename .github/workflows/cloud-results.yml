@@ -113,7 +113,7 @@ jobs:
               for day, failures in data.get("incomplete_races", {}).items():
                   lines.append(f"### 未完了 {day}")
                   for item in failures[:100]:
-                      lines.append(f"- \`{item['race_id']}\`: {item['status']} — {item.get('error', '')}")
+                      lines.append(f"- `{item['race_id']}`: {item['status']} — {item.get('error', '')}")
               Path(os.environ["GITHUB_STEP_SUMMARY"]).open("a", encoding="utf-8").write("\n".join(lines) + "\n")
           PY
       - name: 結果・払戻取得証跡

@@ -278,3 +278,30 @@ jobs:
           PY
           exit 1
 
+
+  oidc_venue_pointer_probe:
+    if: github.event_name == 'push' && github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment: github-pages
+    steps:
+      - name: Read venue pointer through production gateway
+        env:
+          ENDPOINT: https://ypkmorovfnjyesfojcil.supabase.co/functions/v1/cloud-ingest
+        run: |
+          python3 - <<'PY'
+          import json,os,urllib.parse,urllib.request,urllib.error
+          u=os.environ["ACTIONS_ID_TOKEN_REQUEST_URL"]
+          u+=("&" if "?" in u else "?")+"audience=keirin-cloud-ingest-prod-v1"
+          q=urllib.request.Request(u,headers={"Authorization":"Bearer "+os.environ["ACTIONS_ID_TOKEN_REQUEST_TOKEN"]})
+          with urllib.request.urlopen(q,timeout=15) as f: token=json.load(f)["value"]
+          for venue in ["22","36"]:
+              body=json.dumps({"operation":"read_venue_pointer","dataset_family":"racecard","race_date":"2026-11-21","venue_code":venue}).encode()
+              q=urllib.request.Request(os.environ["ENDPOINT"],data=body,method="POST",headers={"Authorization":"Bearer "+token,"Content-Type":"application/json"})
+              try:
+                  with urllib.request.urlopen(q,timeout=20) as f:
+                      print("VENUE",venue,"STATUS",f.status,"BODY",f.read(400).decode(errors="replace"))
+              except urllib.error.HTTPError as e:
+                  print("VENUE",venue,"STATUS",e.code,"BODY",e.read(400).decode(errors="replace"))
+                  raise
+          PY

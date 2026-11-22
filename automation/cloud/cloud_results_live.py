@@ -306,7 +306,23 @@ def main() -> int:
         atomic_json(args.state, state)
         summary["dates"].append({"date": day, "status": manifest["generation_status"], "counts": manifest["counts"]})
     summary.update({"request_count": provider.request_count, "finished_at": utc_now()})
+    # Keep per-race diagnostics in the report without storing page bodies or credentials.
+    # The persisted state is the source of truth for retrying only incomplete races.
+    summary["incomplete_races"] = {}
+    for row in summary["dates"]:
+        day = row["date"]
+        races = (state.get("days", {}).get(day) or {}).get("races", {})
+        failures = [
+            {"race_id": race_id, "status": item.get("status"),
+             "error": item.get("error", "")}
+            for race_id, item in sorted(races.items())
+            if item.get("status") not in {"complete", "not_due"}
+        ]
+        if failures:
+            summary["incomplete_races"][day] = failures
     atomic_json(args.output_root / "result_acquisition_report.json", summary)
+    for day, failures in summary["incomplete_races"].items():
+        print(f"::warning title=結果未完了 {day}::{len(failures)} race(s) remain; see result_acquisition_report.json", flush=True)
     return 1 if any(row["status"] == "partial" for row in summary["dates"]) else 0
 
 

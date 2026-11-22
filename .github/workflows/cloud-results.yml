@@ -96,6 +96,26 @@ jobs:
             git commit -m "結果補完チェックポイントを更新"
             git push
           fi
+      - name: 未完了レースの診断をジョブ概要に表示
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          report = Path(os.environ["RUNNER_TEMP"]) / "keirin-cloud-results/bundles/result_acquisition_report.json"
+          if not report.exists():
+              print("::warning::Result acquisition report missing")
+          else:
+              data = json.loads(report.read_text(encoding="utf-8"))
+              lines = ["## 結果・払戻の取得状況"]
+              for row in data.get("dates", []):
+                  lines.append(f"- {row['date']}: {row['status']} / {row['counts']}")
+              for day, failures in data.get("incomplete_races", {}).items():
+                  lines.append(f"### 未完了 {day}")
+                  for item in failures[:100]:
+                      lines.append(f"- `{item['race_id']}`: {item['status']} — {item.get('error', '')}")
+              Path(os.environ["GITHUB_STEP_SUMMARY"]).open("a", encoding="utf-8").write("\n".join(lines) + "\n")
+          PY
       - name: 結果・払戻取得証跡
         if: always()
         uses: actions/upload-artifact@v5

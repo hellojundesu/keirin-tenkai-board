@@ -1,0 +1,28 @@
+name: PR offline Python verification
+on:
+  push:
+    branches:
+      - fix/actions-recovery-20261122
+    paths:
+      - '.github/workflows/pr-offline-python-tests.yml'
+      - 'automation/cloud/**'
+      - 'automation/comments/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Confirm offline-only verification
+        run: echo 'No cloud credentials or network publishing is used by this job.'
+      - name: Python version
+        run: python3 --version
+      - name: Compile changed Python modules
+        run: python3 -m py_compile automation/cloud/cloud_venue_publish.py automation/cloud/cloud_oidc_gateway_client.py
+      - name: Run offline cloud unit tests
+        run: python3 -m unittest discover -s automation/cloud -p 'test_*.py' -v

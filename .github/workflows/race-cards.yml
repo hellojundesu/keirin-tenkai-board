@@ -278,3 +278,35 @@ jobs:
           PY
           exit 1
 
+
+  oidc_readonly_diagnostic:
+    if: github.event_name == 'push' && github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment:
+      name: github-pages
+    steps:
+      - name: Probe production gateway without writes
+        env:
+          AUDIENCE: keirin-cloud-ingest-prod-v1
+          ENDPOINT: https://ypkmorovfnjyesfojcil.supabase.co/functions/v1/cloud-ingest
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.parse, urllib.request, urllib.error
+          url = os.environ["ACTIONS_ID_TOKEN_REQUEST_URL"]
+          url += ("&" if "?" in url else "?") + urllib.parse.urlencode({"audience":os.environ["AUDIENCE"]})
+          req = urllib.request.Request(url, headers={"Authorization":"Bearer "+os.environ["ACTIONS_ID_TOKEN_REQUEST_TOKEN"]})
+          with urllib.request.urlopen(req, timeout=15) as response:
+              token = json.load(response)["value"]
+          print("OIDC_TOKEN_ACQUIRED=true")
+          payload = json.dumps({"operation":"read_day_index","dataset_family":"racecard","race_date":"2026-11-21"}).encode()
+          req = urllib.request.Request(os.environ["ENDPOINT"], data=payload, method="POST", headers={"Authorization":"Bearer "+token,"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req, timeout=20) as response:
+                  print("GATEWAY_HTTP_STATUS="+str(response.status))
+                  print("GATEWAY_RESPONSE="+response.read(500).decode(errors="replace"))
+          except urllib.error.HTTPError as error:
+              print("GATEWAY_HTTP_STATUS="+str(error.code))
+              print("GATEWAY_RESPONSE="+error.read(500).decode(errors="replace"))
+              raise
+          PY

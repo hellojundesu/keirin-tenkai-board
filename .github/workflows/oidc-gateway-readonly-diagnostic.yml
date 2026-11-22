@@ -1,0 +1,44 @@
+name: OIDC gateway read-only diagnostic
+on:
+  push:
+    branches:
+      - fix/actions-recovery-20261122
+    paths:
+      - '.github/workflows/oidc-gateway-readonly-diagnostic.yml'
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment: github-pages
+    steps:
+      - name: Read-only OIDC gateway probe
+        env:
+          AUDIENCE: keirin-cloud-ingest-prod-v1
+          ENDPOINT: https://ypkmorovfnjyesfojcil.supabase.co/functions/v1/cloud-ingest
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.parse, urllib.request, urllib.error
+          token_url = os.environ["ACTIONS_ID_TOKEN_REQUEST_URL"]
+          sep = "&" if "?" in token_url else "?"
+          token_url += sep + urllib.parse.urlencode({"audience": os.environ["AUDIENCE"]})
+          req = urllib.request.Request(token_url, headers={"Authorization": "Bearer " + os.environ["ACTIONS_ID_TOKEN_REQUEST_TOKEN"]})
+          with urllib.request.urlopen(req, timeout=15) as response:
+              token = json.load(response)["value"]
+          # Read-only operation; no data modifications. Do not print JWT.
+          payload = json.dumps({"operation":"read_day_index","dataset_family":"racecard","race_date":"2026-11-21"}).encode()
+          req = urllib.request.Request(os.environ["ENDPOINT"], data=payload, method="POST", headers={"Authorization":"Bearer "+token,"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req, timeout=20) as response:
+                  print("GATEWAY_HTTP_STATUS", response.status)
+                  print("GATEWAY_RESPONSE", response.read(500).decode(errors="replace"))
+          except urllib.error.HTTPError as error:
+              print("GATEWAY_HTTP_STATUS", error.code)
+              print("GATEWAY_RESPONSE", error.read(500).decode(errors="replace"))
+              if error.code == 403:
+                  print("EXPECTED_BRANCH_POLICY_REJECTION_POSSIBLE: branch is not main; inspect function logs")
+              else:
+                  raise
+          PY

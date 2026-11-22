@@ -1,0 +1,172 @@
+{
+  "date": "2026-11-22",
+  "venue": "小倉",
+  "race": 1,
+  "raceId": "202611228101",
+  "riders": [
+    {
+      "number": 1,
+      "name": "中川 誠一郎",
+      "snum": "013745",
+      "style": "両",
+      "score": "107.86",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101"
+      }
+    },
+    {
+      "number": 2,
+      "name": "飯野 祐太",
+      "snum": "014052",
+      "style": "両",
+      "score": "106.57",
+      "back": 1,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101"
+      }
+    },
+    {
+      "number": 3,
+      "name": "根田 空史",
+      "snum": "014380",
+      "style": "逃",
+      "score": "110.90",
+      "back": 15,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101"
+      }
+    },
+    {
+      "number": 4,
+      "name": "纐纈 洸翔",
+      "snum": "015620",
+      "style": "両",
+      "score": "105.17",
+      "back": 6,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101"
+      }
+    },
+    {
+      "number": 5,
+      "name": "佐藤 礼文",
+      "snum": "015337",
+      "style": "追",
+      "score": "108.89",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101"
+      }
+    },
+    {
+      "number": 6,
+      "name": "林 慶次郎",
+      "snum": "015207",
+      "style": "逃",
+      "score": "102.62",
+      "back": 8,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101"
+      }
+    },
+    {
+      "number": 7,
+      "name": "川口 聖二",
+      "snum": "014977",
+      "style": "両",
+      "score": "106.48",
+      "back": 5,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101"
+      }
+    },
+    {
+      "number": 8,
+      "name": "森川 大輔",
+      "snum": "014246",
+      "style": "追",
+      "score": "103.77",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101"
+      }
+    },
+    {
+      "number": 9,
+      "name": "内藤 宣彦",
+      "snum": "012339",
+      "style": "追",
+      "score": "105.94",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611228101"
+      }
+    }
+  ],
+  "lines": [
+    [
+      6,
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3,
+      5,
+      9
+    ],
+    [
+      4,
+      7,
+      8
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611228101"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-22T06:32:01.023Z",
+  "lineUpdatedAt": "2026-11-22T06:32:01.023Z"
+}

@@ -63,7 +63,21 @@ class OIDCGatewayClient:
                     raw = response.read()
                     return json.loads(raw.decode("utf-8")) if raw else None
             except urllib.error.HTTPError as exc:
-                last = RuntimeError(f"cloud gateway HTTP {exc.code}")
+                # Do not expose arbitrary upstream response bodies or credentials.
+                try:
+                    detail = exc.read(2048).decode("utf-8", errors="replace").strip().lower()
+                except OSError:
+                    detail = ""
+                known = {
+                    "cloud ingest rejected": "OIDC policy or gateway exception; inspect function logs",
+                    "invalid venue identity": "invalid venue identity",
+                    "invalid venue generation": "invalid venue generation",
+                    "invalid venue publication": "invalid venue publication",
+                    "unauthorized": "authorization rejected",
+                }
+                safe_detail = known.get(detail, "upstream response withheld")
+                operation = str(payload.get("operation", "unknown"))
+                last = RuntimeError(f"cloud gateway HTTP {exc.code} operation={operation}: {safe_detail}")
                 if exc.code not in {429, 500, 502, 503, 504}:
                     raise last from exc
             except (TimeoutError, urllib.error.URLError) as exc:

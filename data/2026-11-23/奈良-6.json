@@ -1,0 +1,146 @@
+{
+  "date": "2026-11-23",
+  "venue": "奈良",
+  "race": 6,
+  "raceId": "202611235306",
+  "riders": [
+    {
+      "number": 1,
+      "name": "宮地 寧々",
+      "snum": "015150",
+      "style": "両",
+      "score": "50.38",
+      "back": 3,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306"
+      }
+    },
+    {
+      "number": 2,
+      "name": "橋本 のこ",
+      "snum": "015945",
+      "style": "両",
+      "score": "47.37",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306"
+      }
+    },
+    {
+      "number": 3,
+      "name": "吉村 美有紀",
+      "snum": "015761",
+      "style": "両",
+      "score": "49.46",
+      "back": 4,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306"
+      }
+    },
+    {
+      "number": 4,
+      "name": "鈴木 美教",
+      "snum": "015220",
+      "style": "両",
+      "score": "55.48",
+      "back": 5,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306"
+      }
+    },
+    {
+      "number": 5,
+      "name": "土井 柚姫",
+      "snum": "015953",
+      "style": "両",
+      "score": "50.09",
+      "back": 1,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306"
+      }
+    },
+    {
+      "number": 6,
+      "name": "小泉 夢菜",
+      "snum": "015671",
+      "style": "追",
+      "score": "52.04",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306"
+      }
+    },
+    {
+      "number": 7,
+      "name": "アニー紗世子",
+      "snum": "016040",
+      "style": "両",
+      "score": "49.15",
+      "back": 2,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611235306"
+      }
+    }
+  ],
+  "lines": [
+    [
+      5
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      1
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611235306"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-23T07:22:48.397Z",
+  "lineUpdatedAt": "2026-11-23T07:22:48.397Z"
+}

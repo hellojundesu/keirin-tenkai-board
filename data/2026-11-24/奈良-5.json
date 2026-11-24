@@ -1,0 +1,128 @@
+{
+  "date": "2026-11-24",
+  "venue": "奈良",
+  "race": 5,
+  "raceId": "202611245305",
+  "riders": [
+    {
+      "number": 1,
+      "name": "小泉 夢菜",
+      "snum": "015671",
+      "style": "追",
+      "score": "52.04",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305"
+      }
+    },
+    {
+      "number": 2,
+      "name": "アニー紗世子",
+      "snum": "016040",
+      "style": "両",
+      "score": "49.15",
+      "back": 2,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305"
+      }
+    },
+    {
+      "number": 3,
+      "name": "梶原 百香",
+      "snum": "015310",
+      "style": "両",
+      "score": "50.23",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305"
+      }
+    },
+    {
+      "number": 4,
+      "name": "橋本 のこ",
+      "snum": "015945",
+      "style": "両",
+      "score": "47.37",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305"
+      }
+    },
+    {
+      "number": 5,
+      "name": "大和 久保美",
+      "snum": "014925",
+      "style": "追",
+      "score": "48.53",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305"
+      }
+    },
+    {
+      "number": 6,
+      "name": "溝口 香奈",
+      "snum": "015075",
+      "style": "追",
+      "score": "46.86",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611245305"
+      }
+    }
+  ],
+  "lines": [
+    [
+      2
+    ],
+    [
+      1
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611245305"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-24T09:43:34.147Z",
+  "lineUpdatedAt": "2026-11-24T09:43:34.147Z"
+}

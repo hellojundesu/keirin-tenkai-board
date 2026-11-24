@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-24",
+  "venue": "静岡",
+  "race": 12,
+  "raceId": "202611243812",
+  "riders": [
+    {
+      "number": 1,
+      "name": "藤田 勝也",
+      "snum": "014398",
+      "style": "追",
+      "score": "103.92",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812"
+      }
+    },
+    {
+      "number": 2,
+      "name": "岡村 潤",
+      "snum": "013772",
+      "style": "追",
+      "score": "107.50",
+      "back": 0,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812"
+      }
+    },
+    {
+      "number": 3,
+      "name": "太田 竜馬",
+      "snum": "015121",
+      "style": "逃",
+      "score": "104.56",
+      "back": 6,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812"
+      }
+    },
+    {
+      "number": 4,
+      "name": "佐々木 雄一",
+      "snum": "013532",
+      "style": "追",
+      "score": "105.41",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812"
+      }
+    },
+    {
+      "number": 5,
+      "name": "皿屋 豊",
+      "snum": "015179",
+      "style": "両",
+      "score": "105.30",
+      "back": 5,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812"
+      }
+    },
+    {
+      "number": 6,
+      "name": "塩島 嵩一朗",
+      "snum": "015807",
+      "style": "逃",
+      "score": "102.68",
+      "back": 9,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812"
+      }
+    },
+    {
+      "number": 7,
+      "name": "原井 博斗",
+      "snum": "015383",
+      "style": "追",
+      "score": "109.17",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611243812"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3,
+      7
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      2,
+      4
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611243812"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-24T09:43:01.576Z",
+  "lineUpdatedAt": "2026-11-24T09:43:01.576Z"
+}

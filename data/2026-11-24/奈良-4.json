@@ -1,0 +1,142 @@
+{
+  "date": "2026-11-24",
+  "venue": "奈良",
+  "race": 4,
+  "raceId": "202611245304",
+  "riders": [
+    {
+      "number": 1,
+      "name": "長川 達哉",
+      "snum": "015973",
+      "style": "逃",
+      "score": "79.15",
+      "back": 22,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304"
+      }
+    },
+    {
+      "number": 2,
+      "name": "岡崎 克政",
+      "snum": "014257",
+      "style": "逃",
+      "score": "71.86",
+      "back": 19,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304"
+      }
+    },
+    {
+      "number": 3,
+      "name": "片岡 遼真",
+      "snum": "015997",
+      "style": "逃",
+      "score": "76.46",
+      "back": 17,
+      "start": 11,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304"
+      }
+    },
+    {
+      "number": 4,
+      "name": "秋山 太洋",
+      "snum": "015884",
+      "style": "逃",
+      "score": "78.33",
+      "back": 13,
+      "start": 19,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304"
+      }
+    },
+    {
+      "number": 5,
+      "name": "里見 恒平",
+      "snum": "014739",
+      "style": "逃",
+      "score": "71.67",
+      "back": 1,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304"
+      }
+    },
+    {
+      "number": 6,
+      "name": "小磯 知也",
+      "snum": "013061",
+      "style": "追",
+      "score": "70.59",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304"
+      }
+    },
+    {
+      "number": 7,
+      "name": "吉岡 竜太",
+      "snum": "016003",
+      "style": "逃",
+      "score": "78.95",
+      "back": 17,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611245304"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      7,
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611245304"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-24T09:43:33.566Z",
+  "lineUpdatedAt": "2026-11-24T09:43:33.566Z"
+}

@@ -1,0 +1,135 @@
+{
+  "date": "2026-11-24",
+  "venue": "松山",
+  "race": 8,
+  "raceId": "202611247508",
+  "riders": [
+    {
+      "number": 1,
+      "name": "中園 和剛",
+      "snum": "014043",
+      "style": "追",
+      "score": "96.17",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508"
+      }
+    },
+    {
+      "number": 2,
+      "name": "望月 永悟",
+      "snum": "013115",
+      "style": "追",
+      "score": "98.45",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508"
+      }
+    },
+    {
+      "number": 3,
+      "name": "松村 友和",
+      "snum": "013961",
+      "style": "追",
+      "score": "101.86",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508"
+      }
+    },
+    {
+      "number": 4,
+      "name": "小原 丈一郎",
+      "snum": "015323",
+      "style": "両",
+      "score": "103.31",
+      "back": 0,
+      "start": 11,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508"
+      }
+    },
+    {
+      "number": 5,
+      "name": "南部 翔大",
+      "snum": "015825",
+      "style": "逃",
+      "score": "102.17",
+      "back": 16,
+      "start": 15,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508"
+      }
+    },
+    {
+      "number": 6,
+      "name": "児玉 慎一郎",
+      "snum": "013060",
+      "style": "追",
+      "score": "90.10",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508"
+      }
+    },
+    {
+      "number": 7,
+      "name": "五十嵐 綾",
+      "snum": "015601",
+      "style": "逃",
+      "score": "97.58",
+      "back": 7,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611247508"
+      }
+    }
+  ],
+  "lines": [
+    [
+      5,
+      3,
+      1,
+      6
+    ],
+    [
+      7,
+      4,
+      2
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611247508"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-24T09:43:08.724Z"
+}

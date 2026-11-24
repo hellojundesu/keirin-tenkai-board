@@ -10273,14 +10273,16 @@
           "updated_at": "2026-11-23T00:27:53.324273Z"
         },
         "202611215104": {
-          "status": "not_published",
-          "error": "confirmed result table was not uniquely identified",
-          "updated_at": "2026-11-24T04:25:45.037480Z"
+          "status": "cancelled",
+          "source_html_sha256": "ebc4e080994917896470d2e8a1f4375635f79f7e7b59243812ab0d791b140603",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T11:44:43.080149Z"
         },
         "202611215105": {
-          "status": "not_published",
-          "error": "confirmed result table was not uniquely identified",
-          "updated_at": "2026-11-24T04:25:46.022856Z"
+          "status": "cancelled",
+          "source_html_sha256": "5223facf7dafeb94b83dd87b8075bc2c9400eaae02b581f624c990c550fefd6c",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T11:44:44.323345Z"
         },
         "202611215106": {
           "status": "complete",
@@ -10371,7 +10373,7 @@
         "schema_version": 1,
         "race_date": "2026-11-21",
         "generation_id": "6c6eacd59e7de72fd28768d19fb7f1c6c207e5ae55f94c92a7fce2d60ef316eb",
-        "generation_status": "partial",
+        "generation_status": "complete",
         "expected_race_ids": [
           "202611212201",
           "202611212202",
@@ -10436,16 +10438,17 @@
           "expected": 57,
           "complete": 55,
           "not_due": 0,
-          "not_published": 2,
+          "not_published": 0,
           "fetch_failed": 0,
           "parse_failed": 0,
           "partial_payout": 0,
-          "skipped_complete": 55
+          "skipped_complete": 55,
+          "cancelled": 2
         },
-        "generated_at": "2026-11-24T04:25:46.022909Z",
-        "publishable_records": 0
+        "generated_at": "2026-11-24T11:44:44.323371Z",
+        "publishable_records": 2
       },
-      "updated_at": "2026-11-24T04:25:46.022914Z"
+      "updated_at": "2026-11-24T11:44:44.323373Z"
     },
     "2026-11-22": {
       "races": {

@@ -10275,12 +10275,12 @@
         "202611215104": {
           "status": "not_published",
           "error": "confirmed result table was not uniquely identified",
-          "updated_at": "2026-11-23T00:27:54.378722Z"
+          "updated_at": "2026-11-24T04:25:45.037480Z"
         },
         "202611215105": {
           "status": "not_published",
           "error": "confirmed result table was not uniquely identified",
-          "updated_at": "2026-11-23T00:27:55.315690Z"
+          "updated_at": "2026-11-24T04:25:46.022856Z"
         },
         "202611215106": {
           "status": "complete",
@@ -10440,12 +10440,12 @@
           "fetch_failed": 0,
           "parse_failed": 0,
           "partial_payout": 0,
-          "skipped_complete": 0
+          "skipped_complete": 55
         },
-        "generated_at": "2026-11-23T00:28:09.335949Z",
-        "publishable_records": 165
+        "generated_at": "2026-11-24T04:25:46.022909Z",
+        "publishable_records": 0
       },
-      "updated_at": "2026-11-23T00:28:09.335953Z"
+      "updated_at": "2026-11-24T04:25:46.022914Z"
     },
     "2026-11-22": {
       "races": {
@@ -10948,6 +10948,655 @@
         "publishable_records": 204
       },
       "updated_at": "2026-11-23T00:27:05.303352Z"
+    },
+    "2026-11-23": {
+      "races": {
+        "202611232601": {
+          "status": "complete",
+          "source_html_sha256": "898d9f7dd4caabeac8dd3560b3b6bef0746431126688fbe85c1bde7b8486a042",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:09.007194Z"
+        },
+        "202611232602": {
+          "status": "complete",
+          "source_html_sha256": "64d583a91c6fb76267b7d06281477504540198d385b2416101e2b8d9fc4100ce",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:09.989172Z"
+        },
+        "202611232603": {
+          "status": "complete",
+          "source_html_sha256": "1df245bc18406ea6f052f5ed745d6da58fd3e2128b362bbc11f0a0e2f0042171",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:10.997112Z"
+        },
+        "202611232604": {
+          "status": "complete",
+          "source_html_sha256": "3db895d7da8249b4d8d77d1f00f6990e1052c3ed40c362aa58cb5a614c5092a9",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:12.003282Z"
+        },
+        "202611232605": {
+          "status": "complete",
+          "source_html_sha256": "919c9ab79bf5c8fc22e6ae853dfc683cc4035ffb4bfeae8cbbc89f49aea90355",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:12.964823Z"
+        },
+        "202611232606": {
+          "status": "complete",
+          "source_html_sha256": "723aceeaa2f40bb7eb00df0c0bd8888c345367fe5af81370cd96e8acb48f9647",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:13.968173Z"
+        },
+        "202611232607": {
+          "status": "complete",
+          "source_html_sha256": "22cef2a184681a580089074a6abb480b9bb609cc53ac2bdc9387d0fee9f4fde5",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:14.987865Z"
+        },
+        "202611232608": {
+          "status": "complete",
+          "source_html_sha256": "005a6bad42452d5767df7646eac123bfc19a978dfef6978cfa1d360873a73a8c",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:16.177024Z"
+        },
+        "202611232609": {
+          "status": "complete",
+          "source_html_sha256": "c7ceecd4346b6c2ba32d2e9cbd6165e5e69ceabab024ce5b4519ccce9db6cea2",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:17.016505Z"
+        },
+        "202611232610": {
+          "status": "complete",
+          "source_html_sha256": "2bc57d0cf67f688b99aa96a0b198a2bdfcb5af3f874028e531b37f2a961d9f2d",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:17.977967Z"
+        },
+        "202611232611": {
+          "status": "complete",
+          "source_html_sha256": "3ac1001f673f92453d4c54fb1c9dcd8d06d398cbe8ecdb0dde0981f9e3496df2",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:19.010596Z"
+        },
+        "202611233401": {
+          "status": "complete",
+          "source_html_sha256": "b57a48849d5ca22bf4b0828db4851790168907cfe89b01be3bb3ace24cea5865",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:19.977837Z"
+        },
+        "202611233402": {
+          "status": "complete",
+          "source_html_sha256": "eb87616920efa0596cd8b472e04764acfacbf1a7b68814499716a6b430a3dfa4",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:20.966294Z"
+        },
+        "202611233403": {
+          "status": "complete",
+          "source_html_sha256": "95727377d108fe9ff3f34e957596eaa0031d3f03144429b8155e7ab52cb0e5db",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:22.061713Z"
+        },
+        "202611233404": {
+          "status": "complete",
+          "source_html_sha256": "58f83d7ee6afa3ca815400cc77d782e0c90abf62e6779b620616f381e97f48db",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:23.340393Z"
+        },
+        "202611233405": {
+          "status": "complete",
+          "source_html_sha256": "dd1ff2f4eb22dfe0ff29d20993a67ea9871e0add6a77c3071a2d134453efdf1f",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:24.378098Z"
+        },
+        "202611233406": {
+          "status": "complete",
+          "source_html_sha256": "174a7d648d65b66655188ac6c5beb68cdfcedc7c591da8370a841028fffea923",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:24.999339Z"
+        },
+        "202611233407": {
+          "status": "complete",
+          "source_html_sha256": "6da5d95671e679953c6c45a62257c3b9e8ca1e278a3bb2f0fd03b08ec7f6cc16",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:26.044129Z"
+        },
+        "202611233601": {
+          "status": "complete",
+          "source_html_sha256": "c7978809188b6d5d856b67537e2b9e4b0e1556627b920f0ef5bfd94ad98734f1",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:27.316132Z"
+        },
+        "202611233602": {
+          "status": "complete",
+          "source_html_sha256": "516810e8e52b8575b1c77381403cb983983825aca0cb9ec76d909a5ec8444bee",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:27.990940Z"
+        },
+        "202611233603": {
+          "status": "complete",
+          "source_html_sha256": "57f60758b9fa749efcb94758b2d26495cadeec724bd3c4defff038c0d63a59c5",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:28.994352Z"
+        },
+        "202611233604": {
+          "status": "complete",
+          "source_html_sha256": "f10298a977df16163eeb6df974f9d6b745a407bb481af98c344bc25fb588f18d",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:29.963769Z"
+        },
+        "202611233605": {
+          "status": "complete",
+          "source_html_sha256": "c3e368ed9e9b270915f8110871596b9ed311ad493f2e0b076a96f735a7695ef3",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:30.994642Z"
+        },
+        "202611233606": {
+          "status": "complete",
+          "source_html_sha256": "2c28e67e4ff3639666357ece9b39353013013d643c3ad88de51866aa2b0894d0",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:31.998272Z"
+        },
+        "202611233607": {
+          "status": "complete",
+          "source_html_sha256": "970419cba0bf123cebeac230c6b28822580a822e9db1ffb6f7322ad0bef4da92",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:32.971072Z"
+        },
+        "202611233608": {
+          "status": "complete",
+          "source_html_sha256": "6df490ffadf3e45261764ece5171127334d335c3d43cb123dc7bdd67bc2b690e",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:33.972944Z"
+        },
+        "202611233609": {
+          "status": "complete",
+          "source_html_sha256": "33c3816766eda3757a7183b3146ad1bb50fb93a458769d29ac3e673b2873f0c1",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:34.983975Z"
+        },
+        "202611233610": {
+          "status": "complete",
+          "source_html_sha256": "b9b67ce6910a35b25996fe3a9a5c9e22e05b2a1bf716a5ba8890b4250fe3ffe3",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:36.002543Z"
+        },
+        "202611234501": {
+          "status": "complete",
+          "source_html_sha256": "ce720f7bf5e7229b33bbf74c2244d18f8dfa787aaae1807386f317ee1ddf1bbd",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:37.096473Z"
+        },
+        "202611234502": {
+          "status": "complete",
+          "source_html_sha256": "6e40a350d4db64f4eb50742b622057e3c55352b00bd2f6f0f9f5818925888148",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:38.001357Z"
+        },
+        "202611234503": {
+          "status": "complete",
+          "source_html_sha256": "ba2c51eed52d800fcadf27408bc84d0bab4cef0620fc933c99cdc86d8720202a",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:39.026247Z"
+        },
+        "202611234504": {
+          "status": "complete",
+          "source_html_sha256": "d20925ec08d36d43886848c6d0a2fb493e9475018d62decb7e2619cd2e2d8bcb",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:39.987386Z"
+        },
+        "202611234505": {
+          "status": "complete",
+          "source_html_sha256": "e3b71b5bc69c6bb4f7d8c0304a280abaa04f11d76e3180169da905ee0d036cf7",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:41.319525Z"
+        },
+        "202611234506": {
+          "status": "complete",
+          "source_html_sha256": "07b79581edaa825904f5de05a1070af92f8b30d891ed85e0946dc16322876f1c",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:42.040648Z"
+        },
+        "202611234507": {
+          "status": "complete",
+          "source_html_sha256": "a50755e08bb636b03f00dfd8ae4deef5b2f6b74f2e87fb8a70fc34cb7208fa12",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:43.030139Z"
+        },
+        "202611234508": {
+          "status": "complete",
+          "source_html_sha256": "032ef7c1c25c891f7a01607b21712b9a7d5cdffe72fee4ef9aebb23adf67bbaf",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:43.989931Z"
+        },
+        "202611234509": {
+          "status": "complete",
+          "source_html_sha256": "93d766bf4b072b28b38fd340b3cac89bb3ec7df939aaf9276082ff9800692de2",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:44.967538Z"
+        },
+        "202611234510": {
+          "status": "complete",
+          "source_html_sha256": "27137d1f4387233df7e4a47504f28b34c42f757bac85fdb9e2babc2edb786402",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:45.998936Z"
+        },
+        "202611234801": {
+          "status": "complete",
+          "source_html_sha256": "90a705bbdbca717af1be840bade1fc11b8de19a782c1c572ed8f8dfc6a97c62d",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:47.006061Z"
+        },
+        "202611234802": {
+          "status": "complete",
+          "source_html_sha256": "25f5c5849b761c576ee4f9fb47f4758a61ca5fb9863a224d4d0eedadd4e29bf8",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:48.002660Z"
+        },
+        "202611234803": {
+          "status": "complete",
+          "source_html_sha256": "08a1a60acc71d557b177f530d6afe4063c67c56799c5094cae64ae43193fc497",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:49.020226Z"
+        },
+        "202611234804": {
+          "status": "complete",
+          "source_html_sha256": "97933931299d7791fff91baeb253edafe2cab6161b2ec37552706b7c93d37635",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:50.003876Z"
+        },
+        "202611234805": {
+          "status": "complete",
+          "source_html_sha256": "f19d14ba462d13b697776b01355aa81155da51345d7c94e195d7fda803c38fb6",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:51.016798Z"
+        },
+        "202611234806": {
+          "status": "complete",
+          "source_html_sha256": "64412d34109fd5eec175599ddcc344808262da3c3f8f53fc978050e0e5b26114",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:51.998682Z"
+        },
+        "202611234807": {
+          "status": "complete",
+          "source_html_sha256": "08213a1d6ae2893adcb2eaa16bc2c51906e91466ec4a9165aa50fac6d7846754",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:52.988055Z"
+        },
+        "202611235301": {
+          "status": "complete",
+          "source_html_sha256": "5c2e8523f34a928a523c37804786fe9c2c8b3a95faf0034493ad2e0b55f0cf4f",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:54.013428Z"
+        },
+        "202611235302": {
+          "status": "complete",
+          "source_html_sha256": "5b21b310cb9337ef52d1c4ab0b63d8844f3d5a42fd05982217927bf77dd19b19",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:54.968181Z"
+        },
+        "202611235303": {
+          "status": "complete",
+          "source_html_sha256": "4b6f56b5adcf9d6ee524c55b3a8e98009ab1b81aa5f269e10183b18c61dc9319",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:56.033191Z"
+        },
+        "202611235304": {
+          "status": "complete",
+          "source_html_sha256": "2ea46452f6c8d256f6b6f2cea6ac9f86b9997fc708c357b1b5eabc95511fdc17",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:57.002806Z"
+        },
+        "202611235305": {
+          "status": "complete",
+          "source_html_sha256": "1a2022aed786193fe87204cc5eef2f1adc308d6b477da80c5850f52b85cc8c5d",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:57.977955Z"
+        },
+        "202611235306": {
+          "status": "complete",
+          "source_html_sha256": "299a21c9136b0f39b3ede12004783e9a850a141a328ab4dd7737c8d1e072ffdd",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:24:59.010082Z"
+        },
+        "202611235307": {
+          "status": "complete",
+          "source_html_sha256": "8428b71c6379e929e8d824b593bed410fd22295b106c41af7f71d2a64a7dae4c",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:00.017473Z"
+        },
+        "202611235308": {
+          "status": "complete",
+          "source_html_sha256": "44fb58c61ff8ee612450dac2662fb41cbccd3a037d86552a7a4fe3ebd783723f",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:00.995239Z"
+        },
+        "202611235309": {
+          "status": "complete",
+          "source_html_sha256": "0b72d62fdc2d84ef75ea876c58eee94745c895f646e8f6f73df4da08afdbf5c3",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:01.991341Z"
+        },
+        "202611235310": {
+          "status": "complete",
+          "source_html_sha256": "1da6e2a98b0ac9415a0ec38dc6e46174a5a9e4ddb1128d3cf99104932e45f122",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:02.982418Z"
+        },
+        "202611235311": {
+          "status": "complete",
+          "source_html_sha256": "c50a9861118a0d53e529ef34b00a0df4b7221b953e920eafaddb97e92588e728",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:04.031259Z"
+        },
+        "202611236101": {
+          "status": "complete",
+          "source_html_sha256": "b43127ce6dd0070ee1436d5ac563187089b9ec910cef686dd29e6966776d3c8e",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:05.013165Z"
+        },
+        "202611236102": {
+          "status": "complete",
+          "source_html_sha256": "1f019e8b669cd810451a4c7182deef417a0dbf30fa4e74a66fbc5461a72dd6d8",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:06.004654Z"
+        },
+        "202611236103": {
+          "status": "complete",
+          "source_html_sha256": "ae555369a8ce78af2e602dd8fe387929039521be8fccd9f4141435e6f0727023",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:07.039609Z"
+        },
+        "202611236104": {
+          "status": "complete",
+          "source_html_sha256": "7bf0666ab75dd357dc0010ab547b69c57fa7b6bf3f1b432c60ea719a02bf8ebd",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:07.994535Z"
+        },
+        "202611236105": {
+          "status": "complete",
+          "source_html_sha256": "42a4190e5e0ebcefde2029da7a9efc5a85fed953e268fe6dded120c6e19122b2",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:08.954889Z"
+        },
+        "202611236106": {
+          "status": "complete",
+          "source_html_sha256": "ebe61b3026020358d593ae24ce06167ee558306cb5c08d8bb33b12d70fc20704",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:10.211016Z"
+        },
+        "202611236107": {
+          "status": "complete",
+          "source_html_sha256": "82c9b7f77fc85d02ea362ced78c3ff0acad95dfb3789d92ce850be33e99b2b59",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:10.983367Z"
+        },
+        "202611236201": {
+          "status": "complete",
+          "source_html_sha256": "48f17de61d60a198cf1928182f9650bcd0ad7940cdddc25e5c8306b7dc327725",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:11.985770Z"
+        },
+        "202611236202": {
+          "status": "complete",
+          "source_html_sha256": "5071ac2747e0f732db9e9344442d8a55c4b803d3b050329960bff85c43b7e41f",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:13.048090Z"
+        },
+        "202611236203": {
+          "status": "complete",
+          "source_html_sha256": "53087b7f79cf0488b89306af71307085138e7e1a6af1493d03ce1b491dcdc08b",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:14.020351Z"
+        },
+        "202611236204": {
+          "status": "complete",
+          "source_html_sha256": "1ed51d7e5908c66649cc4287513c710d4afaeaee3441e79a6b72234a87bb1ec3",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:14.996036Z"
+        },
+        "202611236205": {
+          "status": "complete",
+          "source_html_sha256": "aef422f4a2aae269ce3785684087991f41952aa4a3de709699429b100d39f696",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:16.019037Z"
+        },
+        "202611236206": {
+          "status": "complete",
+          "source_html_sha256": "f0d51e6a61afb49a066c3c012ebc44478788903a4464ac2af681c3d1be575dbf",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:17.021012Z"
+        },
+        "202611236207": {
+          "status": "complete",
+          "source_html_sha256": "c9dd7934adf623f00ca4004fbd0f63588258443ad19001b929eb29ba284672fe",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:18.357741Z"
+        },
+        "202611238101": {
+          "status": "complete",
+          "source_html_sha256": "8eba5d221df0089477b9de6ab75356985cd11d0499763b01c0904eb191c71cee",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:18.970728Z"
+        },
+        "202611238102": {
+          "status": "complete",
+          "source_html_sha256": "ad2a7fdd85e426f9f1d4a235063f62e31f17a30f6a24a195753d655ca74b47cd",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:20.057155Z"
+        },
+        "202611238103": {
+          "status": "complete",
+          "source_html_sha256": "7a954b0d5c58857e605040efff12be099668383a461a2489221d50b2b48cc696",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:21.000802Z"
+        },
+        "202611238104": {
+          "status": "complete",
+          "source_html_sha256": "bf85fb933a98fc20aaa0b9d62cc43d85fdd70fb275591ddf330ecc612a9427cb",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:22.018434Z"
+        },
+        "202611238105": {
+          "status": "complete",
+          "source_html_sha256": "8ecd31db9a0d28143a3e34a4b79a1c876f8933533c19464a0d8931f47898ed4f",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:22.977292Z"
+        },
+        "202611238106": {
+          "status": "complete",
+          "source_html_sha256": "683d5fd7a56d41c279275f04b77acedcd05cce01e2b9cbf395bb11158cd89380",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:24.030466Z"
+        },
+        "202611238107": {
+          "status": "complete",
+          "source_html_sha256": "e67aae3462da04348b9e02e06ff32f9b15d84c50fded6711fb8d0e29f0c7abe9",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:25.026210Z"
+        },
+        "202611238108": {
+          "status": "complete",
+          "source_html_sha256": "50e7ffd656758185c58e1e7744df369a6ddebb19131c9f146fcce5c3434b3114",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:26.007871Z"
+        },
+        "202611238109": {
+          "status": "complete",
+          "source_html_sha256": "4cf7441fababd07db3d28ecef742fd3616ff5e1d28f13420959425dfed9eca58",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:26.998306Z"
+        },
+        "202611238110": {
+          "status": "complete",
+          "source_html_sha256": "217e78144745be7ee284444558bad60fda54bf04ac0c9b4b6b51ffab2aa8a82f",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:28.013120Z"
+        },
+        "202611238111": {
+          "status": "complete",
+          "source_html_sha256": "ab57417ae579ccbbd97f908debdc7a5b8ea8d5084260871e5264c21a53bc2fdd",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:29.093860Z"
+        },
+        "202611238112": {
+          "status": "complete",
+          "source_html_sha256": "0ecef9759fd8df6f4a079fc8cd1fc57cbd72bd72c9c0373624d3fa89a091c2f2",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:30.083239Z"
+        },
+        "202611238401": {
+          "status": "complete",
+          "source_html_sha256": "56072967729dac045a82192dd5d4ac7a189f20a83868a9e88ea2a48d1b452764",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:31.014252Z"
+        },
+        "202611238402": {
+          "status": "complete",
+          "source_html_sha256": "1af8cc4a7d63ccbf09db7166e1d96c4da95b7c2b7f925dd325f2c0be6673252b",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:32.098498Z"
+        },
+        "202611238403": {
+          "status": "complete",
+          "source_html_sha256": "4fea5a62acfdee32a51321b27f88568bd1b2decf8bcce992822ca684cb8d5240",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:33.032207Z"
+        },
+        "202611238404": {
+          "status": "complete",
+          "source_html_sha256": "3b4ec69550112557db04192c3b8b9fb5e9db0c019b59082cd5888f09595b63af",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:33.977735Z"
+        },
+        "202611238405": {
+          "status": "complete",
+          "source_html_sha256": "1f6e625e4c5a47f423a4f9fcffd1aaa209f535974e0090e6f3bff20ffa985386",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:35.076264Z"
+        },
+        "202611238406": {
+          "status": "complete",
+          "source_html_sha256": "1680b98f943fc1e9e7715a0a20a558d71fafa4b8346c57d9d9ae50b12dbd1871",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:35.993370Z"
+        },
+        "202611238407": {
+          "status": "complete",
+          "source_html_sha256": "7dc1db406dee6676287c293fb6db0b71e9928c4cda29283bf5017930760d0c6e",
+          "missing_bet_types": [],
+          "updated_at": "2026-11-24T04:25:37.023048Z"
+        }
+      },
+      "manifest": {
+        "schema_version": 1,
+        "race_date": "2026-11-23",
+        "generation_id": "c68102c1a6c22e203251630c557d9fc565577a3b9dc1d37b6a7d7a71f117852e",
+        "generation_status": "complete",
+        "expected_race_ids": [
+          "202611232601",
+          "202611232602",
+          "202611232603",
+          "202611232604",
+          "202611232605",
+          "202611232606",
+          "202611232607",
+          "202611232608",
+          "202611232609",
+          "202611232610",
+          "202611232611",
+          "202611233401",
+          "202611233402",
+          "202611233403",
+          "202611233404",
+          "202611233405",
+          "202611233406",
+          "202611233407",
+          "202611233601",
+          "202611233602",
+          "202611233603",
+          "202611233604",
+          "202611233605",
+          "202611233606",
+          "202611233607",
+          "202611233608",
+          "202611233609",
+          "202611233610",
+          "202611234501",
+          "202611234502",
+          "202611234503",
+          "202611234504",
+          "202611234505",
+          "202611234506",
+          "202611234507",
+          "202611234508",
+          "202611234509",
+          "202611234510",
+          "202611234801",
+          "202611234802",
+          "202611234803",
+          "202611234804",
+          "202611234805",
+          "202611234806",
+          "202611234807",
+          "202611235301",
+          "202611235302",
+          "202611235303",
+          "202611235304",
+          "202611235305",
+          "202611235306",
+          "202611235307",
+          "202611235308",
+          "202611235309",
+          "202611235310",
+          "202611235311",
+          "202611236101",
+          "202611236102",
+          "202611236103",
+          "202611236104",
+          "202611236105",
+          "202611236106",
+          "202611236107",
+          "202611236201",
+          "202611236202",
+          "202611236203",
+          "202611236204",
+          "202611236205",
+          "202611236206",
+          "202611236207",
+          "202611238101",
+          "202611238102",
+          "202611238103",
+          "202611238104",
+          "202611238105",
+          "202611238106",
+          "202611238107",
+          "202611238108",
+          "202611238109",
+          "202611238110",
+          "202611238111",
+          "202611238112",
+          "202611238401",
+          "202611238402",
+          "202611238403",
+          "202611238404",
+          "202611238405",
+          "202611238406",
+          "202611238407"
+        ],
+        "expected_race_hash": "1429abaa0315b8db25bbe398c6185bec54b51598eba74a35d5443916c9745839",
+        "counts": {
+          "expected": 89,
+          "complete": 89,
+          "not_due": 0,
+          "not_published": 0,
+          "fetch_failed": 0,
+          "parse_failed": 0,
+          "partial_payout": 0,
+          "skipped_complete": 0
+        },
+        "generated_at": "2026-11-24T04:25:37.023071Z",
+        "publishable_records": 267
+      },
+      "updated_at": "2026-11-24T04:25:37.023076Z"
     }
   }
 }

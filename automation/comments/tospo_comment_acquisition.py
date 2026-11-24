@@ -104,7 +104,7 @@ class LiveTransport:
         if parsed.scheme != "https" or parsed.hostname != "keirin.tokyo-sports.co.jp":
             raise ValueError("Tospo transport host is not allowed")
         cache = self.cache_root / (hashlib.sha256(url.encode()).hexdigest() + ".html")
-        if cache.exists():
+        if cache.exists() and time.time() - cache.stat().st_mtime < 6 * 3600:
             self.events.append({"url": url, "status": "cache"})
             return cache.read_text(encoding="utf-8")
         if self.request_count >= self.request_budget:
@@ -131,6 +131,8 @@ class LiveTransport:
             if exc.code in STOP_HTTP:
                 raise RuntimeError(f"Tospo access stopped by HTTP {exc.code}") from exc
             raise
+        if any(marker in source.lower() for marker in ('captcha', 'access denied')):
+            raise RuntimeError('Tospo access restriction marker detected')
         cache.parent.mkdir(parents=True, exist_ok=True)
         cache.write_text(source, encoding="utf-8")
         self.events.append({"url": url, "status": "fetched", "http_status": 200})
@@ -181,8 +183,18 @@ def discover_pages(
     transport: LiveTransport,
     race_date: str,
     expected_keys: set[tuple[str, int]],
+    state_path: Path | None = None,
 ) -> tuple[dict[tuple[str, int], dict[str, str]], dict[str, Any]]:
-    queue = race_links(transport.get(LISTING_URL))
+    saved = {}
+    if state_path and state_path.exists():
+        saved = json.loads(state_path.read_text(encoding='utf-8'))
+        if saved.get('race_date') != race_date:
+            raise ValueError('Tospo discovery checkpoint date mismatch')
+    def allowed(url):
+        parsed = urlparse(url)
+        return parsed.scheme == 'https' and parsed.hostname == 'keirin.tokyo-sports.co.jp' and re.fullmatch(r'/list/race/\d{8}_\d+', parsed.path)
+    seeds = race_links(transport.get(LISTING_URL))
+    queue = list(dict.fromkeys(url for url in [*saved.get('matched_urls', []), *saved.get('pending_urls', []), *seeds] if allowed(url)))
     seen: set[str] = set()
     matched: dict[tuple[str, int], dict[str, str]] = {}
     errors: list[dict[str, str]] = []
@@ -207,13 +219,24 @@ def discover_pages(
                     if key in matched and matched[key]["url"] != url:
                             raise DiscoveryConflict(f"duplicate Tospo race page: {key}")
                     matched[key] = {"url": url, "source": source}
-            for link in race_links(source):
-                if link not in seen and link not in queue:
-                    queue.append(link)
+            # Expand only verified target-day pages, and finish their race
+            # navigation before visiting another date/venue seed. URL bucket is
+            # a publication date, never assumed to equal the requested race date.
+            if identity and identity[0] == race_date:
+                links = [link for link in race_links(source) if page_bucket(link) == page_bucket(url) and link not in seen]
+                queue = list(dict.fromkeys([*links, *queue]))
         except RuntimeError:
+            if state_path:
+                state_path.parent.mkdir(parents=True, exist_ok=True)
+                state_path.write_text(json.dumps({'race_date': race_date, 'matched_urls': [row['url'] for row in matched.values()], 'pending_urls': [url, *queue]}), encoding='utf-8')
             raise
         except Exception as exc:
             errors.append({"url": url, "error": f"{type(exc).__name__}: {exc}"[:240]})
+        if state_path:
+            state_path.parent.mkdir(parents=True, exist_ok=True)
+            temporary = state_path.with_suffix('.tmp')
+            temporary.write_text(json.dumps({'race_date': race_date, 'matched_urls': [row['url'] for row in matched.values()], 'pending_urls': queue}), encoding='utf-8')
+            temporary.replace(state_path)
     return matched, {
         "pages_visited": len(seen),
         "matched_pages": len(matched),
@@ -427,6 +450,7 @@ def main() -> int:
     parser.add_argument("--run-report", required=True, type=Path)
     parser.add_argument("--cache-root", required=True, type=Path)
     parser.add_argument("--live", action="store_true")
+    parser.add_argument("--discovery-state", type=Path)
     args = parser.parse_args()
     if not args.live:
         raise SystemExit("Tospo CLI acquisition requires --live; tests call pure functions")
@@ -434,7 +458,7 @@ def main() -> int:
     race_date, races = validate_catalog(catalog)
     expected_keys = {(str(race["venue"]), int(race["race_number"])) for race in races}
     transport = LiveTransport(args.cache_root)
-    pages, discovery = discover_pages(transport, race_date, expected_keys)
+    pages, discovery = discover_pages(transport, race_date, expected_keys, state_path=args.discovery_state)
     observed_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
     records, report = acquire_catalog(
         catalog,
@@ -452,3 +476,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

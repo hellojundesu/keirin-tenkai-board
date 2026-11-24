@@ -21,12 +21,16 @@ import urllib.request
 from pathlib import Path
 from typing import Any
 
-from cloud_results_payouts import normalize_saved_result
+from cloud_results_payouts import normalize_saved_result, parse_payouts
 
 HOST = "https://keirin.netkeiba.com"
 RACE_LIST_API = f"{HOST}/race/api_race_list.html"
 RESULT_URL = f"{HOST}/db/result/?race_id={{race_id}}"
 STOP_HTTP = {401, 403, 429}
+
+
+class AcquisitionStop(RuntimeError):
+    """Access restriction or hard budget: no further HTTP calls are permitted."""
 
 
 class NoRaceDay(Exception):
@@ -134,7 +138,7 @@ class LiveHttpProvider:
         request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; keirin-data-maintenance/1.0)"})
         for attempt in range(self.max_attempts):
             if self.request_count >= self.request_budget:
-                raise RuntimeError("request budget exceeded")
+                raise AcquisitionStop("request budget exceeded")
             delay = self.min_interval - (time.monotonic() - self.last_request)
             if delay > 0: time.sleep(delay)
             self.request_count += 1; self.last_request = time.monotonic()
@@ -145,14 +149,14 @@ class LiveHttpProvider:
                     text = raw.decode("utf-8", errors="replace")
                     if access_blocked(response.geturl(), text):
                         self.events.append({"key": key, "status": "restriction", "http_status": int(getattr(response, "status", 200))})
-                        raise RuntimeError("access restriction marker detected")
+                        raise AcquisitionStop("access restriction marker detected")
                     self.events.append({"key": key, "status": "fetched", "http_status": int(getattr(response, "status", 200))})
                     cache.parent.mkdir(parents=True, exist_ok=True)
                     cache.write_bytes(gzip.compress(raw))
                     return text
             except urllib.error.HTTPError as exc:
                 self.events.append({"key": key, "status": "http_error", "http_status": exc.code})
-                if exc.code in STOP_HTTP: raise RuntimeError(f"stop HTTP {exc.code}") from exc
+                if exc.code in STOP_HTTP: raise AcquisitionStop(f"stop HTTP {exc.code}") from exc
                 if attempt + 1 == self.max_attempts or exc.code < 500: raise
             except (TimeoutError, urllib.error.URLError):
                 self.events.append({"key": key, "status": "network_error", "http_status": None})
@@ -181,12 +185,27 @@ def is_due(race: dict[str, Any], now_jst: dt.datetime) -> bool:
     return now_jst >= now_jst.replace(hour=hour, minute=minute, second=0, microsecond=0) + dt.timedelta(minutes=60)
 
 
+def cancelled_payout(source: str, race: dict, observed_at: str, generation_id: str) -> dict | None:
+    if not re.search(r'<div[^>]*class="Race_Infomation_Box"[^>]*>\s*本レースは中止となりました\s*</div>',source):
+        return None
+    title_match=re.search(r'<title[^>]*>(.*?)</title>',source,re.S|re.I)
+    title=re.sub(r'\s+','',text_content(title_match[1])) if title_match else ''
+    day=dt.date.fromisoformat(race['race_date'])
+    prefix=f"{day.year}年{day.month}月{day.day}日{race['venue_name']}競輪"
+    if not title.startswith(prefix) or not re.search(r'(?<!\d)'+str(race['race_number'])+r'R(?:\D|$)',title):
+        raise ValueError('cancelled page race identity mismatch')
+    items,missing=parse_payouts(source)
+    if missing or len(items)!=5 or any(item['payout_status']!='refunded' for item in items):
+        raise ValueError('cancelled race refund evidence incomplete')
+    return {'dataset':'cloud_race_payout','race_id':race['race_id'],'observed_at':observed_at,'source_html_sha256':hashlib.sha256(source.encode()).hexdigest(),'cloud_generation':{'generation_id':generation_id,'generation_status':'complete','race_date':race['race_date']},'status':'confirmed','items':items,'missing_bet_types':[],'race_cancelled':True}
+
+
 def should_fetch(previous: dict[str, Any] | None, race_date: dt.date, today: dt.date, correction_days: int) -> bool:
-    if not previous or previous.get("status") != "complete": return True
+    if not previous or previous.get("status") not in {"complete", "cancelled"}: return True
     return race_date >= today - dt.timedelta(days=correction_days)
 
 
-def acquire_day(provider, day: str, state: dict[str, Any], *, now_jst: dt.datetime, correction_days: int = 2, force: bool = False) -> tuple[dict, list[dict]]:
+def acquire_day(provider, day: str, state: dict[str, Any], *, now_jst: dt.datetime, correction_days: int = 2, force: bool = False, retry_only: bool = False) -> tuple[dict, list[dict]]:
     try:
         expected = fetch_expected(provider, day)
     except NoRaceDay:
@@ -204,7 +223,7 @@ def acquire_day(provider, day: str, state: dict[str, Any], *, now_jst: dt.dateti
     expected_hash = hashlib.sha256("\n".join(row["race_id"] for row in expected).encode()).hexdigest()
     generation_id = hashlib.sha256(f"result\0{day}\0{expected_hash}".encode()).hexdigest()
     day_state = state.setdefault("days", {}).setdefault(day, {"races": {}})
-    records, counts = [], {key: 0 for key in ("expected", "complete", "not_due", "not_published", "fetch_failed", "parse_failed", "partial_payout", "skipped_complete")}
+    records, counts = [], {key: 0 for key in ("expected", "complete", "not_due", "not_published", "fetch_failed", "parse_failed", "partial_payout", "skipped_complete", "cancelled")}
     counts["expected"] = len(expected)
     for race in expected:
         race_id = race["race_id"]
@@ -213,16 +232,24 @@ def acquire_day(provider, day: str, state: dict[str, Any], *, now_jst: dt.dateti
             counts["not_due"] += 1
             day_state["races"].setdefault(race_id, {"status": "not_due"})
             continue
-        if not force and not should_fetch(previous, dt.date.fromisoformat(day), now_jst.date(), correction_days):
-            counts["skipped_complete"] += 1; counts["complete"] += 1
+        if not force and ((retry_only and previous and previous.get("status") in {"complete", "cancelled"}) or not should_fetch(previous, dt.date.fromisoformat(day), now_jst.date(), correction_days)):
+            counts["skipped_complete"] += 1; counts["cancelled" if previous.get("status")=="cancelled" else "complete"] += 1
             continue
         try:
             source = provider.get(f"result-{race_id}", race["source_url"])
+        except AcquisitionStop:
+            raise
         except Exception as exc:
             counts["fetch_failed"] += 1
             day_state["races"][race_id] = {"status": "fetch_failed", "error": type(exc).__name__, "updated_at": utc_now()}
             continue
         try:
+            cancelled=cancelled_payout(source,race,utc_now(),generation_id)
+            if cancelled:
+                records.append({'record_type':'cloud_race_payout','record_id':race_id,'payload':cancelled,'source_updated_at':cancelled['observed_at']})
+                counts['cancelled']+=1
+                day_state['races'][race_id]={'status':'cancelled','source_html_sha256':cancelled['source_html_sha256'],'missing_bet_types':[],'updated_at':utc_now()}
+                continue
             normalized = normalize_saved_result(source, race_id, utc_now(), generation_id)
         except Exception as exc:
             marker = "not_published" if 'summary="全着順"' not in source else "parse_failed"
@@ -275,6 +302,7 @@ def main() -> int:
     parser.add_argument("--today", default=dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).date().isoformat())
     parser.add_argument("--target-date", help="one saved/live trial day (YYYY-MM-DD)")
     parser.add_argument("--max-days", type=int, default=3)
+    parser.add_argument("--only-unresolved", action="store_true", help="retry failed races without refreshing confirmed facts")
     parser.add_argument("--request-budget", type=int, default=250)
     parser.add_argument("--live", action="store_true")
     args = parser.parse_args()
@@ -289,9 +317,11 @@ def main() -> int:
     now_jst = dt.datetime.now(dt.timezone(dt.timedelta(hours=9)))
     summary = {"dates": [], "backlog_dates": backlog, "started_at": utc_now()}
     for day in dates:
+        stop_access=False
         try:
-            manifest, records = acquire_day(provider, day, state, now_jst=now_jst, force=bool(args.target_date))
+            manifest, records = acquire_day(provider, day, state, now_jst=now_jst, force=bool(args.target_date) and not args.only_unresolved, retry_only=args.only_unresolved)
         except Exception as exc:
+            stop_access=isinstance(exc,AcquisitionStop)
             manifest, records = {
                 "schema_version": 1, "race_date": day, "generation_id": None,
                 "generation_status": "partial", "day_state": "schedule_failed",
@@ -299,12 +329,13 @@ def main() -> int:
                 "generated_at": utc_now(), "publishable_records": 0,
                 "error_class": type(exc).__name__, "error_summary": str(exc)[:200],
             }, []
-            state.setdefault("days", {})[day] = {"manifest": manifest, "updated_at": utc_now()}
+            state.setdefault("days", {}).setdefault(day, {"races": {}}).update({"manifest": manifest, "updated_at": utc_now()})
         target = args.output_root / day
         atomic_json(target / "result_manifest.json", manifest)
         atomic_json(target / "result_records.json", records)
         atomic_json(args.state, state)
         summary["dates"].append({"date": day, "status": manifest["generation_status"], "counts": manifest["counts"]})
+        if stop_access: break
     summary.update({"request_count": provider.request_count, "finished_at": utc_now()})
     # Keep per-race diagnostics in the report without storing page bodies or credentials.
     # The persisted state is the source of truth for retrying only incomplete races.
@@ -316,7 +347,7 @@ def main() -> int:
             {"race_id": race_id, "status": item.get("status"),
              "error": item.get("error", "")}
             for race_id, item in sorted(races.items())
-            if item.get("status") not in {"complete", "not_due"}
+            if item.get("status") not in {"complete", "cancelled", "not_due"}
         ]
         if failures:
             summary["incomplete_races"][day] = failures
@@ -327,5 +358,6 @@ def main() -> int:
 
 
 if __name__ == "__main__": raise SystemExit(main())
+
 
 

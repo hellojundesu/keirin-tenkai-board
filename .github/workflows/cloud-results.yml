@@ -9,6 +9,10 @@ on:
         description: '対象日（YYYY-MM-DD、未指定時はJST前日）'
         type: string
         required: false
+      only_unresolved:
+        description: '未完了レースのみ再試行（確認済みデータは再取得しない）'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -51,6 +55,7 @@ jobs:
         env:
           TARGET_DATE: ${{ steps.target.outputs.target_date }}
           EXPLICIT_TARGET: ${{ steps.target.outputs.explicit }}
+          ONLY_UNRESOLVED: ${{ inputs.only_unresolved }}
           CONFIGURED_START_DATE: ${{ vars.CLOUD_RESULTS_START_DATE }}
         run: |
           set -euo pipefail
@@ -58,6 +63,9 @@ jobs:
           target_args=()
           if [ "$EXPLICIT_TARGET" = "true" ]; then
             target_args+=(--target-date "$TARGET_DATE")
+          fi
+          if [ "$ONLY_UNRESOLVED" = "true" ]; then
+            target_args+=(--only-unresolved)
           fi
           mkdir -p "$RUNNER_TEMP/keirin-cloud-results"
           if [ -f data/.cloud-result-state.json ]; then
@@ -129,3 +137,4 @@ jobs:
       - name: 取得・保存エラーを実行結果に反映
         if: always() && (steps.result_acquire.outcome == 'failure' || steps.result_sync.outcome == 'failure' || steps.checkpoint.outcome == 'failure')
         run: exit 1
+

@@ -220,6 +220,17 @@ jobs:
           python3 automation/comments/cloud_comment_catalog.py "data/$TARGET_DATE" \
             --output "$COMMENT_ROOT/catalog.json"
 
+      - name: 同じ対象日の探索状態を復元
+        if: steps.comment_complete.outputs.complete != 'true'
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            ${{ env.COMMENT_ROOT }}/cache
+            ${{ env.COMMENT_ROOT }}/discovery-state.json
+          key: tospo-discovery-v2-${{ steps.target.outputs.target_date }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            tospo-discovery-v2-${{ steps.target.outputs.target_date }}-
+
       - name: 東スポの出走表コメントを取得・照合
         id: comment_acquire
         if: steps.comment_complete.outputs.complete != 'true'
@@ -229,6 +240,7 @@ jobs:
           python3 automation/comments/tospo_comment_acquisition.py --live \
             --catalog "$COMMENT_ROOT/catalog.json" \
             --cache-root "$COMMENT_ROOT/cache" \
+            --discovery-state "$COMMENT_ROOT/discovery-state.json" \
             --output "$COMMENT_ROOT/records.json" \
             --run-report "$COMMENT_ROOT/acquisition-report.json"
 
@@ -272,6 +284,15 @@ jobs:
           print(json.dumps(summary, ensure_ascii=True, sort_keys=True))
           PY
 
+      - name: 探索途中の状態を次回へ保存
+        if: always() && steps.comment_complete.outputs.complete != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            ${{ env.COMMENT_ROOT }}/cache
+            ${{ env.COMMENT_ROOT }}/discovery-state.json
+          key: tospo-discovery-v2-${{ steps.target.outputs.target_date }}-${{ github.run_id }}-${{ github.run_attempt }}
+
       - name: 検証証跡を保存
         if: always()
         uses: actions/upload-artifact@v4
@@ -292,3 +313,4 @@ jobs:
            steps.publish.outcome == 'failure' ||
            steps.verify.outcome == 'failure')
         run: exit 1
+

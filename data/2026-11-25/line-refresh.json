@@ -1,158 +1,114 @@
 {
-  "date": "2026-11-19",
+  "date": "2026-11-25",
   "mode": "lines-only",
-  "startedAt": "2026-11-19T17:49:46.162Z",
+  "startedAt": "2026-11-25T18:53:57.470Z",
   "added": [],
   "preserved": [
     {
-      "venue": "宇都宮",
+      "venue": "玉野",
       "race": 1
     },
     {
-      "venue": "宇都宮",
+      "venue": "玉野",
       "race": 2
     },
     {
-      "venue": "宇都宮",
+      "venue": "玉野",
       "race": 3
     },
     {
-      "venue": "宇都宮",
+      "venue": "玉野",
       "race": 4
     },
     {
-      "venue": "宇都宮",
+      "venue": "玉野",
       "race": 5
     },
     {
-      "venue": "宇都宮",
+      "venue": "玉野",
       "race": 6
     },
     {
-      "venue": "宇都宮",
+      "venue": "玉野",
       "race": 7
     },
     {
-      "venue": "宇都宮",
-      "race": 8
-    },
-    {
-      "venue": "宇都宮",
-      "race": 9
-    },
-    {
-      "venue": "高知",
+      "venue": "四日市",
       "race": 1
     },
     {
-      "venue": "高知",
+      "venue": "四日市",
       "race": 2
     },
     {
-      "venue": "高知",
+      "venue": "四日市",
       "race": 3
     },
     {
-      "venue": "高知",
+      "venue": "四日市",
       "race": 4
     },
     {
-      "venue": "高知",
+      "venue": "四日市",
       "race": 5
     },
     {
-      "venue": "高知",
+      "venue": "四日市",
       "race": 6
     },
     {
-      "venue": "高知",
+      "venue": "四日市",
       "race": 7
     },
     {
-      "venue": "高知",
-      "race": 8
-    },
-    {
-      "venue": "高知",
-      "race": 9
-    },
-    {
-      "venue": "小倉",
+      "venue": "松山",
       "race": 1
     },
     {
-      "venue": "小倉",
+      "venue": "松山",
       "race": 2
     },
     {
-      "venue": "小倉",
+      "venue": "松山",
       "race": 3
     },
     {
-      "venue": "小倉",
+      "venue": "松山",
       "race": 4
     },
     {
-      "venue": "小倉",
+      "venue": "松山",
       "race": 5
     },
     {
-      "venue": "小倉",
+      "venue": "松山",
       "race": 6
     },
     {
-      "venue": "小倉",
+      "venue": "松山",
       "race": 7
     },
     {
-      "venue": "小倉",
+      "venue": "松山",
       "race": 8
     },
     {
-      "venue": "小倉",
+      "venue": "松山",
       "race": 9
     },
     {
-      "venue": "小倉",
+      "venue": "松山",
       "race": 10
     },
     {
-      "venue": "小倉",
+      "venue": "松山",
       "race": 11
     },
     {
-      "venue": "小倉",
+      "venue": "松山",
       "race": 12
     },
     {
-      "venue": "松山",
-      "race": 1
-    },
-    {
-      "venue": "松山",
-      "race": 2
-    },
-    {
-      "venue": "松山",
-      "race": 3
-    },
-    {
-      "venue": "松山",
-      "race": 4
-    },
-    {
-      "venue": "松山",
-      "race": 5
-    },
-    {
-      "venue": "松山",
-      "race": 6
-    },
-    {
-      "venue": "松山",
-      "race": 7
-    },
-    {
       "venue": "西武園",
       "race": 1
     },
@@ -191,6 +147,10 @@
     {
       "venue": "西武園",
       "race": 10
+    },
+    {
+      "venue": "西武園",
+      "race": 11
     },
     {
       "venue": "静岡",
@@ -237,77 +197,117 @@
       "race": 11
     },
     {
-      "venue": "大垣",
+      "venue": "静岡",
+      "race": 12
+    },
+    {
+      "venue": "川崎",
       "race": 1
     },
     {
-      "venue": "大垣",
+      "venue": "川崎",
       "race": 2
     },
     {
-      "venue": "大垣",
+      "venue": "川崎",
       "race": 3
     },
     {
-      "venue": "大垣",
+      "venue": "川崎",
       "race": 4
     },
     {
-      "venue": "大垣",
+      "venue": "川崎",
       "race": 5
     },
     {
-      "venue": "大垣",
+      "venue": "川崎",
       "race": 6
     },
     {
-      "venue": "大垣",
+      "venue": "川崎",
       "race": 7
     },
     {
-      "venue": "大垣",
+      "venue": "武雄",
+      "race": 1
+    },
+    {
+      "venue": "武雄",
+      "race": 2
+    },
+    {
+      "venue": "武雄",
+      "race": 3
+    },
+    {
+      "venue": "武雄",
+      "race": 4
+    },
+    {
+      "venue": "武雄",
+      "race": 5
+    },
+    {
+      "venue": "武雄",
+      "race": 6
+    },
+    {
+      "venue": "武雄",
+      "race": 7
+    },
+    {
+      "venue": "福井",
+      "race": 1
+    },
+    {
+      "venue": "福井",
+      "race": 2
+    },
+    {
+      "venue": "福井",
+      "race": 3
+    },
+    {
+      "venue": "福井",
+      "race": 4
+    },
+    {
+      "venue": "福井",
+      "race": 5
+    },
+    {
+      "venue": "福井",
+      "race": 6
+    },
+    {
+      "venue": "福井",
+      "race": 7
+    },
+    {
+      "venue": "福井",
       "race": 8
     },
     {
-      "venue": "大垣",
+      "venue": "福井",
       "race": 9
     },
     {
-      "venue": "大垣",
+      "venue": "福井",
       "race": 10
     },
     {
       "venue": "福井",
-      "race": 1
+      "race": 11
     },
     {
       "venue": "福井",
-      "race": 2
-    },
-    {
-      "venue": "福井",
-      "race": 3
-    },
-    {
-      "venue": "福井",
-      "race": 4
-    },
-    {
-      "venue": "福井",
-      "race": 5
-    },
-    {
-      "venue": "福井",
-      "race": 6
-    },
-    {
-      "venue": "福井",
-      "race": 7
+      "race": 12
     }
   ],
   "unavailable": [],
   "sourceWarnings": [],
   "errors": [],
-  "finishedAt": "2026-11-19T17:49:46.179Z",
+  "finishedAt": "2026-11-25T18:53:57.487Z",
   "status": "complete"
 }

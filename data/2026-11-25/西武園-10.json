@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-25",
+  "venue": "西武園",
+  "race": 10,
+  "raceId": "202611252610",
+  "riders": [
+    {
+      "number": 1,
+      "name": "田沼 龍弥",
+      "snum": "015970",
+      "style": "逃",
+      "score": "78.44",
+      "back": 13,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610"
+      }
+    },
+    {
+      "number": 2,
+      "name": "藤岡 祐馬",
+      "snum": "015984",
+      "style": "逃",
+      "score": "73.88",
+      "back": 11,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610"
+      }
+    },
+    {
+      "number": 3,
+      "name": "大内 達也",
+      "snum": "012710",
+      "style": "追",
+      "score": "76.70",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610"
+      }
+    },
+    {
+      "number": 4,
+      "name": "舟山 佑京",
+      "snum": "015257",
+      "style": "逃",
+      "score": "75.13",
+      "back": 9,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610"
+      }
+    },
+    {
+      "number": 5,
+      "name": "國井 裕樹",
+      "snum": "015260",
+      "style": "逃",
+      "score": "74.17",
+      "back": 4,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610"
+      }
+    },
+    {
+      "number": 6,
+      "name": "菅藤 智",
+      "snum": "014446",
+      "style": "追",
+      "score": "72.44",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610"
+      }
+    },
+    {
+      "number": 7,
+      "name": "中野 楚樂",
+      "snum": "015959",
+      "style": "逃",
+      "score": "81.08",
+      "back": 14,
+      "start": 8,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611252610"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      4,
+      6
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      7,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611252610"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-25T06:19:49.525Z"
+}

@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-25",
+  "venue": "静岡",
+  "race": 7,
+  "raceId": "202611253807",
+  "riders": [
+    {
+      "number": 1,
+      "name": "谷田 泰平",
+      "snum": "014307",
+      "style": "追",
+      "score": "93.58",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807"
+      }
+    },
+    {
+      "number": 2,
+      "name": "小林 大介",
+      "snum": "013240",
+      "style": "追",
+      "score": "97.34",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807"
+      }
+    },
+    {
+      "number": 3,
+      "name": "近藤 誠二",
+      "snum": "013357",
+      "style": "追",
+      "score": "96.94",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807"
+      }
+    },
+    {
+      "number": 4,
+      "name": "保田 浩輔",
+      "snum": "015728",
+      "style": "逃",
+      "score": "95.95",
+      "back": 9,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807"
+      }
+    },
+    {
+      "number": 5,
+      "name": "大洞 翔平",
+      "snum": "014830",
+      "style": "追",
+      "score": "96.83",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807"
+      }
+    },
+    {
+      "number": 6,
+      "name": "佐野 梅一",
+      "snum": "013204",
+      "style": "追",
+      "score": "90.81",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807"
+      }
+    },
+    {
+      "number": 7,
+      "name": "斉藤 樂",
+      "snum": "015690",
+      "style": "逃",
+      "score": "102.61",
+      "back": 6,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611253807"
+      }
+    }
+  ],
+  "lines": [
+    [
+      5,
+      1
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611253807"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-25T06:19:17.395Z",
+  "lineUpdatedAt": "2026-11-25T06:19:17.395Z"
+}

@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-25",
+  "venue": "松山",
+  "race": 9,
+  "raceId": "202611257509",
+  "riders": [
+    {
+      "number": 1,
+      "name": "兼本 将太",
+      "snum": "015477",
+      "style": "逃",
+      "score": "102.04",
+      "back": 2,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509"
+      }
+    },
+    {
+      "number": 2,
+      "name": "庄子 信弘",
+      "snum": "013604",
+      "style": "追",
+      "score": "100.11",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509"
+      }
+    },
+    {
+      "number": 3,
+      "name": "福田 滉",
+      "snum": "015342",
+      "style": "追",
+      "score": "98.61",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509"
+      }
+    },
+    {
+      "number": 4,
+      "name": "門田 凌",
+      "snum": "015201",
+      "style": "両",
+      "score": "97.39",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509"
+      }
+    },
+    {
+      "number": 5,
+      "name": "平原 啓多",
+      "snum": "014582",
+      "style": "追",
+      "score": "98.09",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509"
+      }
+    },
+    {
+      "number": 6,
+      "name": "下井 竜",
+      "snum": "015453",
+      "style": "逃",
+      "score": "95.38",
+      "back": 11,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509"
+      }
+    },
+    {
+      "number": 7,
+      "name": "堤 洋",
+      "snum": "012987",
+      "style": "追",
+      "score": "100.92",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611257509"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      7,
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6,
+      2,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611257509"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-25T06:19:39.402Z"
+}

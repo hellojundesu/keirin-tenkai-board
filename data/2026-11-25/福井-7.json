@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-25",
+  "venue": "福井",
+  "race": 7,
+  "raceId": "202611255107",
+  "riders": [
+    {
+      "number": 1,
+      "name": "稲吉 悠大",
+      "snum": "014262",
+      "style": "追",
+      "score": "100.58",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107"
+      }
+    },
+    {
+      "number": 2,
+      "name": "丸山 直樹",
+      "snum": "014292",
+      "style": "追",
+      "score": "96.10",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107"
+      }
+    },
+    {
+      "number": 3,
+      "name": "城戸 俊潔",
+      "snum": "015370",
+      "style": "逃",
+      "score": "103.47",
+      "back": 11,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107"
+      }
+    },
+    {
+      "number": 4,
+      "name": "嶋田 誠也",
+      "snum": "015128",
+      "style": "追",
+      "score": "100.90",
+      "back": 0,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107"
+      }
+    },
+    {
+      "number": 5,
+      "name": "染谷 幸喜",
+      "snum": "015168",
+      "style": "逃",
+      "score": "98.34",
+      "back": 5,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107"
+      }
+    },
+    {
+      "number": 6,
+      "name": "酒井 拳蔵",
+      "snum": "015113",
+      "style": "両",
+      "score": "93.95",
+      "back": 3,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107"
+      }
+    },
+    {
+      "number": 7,
+      "name": "筒井 敦史",
+      "snum": "013737",
+      "style": "追",
+      "score": "104.31",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611255107"
+      }
+    }
+  ],
+  "lines": [
+    [
+      3,
+      7,
+      4
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      5,
+      2
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611255107"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-25T06:19:27.469Z",
+  "lineUpdatedAt": "2026-11-25T06:19:27.469Z"
+}

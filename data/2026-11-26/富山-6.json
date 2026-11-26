@@ -1,0 +1,146 @@
+{
+  "date": "2026-11-26",
+  "venue": "富山",
+  "race": 6,
+  "raceId": "202611264606",
+  "riders": [
+    {
+      "number": 1,
+      "name": "小林 真矢香",
+      "snum": "015678",
+      "style": "両",
+      "score": "52.19",
+      "back": 3,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606"
+      }
+    },
+    {
+      "number": 2,
+      "name": "熊谷 芽緯",
+      "snum": "015756",
+      "style": "逃",
+      "score": "56.44",
+      "back": 15,
+      "start": 10,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606"
+      }
+    },
+    {
+      "number": 3,
+      "name": "向井 円",
+      "snum": "015314",
+      "style": "追",
+      "score": "48.40",
+      "back": 0,
+      "start": 13,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606"
+      }
+    },
+    {
+      "number": 4,
+      "name": "高尾 貴美歌",
+      "snum": "015408",
+      "style": "両",
+      "score": "56.46",
+      "back": 5,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606"
+      }
+    },
+    {
+      "number": 5,
+      "name": "田中 まい",
+      "snum": "014966",
+      "style": "両",
+      "score": "53.09",
+      "back": 6,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606"
+      }
+    },
+    {
+      "number": 6,
+      "name": "吉田 恵利",
+      "snum": "016026",
+      "style": "両",
+      "score": "47.22",
+      "back": 2,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606"
+      }
+    },
+    {
+      "number": 7,
+      "name": "田野口 佳奈",
+      "snum": "015864",
+      "style": "両",
+      "score": "47.81",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264606"
+      }
+    }
+  ],
+  "lines": [
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      1
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611264606"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-26T05:37:31.704Z",
+  "lineUpdatedAt": "2026-11-26T05:37:31.704Z"
+}

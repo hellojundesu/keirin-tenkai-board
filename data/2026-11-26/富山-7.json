@@ -1,0 +1,142 @@
+{
+  "date": "2026-11-26",
+  "venue": "富山",
+  "race": 7,
+  "raceId": "202611264607",
+  "riders": [
+    {
+      "number": 1,
+      "name": "武井 大介",
+      "snum": "013766",
+      "style": "追",
+      "score": "87.00",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607"
+      }
+    },
+    {
+      "number": 2,
+      "name": "村瀬 大和",
+      "snum": "015538",
+      "style": "逃",
+      "score": "82.59",
+      "back": 11,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607"
+      }
+    },
+    {
+      "number": 3,
+      "name": "伊原 弘幸",
+      "snum": "014091",
+      "style": "追",
+      "score": "86.00",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607"
+      }
+    },
+    {
+      "number": 4,
+      "name": "荒木 伸哉",
+      "snum": "013859",
+      "style": "追",
+      "score": "87.07",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607"
+      }
+    },
+    {
+      "number": 5,
+      "name": "吉田 健市",
+      "snum": "013863",
+      "style": "追",
+      "score": "88.67",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607"
+      }
+    },
+    {
+      "number": 6,
+      "name": "伊藤 大理",
+      "snum": "013690",
+      "style": "追",
+      "score": "80.86",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607"
+      }
+    },
+    {
+      "number": 7,
+      "name": "秋末 蓮",
+      "snum": "015828",
+      "style": "逃",
+      "score": "87.71",
+      "back": 16,
+      "start": 15,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264607"
+      }
+    }
+  ],
+  "lines": [
+    [
+      2,
+      5
+    ],
+    [
+      1
+    ],
+    [
+      4
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611264607"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-26T05:37:32.250Z",
+  "lineUpdatedAt": "2026-11-26T05:37:32.250Z"
+}

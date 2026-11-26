@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-26",
+  "venue": "松阪",
+  "race": 9,
+  "raceId": "202611264709",
+  "riders": [
+    {
+      "number": 1,
+      "name": "岡 光良",
+      "snum": "014371",
+      "style": "追",
+      "score": "96.84",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709"
+      }
+    },
+    {
+      "number": 2,
+      "name": "原田 翔真",
+      "snum": "015630",
+      "style": "逃",
+      "score": "97.97",
+      "back": 10,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709"
+      }
+    },
+    {
+      "number": 3,
+      "name": "溪 飛雄馬",
+      "snum": "013805",
+      "style": "追",
+      "score": "93.93",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709"
+      }
+    },
+    {
+      "number": 4,
+      "name": "木村 直隆",
+      "snum": "013798",
+      "style": "追",
+      "score": "98.89",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709"
+      }
+    },
+    {
+      "number": 5,
+      "name": "宿口 潤平",
+      "snum": "014151",
+      "style": "追",
+      "score": "100.47",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709"
+      }
+    },
+    {
+      "number": 6,
+      "name": "加倉 正義",
+      "snum": "012478",
+      "style": "追",
+      "score": "93.10",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709"
+      }
+    },
+    {
+      "number": 7,
+      "name": "長田 龍拳",
+      "snum": "015440",
+      "style": "逃",
+      "score": "102.00",
+      "back": 14,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611264709"
+      }
+    }
+  ],
+  "lines": [
+    [
+      7,
+      5,
+      1
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611264709"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-26T05:37:00.872Z"
+}

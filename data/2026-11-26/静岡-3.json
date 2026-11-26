@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-26",
+  "venue": "静岡",
+  "race": 3,
+  "raceId": "202611263803",
+  "riders": [
+    {
+      "number": 1,
+      "name": "北野 武史",
+      "snum": "013199",
+      "style": "追",
+      "score": "93.52",
+      "back": 0,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803"
+      }
+    },
+    {
+      "number": 2,
+      "name": "金田 涼馬",
+      "snum": "015594",
+      "style": "逃",
+      "score": "89.70",
+      "back": 15,
+      "start": 15,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803"
+      }
+    },
+    {
+      "number": 3,
+      "name": "隅 貴史",
+      "snum": "014185",
+      "style": "追",
+      "score": "87.46",
+      "back": 0,
+      "start": 12,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803"
+      }
+    },
+    {
+      "number": 4,
+      "name": "坂本 拓也",
+      "snum": "015159",
+      "style": "両",
+      "score": "87.54",
+      "back": 3,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803"
+      }
+    },
+    {
+      "number": 5,
+      "name": "徳永 泰粋",
+      "snum": "015750",
+      "style": "逃",
+      "score": "89.25",
+      "back": 8,
+      "start": 9,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803"
+      }
+    },
+    {
+      "number": 6,
+      "name": "薮 謙治",
+      "snum": "013581",
+      "style": "追",
+      "score": "82.40",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803"
+      }
+    },
+    {
+      "number": 7,
+      "name": "大竹 哲也",
+      "snum": "014304",
+      "style": "追",
+      "score": "85.41",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611263803"
+      }
+    }
+  ],
+  "lines": [
+    [
+      2,
+      7
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "netkeirin",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611263803"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-26T05:36:45.155Z",
+  "lineUpdatedAt": "2026-11-26T05:36:45.155Z"
+}

@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-27",
+  "venue": "平塚",
+  "race": 6,
+  "raceId": "202611273506",
+  "riders": [
+    {
+      "number": 1,
+      "name": "伊東 翔貴",
+      "snum": "014800",
+      "style": "逃",
+      "score": "101.13",
+      "back": 5,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506"
+      }
+    },
+    {
+      "number": 2,
+      "name": "清水 剛志",
+      "snum": "014942",
+      "style": "両",
+      "score": "104.07",
+      "back": 1,
+      "start": 14,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506"
+      }
+    },
+    {
+      "number": 3,
+      "name": "大坪 功一",
+      "snum": "013443",
+      "style": "追",
+      "score": "99.08",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506"
+      }
+    },
+    {
+      "number": 4,
+      "name": "泉 慶輔",
+      "snum": "014712",
+      "style": "追",
+      "score": "97.03",
+      "back": 0,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506"
+      }
+    },
+    {
+      "number": 5,
+      "name": "小川 将二郎",
+      "snum": "015643",
+      "style": "逃",
+      "score": "96.42",
+      "back": 6,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506"
+      }
+    },
+    {
+      "number": 6,
+      "name": "丸山 啓一",
+      "snum": "012889",
+      "style": "追",
+      "score": "96.30",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506"
+      }
+    },
+    {
+      "number": 7,
+      "name": "村上 翔馬",
+      "snum": "015724",
+      "style": "逃",
+      "score": "100.25",
+      "back": 6,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611273506"
+      }
+    }
+  ],
+  "lines": [
+    [
+      7,
+      2
+    ],
+    [
+      1,
+      4,
+      6
+    ],
+    [
+      5,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611273506"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-27T00:36:36.173Z"
+}

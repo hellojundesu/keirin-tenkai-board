@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-27",
+  "venue": "富山",
+  "race": 8,
+  "raceId": "202611274608",
+  "riders": [
+    {
+      "number": 1,
+      "name": "西 徹",
+      "snum": "013273",
+      "style": "追",
+      "score": "84.37",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608"
+      }
+    },
+    {
+      "number": 2,
+      "name": "中里 福太郎",
+      "snum": "015293",
+      "style": "逃",
+      "score": "80.80",
+      "back": 2,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608"
+      }
+    },
+    {
+      "number": 3,
+      "name": "武井 大介",
+      "snum": "013766",
+      "style": "追",
+      "score": "87.00",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608"
+      }
+    },
+    {
+      "number": 4,
+      "name": "村瀬 大和",
+      "snum": "015538",
+      "style": "逃",
+      "score": "82.59",
+      "back": 11,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608"
+      }
+    },
+    {
+      "number": 5,
+      "name": "伊藤 大理",
+      "snum": "013690",
+      "style": "追",
+      "score": "80.86",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608"
+      }
+    },
+    {
+      "number": 6,
+      "name": "有馬 雄二",
+      "snum": "014094",
+      "style": "追",
+      "score": "79.66",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608"
+      }
+    },
+    {
+      "number": 7,
+      "name": "佐藤 正吾",
+      "snum": "013907",
+      "style": "追",
+      "score": "82.14",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611274608"
+      }
+    }
+  ],
+  "lines": [
+    [
+      4,
+      1,
+      6
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      3
+    ],
+    [
+      5
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611274608"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-27T00:37:11.270Z"
+}

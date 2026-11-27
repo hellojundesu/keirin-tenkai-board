@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-27",
+  "venue": "富山",
+  "race": 11,
+  "raceId": "202611274611",
+  "riders": [
+    {
+      "number": 1,
+      "name": "吉川 希望",
+      "snum": "015182",
+      "style": "逃",
+      "score": "93.08",
+      "back": 4,
+      "start": 5,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611"
+      }
+    },
+    {
+      "number": 2,
+      "name": "大城 慶之",
+      "snum": "015271",
+      "style": "逃",
+      "score": "86.17",
+      "back": 7,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611"
+      }
+    },
+    {
+      "number": 3,
+      "name": "太刀川 一成",
+      "snum": "014819",
+      "style": "追",
+      "score": "91.50",
+      "back": 0,
+      "start": 15,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611"
+      }
+    },
+    {
+      "number": 4,
+      "name": "金子 貴志",
+      "snum": "012972",
+      "style": "追",
+      "score": "89.04",
+      "back": 0,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611"
+      }
+    },
+    {
+      "number": 5,
+      "name": "小原 唯志",
+      "snum": "014858",
+      "style": "逃",
+      "score": "89.33",
+      "back": 6,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611"
+      }
+    },
+    {
+      "number": 6,
+      "name": "中野 智公",
+      "snum": "014758",
+      "style": "追",
+      "score": "82.30",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611"
+      }
+    },
+    {
+      "number": 7,
+      "name": "吉田 健市",
+      "snum": "013863",
+      "style": "追",
+      "score": "88.67",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611274611"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      4,
+      7
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      5,
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611274611"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-27T00:37:12.894Z"
+}

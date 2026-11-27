@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-27",
+  "venue": "小松島",
+  "race": 6,
+  "raceId": "202611277306",
+  "riders": [
+    {
+      "number": 1,
+      "name": "黒沢 夢姫",
+      "snum": "015309",
+      "style": "追",
+      "score": "49.92",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306"
+      }
+    },
+    {
+      "number": 2,
+      "name": "國村 美留莉",
+      "snum": "015498",
+      "style": "追",
+      "score": "48.89",
+      "back": 2,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306"
+      }
+    },
+    {
+      "number": 3,
+      "name": "豊岡 英子",
+      "snum": "015313",
+      "style": "両",
+      "score": "52.28",
+      "back": 0,
+      "start": 7,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306"
+      }
+    },
+    {
+      "number": 4,
+      "name": "下条 未悠",
+      "snum": "015495",
+      "style": "両",
+      "score": "55.15",
+      "back": 6,
+      "start": 1,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306"
+      }
+    },
+    {
+      "number": 5,
+      "name": "豊田 美香",
+      "snum": "015865",
+      "style": "両",
+      "score": "51.92",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306"
+      }
+    },
+    {
+      "number": 6,
+      "name": "仲井 リコ",
+      "snum": "016038",
+      "style": "両",
+      "score": "44.82",
+      "back": 0,
+      "start": 0,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306"
+      }
+    },
+    {
+      "number": 7,
+      "name": "篠崎 新純",
+      "snum": "014910",
+      "style": "両",
+      "score": "51.33",
+      "back": 4,
+      "start": 18,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611277306"
+      }
+    }
+  ],
+  "lines": [
+    [
+      7
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      4
+    ],
+    [
+      3
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611277306"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-27T00:37:17.865Z"
+}

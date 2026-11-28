@@ -1,0 +1,891 @@
+{
+  "date": "2026-11-28",
+  "updatedAt": "2026-11-28T02:09:31.027Z",
+  "status": "complete",
+  "scope": "all",
+  "races": [
+    {
+      "venue": "久留米",
+      "race": 1,
+      "updatedAt": "2026-11-28T02:09:20.242Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "久留米",
+      "race": 2,
+      "updatedAt": "2026-11-28T02:09:20.855Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "久留米",
+      "race": 3,
+      "updatedAt": "2026-11-28T02:09:21.562Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "久留米",
+      "race": 4,
+      "updatedAt": "2026-11-28T02:09:22.137Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "久留米",
+      "race": 5,
+      "updatedAt": "2026-11-28T02:09:22.709Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "久留米",
+      "race": 6,
+      "updatedAt": "2026-11-28T02:09:23.262Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "久留米",
+      "race": 7,
+      "updatedAt": "2026-11-28T02:09:23.812Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "久留米",
+      "race": 8,
+      "updatedAt": "2026-11-28T02:09:24.329Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "久留米",
+      "race": 9,
+      "updatedAt": "2026-11-28T02:09:24.981Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "佐世保",
+      "race": 1,
+      "updatedAt": "2026-11-28T02:09:27.069Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "佐世保",
+      "race": 2,
+      "updatedAt": "2026-11-28T02:09:27.635Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "佐世保",
+      "race": 3,
+      "updatedAt": "2026-11-28T02:09:28.275Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "佐世保",
+      "race": 4,
+      "updatedAt": "2026-11-28T02:09:28.816Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "佐世保",
+      "race": 5,
+      "updatedAt": "2026-11-28T02:09:29.366Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "佐世保",
+      "race": 6,
+      "updatedAt": "2026-11-28T02:09:29.961Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "佐世保",
+      "race": 7,
+      "updatedAt": "2026-11-28T02:09:30.581Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小松島",
+      "race": 1,
+      "updatedAt": "2026-11-28T02:09:06.898Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小松島",
+      "race": 2,
+      "updatedAt": "2026-11-28T02:09:07.419Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小松島",
+      "race": 3,
+      "updatedAt": "2026-11-28T02:09:08.004Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小松島",
+      "race": 4,
+      "updatedAt": "2026-11-28T02:09:08.599Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小松島",
+      "race": 5,
+      "updatedAt": "2026-11-28T02:09:09.126Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小松島",
+      "race": 6,
+      "updatedAt": "2026-11-28T02:09:09.652Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小松島",
+      "race": 7,
+      "updatedAt": "2026-11-28T02:09:10.206Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小倉",
+      "race": 1,
+      "updatedAt": "2026-11-28T02:09:12.588Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小倉",
+      "race": 2,
+      "updatedAt": "2026-11-28T02:09:13.206Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小倉",
+      "race": 3,
+      "updatedAt": "2026-11-28T02:09:13.747Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小倉",
+      "race": 4,
+      "updatedAt": "2026-11-28T02:09:14.300Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小倉",
+      "race": 5,
+      "updatedAt": "2026-11-28T02:09:14.872Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小倉",
+      "race": 6,
+      "updatedAt": "2026-11-28T02:09:15.400Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小倉",
+      "race": 7,
+      "updatedAt": "2026-11-28T02:09:15.939Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小倉",
+      "race": 8,
+      "updatedAt": "2026-11-28T02:09:16.473Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小倉",
+      "race": 9,
+      "updatedAt": "2026-11-28T02:09:17.058Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小倉",
+      "race": 10,
+      "updatedAt": "2026-11-28T02:09:17.709Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "小倉",
+      "race": 11,
+      "updatedAt": "2026-11-28T02:09:18.261Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松戸",
+      "race": 1,
+      "updatedAt": "2026-11-28T02:08:51.598Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松戸",
+      "race": 2,
+      "updatedAt": "2026-11-28T02:08:52.159Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松戸",
+      "race": 3,
+      "updatedAt": "2026-11-28T02:08:53.091Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松戸",
+      "race": 4,
+      "updatedAt": "2026-11-28T02:08:53.570Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松戸",
+      "race": 5,
+      "updatedAt": "2026-11-28T02:08:54.241Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松戸",
+      "race": 6,
+      "updatedAt": "2026-11-28T02:08:54.758Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松戸",
+      "race": 7,
+      "updatedAt": "2026-11-28T02:08:55.311Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松戸",
+      "race": 8,
+      "updatedAt": "2026-11-28T02:08:55.834Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松戸",
+      "race": 9,
+      "updatedAt": "2026-11-28T02:08:56.488Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松阪",
+      "race": 1,
+      "updatedAt": "2026-11-28T02:08:42.359Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松阪",
+      "race": 2,
+      "updatedAt": "2026-11-28T02:08:43.421Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松阪",
+      "race": 3,
+      "updatedAt": "2026-11-28T02:08:44.140Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松阪",
+      "race": 4,
+      "updatedAt": "2026-11-28T02:08:44.890Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松阪",
+      "race": 5,
+      "updatedAt": "2026-11-28T02:08:45.436Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松阪",
+      "race": 6,
+      "updatedAt": "2026-11-28T02:08:46.239Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松阪",
+      "race": 7,
+      "updatedAt": "2026-11-28T02:08:46.795Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松阪",
+      "race": 8,
+      "updatedAt": "2026-11-28T02:08:47.298Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松阪",
+      "race": 9,
+      "updatedAt": "2026-11-28T02:08:48.085Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松阪",
+      "race": 10,
+      "updatedAt": "2026-11-28T02:08:48.640Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松阪",
+      "race": 11,
+      "updatedAt": "2026-11-28T02:08:49.153Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "松阪",
+      "race": 12,
+      "updatedAt": "2026-11-28T02:08:49.720Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "富山",
+      "race": 1,
+      "updatedAt": "2026-11-28T02:08:58.318Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "富山",
+      "race": 2,
+      "updatedAt": "2026-11-28T02:08:58.803Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "富山",
+      "race": 3,
+      "updatedAt": "2026-11-28T02:08:59.353Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "富山",
+      "race": 4,
+      "updatedAt": "2026-11-28T02:08:59.920Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "富山",
+      "race": 5,
+      "updatedAt": "2026-11-28T02:09:00.465Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "富山",
+      "race": 6,
+      "updatedAt": "2026-11-28T02:09:01.037Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "富山",
+      "race": 7,
+      "updatedAt": "2026-11-28T02:09:01.616Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "富山",
+      "race": 8,
+      "updatedAt": "2026-11-28T02:09:02.131Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "富山",
+      "race": 9,
+      "updatedAt": "2026-11-28T02:09:03.268Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "富山",
+      "race": 10,
+      "updatedAt": "2026-11-28T02:09:04.479Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "富山",
+      "race": 11,
+      "updatedAt": "2026-11-28T02:09:05.318Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "平塚",
+      "race": 1,
+      "updatedAt": "2026-11-28T02:08:28.614Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "平塚",
+      "race": 2,
+      "updatedAt": "2026-11-28T02:08:29.897Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "平塚",
+      "race": 3,
+      "updatedAt": "2026-11-28T02:08:31.096Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "平塚",
+      "race": 4,
+      "updatedAt": "2026-11-28T02:08:32.299Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "平塚",
+      "race": 5,
+      "updatedAt": "2026-11-28T02:08:33.410Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "平塚",
+      "race": 6,
+      "updatedAt": "2026-11-28T02:08:34.269Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "平塚",
+      "race": 7,
+      "updatedAt": "2026-11-28T02:08:35.525Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "平塚",
+      "race": 8,
+      "updatedAt": "2026-11-28T02:08:36.108Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "平塚",
+      "race": 9,
+      "updatedAt": "2026-11-28T02:08:36.851Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "平塚",
+      "race": 10,
+      "updatedAt": "2026-11-28T02:08:37.961Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "平塚",
+      "race": 11,
+      "updatedAt": "2026-11-28T02:08:38.785Z",
+      "missingFields": 0
+    },
+    {
+      "venue": "平塚",
+      "race": 12,
+      "updatedAt": "2026-11-28T02:08:39.883Z",
+      "missingFields": 0
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "sourceWarnings": [],
+  "expectedRaces": [
+    {
+      "venue": "平塚",
+      "race": 1,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "平塚",
+      "race": 2,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "平塚",
+      "race": 3,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "平塚",
+      "race": 4,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "平塚",
+      "race": 5,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "平塚",
+      "race": 6,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "平塚",
+      "race": 7,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "平塚",
+      "race": 8,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "平塚",
+      "race": 9,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "平塚",
+      "race": 10,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "平塚",
+      "race": 11,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "平塚",
+      "race": 12,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松阪",
+      "race": 1,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松阪",
+      "race": 2,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松阪",
+      "race": 3,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松阪",
+      "race": 4,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松阪",
+      "race": 5,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松阪",
+      "race": 6,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松阪",
+      "race": 7,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松阪",
+      "race": 8,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松阪",
+      "race": 9,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松阪",
+      "race": 10,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松阪",
+      "race": 11,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松阪",
+      "race": 12,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松戸",
+      "race": 1,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松戸",
+      "race": 2,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松戸",
+      "race": 3,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松戸",
+      "race": 4,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松戸",
+      "race": 5,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松戸",
+      "race": 6,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松戸",
+      "race": 7,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松戸",
+      "race": 8,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "松戸",
+      "race": 9,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "富山",
+      "race": 1,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "富山",
+      "race": 2,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "富山",
+      "race": 3,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "富山",
+      "race": 4,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "富山",
+      "race": 5,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "富山",
+      "race": 6,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "富山",
+      "race": 7,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "富山",
+      "race": 8,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "富山",
+      "race": 9,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "富山",
+      "race": 10,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "富山",
+      "race": 11,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小松島",
+      "race": 1,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小松島",
+      "race": 2,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小松島",
+      "race": 3,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小松島",
+      "race": 4,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小松島",
+      "race": 5,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小松島",
+      "race": 6,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小松島",
+      "race": 7,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小倉",
+      "race": 1,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小倉",
+      "race": 2,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小倉",
+      "race": 3,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小倉",
+      "race": 4,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小倉",
+      "race": 5,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小倉",
+      "race": 6,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小倉",
+      "race": 7,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小倉",
+      "race": 8,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小倉",
+      "race": 9,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小倉",
+      "race": 10,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "小倉",
+      "race": 11,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "久留米",
+      "race": 1,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "久留米",
+      "race": 2,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "久留米",
+      "race": 3,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "久留米",
+      "race": 4,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "久留米",
+      "race": 5,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "久留米",
+      "race": 6,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "久留米",
+      "race": 7,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "久留米",
+      "race": 8,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "久留米",
+      "race": 9,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "佐世保",
+      "race": 1,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "佐世保",
+      "race": 2,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "佐世保",
+      "race": 3,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "佐世保",
+      "race": 4,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "佐世保",
+      "race": 5,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "佐世保",
+      "race": 6,
+      "source": "KEIRIN.JP"
+    },
+    {
+      "venue": "佐世保",
+      "race": 7,
+      "source": "KEIRIN.JP"
+    }
+  ],
+  "completedVenues": [
+    "平塚",
+    "松阪",
+    "松戸",
+    "富山",
+    "小松島",
+    "小倉",
+    "久留米",
+    "佐世保"
+  ],
+  "discoveredVenues": [
+    "平塚",
+    "松阪",
+    "松戸",
+    "富山",
+    "小松島",
+    "小倉",
+    "久留米",
+    "佐世保"
+  ]
+}

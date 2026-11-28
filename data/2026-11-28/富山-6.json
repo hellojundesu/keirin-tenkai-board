@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-28",
+  "venue": "富山",
+  "race": 6,
+  "raceId": "202611284606",
+  "riders": [
+    {
+      "number": 1,
+      "name": "秋末 蓮",
+      "snum": "015828",
+      "style": "逃",
+      "score": "87.71",
+      "back": 16,
+      "start": 15,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606"
+      }
+    },
+    {
+      "number": 2,
+      "name": "武井 大介",
+      "snum": "013766",
+      "style": "追",
+      "score": "87.00",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606"
+      }
+    },
+    {
+      "number": 3,
+      "name": "伊藤 大理",
+      "snum": "013690",
+      "style": "追",
+      "score": "80.86",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606"
+      }
+    },
+    {
+      "number": 4,
+      "name": "佐藤 正吾",
+      "snum": "013907",
+      "style": "追",
+      "score": "82.14",
+      "back": 0,
+      "start": 6,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606"
+      }
+    },
+    {
+      "number": 5,
+      "name": "田中 雅史",
+      "snum": "013263",
+      "style": "追",
+      "score": "81.38",
+      "back": 0,
+      "start": 2,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606"
+      }
+    },
+    {
+      "number": 6,
+      "name": "中里 福太郎",
+      "snum": "015293",
+      "style": "逃",
+      "score": "80.80",
+      "back": 2,
+      "start": 3,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606"
+      }
+    },
+    {
+      "number": 7,
+      "name": "中野 智公",
+      "snum": "014758",
+      "style": "追",
+      "score": "82.30",
+      "back": 0,
+      "start": 4,
+      "sources": {
+        "style": "https://keirin.jp/pc/racelist",
+        "score": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606",
+        "back": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606",
+        "start": "https://keirin.netkeiba.com/race/entry/?race_id=202611284606"
+      }
+    }
+  ],
+  "lines": [
+    [
+      1,
+      7,
+      5
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ]
+  ],
+  "source": "KEIRIN.JP / netkeirin",
+  "lineSource": "KEIRIN.JP",
+  "scoreType": "出走表掲載の競走得点",
+  "sourceUrls": [
+    "https://keirin.jp/pc/racelist",
+    "https://keirin.netkeiba.com/race/entry/?race_id=202611284606"
+  ],
+  "missingFields": [],
+  "updatedAt": "2026-11-28T02:09:01.037Z"
+}

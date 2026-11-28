@@ -102,7 +102,20 @@ jobs:
           git add data/.cloud-result-state.json
           if ! git diff --cached --quiet; then
             git commit -m "結果補完チェックポイントを更新"
-            git push
+            for attempt in 1 2 3; do
+              # Preserve concurrent racecard commits; never force-push checkpoint state.
+              if ! git pull --rebase origin "$GITHUB_REF_NAME"; then
+                git rebase --abort || true
+                exit 1
+              fi
+              if git push origin "HEAD:$GITHUB_REF_NAME"; then
+                break
+              fi
+              if [ "$attempt" = "3" ]; then
+                echo "::error::Checkpoint push still conflicts after three attempts"
+                exit 1
+              fi
+            done
           fi
       - name: 未完了レースの診断をジョブ概要に表示
         if: always()
